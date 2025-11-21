@@ -1,0 +1,66 @@
+[
+  {
+    "conferenceId": "phpcon",
+    "year": 2025,
+    "startDate": "2025-06-28",
+    "endDate": "2025-06-28",
+    "location": {
+      "name": "大田区産業プラザPiO",
+      "address": "東京都大田区南蒲田1丁目20−20",
+      "lat": 35.558877,
+      "lng": 139.724089,
+      "prefecture": "東京都"
+    },
+    "isOnline": false,
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2025/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "year": 2025,
+    "startDate": "2025-07-18",
+    "endDate": "2025-07-19",
+    "location": {
+      "name": "神戸駅前研修センター",
+      "address": "兵庫県神戸市中央区中町通２丁目３−１",
+      "lat": 34.679722,
+      "lng": 135.175821,
+      "prefecture": "兵庫県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://2025.kphpug.jp/"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "year": 2025,
+    "startDate": "2025-11-08",
+    "endDate": "2025-11-08",
+    "location": {
+      "name": "FFBホール",
+      "address": "福岡県福岡市博多区博多駅前2丁目10−19",
+      "lat": 33.5921875,
+      "lng": 130.4149999,
+      "prefecture": "福岡県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2025/"
+  },
+  {
+    "conferenceId": "rubykaigi",
+    "year": 2025,
+    "startDate": "2025-04-16",
+    "endDate": "2025-04-18",
+    "location": {
+      "name": "愛媛県県民文化会館",
+      "address": "愛媛県松山市道後町2丁目5−1",
+      "lat": 33.8483364,
+      "lng": 132.7795355,
+      "prefecture": "愛媛県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2025/"
+  }
+]

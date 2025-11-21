@@ -1,0 +1,9 @@
+{
+  "id": "phpcon-okinawa",
+  "name": "PHPカンファレンス沖縄",
+  "description": "沖縄で開催される南国PHPカンファレンス。",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://phpcon.okinawa.jp/",
+  "twitter": "@phpcon_okinawa"
+}

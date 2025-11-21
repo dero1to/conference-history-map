@@ -1,0 +1,9 @@
+{
+  "id": "phpcon",
+  "name": "PHPカンファレンスJapan",
+  "description": "日本最大のPHPカンファレンス。",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://phpcon.php.gr.jp",
+  "twitter": "@phpcon"
+}
