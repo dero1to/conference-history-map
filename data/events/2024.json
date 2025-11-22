@@ -1,5 +1,55 @@
 [
   {
+    "conferenceId": "phpcon-hokkaido",
+    "name": "PHPカンファレンス北海道 2024",
+    "year": 2024,
+    "startDate": "2024-01-12",
+    "endDate": "2024-01-13",
+    "venueId": "hokkaido/sapporo-civic-plaza",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.hokkaido.jp/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2024",
+    "year": 2024,
+    "startDate": "2024-02-11",
+    "endDate": "2024-02-11",
+    "venueId": "osaka/grand-front-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://2024.kphpug.jp/"
+  },
+  {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2024",
+    "year": 2024,
+    "startDate": "2024-03-07",
+    "endDate": "2024-03-09",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://phperkaigi.jp/2024/"
+  },
+  {
+    "conferenceId": "object-oriented-con",
+    "name": "Object-Oriented Conference 2024",
+    "year": 2024,
+    "startDate": "2024-03-23",
+    "endDate": "2024-03-24",
+    "venueId": "tokyo/ocha-no-mizu-joshi-daigaku",
+    "isHybrid": false,
+    "eventUrl": "https://ooc.dev/2024/"
+  },
+  {
+    "conferenceId": "phpcon-odawara",
+    "name": "PHPカンファレンス小田原 2024",
+    "year": 2024,
+    "startDate": "2024-04-13",
+    "endDate": "2024-04-13",
+    "venueId": "kanagawa/odawara-umeco",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-odawara.jp/2024/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2024",
     "year": 2024,
@@ -8,6 +58,26 @@
     "venueId": "okinawa/naha-nahart",
     "isHybrid": false,
     "eventUrl": "https://rubykaigi.org/2024/"
+  },
+  {
+    "conferenceId": "phpcon-kagawa",
+    "name": "PHPカンファレンス香川 2024",
+    "year": 2024,
+    "startDate": "2024-05-10",
+    "endDate": "2024-05-11",
+    "venueId": "kagawa/tamamo-hiunkaku",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.kagawa.jp/2024/"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2024",
+    "year": 2024,
+    "startDate": "2024-06-22",
+    "endDate": "2024-06-22",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2024/"
   },
   {
     "conferenceId": "phpcon",
