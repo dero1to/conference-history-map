@@ -4,10 +4,10 @@ import { useState, useMemo, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
-import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
-import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
+import { filterEvents } from '@/lib/utils'
 import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
+import { useDynamicFilters } from '@/hooks/useDynamicFilters'
 
 const ConferenceMap = dynamic(() => import('./ConferenceMap'), {
   ssr: false,
@@ -58,11 +58,13 @@ export default function ConferenceMapPage({
     [events, conferences, filters]
   )
 
-  const availableYears = useMemo(() => getYears(events), [events])
-  const availablePrefectures = useMemo(() => getPrefectures(events), [events])
-
-  const allCategories = useMemo(() => getAvailableCategories(), [])
-  const availableProgrammingLanguages = useMemo(() => getAvailableProgrammingLanguages(), [])
+  // 動的フィルタリング機能を使用
+  const {
+    availableYears,
+    availableCategories: allCategories,
+    availableProgrammingLanguages,
+    availablePrefectures,
+  } = useDynamicFilters(events, conferences, filters)
 
   return (
     <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 lg:gap-4 h-[calc(100vh-6.5rem)] sm:h-[calc(100vh-7rem)] lg:h-[calc(100vh-8rem)]">

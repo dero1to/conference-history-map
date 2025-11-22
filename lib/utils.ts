@@ -1,17 +1,18 @@
-import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
+import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages, Prefectures } from '@/types/conference'
+import { getAvailablePrefectures } from '@/types/conference'
 
 // カテゴリー別の色を返す
 export function getCategoryColor(category: Category): string {
   const colorMap: Record<Category, string> = {
     // 技術領域
     Web: '#3B82F6', // blue
-    // Mobile: '#8B5CF6', // violet
+    Mobile: '#8B5CF6', // violet
     Backend: '#06B6D4', // cyan
     Frontend: '#10B981', // green
     DevOps: '#F59E0B', // amber
-    // 'AI/ML': '#EC4899', // pink
-    // Data: '#6366F1', // indigo
-    // Security: '#EF4444', // red
+    'AI/ML': '#EC4899', // pink
+    Data: '#6366F1', // indigo
+    Security: '#EF4444', // red
     Cloud: '#14B8A6', // teal
     SRE: '#F97316', // orange
     Other: '#6B7280', // gray
@@ -26,26 +27,31 @@ export function getProgrammingLanguageColor(language: ProgrammingLanguages): str
     TypeScript: '#3178C6', // blue
     PHP: '#777BB4', // purple
     Ruby: '#CC342D', // red
-    // Python: '#3776AB', // blue
-    // Go: '#00ADD8', // cyan
-    // Rust: '#CE422B', // orange-red
-    // Java: '#007396', // blue
-    // Kotlin: '#7F52FF', // purple
-    // Swift: '#FA7343', // orange
-    // 'C#': '#239120', // green
-    // 'C++': '#00599C', // blue
+    Python: '#3776AB', // blue
+    Go: '#00ADD8', // cyan
+    Rust: '#CE422B', // orange-red
+    Java: '#007396', // blue
+    Kotlin: '#7F52FF', // purple
+    Swift: '#FA7343', // orange
+    'C#': '#239120', // green
+    'C++': '#00599C', // blue
     Other: '#6B7280' // gray
   }
   return colorMap[language] || '#6B7280' // default gray
 }
 
-// 都道府県リストを取得
-export function getPrefectures(events: ConferenceEventWithVenue[]): string[] {
-  const prefectures = new Set<string>()
+// 都道府県リストを取得（型定義の順序で、データがあるもののみ）
+export function getPrefectures(events: ConferenceEventWithVenue[]): Prefectures[] {
+  // 実際にイベントがある都道府県を収集
+  const existingPrefectures = new Set<Prefectures>()
   events.forEach((event) => {
-    prefectures.add(event.venue.prefecture)
+    existingPrefectures.add(event.venue.prefecture as Prefectures)
   })
-  return Array.from(prefectures).sort()
+  
+  // 型定義の順序で、データがあるもののみを返す
+  return getAvailablePrefectures().filter(prefecture => 
+    existingPrefectures.has(prefecture)
+  )
 }
 
 // 年度リストを取得
@@ -65,7 +71,7 @@ export function filterEvents(
     years?: number[]
     categories?: Category[]
     programmingLanguages?: ProgrammingLanguages[]
-    prefectures?: string[]
+    prefectures?: Prefectures[]
     offlineOnly?: boolean
     hybridOnly?: boolean
     searchQuery?: string
@@ -100,7 +106,7 @@ export function filterEvents(
 
     // 都道府県フィルター
     if (filters.prefectures && filters.prefectures.length > 0) {
-      if (!filters.prefectures.includes(event.venue.prefecture)) return false
+      if (!filters.prefectures.includes(event.venue.prefecture as Prefectures)) return false
     }
 
     // カンファレンス名検索フィルター

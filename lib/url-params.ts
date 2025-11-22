@@ -1,11 +1,11 @@
-import type { Category, ProgrammingLanguages } from '@/types/conference'
+import type { Category, ProgrammingLanguages, Prefectures } from '@/types/conference'
 import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 
 export interface FilterParams {
   years: number[]
   categories: Category[]
   programmingLanguages: ProgrammingLanguages[]
-  prefectures: string[]
+  prefectures: Prefectures[]
   offlineOnly: boolean
   hybridOnly: boolean
   searchQuery: string
@@ -86,15 +86,16 @@ function parseProgrammingLanguages(value: string | string[] | null): Programming
   return [...new Set(languages)]
 }
 
-function parsePrefectures(value: string | string[] | null): string[] {
+function parsePrefectures(value: string | string[] | null): Prefectures[] {
   if (!value) return []
   
   const prefectureStrings = Array.isArray(value) ? value : [value]
-  const prefectures: string[] = []
+  const prefectures: Prefectures[] = []
   
   for (const prefStr of prefectureStrings) {
-    const sanitized = sanitizeString(prefStr)
-    if (sanitized && sanitized.length <= 10) {
+    const sanitized = sanitizeString(prefStr) as Prefectures
+    // 簡単なバリデーション: 日本の都道府県名かどうか
+    if (sanitized && (sanitized.includes('県') || sanitized.includes('都') || sanitized.includes('道') || sanitized.includes('府'))) {
       prefectures.push(sanitized)
     }
   }

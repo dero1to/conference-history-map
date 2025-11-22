@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import type { Category, ProgrammingLanguages } from '@/types/conference'
+import type { Prefectures, Category, ProgrammingLanguages } from '@/types/conference'
 import { getCategoryColor, getProgrammingLanguageColor } from '@/lib/utils'
 import type { FilterParams } from '@/lib/url-params'
 
@@ -9,7 +9,7 @@ interface FilterPanelProps {
   availableYears: number[]
   availableCategories: Category[]
   availableProgrammingLanguages: ProgrammingLanguages[]
-  availablePrefectures: string[]
+  availablePrefectures: Prefectures[]
   initialFilters: FilterParams
   isInitialized: boolean
   onFilterChange: (filters: FilterParams) => void
@@ -27,7 +27,7 @@ export default function FilterPanel({
   const [selectedYears, setSelectedYears] = useState<number[]>([])
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([])
   const [selectedProgrammingLanguages, setSelectedProgrammingLanguages] = useState<ProgrammingLanguages[]>([])
-  const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([])
+  const [selectedPrefectures, setSelectedPrefectures] = useState<Prefectures[]>([])
   const [offlineOnly, setOfflineOnly] = useState(false)
   const [hybridOnly, setHybridOnly] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
@@ -84,7 +84,7 @@ export default function FilterPanel({
     handleFilterUpdate({ programmingLanguages: newLanguages })
   }
 
-  const togglePrefecture = (prefecture: string) => {
+  const togglePrefecture = (prefecture: Prefectures) => {
     const newPrefectures = selectedPrefectures.includes(prefecture)
       ? selectedPrefectures.filter((p) => p !== prefecture)
       : [...selectedPrefectures, prefecture]
@@ -271,7 +271,7 @@ export default function FilterPanel({
       {/* 都道府県フィルター */}
       <div>
         <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">都道府県</h3>
-        <div className="max-h-32 sm:max-h-40 overflow-y-auto">
+        <div>
           <div className="flex flex-wrap gap-1 sm:gap-2">
             {availablePrefectures.map((prefecture) => (
               <button

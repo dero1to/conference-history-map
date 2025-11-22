@@ -3,11 +3,11 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
-import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import ConferenceList from './ConferenceList'
-import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
+import { filterEvents } from '@/lib/utils'
 import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
+import { useDynamicFilters } from '@/hooks/useDynamicFilters'
 
 interface ConferenceListPageProps {
   conferences: Conference[]
@@ -49,10 +49,13 @@ export default function ConferenceListPage({
     [events, conferences, filters]
   )
 
-  const availableYears = useMemo(() => getYears(events), [events])
-  const availablePrefectures = useMemo(() => getPrefectures(events), [events])
-  const allCategories = useMemo(() => getAvailableCategories(), [])
-  const availableProgrammingLanguages = useMemo(() => getAvailableProgrammingLanguages(), [])
+  // 動的フィルタリング機能を使用
+  const {
+    availableYears,
+    availableCategories: allCategories,
+    availableProgrammingLanguages,
+    availablePrefectures,
+  } = useDynamicFilters(events, conferences, filters)
 
   return (
     <div className="flex flex-col lg:flex-row gap-4 min-h-[calc(100vh-8rem)]">
