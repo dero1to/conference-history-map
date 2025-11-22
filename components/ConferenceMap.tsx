@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import { LatLngBounds, Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
-import type { Conference, ConferenceEvent } from '@/types/conference'
+import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import { getCategoryColor, getProgrammingLanguageColor, formatDateRange } from '@/lib/utils'
 import 'leaflet/dist/leaflet.css'
 
@@ -28,17 +28,17 @@ const createColoredIcon = (color: string) => {
 }
 
 interface ConferenceMapProps {
-  events: ConferenceEvent[]
+  events: ConferenceEventWithVenue[]
   conferences: Conference[]
 }
 
-function MapUpdater({ events }: { events: ConferenceEvent[] }) {
+function MapUpdater({ events }: { events: ConferenceEventWithVenue[] }) {
   const map = useMap()
 
   useEffect(() => {
     if (events.length > 0) {
       const bounds = new LatLngBounds(
-        events.map((event) => [event.location.lat, event.location.lng])
+        events.map((event) => [event.venue.lat, event.venue.lng])
       )
       map.fitBounds(bounds, { padding: [50, 50] })
     }
@@ -117,7 +117,7 @@ export default function ConferenceMap({
           return (
             <Marker
               key={`${event.conferenceId}-${event.year}-${index}`}
-              position={[event.location.lat, event.location.lng]}
+              position={[event.venue.lat, event.venue.lng]}
               icon={icon}
             >
               <Popup maxWidth={300} className="custom-popup">
@@ -127,9 +127,9 @@ export default function ConferenceMap({
                   <p className="text-xs sm:text-sm mb-1">
                     {formatDateRange(event.startDate, event.endDate)}
                   </p>
-                  <p className="text-xs sm:text-sm mb-1">{event.location.name}</p>
+                  <p className="text-xs sm:text-sm mb-1">{event.venue.name}</p>
                   <p className="text-xs sm:text-sm text-gray-600 mb-2">
-                    {event.location.prefecture}
+                    {event.venue.prefecture}
                   </p>
                   {event.attendees && (
                     <p className="text-xs sm:text-sm mb-1">参加者: {event.attendees}人</p>

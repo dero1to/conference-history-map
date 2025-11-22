@@ -39,8 +39,9 @@ export const ProgrammingLanguagesSchema = z.enum([
 
 export type ProgrammingLanguages = z.infer<typeof ProgrammingLanguagesSchema>
 
-// 開催地情報
-export const LocationSchema = z.object({
+// 会場情報
+export const VenueSchema = z.object({
+  id: z.string(),
   name: z.string(),
   address: z.string(),
   lat: z.number(),
@@ -48,7 +49,7 @@ export const LocationSchema = z.object({
   prefecture: z.string(),
 })
 
-export type Location = z.infer<typeof LocationSchema>
+export type Venue = z.infer<typeof VenueSchema>
 
 // カンファレンスの基本情報
 export const ConferenceSchema = z.object({
@@ -68,11 +69,16 @@ export const ConferenceEventSchema = z.object({
   year: z.number(),
   startDate: z.string(),
   endDate: z.string(),
-  location: LocationSchema,
+  venueId: z.string(),
   attendees: z.number().optional(),
   isHybrid: z.boolean().default(false),
   eventUrl: z.string().url().optional(),
 })
 
 export type ConferenceEvent = z.infer<typeof ConferenceEventSchema>
+
+// 拡張されたイベント情報（会場情報を含む）
+export type ConferenceEventWithVenue = ConferenceEvent & {
+  venue: Venue
+}
 
