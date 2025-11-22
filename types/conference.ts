@@ -85,4 +85,5 @@ export interface ConferenceFilters {
   prefectures: string[]
   onlineOnly: boolean
   offlineOnly: boolean
+  searchQuery: string
 }

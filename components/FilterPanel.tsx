@@ -16,6 +16,7 @@ interface FilterPanelProps {
     prefectures: string[]
     onlineOnly: boolean
     offlineOnly: boolean
+    searchQuery: string
   }) => void
 }
 
@@ -32,6 +33,7 @@ export default function FilterPanel({
   const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([])
   const [onlineOnly, setOnlineOnly] = useState(false)
   const [offlineOnly, setOfflineOnly] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   const handleFilterUpdate = (updates: Partial<{
     years: number[]
@@ -40,6 +42,7 @@ export default function FilterPanel({
     prefectures: string[]
     onlineOnly: boolean
     offlineOnly: boolean
+    searchQuery: string
   }>) => {
     const newFilters = {
       years: updates.years ?? selectedYears,
@@ -48,6 +51,7 @@ export default function FilterPanel({
       prefectures: updates.prefectures ?? selectedPrefectures,
       onlineOnly: updates.onlineOnly ?? onlineOnly,
       offlineOnly: updates.offlineOnly ?? offlineOnly,
+      searchQuery: updates.searchQuery ?? searchQuery,
     }
     onFilterChange(newFilters)
   }
@@ -106,6 +110,12 @@ export default function FilterPanel({
     }
   }
 
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newSearchQuery = e.target.value
+    setSearchQuery(newSearchQuery)
+    handleFilterUpdate({ searchQuery: newSearchQuery })
+  }
+
   const clearAllFilters = () => {
     setSelectedYears([])
     setSelectedCategories([])
@@ -113,6 +123,7 @@ export default function FilterPanel({
     setSelectedPrefectures([])
     setOnlineOnly(false)
     setOfflineOnly(false)
+    setSearchQuery('')
     onFilterChange({
       years: [],
       categories: [],
@@ -120,6 +131,7 @@ export default function FilterPanel({
       prefectures: [],
       onlineOnly: false,
       offlineOnly: false,
+      searchQuery: '',
     })
   }
 
@@ -129,7 +141,8 @@ export default function FilterPanel({
     selectedProgrammingLanguages.length > 0 ||
     selectedPrefectures.length > 0 ||
     onlineOnly ||
-    offlineOnly
+    offlineOnly ||
+    searchQuery.trim().length > 0
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 space-y-4">
@@ -143,6 +156,18 @@ export default function FilterPanel({
             クリア
           </button>
         )}
+      </div>
+
+      {/* 検索フィルター */}
+      <div>
+        <h3 className="font-semibold mb-2">カンファレンス名で検索</h3>
+        <input
+          type="text"
+          placeholder="カンファレンス名を入力..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        />
       </div>
 
       {/* 年度フィルター */}

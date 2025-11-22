@@ -31,6 +31,7 @@ export default function ConferenceMapPage({
     prefectures: string[]
     onlineOnly: boolean
     offlineOnly: boolean
+    searchQuery: string
   }>({
     years: [],
     categories: [],
@@ -38,6 +39,7 @@ export default function ConferenceMapPage({
     prefectures: [],
     onlineOnly: false,
     offlineOnly: false,
+    searchQuery: '',
   })
 
   const filteredEvents = useMemo(
