@@ -1,4 +1,4 @@
-import { Conference, ConferenceEvent, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
+import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
 
 // カテゴリー別の色を返す
 export function getCategoryColor(category: Category): string {

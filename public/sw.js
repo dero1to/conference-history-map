@@ -1,10 +1,8 @@
 // 最小限のService Worker
 // 404エラーを回避するための基本実装
 
-const CACHE_NAME = 'conference-map-v1';
-
 // インストール時
-self.addEventListener('install', (event) => {
+self.addEventListener('install', () => {
   console.log('Service Worker: Installing...');
   // すぐにアクティベート
   self.skipWaiting();
