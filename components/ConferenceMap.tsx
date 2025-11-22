@@ -69,6 +69,10 @@ export default function ConferenceMap({
       zoom={5}
       style={{ height: '100%', width: '100%' }}
       className="rounded-lg"
+      touchZoom={true}
+      doubleClickZoom={true}
+      scrollWheelZoom={true}
+      dragging={true}
     >
       <TileLayer
         attribution='Map data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -89,25 +93,25 @@ export default function ConferenceMap({
             position={[event.location.lat, event.location.lng]}
             icon={icon}
           >
-            <Popup>
-              <div className="p-2 min-w-[200px]">
-                <h3 className="font-bold text-lg mb-1">{conference.name}</h3>
-                <p className="text-sm text-gray-600 mb-2">{event.year}年</p>
-                <p className="text-sm mb-1">
+            <Popup maxWidth={300} className="custom-popup">
+              <div className="p-2 min-w-[180px] sm:min-w-[200px]">
+                <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{conference.name}</h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-2">{event.year}年</p>
+                <p className="text-xs sm:text-sm mb-1">
                   {formatDateRange(event.startDate, event.endDate)}
                 </p>
-                <p className="text-sm mb-1">{event.location.name}</p>
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-xs sm:text-sm mb-1">{event.location.name}</p>
+                <p className="text-xs sm:text-sm text-gray-600 mb-2">
                   {event.location.prefecture}
                 </p>
                 {event.attendees && (
-                  <p className="text-sm mb-1">参加者: {event.attendees}人</p>
+                  <p className="text-xs sm:text-sm mb-1">参加者: {event.attendees}人</p>
                 )}
                 <div className="flex flex-wrap gap-1 mt-2">
                   {conference.category.map((cat) => (
                     <span
                       key={cat}
-                      className="text-xs px-2 py-1 rounded"
+                      className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
                       style={{
                         backgroundColor: getCategoryColor(cat),
                         color: 'white',
@@ -119,7 +123,7 @@ export default function ConferenceMap({
                   {conference.programmingLanguages?.map((lang) => (
                     <span
                       key={lang}
-                      className="text-xs px-2 py-1 rounded"
+                      className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
                       style={{
                         backgroundColor: getProgrammingLanguageColor(lang),
                         color: 'white',
@@ -130,12 +134,12 @@ export default function ConferenceMap({
                   ))}
                 </div>
                 {event.isHybrid && (
-                  <span className="inline-block text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded mt-2">
+                  <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-blue-100 text-blue-800 rounded mt-2">
                     ハイブリッド開催
                   </span>
                 )}
                 {event.isOnline && !event.isHybrid && (
-                  <span className="inline-block text-xs px-2 py-1 bg-green-100 text-green-800 rounded mt-2">
+                  <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-green-100 text-green-800 rounded mt-2">
                     オンライン開催
                   </span>
                 )}
@@ -144,7 +148,7 @@ export default function ConferenceMap({
                     href={event.eventUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block mt-2 text-sm text-blue-600 hover:underline"
+                    className="block mt-2 text-xs sm:text-sm text-blue-600 hover:underline"
                   >
                     イベントページ →
                   </a>

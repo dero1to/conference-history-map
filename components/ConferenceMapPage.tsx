@@ -90,9 +90,9 @@ export default function ConferenceMapPage({
   ]
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 h-[calc(100vh-8rem)]">
+    <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 lg:gap-4 h-[calc(100vh-6.5rem)] sm:h-[calc(100vh-7rem)] lg:h-[calc(100vh-8rem)]">
       {/* サイドバー */}
-      <div className="lg:w-80 flex-shrink-0 overflow-y-auto">
+      <div className="lg:w-80 flex-shrink-0 overflow-y-auto max-h-[35vh] sm:max-h-[40vh] lg:max-h-full">
         <FilterPanel
           availableYears={availableYears}
           availableCategories={allCategories}
@@ -104,9 +104,9 @@ export default function ConferenceMapPage({
         />
 
         {/* 統計情報 */}
-        <div className="mt-4 bg-white rounded-lg shadow-md p-4">
-          <h3 className="font-semibold mb-2">統計情報</h3>
-          <div className="space-y-1 text-sm">
+        <div className="mt-2 sm:mt-3 lg:mt-4 bg-white rounded-lg shadow-md p-2 sm:p-3 lg:p-4">
+          <h3 className="font-semibold mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base">統計情報</h3>
+          <div className="space-y-0.5 sm:space-y-1 text-xs">
             <p>総イベント数: {events.length}</p>
             <p>表示中: {filteredEvents.length}</p>
             <p>カンファレンス数: {conferences.length}</p>
@@ -115,7 +115,7 @@ export default function ConferenceMapPage({
       </div>
 
       {/* 地図エリア */}
-      <div className="flex-1 rounded-lg overflow-hidden shadow-md">
+      <div className="flex-1 rounded-lg overflow-hidden shadow-md min-h-[65vh] sm:min-h-[60vh] lg:min-h-0">
         <ConferenceMap events={filteredEvents} conferences={conferences} />
       </div>
     </div>

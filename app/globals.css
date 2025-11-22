@@ -34,3 +34,36 @@ body {
 .leaflet-container {
   font-family: inherit;
 }
+
+/* Mobile optimizations for Leaflet popup */
+.custom-popup .leaflet-popup-content {
+  margin: 8px 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .custom-popup .leaflet-popup-content {
+    margin: 6px 8px;
+    font-size: 12px;
+  }
+  
+  .leaflet-control-zoom {
+    margin-left: 8px !important;
+    margin-top: 8px !important;
+  }
+  
+  .leaflet-control-attribution {
+    font-size: 10px !important;
+  }
+}
+
+/* Touch-friendly button sizes */
+@media (max-width: 640px) {
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 30px !important;
+    font-size: 16px !important;
+  }
+}
