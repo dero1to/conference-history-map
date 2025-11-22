@@ -5,8 +5,8 @@ export interface FilterParams {
   categories: Category[]
   programmingLanguages: ProgrammingLanguages[]
   prefectures: string[]
-  onlineOnly: boolean
   offlineOnly: boolean
+  hybridOnly: boolean
   searchQuery: string
 }
 
@@ -116,8 +116,8 @@ export function parseUrlParams(searchParams: URLSearchParams): FilterParams {
     categories: parseCategories(searchParams.getAll('categories')),
     programmingLanguages: parseProgrammingLanguages(searchParams.getAll('languages')),
     prefectures: parsePrefectures(searchParams.getAll('prefectures')),
-    onlineOnly: parseBoolean(searchParams.get('online')),
     offlineOnly: parseBoolean(searchParams.get('offline')),
+    hybridOnly: parseBoolean(searchParams.get('hybrid')),
     searchQuery: sanitizeString(searchParams.get('search') || ''),
   }
 }
@@ -141,12 +141,12 @@ export function createUrlParams(filters: FilterParams): URLSearchParams {
     filters.prefectures.forEach(prefecture => params.append('prefectures', prefecture))
   }
   
-  if (filters.onlineOnly) {
-    params.set('online', 'true')
-  }
-  
   if (filters.offlineOnly) {
     params.set('offline', 'true')
+  }
+  
+  if (filters.hybridOnly) {
+    params.set('hybrid', 'true')
   }
   
   if (filters.searchQuery.trim()) {

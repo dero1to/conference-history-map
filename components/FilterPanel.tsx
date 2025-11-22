@@ -28,8 +28,8 @@ export default function FilterPanel({
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([])
   const [selectedProgrammingLanguages, setSelectedProgrammingLanguages] = useState<ProgrammingLanguages[]>([])
   const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([])
-  const [onlineOnly, setOnlineOnly] = useState(false)
   const [offlineOnly, setOfflineOnly] = useState(false)
+  const [hybridOnly, setHybridOnly] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
@@ -38,8 +38,8 @@ export default function FilterPanel({
       setSelectedCategories(initialFilters.categories)
       setSelectedProgrammingLanguages(initialFilters.programmingLanguages)
       setSelectedPrefectures(initialFilters.prefectures)
-      setOnlineOnly(initialFilters.onlineOnly)
       setOfflineOnly(initialFilters.offlineOnly)
+      setHybridOnly(initialFilters.hybridOnly)
       setSearchQuery(initialFilters.searchQuery)
     }
   }, [initialFilters, isInitialized])
@@ -50,8 +50,8 @@ export default function FilterPanel({
       categories: updates.categories ?? selectedCategories,
       programmingLanguages: updates.programmingLanguages ?? selectedProgrammingLanguages,
       prefectures: updates.prefectures ?? selectedPrefectures,
-      onlineOnly: updates.onlineOnly ?? onlineOnly,
       offlineOnly: updates.offlineOnly ?? offlineOnly,
+      hybridOnly: updates.hybridOnly ?? hybridOnly,
       searchQuery: updates.searchQuery ?? searchQuery,
     }
     onFilterChange(newFilters)
@@ -89,25 +89,25 @@ export default function FilterPanel({
     handleFilterUpdate({ prefectures: newPrefectures })
   }
 
-  const handleOnlineToggle = () => {
-    const newValue = !onlineOnly
-    setOnlineOnly(newValue)
-    if (newValue && offlineOnly) {
-      setOfflineOnly(false)
-      handleFilterUpdate({ onlineOnly: newValue, offlineOnly: false })
-    } else {
-      handleFilterUpdate({ onlineOnly: newValue })
-    }
-  }
-
   const handleOfflineToggle = () => {
     const newValue = !offlineOnly
     setOfflineOnly(newValue)
-    if (newValue && onlineOnly) {
-      setOnlineOnly(false)
-      handleFilterUpdate({ offlineOnly: newValue, onlineOnly: false })
+    if (newValue) {
+      setHybridOnly(false)
+      handleFilterUpdate({ offlineOnly: newValue, hybridOnly: false })
     } else {
       handleFilterUpdate({ offlineOnly: newValue })
+    }
+  }
+
+  const handleHybridToggle = () => {
+    const newValue = !hybridOnly
+    setHybridOnly(newValue)
+    if (newValue) {
+      setOfflineOnly(false)
+      handleFilterUpdate({ hybridOnly: newValue, offlineOnly: false })
+    } else {
+      handleFilterUpdate({ hybridOnly: newValue })
     }
   }
 
@@ -123,16 +123,16 @@ export default function FilterPanel({
       categories: [],
       programmingLanguages: [],
       prefectures: [],
-      onlineOnly: false,
       offlineOnly: false,
+      hybridOnly: false,
       searchQuery: '',
     }
     setSelectedYears(emptyFilters.years)
     setSelectedCategories(emptyFilters.categories)
     setSelectedProgrammingLanguages(emptyFilters.programmingLanguages)
     setSelectedPrefectures(emptyFilters.prefectures)
-    setOnlineOnly(emptyFilters.onlineOnly)
     setOfflineOnly(emptyFilters.offlineOnly)
+    setHybridOnly(emptyFilters.hybridOnly)
     setSearchQuery(emptyFilters.searchQuery)
     onFilterChange(emptyFilters)
   }
@@ -142,8 +142,8 @@ export default function FilterPanel({
     selectedCategories.length > 0 ||
     selectedProgrammingLanguages.length > 0 ||
     selectedPrefectures.length > 0 ||
-    onlineOnly ||
     offlineOnly ||
+    hybridOnly ||
     searchQuery.trim().length > 0
 
   return (
@@ -300,19 +300,10 @@ export default function FilterPanel({
         </div>
       </div>
 
-      {/* オンライン/オフラインフィルター */}
+      {/* 開催形式フィルター */}
       <div>
         <h3 className="font-semibold mb-2 text-sm sm:text-base">開催形式</h3>
         <div className="space-y-2">
-          <label className="flex items-center space-x-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={onlineOnly}
-              onChange={handleOnlineToggle}
-              className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 rounded focus:ring-blue-500"
-            />
-            <span className="text-xs sm:text-sm">オンライン開催のみ</span>
-          </label>
           <label className="flex items-center space-x-2 cursor-pointer">
             <input
               type="checkbox"
@@ -320,7 +311,16 @@ export default function FilterPanel({
               onChange={handleOfflineToggle}
               className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 rounded focus:ring-blue-500"
             />
-            <span className="text-xs sm:text-sm">オフライン開催のみ</span>
+            <span className="text-xs sm:text-sm">オフライン開催</span>
+          </label>
+          <label className="flex items-center space-x-2 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={hybridOnly}
+              onChange={handleHybridToggle}
+              className="w-3 h-3 sm:w-4 sm:h-4 text-purple-600 rounded focus:ring-purple-500"
+            />
+            <span className="text-xs sm:text-sm">ハイブリッド開催</span>
           </label>
         </div>
       </div>

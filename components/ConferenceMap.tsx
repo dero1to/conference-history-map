@@ -138,11 +138,6 @@ export default function ConferenceMap({
                     ハイブリッド開催
                   </span>
                 )}
-                {event.isOnline && !event.isHybrid && (
-                  <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-green-100 text-green-800 rounded mt-2">
-                    オンライン開催
-                  </span>
-                )}
                 {event.eventUrl && (
                   <a
                     href={event.eventUrl}
