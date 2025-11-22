@@ -1,10 +1,12 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import dynamic from 'next/dynamic'
+import { useSearchParams } from 'next/navigation'
 import type { Conference, ConferenceEvent, Category, ProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
+import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
 
 const ConferenceMap = dynamic(() => import('./ConferenceMap'), {
   ssr: false,
@@ -24,21 +26,30 @@ export default function ConferenceMapPage({
   conferences,
   events,
 }: ConferenceMapPageProps) {
-  const [filters, setFilters] = useState<{
-    years: number[]
-    categories: Category[]
-    programmingLanguages: ProgrammingLanguages[]
-    prefectures: string[]
-    onlineOnly: boolean
-    offlineOnly: boolean
-  }>({
+  const searchParams = useSearchParams()
+  const [filters, setFilters] = useState<FilterParams>({
     years: [],
     categories: [],
     programmingLanguages: [],
     prefectures: [],
     onlineOnly: false,
     offlineOnly: false,
+    searchQuery: '',
   })
+  const [isInitialized, setIsInitialized] = useState(false)
+
+  useEffect(() => {
+    if (!isInitialized) {
+      const initialFilters = parseUrlParams(searchParams)
+      setFilters(initialFilters)
+      setIsInitialized(true)
+    }
+  }, [searchParams, isInitialized])
+
+  const handleFilterChange = (newFilters: FilterParams) => {
+    setFilters(newFilters)
+    updateUrlWithParams(newFilters, true)
+  }
 
   const filteredEvents = useMemo(
     () => filterEvents(events, conferences, filters),
@@ -87,7 +98,9 @@ export default function ConferenceMapPage({
           availableCategories={allCategories}
           availableProgrammingLanguages={availableProgrammingLanguages}
           availablePrefectures={availablePrefectures}
-          onFilterChange={setFilters}
+          initialFilters={filters}
+          isInitialized={isInitialized}
+          onFilterChange={handleFilterChange}
         />
 
         {/* 統計情報 */}

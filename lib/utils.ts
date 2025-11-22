@@ -70,6 +70,7 @@ export function filterEvents(
     prefectures?: string[]
     onlineOnly?: boolean
     offlineOnly?: boolean
+    searchQuery?: string
   }
 ): ConferenceEvent[] {
   return events.filter((event) => {
@@ -103,6 +104,17 @@ export function filterEvents(
       if (!filters.prefectures.includes(event.location.prefecture)) return false
     }
 
+    // 検索クエリフィルター
+    if (filters.searchQuery && filters.searchQuery.trim()) {
+      const conference = conferences.find((c) => c.id === event.conferenceId)
+      if (!conference) return false
+      
+      const normalizedQuery = normalizeSearchQuery(filters.searchQuery)
+      const normalizedName = normalizeSearchQuery(conference.name)
+      
+      if (!normalizedName.includes(normalizedQuery)) return false
+    }
+
     // オンライン/オフラインフィルター
     if (filters.onlineOnly && !event.isOnline && !event.isHybrid) return false
     if (filters.offlineOnly && event.isOnline) return false
@@ -131,4 +143,31 @@ export function formatDateRange(startDate: string, endDate: string): string {
   }
 
   return `${formatDate(startDate)} - ${formatDate(endDate)}`
+}
+
+// 検索クエリの正規化
+export function normalizeSearchQuery(query: string): string {
+  return query
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[ー\-]/g, '')
+    .replace(/[（）()]/g, '')
+    .trim()
+}
+
+// カンファレンス名での検索
+export function searchConferences(
+  conferences: Conference[],
+  searchQuery: string
+): Conference[] {
+  if (!searchQuery.trim()) {
+    return conferences
+  }
+
+  const normalizedQuery = normalizeSearchQuery(searchQuery)
+  
+  return conferences.filter((conference) => {
+    const normalizedName = normalizeSearchQuery(conference.name)
+    return normalizedName.includes(normalizedQuery)
+  })
 }
