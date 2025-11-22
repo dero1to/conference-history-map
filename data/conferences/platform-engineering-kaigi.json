@@ -1,0 +1,13 @@
+{
+  "id": "platform-engineering-kaigi",
+  "name": "Platform Engineering Kaigi",
+  "category": [
+    "DevOps",
+    "SRE"
+  ],
+  "programmingLanguages": [
+    "Other"
+  ],
+  "website": "https://www.cnia.io/pek2024/",
+  "twitter": "@cnia_pfem"
+}

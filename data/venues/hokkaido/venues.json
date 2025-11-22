@@ -3,8 +3,40 @@
     "id": "sapporo-civic-plaza",
     "name": "札幌市民交流プラザ",
     "address": "札幌市中央区北1条西1丁目",
-    "lat": 43.06323308344315, 
+    "lat": 43.06323308344315,
     "lng": 141.35568408570364,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "asahikawa-research-center",
+    "name": "旭川リサーチセンター",
+    "address": "北海道旭川市緑が丘東1条3丁目1-6",
+    "lat": 43.724616257611984,
+    "lng": 142.39388224260756,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "asahikawa-city-daisetsu-crystal-hall",
+    "name": "旭川市大雪クリスタルホール",
+    "address": "北海道旭川市神楽３条７丁目１−４５",
+    "lat": 43.7600754,
+    "lng": 142.3509511,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "deep-tech-core-sapporo",
+    "name": "Deep Tech CORE SAPPORO",
+    "address": "北海道札幌市中央区北５条西５丁目１",
+    "lat": 43.06727041494782,
+    "lng": 141.34758539720903,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "air-water-forest",
+    "name": "エア・ウォーターの森",
+    "address": "北海道札幌市中央区北8条西13丁目28-21",
+    "lat": 43.0685626,
+    "lng": 141.3345065,
     "prefecture": "北海道"
   }
 ]

@@ -70,5 +70,45 @@
     "lat": 35.63230616964451,
     "lng": 139.78839987626475,
     "prefecture": "東京都"
+  },
+  {
+    "id": "musashino-place",
+    "name": "武蔵野プレイス",
+    "address": "東京都武蔵野市境南町２丁目３−１８",
+    "lat": 35.7010861,
+    "lng": 139.5437217,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "musashino-public-hall",
+    "name": "武蔵野公会堂",
+    "address": "東京都武蔵野市吉祥寺南町１丁目６−２２",
+    "lat": 35.6969614,
+    "lng": 139.5763128,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "docomo-rd-openlab-odaiba",
+    "name": "docomo R&D OPENLAB ODAIBA",
+    "address": "東京都港区台場２丁目３−２",
+    "lat": 35.62865916531257,
+    "lng": 139.77779057813072,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "abema-towers",
+    "name": "Abema Towers",
+    "address": "東京都渋谷区宇田川町40-1",
+    "lat": 35.6624319,
+    "lng": 139.6960429,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "jp-tower-hall-conference",
+    "name": "JPタワー ホール＆カンファレンス",
+    "address": "東京都千代田区丸の内２丁目７−２",
+    "lat": 35.67990791289149,
+    "lng": 139.7646534549541,
+    "prefecture": "東京都"
   }
 ]

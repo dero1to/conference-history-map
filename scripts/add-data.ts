@@ -457,18 +457,23 @@ async function main() {
         yearEvents = existingEvents;
     }
 
-    // Check for duplicates
-    const existingIndex = yearEvents.findIndex(e => e.conferenceId === conferenceId && e.year === eventData.year);
+    // Check for duplicates (same conference, same year, AND same name)
+    const existingIndex = yearEvents.findIndex(e => e.conferenceId === conferenceId && e.year === eventData.year && e.name === newEvent.name);
     if (existingIndex >= 0) {
         const { overwrite } = await prompts({
             type: 'confirm',
             name: 'overwrite',
-            message: 'Event already exists for this year. Overwrite?',
+            message: `Event "${newEvent.name}" already exists for this year. Overwrite?`,
             initial: false,
         });
         if (!overwrite) return;
         yearEvents[existingIndex] = newEvent;
     } else {
+        // Check if other events exist for this conference in the same year (just for info)
+        const sameYearEvents = yearEvents.filter(e => e.conferenceId === conferenceId && e.year === eventData.year);
+        if (sameYearEvents.length > 0) {
+            console.log(chalk.blue(`ℹ️  Found ${sameYearEvents.length} other event(s) for this conference in ${eventData.year}. Adding as a new event.`));
+        }
         yearEvents.push(newEvent);
     }
 

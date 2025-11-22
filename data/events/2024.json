@@ -100,6 +100,46 @@
     "eventUrl": "https://blessingsoftware.connpass.com/event/315796/"
   },
   {
+    "conferenceId": "platform-engineering-kaigi",
+    "name": "Platform Engineering Kaigi 2024",
+    "year": 2024,
+    "startDate": "2024-07-09",
+    "endDate": "2024-07-09",
+    "venueId": "tokyo/docomo-rd-openlab-odaiba",
+    "isHybrid": true,
+    "eventUrl": "https://www.cnia.io/pek2024/"
+  },
+  {
+    "conferenceId": "daikichijoji-pm",
+    "name": "大吉祥寺.pm 2024",
+    "year": 2024,
+    "startDate": "2024-07-12",
+    "endDate": "2024-07-13",
+    "venueId": "tokyo/musashino-public-hall",
+    "isHybrid": false,
+    "eventUrl": "https://kichijojipm.connpass.com/event/314917/"
+  },
+  {
+    "conferenceId": "techramen-conference",
+    "name": "TechRAMEN Conference 2024",
+    "year": 2024,
+    "startDate": "2024-07-26",
+    "endDate": "2024-07-27",
+    "venueId": "hokkaido/asahikawa-city-daisetsu-crystal-hall",
+    "isHybrid": false,
+    "eventUrl": "https://techramenconf.net/2024/"
+  },
+  {
+    "conferenceId": "front-end-conference-hokkaido",
+    "name": "フロントエンドカンファレンス北海道 2024",
+    "year": 2024,
+    "startDate": "2024-08-24",
+    "endDate": "2024-08-24",
+    "venueId": "hokkaido/deep-tech-core-sapporo",
+    "isHybrid": true,
+    "eventUrl": "https://www.frontend-conf.jp/2024"
+  },
+  {
     "conferenceId": "phpcon-okinawa",
     "name": "PHPカンファレンス沖縄 2024",
     "year": 2024,

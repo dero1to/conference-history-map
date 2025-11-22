@@ -190,6 +190,86 @@
     "eventUrl": "https://2025.kphpug.jp/"
   },
   {
+    "conferenceId": "techramen-conference",
+    "name": "TechRAMEN Conference 2025",
+    "year": 2025,
+    "startDate": "2025-07-26",
+    "endDate": "2025-07-26",
+    "venueId": "hokkaido/asahikawa-research-center",
+    "isHybrid": false,
+    "eventUrl": "https://techramenconf.net/2025/"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG56ミーティング",
+    "year": 2025,
+    "startDate": "2025-07-30",
+    "endDate": "2025-08-01",
+    "venueId": "shimane/shimane-prefectural-industrial-exchange-center-kunibiki-messe",
+    "isHybrid": false,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog56/"
+  },
+  {
+    "conferenceId": "presentation-of-lessons-learned-from-anime",
+    "name": "【劇場版】アニメから得た学びを発表会 2025",
+    "year": 2025,
+    "startDate": "2025-08-10",
+    "endDate": "2025-08-10",
+    "venueId": "tokyo/musashino-place",
+    "isHybrid": false,
+    "eventUrl": "https://engineers-anime-2025-lp.pages.dev/"
+  },
+  {
+    "conferenceId": "daikichijoji-pm",
+    "name": "大吉祥寺.pm 2025",
+    "year": 2025,
+    "startDate": "2025-09-05",
+    "endDate": "2025-09-06",
+    "venueId": "tokyo/musashino-public-hall",
+    "isHybrid": false,
+    "eventUrl": "https://kichijojipm.connpass.com/event/361631/"
+  },
+  {
+    "conferenceId": "front-end-conference-hokkaido",
+    "name": "フロントエンドカンファレンス北海道 2025",
+    "year": 2025,
+    "startDate": "2025-09-06",
+    "endDate": "2025-09-06",
+    "venueId": "hokkaido/air-water-forest",
+    "isHybrid": true,
+    "eventUrl": "https://www.frontend-conf.jp/"
+  },
+  {
+    "conferenceId": "platform-engineering-kaigi",
+    "name": "Platform Engineering Kaigi 2025",
+    "year": 2025,
+    "startDate": "2025-09-18",
+    "endDate": "2025-09-18",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://www.cnia.io/pek2025/"
+  },
+  {
+    "conferenceId": "front-end-conference-tokyo",
+    "name": "フロントエンドカンファレンス東京 2025",
+    "year": 2025,
+    "startDate": "2025-09-21",
+    "endDate": "2025-09-21",
+    "venueId": "tokyo/abema-towers",
+    "isHybrid": false,
+    "eventUrl": "https://fec-tokyo.github.io/2025/"
+  },
+  {
+    "conferenceId": "kaigi-on-rails",
+    "name": "Kaigi on Rails 2025",
+    "year": 2025,
+    "startDate": "2025-09-26",
+    "endDate": "2025-09-27",
+    "venueId": "tokyo/jp-tower-hall-conference",
+    "isHybrid": true,
+    "eventUrl": "https://kaigionrails.org/2025/"
+  },
+  {
     "conferenceId": "phpcon-hiroshima",
     "name": "PHPカンファレンス広島 2025",
     "year": 2025,

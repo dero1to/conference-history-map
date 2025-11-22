@@ -1,0 +1,13 @@
+{
+  "id": "kaigi-on-rails",
+  "name": "Kaigi on Rails",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "Ruby"
+  ],
+  "website": "http://kaigionrails.org/",
+  "twitter": "@kaigionrails"
+}

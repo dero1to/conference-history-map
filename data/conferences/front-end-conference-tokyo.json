@@ -1,0 +1,14 @@
+{
+  "id": "front-end-conference-tokyo",
+  "name": "フロントエンドカンファレンス東京",
+  "category": [
+    "Web",
+    "Frontend"
+  ],
+  "programmingLanguages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "website": "https://fec-tokyo.github.io/",
+  "twitter": "@fec_tokyo"
+}
