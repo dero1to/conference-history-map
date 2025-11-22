@@ -2,10 +2,16 @@
 
 import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
-import { LatLngBounds, Icon } from 'leaflet'
+import { LatLngBounds, Icon, DivIcon } from 'leaflet'
+import MarkerClusterGroup from 'react-leaflet-cluster'
 import type { Conference, ConferenceEvent } from '@/types/conference'
 import { getCategoryColor, getProgrammingLanguageColor, formatDateRange } from '@/lib/utils'
 import 'leaflet/dist/leaflet.css'
+
+// クラスターのインターフェースを定義
+interface MarkerClusterType {
+  getChildCount(): number
+}
 
 // デフォルトアイコンの設定（Leafletのアイコンパス問題の修正）
 const createColoredIcon = (color: string) => {
@@ -79,80 +85,102 @@ export default function ConferenceMap({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <MapUpdater events={events} />
-      {events.map((event, index) => {
-        const conference = getConferenceById(event.conferenceId)
-        if (!conference) return null
+      <MarkerClusterGroup
+        chunkedLoading
+        iconCreateFunction={(cluster: MarkerClusterType) => {
+          const count = cluster.getChildCount()
+          let className = 'marker-cluster-small'
+          
+          if (count > 5) {
+            className = 'marker-cluster-medium'
+          }
+          if (count > 10) {
+            className = 'marker-cluster-large'
+          }
 
-        const primaryCategory = conference.category[0]
-        const color = getCategoryColor(primaryCategory)
-        const icon = createColoredIcon(color)
+          return new DivIcon({
+            html: `<div><span>${count}</span></div>`,
+            className: `marker-cluster ${className}`,
+            iconSize: [40, 40],
+            iconAnchor: [20, 20],
+          })
+        }}
+      >
+        {events.map((event, index) => {
+          const conference = getConferenceById(event.conferenceId)
+          if (!conference) return null
 
-        return (
-          <Marker
-            key={`${event.conferenceId}-${event.year}-${index}`}
-            position={[event.location.lat, event.location.lng]}
-            icon={icon}
-          >
-            <Popup maxWidth={300} className="custom-popup">
-              <div className="p-2 min-w-[180px] sm:min-w-[200px]">
-                <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{conference.name}</h3>
-                <p className="text-xs sm:text-sm text-gray-600 mb-2">{event.year}年</p>
-                <p className="text-xs sm:text-sm mb-1">
-                  {formatDateRange(event.startDate, event.endDate)}
-                </p>
-                <p className="text-xs sm:text-sm mb-1">{event.location.name}</p>
-                <p className="text-xs sm:text-sm text-gray-600 mb-2">
-                  {event.location.prefecture}
-                </p>
-                {event.attendees && (
-                  <p className="text-xs sm:text-sm mb-1">参加者: {event.attendees}人</p>
-                )}
-                <div className="flex flex-wrap gap-1 mt-2">
-                  {conference.category.map((cat) => (
-                    <span
-                      key={cat}
-                      className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
-                      style={{
-                        backgroundColor: getCategoryColor(cat),
-                        color: 'white',
-                      }}
-                    >
-                      {cat}
+          const primaryCategory = conference.category[0]
+          const color = getCategoryColor(primaryCategory)
+          const icon = createColoredIcon(color)
+
+          return (
+            <Marker
+              key={`${event.conferenceId}-${event.year}-${index}`}
+              position={[event.location.lat, event.location.lng]}
+              icon={icon}
+            >
+              <Popup maxWidth={300} className="custom-popup">
+                <div className="p-2 min-w-[180px] sm:min-w-[200px]">
+                  <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{conference.name}</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 mb-2">{event.year}年</p>
+                  <p className="text-xs sm:text-sm mb-1">
+                    {formatDateRange(event.startDate, event.endDate)}
+                  </p>
+                  <p className="text-xs sm:text-sm mb-1">{event.location.name}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 mb-2">
+                    {event.location.prefecture}
+                  </p>
+                  {event.attendees && (
+                    <p className="text-xs sm:text-sm mb-1">参加者: {event.attendees}人</p>
+                  )}
+                  <div className="flex flex-wrap gap-1 mt-2">
+                    {conference.category.map((cat) => (
+                      <span
+                        key={cat}
+                        className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
+                        style={{
+                          backgroundColor: getCategoryColor(cat),
+                          color: 'white',
+                        }}
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                    {conference.programmingLanguages?.map((lang) => (
+                      <span
+                        key={lang}
+                        className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
+                        style={{
+                          backgroundColor: getProgrammingLanguageColor(lang),
+                          color: 'white',
+                        }}
+                      >
+                        {lang}
+                      </span>
+                    ))}
+                  </div>
+                  {event.isHybrid && (
+                    <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-blue-100 text-blue-800 rounded mt-2">
+                      ハイブリッド開催
                     </span>
-                  ))}
-                  {conference.programmingLanguages?.map((lang) => (
-                    <span
-                      key={lang}
-                      className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
-                      style={{
-                        backgroundColor: getProgrammingLanguageColor(lang),
-                        color: 'white',
-                      }}
+                  )}
+                  {event.eventUrl && (
+                    <a
+                      href={event.eventUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block mt-2 text-xs sm:text-sm text-blue-600 hover:underline"
                     >
-                      {lang}
-                    </span>
-                  ))}
+                      イベントページ →
+                    </a>
+                  )}
                 </div>
-                {event.isHybrid && (
-                  <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-blue-100 text-blue-800 rounded mt-2">
-                    ハイブリッド開催
-                  </span>
-                )}
-                {event.eventUrl && (
-                  <a
-                    href={event.eventUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block mt-2 text-xs sm:text-sm text-blue-600 hover:underline"
-                  >
-                    イベントページ →
-                  </a>
-                )}
-              </div>
-            </Popup>
-          </Marker>
-        )
-      })}
+              </Popup>
+            </Marker>
+          )
+        })}
+      </MarkerClusterGroup>
     </MapContainer>
   )
 }
