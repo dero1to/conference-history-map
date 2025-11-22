@@ -5,9 +5,12 @@ export default function About() {
             
             <section className="mb-10">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">概要</h2>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
                     JP Conference History Mapは、日本国内で開催された技術カンファレンスやイベントの開催履歴を地図上で可視化するツールです。
                     過去に開催されたイベントの場所や時期を一目で確認でき、技術コミュニティの歴史を探索できます。
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    ※ このツールは、物理的な会場で開催されたイベント(オフライン開催・ハイブリッド開催)を対象としています。オンラインのみの開催は含まれていません。
                 </p>
             </section>
 
