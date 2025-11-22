@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "phpcon",
+    "name": "PHPカンファレンス2002",
+    "year": 2002,
+    "startDate": "2002-08-17",
+    "endDate": "2002-08-17",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "http://ml.php.gr.jp/pipermail/php-users/2002-August/009195.html"
+  }
+]

@@ -28,5 +28,15 @@
     "venueId": "tokyo/ap-tokyo-yaesu",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2018"
+  },
+  {
+    "conferenceId": "phpcon",
+    "name": "PHP Conference Japan 2018",
+    "year": 2018,
+    "startDate": "2018-12-15",
+    "endDate": "2018-12-15",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2018/"
   }
 ]

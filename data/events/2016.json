@@ -8,5 +8,15 @@
     "venueId": "tokyo/waseda-university-nishi-waseda-campus",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2016"
+  },
+  {
+    "conferenceId": "phpcon",
+    "name": "PHP Conference Japan 2016",
+    "year": 2016,
+    "startDate": "2016-11-03",
+    "endDate": "2016-11-03",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2016/"
   }
 ]

@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "phpcon",
+    "name": "PHP Conference 2014",
+    "year": 2014,
+    "startDate": "2014-10-11",
+    "endDate": "2014-10-11",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/w/2014/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2014",
     "year": 2014,

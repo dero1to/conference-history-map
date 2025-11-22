@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "phpcon",
+    "name": "PHPカンファレンス2000",
+    "year": 2000,
+    "startDate": "2000-07-22",
+    "endDate": "2000-07-22",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "http://oldwww.php.gr.jp/seminar/20000723/index.html"
+  }
+]

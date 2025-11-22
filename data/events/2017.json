@@ -10,6 +10,16 @@
     "eventUrl": "https://pycon.jp/2017/"
   },
   {
+    "conferenceId": "phpcon",
+    "name": "PHP Conference Japan 2017",
+    "year": 2017,
+    "startDate": "2017-10-08",
+    "endDate": "2017-10-08",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2017/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2017",
     "year": 2017,

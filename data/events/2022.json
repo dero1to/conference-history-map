@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "phpcon",
+    "name": "PHP Conference 2022",
+    "year": 2022,
+    "startDate": "2022-09-24",
+    "endDate": "2022-09-25",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2022/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2022",
     "year": 2022,

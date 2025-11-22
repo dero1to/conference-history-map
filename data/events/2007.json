@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "phpcon",
+    "name": "PHPカンファレンス2007",
+    "year": 2007,
+    "startDate": "2007-09-01",
+    "endDate": "2007-09-01",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "http://www.php.gr.jp/seminar/20070901/"
+  }
+]
