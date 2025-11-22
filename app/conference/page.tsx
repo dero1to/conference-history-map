@@ -3,7 +3,7 @@ import AllConferencesPage from '@/components/AllConferencesPage'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'カンファレンス一覧 | 日本IT技術カンファレンスマップ',
+  title: 'カンファレンス一覧 | JP Conference History Map',
   description: '日本全国のIT技術カンファレンスの一覧と開催履歴を確認できます。',
 }
 

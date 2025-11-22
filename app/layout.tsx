@@ -6,7 +6,7 @@ import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '日本IT技術カンファレンスマップ',
+  title: 'JP Conference History Map',
   description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
 }
 
@@ -45,7 +45,7 @@ export default function RootLayout({
               <div className="flex justify-between items-center">
                 <div>
                   <Link href="/" className="text-lg sm:text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                    日本IT技術カンファレンスマップ
+                    JP Conference History Map
                   </Link>
                   <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
                     全国のIT技術カンファレンスの開催履歴を地図で探索

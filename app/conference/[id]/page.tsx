@@ -14,12 +14,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!conference) {
     return {
-      title: 'カンファレンスが見つかりません | 日本IT技術カンファレンスマップ',
+      title: 'カンファレンスが見つかりません | JP Conference History Map',
     }
   }
 
   return {
-    title: `${conference.name}の歴史 | 日本IT技術カンファレンスマップ`,
+    title: `${conference.name}の歴史 | JP Conference History Map`,
     description: `${conference.name}の開催履歴と詳細情報を確認できます。`,
   }
 }
