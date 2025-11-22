@@ -2,7 +2,8 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
+import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
+import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import ConferenceList from './ConferenceList'
 import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
@@ -50,26 +51,8 @@ export default function ConferenceListPage({
 
   const availableYears = useMemo(() => getYears(events), [events])
   const availablePrefectures = useMemo(() => getPrefectures(events), [events])
-
-  const allCategories: Category[] = [
-    'Web',
-    'Mobile',
-    'Backend',
-    'Frontend',
-    'DevOps',
-    'AI/ML',
-    'Data',
-    'Security',
-    'Cloud',
-    'General',
-  ]
-  
-  const availableProgrammingLanguages: ProgrammingLanguages[] = [
-    'JavaScript',
-    'TypeScript',
-    'PHP',
-    'Ruby'
-  ]
+  const allCategories = useMemo(() => getAvailableCategories(), [])
+  const availableProgrammingLanguages = useMemo(() => getAvailableProgrammingLanguages(), [])
 
   return (
     <div className="flex flex-col lg:flex-row gap-4 min-h-[calc(100vh-8rem)]">

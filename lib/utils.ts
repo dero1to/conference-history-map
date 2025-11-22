@@ -5,21 +5,18 @@ export function getCategoryColor(category: Category): string {
   const colorMap: Record<Category, string> = {
     // 技術領域
     Web: '#3B82F6', // blue
-    Mobile: '#8B5CF6', // violet
+    // Mobile: '#8B5CF6', // violet
     Backend: '#06B6D4', // cyan
     Frontend: '#10B981', // green
     DevOps: '#F59E0B', // amber
-    'AI/ML': '#EC4899', // pink
-    Data: '#6366F1', // indigo
-    Security: '#EF4444', // red
+    // 'AI/ML': '#EC4899', // pink
+    // Data: '#6366F1', // indigo
+    // Security: '#EF4444', // red
     Cloud: '#14B8A6', // teal
-    General: '#6B7280', // gray
-    Design: '#F97316', // orange
-    Testing: '#84CC16', // lime
-    IoT: '#A855F7', // purple
-    Game: '#F43F5E', // rose
+    SRE: '#F97316', // orange
+    Other: '#6B7280', // gray
   }
-  return colorMap[category] || colorMap.General
+  return colorMap[category] || colorMap.Other
 }
 
 export function getProgrammingLanguageColor(language: ProgrammingLanguages): string {
@@ -28,7 +25,7 @@ export function getProgrammingLanguageColor(language: ProgrammingLanguages): str
     JavaScript: '#F7DF1E', // yellow
     TypeScript: '#3178C6', // blue
     PHP: '#777BB4', // purple
-    Ruby: '#CC342D' // red
+    Ruby: '#CC342D', // red
     // Python: '#3776AB', // blue
     // Go: '#00ADD8', // cyan
     // Rust: '#CE422B', // orange-red
@@ -37,6 +34,7 @@ export function getProgrammingLanguageColor(language: ProgrammingLanguages): str
     // Swift: '#FA7343', // orange
     // 'C#': '#239120', // green
     // 'C++': '#00599C', // blue
+    Other: '#6B7280' // gray
   }
   return colorMap[language] || '#6B7280' // default gray
 }

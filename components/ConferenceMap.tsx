@@ -142,9 +142,6 @@ export default function ConferenceMap({
                   <p className="text-xs sm:text-sm text-gray-600 mb-2">
                     {event.venue.prefecture}
                   </p>
-                  {event.attendees && (
-                    <p className="text-xs sm:text-sm mb-1">参加者: {event.attendees}人</p>
-                  )}
                   <div className="flex flex-wrap gap-1 mt-2">
                     {conference.category.map((cat) => (
                       <span

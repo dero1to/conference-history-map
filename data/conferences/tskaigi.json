@@ -1,0 +1,8 @@
+{
+  "id": "tskaigi",
+  "name": "TSKaigi",
+  "category": ["Web", "Frontend", "Backend"],
+  "programmingLanguages": ["TypeScript"],
+  "website": "https://2025.tskaigi.org/",
+  "twitter": "@tskaigi"
+}

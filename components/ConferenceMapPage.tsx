@@ -3,7 +3,8 @@
 import { useState, useMemo, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
-import type { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
+import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
+import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
 import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
@@ -60,35 +61,8 @@ export default function ConferenceMapPage({
   const availableYears = useMemo(() => getYears(events), [events])
   const availablePrefectures = useMemo(() => getPrefectures(events), [events])
 
-  const allCategories: Category[] = [
-    // 技術領域
-    'Web',
-    'Mobile',
-    'Backend',
-    'Frontend',
-    'DevOps',
-    'AI/ML',
-    'Data',
-    'Security',
-    'Cloud',
-    'General',
-    
-  ]
-  const availableProgrammingLanguages: ProgrammingLanguages[] = [
-    // プログラミング言語
-    'JavaScript',
-    'TypeScript',
-    'PHP',
-    'Ruby'
-    // 'Python',
-    // 'Go',
-    // 'Rust',
-    // 'Java',
-    // 'Kotlin',
-    // 'Swift',
-    // 'C#',
-    // 'C++',
-  ]
+  const allCategories = useMemo(() => getAvailableCategories(), [])
+  const availableProgrammingLanguages = useMemo(() => getAvailableProgrammingLanguages(), [])
 
   return (
     <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 lg:gap-4 h-[calc(100vh-6.5rem)] sm:h-[calc(100vh-7rem)] lg:h-[calc(100vh-8rem)]">

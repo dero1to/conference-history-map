@@ -221,24 +221,6 @@ export default function FilterPanel({
         <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">技術領域</h3>
         <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableCategories
-            .filter((cat) =>
-              [
-                'Web',
-                'Mobile',
-                'Backend',
-                'Frontend',
-                'DevOps',
-                'AI/ML',
-                'Data',
-                'Security',
-                'Cloud',
-                'General',
-                'Design',
-                'Testing',
-                'IoT',
-                'Game',
-              ].includes(cat)
-            )
             .map((category) => (
               <button
                 key={category}
@@ -265,22 +247,6 @@ export default function FilterPanel({
         <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">プログラミング言語</h3>
         <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableProgrammingLanguages
-            .filter((lang) =>
-              [
-                'JavaScript',
-                'TypeScript',
-                'PHP',
-                'Ruby',
-                // 'Python',
-                // 'Go',
-                // 'Rust',
-                // 'Java',
-                // 'Kotlin',
-                // 'Swift',
-                // 'C#',
-                // 'C++',
-              ].includes(lang)
-            )
             .map((language) => (
               <button
                 key={language}

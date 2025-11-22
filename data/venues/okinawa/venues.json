@@ -6,5 +6,13 @@
     "lat": 26.216592,
     "lng": 127.682453,
     "prefecture": "沖縄県"
+  },
+  {
+    "id": "okinawa-city-municipal-hall",
+    "name": "沖縄市町村自治会館",
+    "address": "沖縄県那覇市旭町116-37",
+    "lat": 26.21005581, 
+    "lng": 127.67759291,
+    "prefecture": "沖縄県"
   }
 ]

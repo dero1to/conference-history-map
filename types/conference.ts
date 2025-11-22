@@ -4,19 +4,16 @@ import { z } from 'zod'
 export const CategorySchema = z.enum([
   // 技術領域
   'Web',
-  'Mobile',
+  // 'Mobile',
   'Backend',
   'Frontend',
   'DevOps',
-  'AI/ML',
-  'Data',
-  'Security',
+  // 'AI/ML',
+  // 'Data',
+  // 'Security',
   'Cloud',
-  'General',
-  'Design',
-  'Testing',
-  'IoT',
-  'Game',
+  'SRE',
+  'Other',
 ])
 
 export type Category = z.infer<typeof CategorySchema>
@@ -35,6 +32,7 @@ export const ProgrammingLanguagesSchema = z.enum([
   // 'Swift',
   // 'C#',
   // 'C++',
+  'Other',
 ])
 
 export type ProgrammingLanguages = z.infer<typeof ProgrammingLanguagesSchema>
@@ -66,11 +64,11 @@ export type Conference = z.infer<typeof ConferenceSchema>
 // 開催イベント情報
 export const ConferenceEventSchema = z.object({
   conferenceId: z.string(),
+  name: z.string(),
   year: z.number(),
   startDate: z.string(),
   endDate: z.string(),
   venueId: z.string(),
-  attendees: z.number().optional(),
   isHybrid: z.boolean().default(false),
   eventUrl: z.string().url().optional(),
 })
@@ -80,5 +78,14 @@ export type ConferenceEvent = z.infer<typeof ConferenceEventSchema>
 // 拡張されたイベント情報（会場情報を含む）
 export type ConferenceEventWithVenue = ConferenceEvent & {
   venue: Venue
+}
+
+// 利用可能な値を取得するヘルパー関数
+export const getAvailableCategories = (): Category[] => {
+  return CategorySchema.options
+}
+
+export const getAvailableProgrammingLanguages = (): ProgrammingLanguages[] => {
+  return ProgrammingLanguagesSchema.options
 }
 

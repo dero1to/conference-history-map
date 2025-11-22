@@ -1,6 +1,7 @@
 [
   {
     "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2023",
     "year": 2023,
     "startDate": "2023-05-11",
     "endDate": "2023-05-13",
@@ -10,6 +11,7 @@
   },
   {
     "conferenceId": "phpcon",
+    "name": "PHPカンファレンスJapan 2023",
     "year": 2023,
     "startDate": "2023-10-08",
     "endDate": "2023-10-08",

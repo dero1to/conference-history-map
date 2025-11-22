@@ -1,6 +1,7 @@
 [
   {
     "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2024",
     "year": 2024,
     "startDate": "2024-05-15",
     "endDate": "2024-05-17",
@@ -10,6 +11,7 @@
   },
   {
     "conferenceId": "phpcon",
+    "name": "PHPカンファレンスJapan 2024",
     "year": 2024,
     "startDate": "2024-12-22",
     "endDate": "2024-12-22",

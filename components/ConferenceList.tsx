@@ -51,13 +51,10 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
             if (!conference) return null
 
             return (
-              <tr key={`${event.conferenceId}-${event.year}`} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              <tr key={`${event.name}`} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="font-medium text-gray-900 dark:text-gray-100">
-                    {conference.name}
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    {event.year}年
+                    {event.name}
                   </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">

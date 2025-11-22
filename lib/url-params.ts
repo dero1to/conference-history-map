@@ -1,4 +1,5 @@
 import type { Category, ProgrammingLanguages } from '@/types/conference'
+import { getAvailableCategories, getAvailableProgrammingLanguages } from '@/types/conference'
 
 export interface FilterParams {
   years: number[]
@@ -12,14 +13,8 @@ export interface FilterParams {
   venueId?: string
 }
 
-const ALLOWED_CATEGORIES: Category[] = [
-  'Web', 'Mobile', 'Backend', 'Frontend', 'DevOps', 'AI/ML', 
-  'Data', 'Security', 'Cloud', 'General', 'Design', 'Testing', 'IoT', 'Game'
-]
-
-const ALLOWED_LANGUAGES: ProgrammingLanguages[] = [
-  'JavaScript', 'TypeScript', 'PHP', 'Ruby'
-]
+const ALLOWED_CATEGORIES = getAvailableCategories()
+const ALLOWED_LANGUAGES = getAvailableProgrammingLanguages()
 
 function sanitizeString(value: string): string {
   if (typeof value !== 'string') return ''
