@@ -86,7 +86,7 @@ export default function ConferenceListPage({
       <div className="flex-1 lg:overflow-y-auto lg:max-h-[calc(100vh-8rem)]">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-            カンファレンス一覧
+            イベント一覧
           </h2>
           <ConferenceList events={filteredEvents} conferences={conferences} />
         </div>
