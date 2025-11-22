@@ -80,6 +80,16 @@
     "eventUrl": "https://fortee.jp/phpcon-okinawa-2019"
   },
   {
+    "conferenceId": "rust-tokyo",
+    "name": "Rust.Tokyo 2019",
+    "year": 2019,
+    "startDate": "2019-10-26",
+    "endDate": "2019-10-26",
+    "venueId": "tokyo/gran-tokyo-south-tower",
+    "isHybrid": false,
+    "eventUrl": "https://rust.tokyo/2019"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2019",
     "year": 2019,

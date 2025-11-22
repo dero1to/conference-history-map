@@ -1,0 +1,14 @@
+{
+  "id": "front-end-conference-kansai",
+  "name": "フロントエンドカンファレンス関西",
+  "category": [
+    "Web",
+    "Frontend"
+  ],
+  "programmingLanguages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "website": "https://frontend-conf.osaka.jp/",
+  "twitter": "@fec_kansai"
+}

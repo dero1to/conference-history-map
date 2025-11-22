@@ -90,6 +90,16 @@
     "eventUrl": "https://phpcon.php.gr.jp/2023/"
   },
   {
+    "conferenceId": "rust-tokyo",
+    "name": "Rust.Tokyo 2023",
+    "year": 2023,
+    "startDate": "2023-10-21",
+    "endDate": "2023-10-21",
+    "venueId": "tokyo/roppongi-hills-mori-tower-mercari",
+    "isHybrid": true,
+    "eventUrl": "https://rust.tokyo/2023"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon APAC 2023",
     "year": 2023,

@@ -80,6 +80,16 @@
     "eventUrl": "https://phpcon.kagawa.jp/2024/"
   },
   {
+    "conferenceId": "tskaigi",
+    "name": "TSKaigi 2024",
+    "year": 2024,
+    "startDate": "2024-05-11",
+    "endDate": "2024-05-11",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://2024.tskaigi.org/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2024",
     "year": 2024,
@@ -220,6 +230,16 @@
     "eventUrl": "https://kaigionrails.org/2024/"
   },
   {
+    "conferenceId": "tskaigi",
+    "name": "TSKaigi Kansai 2024",
+    "year": 2024,
+    "startDate": "2024-11-16",
+    "endDate": "2024-11-16",
+    "venueId": "kyoto/kyoto-city-industrial-museum-miyako-messe",
+    "isHybrid": true,
+    "eventUrl": "https://kansai.tskaigi.org/"
+  },
+  {
     "conferenceId": "cloudnativedays",
     "name": "CloudNative Days Winter 2024",
     "year": 2024,
@@ -228,6 +248,16 @@
     "venueId": "tokyo/ariake-central-tower",
     "isHybrid": true,
     "eventUrl": "https://cloudnativedays.jp/cndw2024"
+  },
+  {
+    "conferenceId": "rust-tokyo",
+    "name": "Rust.Tokyo 2024",
+    "year": 2024,
+    "startDate": "2024-11-30",
+    "endDate": "2024-11-30",
+    "venueId": "tokyo/gmo-yoursfukuras",
+    "isHybrid": true,
+    "eventUrl": "https://rust.tokyo/"
   },
   {
     "conferenceId": "postgresql-conference",

@@ -214,5 +214,29 @@
     "lat": 35.666878409960134,
     "lng": 139.7494388262539,
     "prefecture": "東京都"
+  },
+  {
+    "id": "gmo-yoursfukuras",
+    "name": "GMO Yours・フクラス",
+    "address": "東京都渋谷区道玄坂1丁目2番3号",
+    "lat": 35.65762464851323,
+    "lng": 139.70009763319135,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "roppongi-hills-mori-tower-mercari",
+    "name": "六本木ヒルズ森タワー メルカリ",
+    "address": "東京都港区六本木６丁目１０−１",
+    "lat": 35.66068383650611,
+    "lng": 139.72927627622354,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "gran-tokyo-south-tower",
+    "name": "グラントウキョウ サウスタワー",
+    "address": "東京都千代田区丸の内１丁目９−２",
+    "lat": 35.67882179987549,
+    "lng": 139.7675000835613,
+    "prefecture": "東京都"
   }
 ]

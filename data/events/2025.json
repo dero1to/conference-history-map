@@ -368,5 +368,15 @@
     "venueId": "ishikawa/hotel-kanazawa",
     "isHybrid": true,
     "eventUrl": "https://hokuriku.tskaigi.org/"
+  },
+  {
+    "conferenceId": "front-end-conference-kansai",
+    "name": "フロントエンドカンファレンス関西 2025",
+    "year": 2025,
+    "startDate": "2025-11-30",
+    "endDate": "2025-11-30",
+    "venueId": "osaka/my-dome-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://frontend-conf.osaka.jp/"
   }
 ]

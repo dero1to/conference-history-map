@@ -1,0 +1,14 @@
+{
+  "id": "rust-tokyo",
+  "name": "Rust.Tokyo",
+  "category": [
+    "Web",
+    "Backend",
+    "Frontend"
+  ],
+  "programmingLanguages": [
+    "Rust"
+  ],
+  "website": "https://rust.tokyo/",
+  "twitter": "@rustlang_tokyo"
+}
