@@ -16,8 +16,7 @@ const ALLOWED_CATEGORIES: Category[] = [
 ]
 
 const ALLOWED_LANGUAGES: ProgrammingLanguages[] = [
-  'JavaScript', 'TypeScript', 'PHP', 'Ruby', 'Python', 'Go', 'Rust', 
-  'Java', 'Kotlin', 'Swift', 'C#', 'C++'
+  'JavaScript', 'TypeScript', 'PHP', 'Ruby'
 ]
 
 function sanitizeString(value: string): string {
