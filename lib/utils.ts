@@ -1,4 +1,3 @@
-import { type ClassValue, clsx } from 'clsx'
 import { Conference, ConferenceEvent, Category, ProgrammingLanguages } from '@/types/conference'
 
 // カテゴリー別の色を返す
