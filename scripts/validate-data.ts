@@ -21,7 +21,13 @@ async function validateJson(filePath: string, schema: any, schemaName: string): 
           schema.parse(data[i])
         } catch (error) {
           console.error(`❌ ${filePath}[${i}]: ${schemaName} validation failed`)
-          console.error(error.errors || error.message)
+          if (error instanceof Error && error.name === 'ZodError') {
+            console.error((error as any).errors)
+          } else if (error instanceof Error) {
+            console.error(error.message)
+          } else {
+            console.error(error)
+          }
           return false
         }
       }
