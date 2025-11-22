@@ -102,24 +102,33 @@ async function translateToSlug(text: string): Promise<string> {
 async function main() {
     console.log(chalk.bold.blue('🗺️  Conference History Map Data Entry Tool 🗺️\n'));
 
-    // 1. Select Mode
-    const { mode } = await prompts({
-        type: 'select',
-        name: 'mode',
-        message: 'What would you like to do?',
+    // 1. Select Conference
+    const files = await fs.readdir(CONFERENCES_DIR);
+    const conferences = await Promise.all(
+        files.filter(f => f.endsWith('.json')).map(async f => {
+            const data = await readJson<Conference>(path.join(CONFERENCES_DIR, f));
+            return data;
+        })
+    );
+
+    const { selectedConf } = await prompts({
+        type: 'autocomplete',
+        name: 'selectedConf',
+        message: 'Select Conference:',
         choices: [
-            { title: 'Add Event to Existing Conference', value: 'add_event' },
-            { title: 'Add New Conference', value: 'add_conference' },
+            { title: '➕ Create New Conference', value: 'create_new' },
+            ...conferences
+                .filter((c): c is Conference => c !== null)
+                .map(c => ({ title: c.name, value: c.id })),
         ],
     });
 
-    if (!mode) return;
+    if (!selectedConf) return;
 
     let conferenceId: string;
     let conferenceName: string;
 
-    // 2. Handle Conference Selection/Creation
-    if (mode === 'add_conference') {
+    if (selectedConf === 'create_new') {
         const confData = await prompts([
             {
                 type: 'text',
@@ -181,26 +190,7 @@ async function main() {
         conferenceName = confData.name;
 
     } else {
-        // List existing conferences
-        const files = await fs.readdir(CONFERENCES_DIR);
-        const conferences = await Promise.all(
-            files.filter(f => f.endsWith('.json')).map(async f => {
-                const data = await readJson<Conference>(path.join(CONFERENCES_DIR, f));
-                return data;
-            })
-        );
-
-        const { selectedConfId } = await prompts({
-            type: 'autocomplete',
-            name: 'selectedConfId',
-            message: 'Select Conference:',
-            choices: conferences
-                .filter((c): c is Conference => c !== null)
-                .map(c => ({ title: c.name, value: c.id })),
-        });
-
-        if (!selectedConfId) return;
-        conferenceId = selectedConfId;
+        conferenceId = selectedConf;
         conferenceName = conferences.find(c => c?.id === conferenceId)?.name || '';
     }
 
@@ -246,60 +236,56 @@ async function main() {
     // 4. Venue Selection
     console.log(chalk.bold('\n📍 Venue Details'));
 
-    const { venueAction } = await prompts({
-        type: 'select',
-        name: 'venueAction',
-        message: 'Select Venue:',
-        choices: [
-            { title: 'Search Existing Venue', value: 'search' },
-            { title: 'Create New Venue', value: 'create' },
-        ],
-    });
+    // 4. Venue Selection
+    console.log(chalk.bold('\n📍 Venue Details'));
 
-    let venueId: string = '';
+    // Load all venues first
+    const prefectureDirs = await fs.readdir(VENUES_DIR);
+    const allVenues: { venue: Venue, prefDir: string }[] = [];
 
-    if (venueAction === 'search') {
-        // Load all venues
-        const prefectureDirs = await fs.readdir(VENUES_DIR);
-        const allVenues: { venue: Venue, prefDir: string }[] = [];
-
-        for (const pref of prefectureDirs) {
-            const prefPath = path.join(VENUES_DIR, pref);
-            const stat = await fs.stat(prefPath);
-            if (stat.isDirectory()) {
-                const files = await fs.readdir(prefPath);
-                for (const file of files) {
-                    if (file === 'venues.json') {
-                        // Handle array of venues
-                        const venues = await readJson<Venue[]>(path.join(prefPath, file));
-                        if (venues && Array.isArray(venues)) {
-                            venues.forEach(v => allVenues.push({ venue: v, prefDir: pref }));
-                        }
-                    } else if (file.endsWith('.json')) {
-                        // Handle single venue file (legacy or mixed)
-                        const venue = await readJson<Venue>(path.join(prefPath, file));
-                        if (venue && !Array.isArray(venue)) {
-                            allVenues.push({ venue, prefDir: pref });
-                        }
+    for (const pref of prefectureDirs) {
+        const prefPath = path.join(VENUES_DIR, pref);
+        const stat = await fs.stat(prefPath);
+        if (stat.isDirectory()) {
+            const files = await fs.readdir(prefPath);
+            for (const file of files) {
+                if (file === 'venues.json') {
+                    // Handle array of venues
+                    const venues = await readJson<Venue[]>(path.join(prefPath, file));
+                    if (venues && Array.isArray(venues)) {
+                        venues.forEach(v => allVenues.push({ venue: v, prefDir: pref }));
+                    }
+                } else if (file.endsWith('.json')) {
+                    // Handle single venue file (legacy or mixed)
+                    const venue = await readJson<Venue>(path.join(prefPath, file));
+                    if (venue && !Array.isArray(venue)) {
+                        allVenues.push({ venue, prefDir: pref });
                     }
                 }
             }
         }
+    }
 
-        const { selectedVenue } = await prompts({
-            type: 'autocomplete',
-            name: 'selectedVenue',
-            message: 'Search Venue:',
-            choices: allVenues.map(v => ({
+    const { selectedVenue } = await prompts({
+        type: 'autocomplete',
+        name: 'selectedVenue',
+        message: 'Select Venue:',
+        choices: [
+            { title: '➕ Create New Venue', value: 'create_new' },
+            ...allVenues.map(v => ({
                 title: `${v.venue.name} (${v.venue.prefecture})`,
                 value: { id: v.venue.id, prefDir: v.prefDir }
-            })),
-        });
+            }))
+        ],
+    });
 
-        if (!selectedVenue) return;
-        // Construct venueId as {prefDir}/{venueId}
+    if (!selectedVenue) return;
+
+    let venueId: string = '';
+
+    if (selectedVenue !== 'create_new') {
+        // Existing venue selected
         venueId = `${selectedVenue.prefDir}/${selectedVenue.id}`;
-
     } else {
         // Create New Venue
         const venueData = await prompts([
@@ -355,11 +341,21 @@ async function main() {
 
         if (lat === 0) {
             const manualGeo = await prompts([
-                { type: 'number', name: 'lat', message: 'Latitude:', float: true },
-                { type: 'number', name: 'lng', message: 'Longitude:', float: true },
+                {
+                    type: 'text',
+                    name: 'lat',
+                    message: 'Latitude:',
+                    validate: (val: string) => !isNaN(parseFloat(val)) ? true : 'Must be a number'
+                },
+                {
+                    type: 'text',
+                    name: 'lng',
+                    message: 'Longitude:',
+                    validate: (val: string) => !isNaN(parseFloat(val)) ? true : 'Must be a number'
+                },
             ]);
-            lat = manualGeo.lat;
-            lng = manualGeo.lng;
+            lat = parseFloat(manualGeo.lat);
+            lng = parseFloat(manualGeo.lng);
         }
 
         const { prefecture } = await prompts({

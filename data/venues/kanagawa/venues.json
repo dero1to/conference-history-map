@@ -6,5 +6,13 @@
     "lat": 35.253803,
     "lng": 139.155267,
     "prefecture": "神奈川県"
+  },
+  {
+    "id": "yokohama-city-tsurumi-citizens-cultural-center-salvia-hall",
+    "name": "横浜市鶴見区民文化センター サルビアホール",
+    "address": "神奈川県横浜市鶴見区鶴見中央1-31-2",
+    "lat": 35.5070227,
+    "lng": 139.6768967,
+    "prefecture": "神奈川県"
   }
 ]

@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "tokyo-ruby-kaigi",
+    "name": "東京Ruby会議 2025",
+    "year": 2025,
+    "startDate": "2025-01-18",
+    "endDate": "2025-01-18",
+    "venueId": "kanagawa/yokohama-city-tsurumi-citizens-cultural-center-salvia-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo12/"
+  },
+  {
     "conferenceId": "srekaigi",
     "name": "SRE Kaigi 2025",
     "year": 2025,
@@ -8,6 +18,16 @@
     "venueId": "tokyo/nakano-central-park",
     "isHybrid": false,
     "eventUrl": "https://2025.srekaigi.net/"
+  },
+  {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2025",
+    "year": 2025,
+    "startDate": "2025-02-01",
+    "endDate": "2025-02-01",
+    "venueId": "toyama/university-of-toyama-dx-education-research-center",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/burikaigi-2025"
   },
   {
     "conferenceId": "php-sessionless-con",
@@ -80,6 +100,16 @@
     "eventUrl": "https://2025.tskaigi.org/"
   },
   {
+    "conferenceId": "cloudnativedays",
+    "name": "Cloud Native Days Winter 2025",
+    "year": 2025,
+    "startDate": "2025-05-23",
+    "endDate": "2025-05-23",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndw2025"
+  },
+  {
     "conferenceId": "phpcon-niigata",
     "name": "PHPカンファレンス新潟 2025",
     "year": 2025,
@@ -128,16 +158,6 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2025/"
-  },
-  {
-    "conferenceId": "cloudnativedays",
-    "name": "Cloud Native Days Winter 2025",
-    "year": 2025,
-    "startDate": "2025-05-23",
-    "endDate": "2025-05-23",
-    "venueId": "tokyo/ariake-central-tower",
-    "isHybrid": true,
-    "eventUrl": "https://cloudnativedays.jp/cndw2025"
   },
   {
     "conferenceId": "phpcon-kagawa",

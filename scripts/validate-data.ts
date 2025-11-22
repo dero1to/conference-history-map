@@ -13,7 +13,7 @@ async function validateJson(filePath: string, schema: any, schemaName: string): 
   try {
     const content = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(content)
-    
+
     if (Array.isArray(data)) {
       // 配列の場合（events）
       for (let i = 0; i < data.length; i++) {
@@ -35,8 +35,8 @@ async function validateJson(filePath: string, schema: any, schemaName: string): 
       // オブジェクトの場合（conferences）
       schema.parse(data)
     }
-    
-    console.log(`✅ ${join(process.cwd(), filePath).replace(process.cwd(), '').substring(1)}: ${schemaName} validation passed`)
+
+    // console.log(`✅ ${join(process.cwd(), filePath).replace(process.cwd(), '').substring(1)}: ${schemaName} validation passed`)
     return true
   } catch (error) {
     console.error(`❌ ${filePath}: ${schemaName} validation failed`)
@@ -56,12 +56,12 @@ async function validateDirectory(dirPath: string, schema: any, schemaName: strin
   try {
     const files = await fs.readdir(dirPath)
     const jsonFiles = files.filter(file => file.endsWith('.json'))
-    
+
     if (jsonFiles.length === 0) {
       console.log(`⚠️  No JSON files found in ${dirPath}`)
       return true
     }
-    
+
     let allValid = true
     for (const file of jsonFiles) {
       const filePath = join(dirPath, file)
@@ -70,7 +70,8 @@ async function validateDirectory(dirPath: string, schema: any, schemaName: strin
         allValid = false
       }
     }
-    
+
+    console.log(`Checked ${jsonFiles.length} files.`)
     return allValid
   } catch (error) {
     console.error(`❌ Failed to read directory ${dirPath}:`, error instanceof Error ? error.message : error)
@@ -83,17 +84,19 @@ async function validateVenuesDirectory(venuesDir: string, schema: any, schemaNam
   try {
     const prefectures = await fs.readdir(venuesDir)
     let allValid = true
-    
+    let fileCount = 0
+
     for (const prefecture of prefectures) {
       const prefecturePath = join(venuesDir, prefecture)
-      
+
       // ディレクトリかどうか確認
       const stat = await fs.stat(prefecturePath)
       if (!stat.isDirectory()) continue
-      
+
       const venueFiles = await fs.readdir(prefecturePath)
       const jsonFiles = venueFiles.filter(file => file.endsWith('.json'))
-      
+      fileCount += jsonFiles.length
+
       for (const file of jsonFiles) {
         const filePath = join(prefecturePath, file)
         const isValid = await validateJson(filePath, schema, schemaName)
@@ -102,7 +105,8 @@ async function validateVenuesDirectory(venuesDir: string, schema: any, schemaNam
         }
       }
     }
-    
+
+    console.log(`Checked ${fileCount} files.`)
     return allValid
   } catch (error) {
     console.error(`❌ Failed to read venues directory ${venuesDir}:`, error instanceof Error ? error.message : error)
@@ -113,33 +117,33 @@ async function validateVenuesDirectory(venuesDir: string, schema: any, schemaNam
 // メイン関数
 async function main() {
   console.log('🔍 Starting data validation...\n')
-  
+
   try {
     const conferencesDir = join(process.cwd(), 'data', 'conferences')
     const eventsDir = join(process.cwd(), 'data', 'events')
     const venuesDir = join(process.cwd(), 'data', 'venues')
-    
+
     console.log('📁 Validating conferences data...')
     const conferencesValid = await validateDirectory(
-      conferencesDir, 
-      ConferenceSchema, 
+      conferencesDir,
+      ConferenceSchema,
       'Conference'
     )
-    
+
     console.log('\n📁 Validating venues data...')
     const venuesValid = await validateVenuesDirectory(
-      venuesDir, 
-      VenueSchema, 
+      venuesDir,
+      VenueSchema,
       'Venue'
     )
-    
+
     console.log('\n📁 Validating events data...')
     const eventsValid = await validateDirectory(
-      eventsDir, 
-      ConferenceEventSchema, 
+      eventsDir,
+      ConferenceEventSchema,
       'ConferenceEvent'
     )
-    
+
     console.log('\n' + '='.repeat(50))
     if (conferencesValid && venuesValid && eventsValid) {
       console.log('🎉 All data validation passed!')
@@ -148,7 +152,7 @@ async function main() {
       console.log('💥 Data validation failed!')
       process.exit(1)
     }
-    
+
   } catch (error) {
     console.error('❌ Failed to load schemas:', error instanceof Error ? error.message : error)
     console.error('Make sure you have built the project first: npm run build')
