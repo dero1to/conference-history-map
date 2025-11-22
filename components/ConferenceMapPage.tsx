@@ -32,8 +32,8 @@ export default function ConferenceMapPage({
     categories: [],
     programmingLanguages: [],
     prefectures: [],
-    onlineOnly: false,
     offlineOnly: false,
+    hybridOnly: false,
     searchQuery: '',
   })
   const [isInitialized, setIsInitialized] = useState(false)

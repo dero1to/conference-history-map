@@ -11,7 +11,6 @@
       "lng": 127.682453,
       "prefecture": "沖縄県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://rubykaigi.org/2024/"
   },
@@ -27,7 +26,6 @@
       "lng": 139.724089,
       "prefecture": "東京都"
     },
-    "isOnline": false,
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2024/"
   }

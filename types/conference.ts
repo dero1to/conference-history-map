@@ -70,20 +70,9 @@ export const ConferenceEventSchema = z.object({
   endDate: z.string(),
   location: LocationSchema,
   attendees: z.number().optional(),
-  isOnline: z.boolean().default(false),
   isHybrid: z.boolean().default(false),
   eventUrl: z.string().url().optional(),
 })
 
 export type ConferenceEvent = z.infer<typeof ConferenceEventSchema>
 
-// フィルター用の型
-export interface ConferenceFilters {
-  years: number[]
-  categories: Category[]
-  programmingLanguages: ProgrammingLanguages[]
-  prefectures: string[]
-  onlineOnly: boolean
-  offlineOnly: boolean
-  searchQuery: string
-}

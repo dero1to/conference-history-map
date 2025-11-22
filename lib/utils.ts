@@ -68,8 +68,8 @@ export function filterEvents(
     categories?: Category[]
     programmingLanguages?: ProgrammingLanguages[]
     prefectures?: string[]
-    onlineOnly?: boolean
     offlineOnly?: boolean
+    hybridOnly?: boolean
     searchQuery?: string
   }
 ): ConferenceEvent[] {
@@ -115,9 +115,9 @@ export function filterEvents(
       if (!normalizedName.includes(normalizedQuery)) return false
     }
 
-    // オンライン/オフラインフィルター
-    if (filters.onlineOnly && !event.isOnline && !event.isHybrid) return false
-    if (filters.offlineOnly && event.isOnline) return false
+    // 開催形式フィルター
+    if (filters.offlineOnly && event.isHybrid) return false
+    if (filters.hybridOnly && !event.isHybrid) return false
 
     return true
   })

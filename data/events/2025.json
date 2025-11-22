@@ -11,7 +11,6 @@
       "lng": 139.70654830944574,
       "prefecture": "東京都"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://fortee.jp/sessionless-conference-2024"
   },
@@ -27,7 +26,6 @@
       "lng": 136.88614552499968,
       "prefecture": "愛知県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon.nagoya/2025/"
   },
@@ -43,7 +41,6 @@
       "lng": 139.6616866530886,
       "prefecture": "東京都"
     },
-    "isOnline": false,
     "isHybrid": true,
     "eventUrl": "https://phperkaigi.jp/2025/"
   },
@@ -59,7 +56,6 @@
       "lng": 139.155267,
       "prefecture": "神奈川県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon-odawara.jp/"
   },
@@ -75,7 +71,6 @@
       "lng": 132.7795355,
       "prefecture": "愛媛県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://rubykaigi.org/2025/"
   },
@@ -91,7 +86,6 @@
       "lng": 139.0617185,
       "prefecture": "新潟県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon.niigata.jp/"
   },
@@ -107,7 +101,6 @@
       "lng": 139.724089,
       "prefecture": "東京都"
     },
-    "isOnline": false,
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2025/"
   },
@@ -123,7 +116,6 @@
       "lng": 135.175821,
       "prefecture": "兵庫県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://2025.kphpug.jp/"
   },
@@ -139,7 +131,6 @@
       "lng": 132.4732828,
       "prefecture": "広島県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon-hiroshima.jp/"
   },
@@ -155,7 +146,6 @@
       "lng": 130.4149999,
       "prefecture": "福岡県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2025/"
   },
@@ -171,7 +161,6 @@
       "lng": 134.051263,
       "prefecture": "香川県"
     },
-    "isOnline": false,
     "isHybrid": false,
     "eventUrl": "https://phpcon.kagawa.jp/2025/"
   }
