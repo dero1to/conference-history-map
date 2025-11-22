@@ -1,4 +1,4 @@
-import { Conference, ConferenceEvent, Category, ProgrammingLanguages } from '@/types/conference'
+import { Conference, ConferenceEvent, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
 
 // カテゴリー別の色を返す
 export function getCategoryColor(category: Category): string {
@@ -42,16 +42,16 @@ export function getProgrammingLanguageColor(language: ProgrammingLanguages): str
 }
 
 // 都道府県リストを取得
-export function getPrefectures(events: ConferenceEvent[]): string[] {
+export function getPrefectures(events: ConferenceEventWithVenue[]): string[] {
   const prefectures = new Set<string>()
   events.forEach((event) => {
-    prefectures.add(event.location.prefecture)
+    prefectures.add(event.venue.prefecture)
   })
   return Array.from(prefectures).sort()
 }
 
 // 年度リストを取得
-export function getYears(events: ConferenceEvent[]): number[] {
+export function getYears(events: ConferenceEventWithVenue[]): number[] {
   const years = new Set<number>()
   events.forEach((event) => {
     years.add(event.year)
@@ -61,7 +61,7 @@ export function getYears(events: ConferenceEvent[]): number[] {
 
 // フィルタリング処理
 export function filterEvents(
-  events: ConferenceEvent[],
+  events: ConferenceEventWithVenue[],
   conferences: Conference[],
   filters: {
     years?: number[]
@@ -72,7 +72,7 @@ export function filterEvents(
     hybridOnly?: boolean
     searchQuery?: string
   }
-): ConferenceEvent[] {
+): ConferenceEventWithVenue[] {
   return events.filter((event) => {
     // 年度フィルター
     if (filters.years && filters.years.length > 0) {
@@ -101,7 +101,7 @@ export function filterEvents(
 
     // 都道府県フィルター
     if (filters.prefectures && filters.prefectures.length > 0) {
-      if (!filters.prefectures.includes(event.location.prefecture)) return false
+      if (!filters.prefectures.includes(event.venue.prefecture)) return false
     }
 
     // 検索クエリフィルター

@@ -1,10 +1,10 @@
 import { Suspense } from 'react'
 import ConferenceMapPage from './ConferenceMapPage'
-import type { Conference, ConferenceEvent } from '@/types/conference'
+import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
 
 interface ConferenceMapWrapperProps {
   conferences: Conference[]
-  events: ConferenceEvent[]
+  events: ConferenceEventWithVenue[]
 }
 
 function MapLoadingFallback() {

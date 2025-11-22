@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
-import type { Conference, ConferenceEvent, Category, ProgrammingLanguages } from '@/types/conference'
+import type { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
 import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
@@ -19,7 +19,7 @@ const ConferenceMap = dynamic(() => import('./ConferenceMap'), {
 
 interface ConferenceMapPageProps {
   conferences: Conference[]
-  events: ConferenceEvent[]
+  events: ConferenceEventWithVenue[]
 }
 
 export default function ConferenceMapPage({

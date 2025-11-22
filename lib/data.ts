@@ -3,8 +3,11 @@ import { join } from 'path'
 import {
   Conference,
   ConferenceEvent,
+  ConferenceEventWithVenue,
+  Venue,
   ConferenceSchema,
   ConferenceEventSchema,
+  VenueSchema,
 } from '@/types/conference'
 
 // カンファレンスデータを読み込む
@@ -27,6 +30,50 @@ export async function getConferences(): Promise<Conference[]> {
     return conferences
   } catch (error) {
     console.error('Failed to load conferences:', error)
+    return []
+  }
+}
+
+// 会場データを読み込む
+export async function getVenues(): Promise<Venue[]> {
+  const venuesDir = join(process.cwd(), 'data', 'venues')
+
+  try {
+    const prefectureDirs = await readdir(venuesDir)
+    const allVenues: Venue[] = []
+
+    for (const prefectureDir of prefectureDirs) {
+      const prefecturePath = join(venuesDir, prefectureDir)
+      
+      // ディレクトリかどうか確認
+      const stat = await import('fs/promises').then(fs => fs.stat(prefecturePath))
+      if (!stat.isDirectory()) continue
+
+      const venuesFilePath = join(prefecturePath, 'venues.json')
+      
+      try {
+        const content = await readFile(venuesFilePath, 'utf-8')
+        const data = JSON.parse(content)
+        
+        if (Array.isArray(data)) {
+          const venues = data.map((venue) => {
+            // venueIdにprefecture prefixを追加
+            const venueWithPrefix = {
+              ...venue,
+              id: `${prefectureDir}/${venue.id}`
+            }
+            return VenueSchema.parse(venueWithPrefix)
+          })
+          allVenues.push(...venues)
+        }
+      } catch (error) {
+        console.warn(`Failed to load venues from ${prefectureDir}:`, error)
+      }
+    }
+
+    return allVenues
+  } catch (error) {
+    console.error('Failed to load venues:', error)
     return []
   }
 }
@@ -59,18 +106,25 @@ export async function getEvents(): Promise<ConferenceEvent[]> {
   }
 }
 
-// 特定のカンファレンスのイベント履歴を取得
-export async function getConferenceHistory(
-  conferenceId: string
-): Promise<ConferenceEvent[]> {
-  const events = await getEvents()
-  return events
-    .filter((event) => event.conferenceId === conferenceId)
-    .sort((a, b) => b.year - a.year)
+// 会場情報を含むイベントデータを取得
+export async function getEventsWithVenues(): Promise<ConferenceEventWithVenue[]> {
+  const [events, venues] = await Promise.all([getEvents(), getVenues()])
+  
+  const venueMap = new Map<string, Venue>()
+  venues.forEach(venue => {
+    venueMap.set(venue.id, venue)
+  })
+
+  return events.map(event => {
+    const venue = venueMap.get(event.venueId)
+    if (!venue) {
+      throw new Error(`Venue not found for venueId: ${event.venueId}`)
+    }
+    
+    return {
+      ...event,
+      venue
+    }
+  })
 }
 
-// 特定の年のイベントを取得
-export async function getEventsByYear(year: number): Promise<ConferenceEvent[]> {
-  const events = await getEvents()
-  return events.filter((event) => event.year === year)
-}
