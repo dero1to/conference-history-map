@@ -1,5 +1,35 @@
 [
   {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2018",
+    "year": 2018,
+    "startDate": "2018-03-09",
+    "endDate": "2018-03-10",
+    "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phperkaigi.jp/2018/"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2018",
+    "year": 2018,
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-16",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2018/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2018",
+    "year": 2018,
+    "startDate": "2018-07-14",
+    "endDate": "2018-07-14",
+    "venueId": "osaka/grand-front-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://2018.kphpug.jp/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2018",
     "year": 2018,

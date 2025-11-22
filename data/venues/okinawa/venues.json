@@ -11,8 +11,40 @@
     "id": "okinawa-city-municipal-hall",
     "name": "沖縄市町村自治会館",
     "address": "沖縄県那覇市旭町116-37",
-    "lat": 26.21005581, 
+    "lat": 26.21005581,
     "lng": 127.67759291,
+    "prefecture": "沖縄県"
+  },
+  {
+    "id": "ryukyu-university",
+    "name": "琉球大学",
+    "address": "沖縄県中頭郡中城村南上原１",
+    "lat": 26.241804,
+    "lng": 127.7588099,
+    "prefecture": "沖縄県"
+  },
+  {
+    "id": "zorks-okinawa",
+    "name": "ZORKS沖縄",
+    "address": "沖縄県那覇市安里 ３８１-１",
+    "lat": 26.2176699,
+    "lng": 127.6972166,
+    "prefecture": "沖縄県"
+  },
+  {
+    "id": "startup-lab-lagoon",
+    "name": "STARTUP LAB LAGOON",
+    "address": "沖縄県沖縄市中央1丁目7-8",
+    "lat": 26.3367428,
+    "lng": 127.8003299,
+    "prefecture": "沖縄県"
+  },
+  {
+    "id": "proto-ginowan-okinawa-head-office",
+    "name": "プロト宜野湾沖縄本社",
+    "address": "沖縄県宜野湾市大山7-10-25",
+    "lat": 26.283166936403,
+    "lng": 127.74366117460956,
     "prefecture": "沖縄県"
   }
 ]

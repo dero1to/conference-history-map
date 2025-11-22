@@ -3,8 +3,24 @@
     "id": "grand-front-osaka",
     "name": "グランフロント大阪",
     "address": "大阪市北区大深町3-1",
-    "lat": 34.70596201731445, 
+    "lat": 34.70596201731445,
     "lng": 135.4944515202549,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "breeze-plaza",
+    "name": "ブリーゼプラザ",
+    "address": "大阪府大阪市北区梅田２丁目４−９",
+    "lat": 34.69878254090594,
+    "lng": 135.49396506925092,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "osaka-industrial-creation-museum",
+    "name": "大阪産業創造館",
+    "address": "大阪府大阪市中央区本町１丁目４−５",
+    "lat": 34.6840476,
+    "lng": 135.5092015,
     "prefecture": "大阪府"
   }
 ]

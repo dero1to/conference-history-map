@@ -49,7 +49,7 @@
   },
   {
     "id": "ikebukuro-sunshine-city",
-    "name": " 池袋サンシャインシティ",
+    "name": "池袋サンシャインシティ",
     "address": "東京都豊島区東池袋3-1",
     "lat": 35.728185,
     "lng": 139.7202761,
@@ -173,6 +173,14 @@
     "address": "東京都中央区京橋１丁目１０−７",
     "lat": 35.6786562888351,
     "lng": 139.77263397751793,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "name": "練馬区立区民・産業プラザ Coconeriホール",
+    "address": "東京都練馬区練馬１丁目１７−１",
+    "lat": 35.7381337,
+    "lng": 139.6536513,
     "prefecture": "東京都"
   }
 ]

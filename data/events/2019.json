@@ -1,5 +1,35 @@
 [
   {
+    "conferenceId": "php-conference-sendai",
+    "name": "PHPカンファレンス仙台 2019",
+    "year": 2019,
+    "startDate": "2019-01-26",
+    "endDate": "2019-01-26",
+    "venueId": "miyagi/tkp-garden-city-premium-sendai-west-exit",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-sendai.net/2019/"
+  },
+  {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2019",
+    "year": 2019,
+    "startDate": "2019-03-29",
+    "endDate": "2019-03-31",
+    "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phperkaigi.jp/2019/"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2019",
+    "year": 2019,
+    "startDate": "2019-06-29",
+    "endDate": "2019-06-29",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2019/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2019",
     "year": 2019,
@@ -8,6 +38,26 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2019/"
+  },
+  {
+    "conferenceId": "phpcon-hokkaido",
+    "name": "PHPカンファレンス北海道 2019",
+    "year": 2019,
+    "startDate": "2019-09-21",
+    "endDate": "2019-09-21",
+    "venueId": "hokkaido/sapporo-civic-plaza",
+    "isHybrid": false,
+    "eventUrl": "https://2019.phpcon.hokkaido.jp/"
+  },
+  {
+    "conferenceId": "phpcon-okinawa",
+    "name": "PHPカンファレンス沖縄 2019",
+    "year": 2019,
+    "startDate": "2019-10-12",
+    "endDate": "2019-10-12",
+    "venueId": "okinawa/proto-ginowan-okinawa-head-office",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/phpcon-okinawa-2019"
   },
   {
     "conferenceId": "postgresql-conference",

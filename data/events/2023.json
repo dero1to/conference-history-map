@@ -10,6 +10,16 @@
     "eventUrl": "https://yapcjapan.org/2023kyoto/"
   },
   {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2023",
+    "year": 2023,
+    "startDate": "2023-03-23",
+    "endDate": "2023-03-25",
+    "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "isHybrid": true,
+    "eventUrl": "https://phperkaigi.jp/2023/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2023",
     "year": 2023,
@@ -28,6 +38,16 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2023/"
+  },
+  {
+    "conferenceId": "phpcon-okinawa",
+    "name": "PHPカンファレンス沖縄 2023",
+    "year": 2023,
+    "startDate": "2023-09-16",
+    "endDate": "2023-09-16",
+    "venueId": "okinawa/ryukyu-university",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.okinawa.jp/2023/"
   },
   {
     "conferenceId": "phpcon",

@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2011",
+    "year": 2011,
+    "startDate": "2011-04-02",
+    "endDate": "2011-04-02",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": true,
+    "eventUrl": "http://conference.kphpug.jp/2011/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2011",
     "year": 2011,

@@ -1,0 +1,13 @@
+{
+  "id": "php-conference-sendai",
+  "name": "PHPカンファレンス仙台",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "PHP"
+  ],
+  "website": "https://phpcon-sendai.net/",
+  "twitter": "@phpcon_sendai"
+}

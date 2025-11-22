@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "phpcon-okinawa",
+    "name": "PHPカンファレンス沖縄 2021",
+    "year": 2021,
+    "startDate": "2021-05-29",
+    "endDate": "2021-05-29",
+    "venueId": "okinawa/startup-lab-lagoon",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon-okinawa.connpass.com/event/212058/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2021",
     "year": 2021,

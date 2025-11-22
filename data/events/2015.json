@@ -1,5 +1,25 @@
 [
   {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2015",
+    "year": 2015,
+    "startDate": "2015-05-30",
+    "endDate": "2015-05-30",
+    "venueId": "osaka/breeze-plaza",
+    "isHybrid": false,
+    "eventUrl": "http://conference.kphpug.jp/2015/"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2015",
+    "year": 2015,
+    "startDate": "2015-06-27",
+    "endDate": "2015-06-27",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2015/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2015",
     "year": 2015,

@@ -1,5 +1,25 @@
 [
   {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2022",
+    "year": 2022,
+    "startDate": "2022-04-09",
+    "endDate": "2022-04-11",
+    "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "isHybrid": true,
+    "eventUrl": "https://phperkaigi.jp/2022"
+  },
+  {
+    "conferenceId": "phpcon-okinawa",
+    "name": "PHPカンファレンス沖縄 2022",
+    "year": 2022,
+    "startDate": "2022-08-27",
+    "endDate": "2022-08-27",
+    "venueId": "okinawa/zorks-okinawa",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon-okinawa.connpass.com/event/257992/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference 2022",
     "year": 2022,

@@ -1,5 +1,35 @@
 [
   {
+    "conferenceId": "phpcon-hokkaido",
+    "name": "PHPカンファレンス北海道 2016",
+    "year": 2016,
+    "startDate": "2016-04-16",
+    "endDate": "2016-04-16",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://sapporophp.doorkeeper.jp/events/37547"
+  },
+  {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2016",
+    "year": 2016,
+    "startDate": "2016-05-21",
+    "endDate": "2016-05-21",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2016/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2016",
+    "year": 2016,
+    "startDate": "2016-07-16",
+    "endDate": "2016-07-16",
+    "venueId": "osaka/breeze-plaza",
+    "isHybrid": false,
+    "eventUrl": "http://conference.kphpug.jp/2016/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2016",
     "year": 2016,

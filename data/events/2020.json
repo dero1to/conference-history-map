@@ -1,5 +1,25 @@
 [
   {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2020",
+    "year": 2020,
+    "startDate": "2020-02-09",
+    "endDate": "2020-02-11",
+    "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phperkaigi.jp/2020/"
+  },
+  {
+    "conferenceId": "object-oriented-con",
+    "name": "Object-Oriented Conference 2020",
+    "year": 2020,
+    "startDate": "2020-02-16",
+    "endDate": "2020-02-16",
+    "venueId": "tokyo/ocha-no-mizu-joshi-daigaku",
+    "isHybrid": false,
+    "eventUrl": "https://ooc.dev/2020/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2020",
     "year": 2020,

@@ -46,5 +46,13 @@
     "lat": 41.8422511,
     "lng": 140.7669393,
     "prefecture": "北海道"
+  },
+  {
+    "id": "sapporo-city-industrial-promotion-center",
+    "name": "札幌市産業振興センター",
+    "address": "札幌市白石区東札幌5条1丁目1－1",
+    "lat": 43.0563589,
+    "lng": 141.3852372,
+    "prefecture": "北海道"
   }
 ]

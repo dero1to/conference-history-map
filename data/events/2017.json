@@ -1,5 +1,25 @@
 [
   {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2017",
+    "year": 2017,
+    "startDate": "2017-06-10",
+    "endDate": "2017-06-10",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2017/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2017",
+    "year": 2017,
+    "startDate": "2017-07-15",
+    "endDate": "2017-07-15",
+    "venueId": "osaka/grand-front-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://2017.kphpug.jp/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2017",
     "year": 2017,
