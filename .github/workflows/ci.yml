@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Validate data files
+      run: npm run validate-data
+
+    - name: TypeScript type check
+      run: npx tsc --noEmit
+
+    - name: ESLint check
+      run: npm run lint
+
+    - name: Build test
+      run: npm run build

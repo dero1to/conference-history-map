@@ -98,7 +98,7 @@ conference-history-map/
   "name": "カンファレンス名",
   "description": "説明文",
   "category": ["Web", "Backend"],
-  "programmingLanguages": ["PHP"],
+  "programmingLanguages": ["Lang"],
   "website": "https://example.com",
   "twitter": "@example"
 }
@@ -136,15 +136,10 @@ conference-history-map/
 - **Backend** - バックエンド開発
 - **Frontend** - フロントエンド開発
 - **DevOps** - DevOps、インフラ
-- **AI/ML** - 人工知能、機械学習
 - **Data** - データエンジニアリング
 - **Security** - セキュリティ
 - **Cloud** - クラウドサービス
 - **General** - 総合的な技術カンファレンス
-- **Design** - UI/UXデザイン
-- **Testing** - テスト、QA
-- **IoT** - IoT、組み込み
-- **Game** - ゲーム開発
 
 ### プログラミング言語
 
@@ -152,51 +147,6 @@ conference-history-map/
 - **TypeScript** - TypeScript関連カンファレンス
 - **PHP** - PHP関連カンファレンス
 - **Ruby** - Ruby関連カンファレンス
-- **Python** - Python関連カンファレンス
-- **Go** - Go言語関連カンファレンス
-- **Rust** - Rust関連カンファレンス
-- **Java** - Java関連カンファレンス
-- **Kotlin** - Kotlin関連カンファレンス
-- **Swift** - Swift関連カンファレンス
-- **C#** - C#関連カンファレンス
-- **C++** - C++関連カンファレンス
-
-## 🌐 デプロイ
-
-### Vercel（推奨）
-
-```bash
-# Vercel CLIでデプロイ
-npx vercel
-```
-
-### GitHub Pages
-
-```bash
-# ビルドして静的ファイルを生成
-npm run build
-
-# out/ ディレクトリをGitHub Pagesにデプロイ
-```
-
-### Cloudflare Pages（推奨）
-
-**簡単な設定で高速なグローバル配信が可能です。**
-
-1. [Cloudflare Dashboard](https://dash.cloudflare.com/) で Workers & Pages を開く
-2. 「Create application」→「Pages」→「Connect to Git」
-3. リポジトリを選択
-4. ビルド設定：
-   - **ビルドコマンド**: `npm run build`
-   - **ビルド出力ディレクトリ**: `out`
-   - **Node.js バージョン**: 18以上（自動検出）
-
-詳細な手順は [DEPLOY_CLOUDFLARE.md](./DEPLOY_CLOUDFLARE.md) を参照してください。
-
-**最適化済み:**
-- セキュリティヘッダー設定済み（`_headers`）
-- 静的アセットの自動キャッシング
-- グローバルCDN配信
 
 ## 🤝 コントリビューション
 
