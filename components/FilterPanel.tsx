@@ -168,7 +168,7 @@ export default function FilterPanel({
           placeholder="カンファレンス名を入力..."
           value={searchQuery}
           onChange={handleSearchChange}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent min-h-[40px]"
         />
       </div>
 
@@ -180,7 +180,7 @@ export default function FilterPanel({
             <button
               key={year}
               onClick={() => toggleYear(year)}
-              className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${
+              className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center ${
                 selectedYears.includes(year)
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -219,7 +219,7 @@ export default function FilterPanel({
               <button
                 key={category}
                 onClick={() => toggleCategory(category)}
-                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-all ${
+                className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-all min-h-[36px] flex items-center justify-center ${
                   selectedCategories.includes(category)
                     ? 'text-white shadow-md'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -261,7 +261,7 @@ export default function FilterPanel({
               <button
                 key={language}
                 onClick={() => toggleProgrammingLanguage(language)}
-                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-all ${
+                className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-all min-h-[36px] flex items-center justify-center ${
                   selectedProgrammingLanguages.includes(language)
                     ? 'text-white shadow-md'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -287,7 +287,7 @@ export default function FilterPanel({
               <button
                 key={prefecture}
                 onClick={() => togglePrefecture(prefecture)}
-                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${
+                className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors min-h-[36px] flex items-center justify-center ${
                   selectedPrefectures.includes(prefecture)
                     ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
