@@ -16,5 +16,14 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2024/"
+  },
+  {
+    "conferenceId": "matsue-rubykaigi",
+    "year": 2024,
+    "startDate": "2024-10-05",
+    "endDate": "2024-10-05",
+    "venueId": "shimane/matsue-open-source-lab",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk11/"
   }
 ]

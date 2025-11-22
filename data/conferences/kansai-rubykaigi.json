@@ -1,0 +1,7 @@
+{
+  "id": "kansai-rubykaigi",
+  "name": "関西Ruby会議",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["Ruby"],
+  "website": "https://regional.rubykaigi.org/"
+}

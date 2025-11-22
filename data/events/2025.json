@@ -97,5 +97,14 @@
     "venueId": "kagawa/tamamo-hiunkaku",
     "isHybrid": false,
     "eventUrl": "https://phpcon.kagawa.jp/2025/"
+  },
+  {
+    "conferenceId": "kansai-rubykaigi",
+    "year": 2025,
+    "startDate": "2025-06-28",
+    "endDate": "2025-06-28", 
+    "venueId": "kyoto/pontocho-kaburenjo",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai08/"
   }
 ]
