@@ -1,7 +1,6 @@
 {
   "id": "phpcon-fukuoka",
   "name": "PHPカンファレンス福岡",
-  "description": "九州地域で開催されるPHPカンファレンス。",
   "category": ["Backend", "Web"],
   "programmingLanguages": ["PHP"],
   "website": "https://phpcon.fukuoka.jp/",

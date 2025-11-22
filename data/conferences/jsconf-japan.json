@@ -1,0 +1,8 @@
+{
+  "id": "jsconf-japan",
+  "name": "JSConf JP",
+  "category": ["Frontend", "Web"],
+  "programmingLanguages": ["JavaScript"],
+  "website": "https://jsconf.jp/",
+  "twitter": "@jsconfjp"
+}

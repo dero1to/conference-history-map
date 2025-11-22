@@ -64,10 +64,10 @@ export default function ConferenceMapPage({
   ]
   const availableProgrammingLanguages: ProgrammingLanguages[] = [
     // プログラミング言語
-    // 'JavaScript',
-    // 'TypeScript',
+    'JavaScript',
+    'TypeScript',
     'PHP',
-    'Ruby' //,
+    'Ruby'
     // 'Python',
     // 'Go',
     // 'Rust',

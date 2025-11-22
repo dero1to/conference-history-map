@@ -26,8 +26,8 @@ export function getCategoryColor(category: Category): string {
 export function getProgrammingLanguageColor(language: ProgrammingLanguages): string {
   const colorMap: Record<ProgrammingLanguages, string> = {
     // プログラミング言語
-    // JavaScript: '#F7DF1E', // yellow
-    // TypeScript: '#3178C6', // blue
+    JavaScript: '#F7DF1E', // yellow
+    TypeScript: '#3178C6', // blue
     PHP: '#777BB4', // purple
     Ruby: '#CC342D' // red
     // Python: '#3776AB', // blue

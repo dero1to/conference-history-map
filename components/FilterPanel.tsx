@@ -216,8 +216,8 @@ export default function FilterPanel({
           {availableProgrammingLanguages
             .filter((lang) =>
               [
-                // 'JavaScript',
-                // 'TypeScript',
+                'JavaScript',
+                'TypeScript',
                 'PHP',
                 'Ruby',
                 // 'Python',

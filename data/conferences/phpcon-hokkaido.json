@@ -1,7 +1,6 @@
 {
   "id": "phpcon-hokkaido",
   "name": "PHPカンファレンス北海道",
-  "description": "北海道地域で開催されるPHPカンファレンス。",
   "category": ["Backend", "Web"],
   "programmingLanguages": ["PHP"],
   "website": "https://phpcon.hokkaido.jp/",

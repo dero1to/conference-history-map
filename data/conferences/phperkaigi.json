@@ -1,0 +1,8 @@
+{
+  "id": "phperkaigi",
+  "name": "PHPerKaigi",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://phperkaigi.jp/",
+  "twitter": "@phperkaigi"
+}

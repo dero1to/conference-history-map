@@ -1,0 +1,8 @@
+{
+  "id": "php-sessionless-con",
+  "name": "PHP Sessionless Conference",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://fortee.jp/sessionless-conference-2024",
+  "twitter": "@sessionlesscon"
+}

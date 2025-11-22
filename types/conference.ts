@@ -23,8 +23,8 @@ export type Category = z.infer<typeof CategorySchema>
 
 // プログラミング言語
 export const ProgrammingLanguagesSchema = z.enum([
-  // 'JavaScript',
-  // 'TypeScript',
+  'JavaScript',
+  'TypeScript',
   'PHP',
   'Ruby',
   // 'Python',
@@ -54,7 +54,6 @@ export type Location = z.infer<typeof LocationSchema>
 export const ConferenceSchema = z.object({
   id: z.string(),
   name: z.string(),
-  description: z.string(),
   category: z.array(CategorySchema),
   programmingLanguages: z.array(ProgrammingLanguagesSchema),
   website: z.string().url().optional(),

@@ -1,7 +1,6 @@
 {
   "id": "phpcon-kansai",
   "name": "PHPカンファレンス関西",
-  "description": "関西地域最大のPHPカンファレンス。",
   "category": ["Backend", "Web"],
   "programmingLanguages": ["PHP"],
   "website": "https://2025.kphpug.jp/",

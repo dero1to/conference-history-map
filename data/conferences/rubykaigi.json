@@ -1,7 +1,6 @@
 {
   "id": "rubykaigi",
   "name": "RubyKaigi",
-  "description": "日本最大のRubyカンファレンス。世界中からRubyistが集まります。",
   "category": ["Backend", "Web"],
   "programmingLanguages": ["Ruby"],
   "website": "https://rubykaigi.org/",

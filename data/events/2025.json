@@ -1,5 +1,101 @@
 [
   {
+    "conferenceId": "php-sessionless-con",
+    "year": 2025,
+    "startDate": "2025-02-08",
+    "endDate": "2025-02-08",
+    "location": {
+      "name": "ピクシブ株式会社",
+      "address": "東京都渋谷区千駄ケ谷4丁目23−5",
+      "lat": 35.680991788113076,
+      "lng": 139.70654830944574,
+      "prefecture": "東京都"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/sessionless-conference-2024"
+  },
+  {
+    "conferenceId": "phpcon-nagoya",
+    "year": 2025,
+    "startDate": "2025-02-22",
+    "endDate": "2025-02-22",
+    "location": {
+      "name": "ウインクあいち",
+      "address": "愛知県名古屋市中村区名駅4丁目4−38",
+      "lat": 35.17079005079287, 
+      "lng": 136.88614552499968,
+      "prefecture": "愛知県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.nagoya/2025/"
+  },
+  {
+    "conferenceId": "phperkaigi",
+    "year": 2025,
+    "startDate": "2025-03-21",
+    "endDate": "2025-03-23",
+    "location": {
+      "name": "中野セントラルパークカンファレンス",
+      "address": "東京都中野区中野４丁目１０−２ 中野セントラルパークサウス",
+      "lat": 35.70703193411808, 
+      "lng": 139.6616866530886,
+      "prefecture": "東京都"
+    },
+    "isOnline": false,
+    "isHybrid": true,
+    "eventUrl": "https://phperkaigi.jp/2025/"
+  },
+  {
+    "conferenceId": "phpcon-odawara",
+    "year": 2025,
+    "startDate": "2025-04-11",
+    "endDate": "2025-04-12",
+    "location": {
+      "name": "おだわら市民交流センター「UMECO」",
+      "address": "神奈川県小田原市栄町1丁目1−27",
+      "lat": 35.253803,
+      "lng": 139.155267,
+      "prefecture": "神奈川県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-odawara.jp/"
+  },
+  {
+    "conferenceId": "rubykaigi",
+    "year": 2025,
+    "startDate": "2025-04-16",
+    "endDate": "2025-04-18",
+    "location": {
+      "name": "愛媛県県民文化会館",
+      "address": "愛媛県松山市道後町2丁目5−1",
+      "lat": 33.8483364,
+      "lng": 132.7795355,
+      "prefecture": "愛媛県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2025/"
+  },
+  {
+    "conferenceId": "phpcon-niigata",
+    "year": 2025,
+    "startDate": "2025-05-31",
+    "endDate": "2025-05-31",
+    "location": {
+      "name": "開志専門職大学 米山キャンパス",
+      "address": "新潟県新潟市中央区米山2丁目2−2",
+      "lat": 37.9082163,
+      "lng": 139.0617185,
+      "prefecture": "新潟県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.niigata.jp/"
+  },
+  {
     "conferenceId": "phpcon",
     "year": 2025,
     "startDate": "2025-06-28",
@@ -32,6 +128,22 @@
     "eventUrl": "https://2025.kphpug.jp/"
   },
   {
+    "conferenceId": "phpcon-hiroshima",
+    "year": 2025,
+    "startDate": "2025-10-11",
+    "endDate": "2025-10-11",
+    "location": {
+      "name": "RCC文化センター・エールエールA館6階 貸し会議室",
+      "address": "広島県広島市南区松原町9−1",
+      "lat": 34.3966473,
+      "lng": 132.4732828,
+      "prefecture": "広島県"
+    },
+    "isOnline": false,
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-hiroshima.jp/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "year": 2025,
     "startDate": "2025-11-08",
@@ -48,19 +160,19 @@
     "eventUrl": "https://phpcon.fukuoka.jp/2025/"
   },
   {
-    "conferenceId": "rubykaigi",
+    "conferenceId": "phpcon-kagawa",
     "year": 2025,
-    "startDate": "2025-04-16",
-    "endDate": "2025-04-18",
+    "startDate": "2025-11-23",
+    "endDate": "2025-11-24",
     "location": {
-      "name": "愛媛県県民文化会館",
-      "address": "愛媛県松山市道後町2丁目5−1",
-      "lat": 33.8483364,
-      "lng": 132.7795355,
-      "prefecture": "愛媛県"
+      "name": "玉藻公園内 披雲閣",
+      "address": "香川県高松市玉藻町2−1",
+      "lat": 34.3503782,
+      "lng": 134.051263,
+      "prefecture": "香川県"
     },
     "isOnline": false,
     "isHybrid": false,
-    "eventUrl": "https://rubykaigi.org/2025/"
+    "eventUrl": "https://phpcon.kagawa.jp/2025/"
   }
 ]

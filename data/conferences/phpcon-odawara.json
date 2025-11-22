@@ -1,0 +1,8 @@
+{
+  "id": "phpcon-odawara",
+  "name": "PHPカンファレンス小田原",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://phpcon-odawara.jp/",
+  "twitter": "@phpcon_odawara"
+}
