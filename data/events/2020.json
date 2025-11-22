@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "sre-next",
+    "name": "SRE NEXT 2020",
+    "year": 2020,
+    "startDate": "2020-01-25",
+    "endDate": "2020-01-25",
+    "venueId": "tokyo/toyosu-front",
+    "isHybrid": false,
+    "eventUrl": "https://sre-next.dev/2020/"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2020",
     "year": 2020,

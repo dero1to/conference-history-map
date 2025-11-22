@@ -54,5 +54,13 @@
     "lat": 43.0563589,
     "lng": 141.3852372,
     "prefecture": "北海道"
+  },
+  {
+    "id": "sapporo-convention-center",
+    "name": "札幌コンベンションセンター",
+    "address": "北海道札幌市白石区東札幌６条１丁目１−１",
+    "lat": 43.0570112,
+    "lng": 141.3880396,
+    "prefecture": "北海道"
   }
 ]

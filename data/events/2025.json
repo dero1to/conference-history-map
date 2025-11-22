@@ -120,16 +120,6 @@
     "eventUrl": "https://2025.tskaigi.org/"
   },
   {
-    "conferenceId": "cloudnativedays",
-    "name": "Cloud Native Days Winter 2025",
-    "year": 2025,
-    "startDate": "2025-05-23",
-    "endDate": "2025-05-23",
-    "venueId": "tokyo/ariake-central-tower",
-    "isHybrid": true,
-    "eventUrl": "https://cloudnativedays.jp/cndw2025"
-  },
-  {
     "conferenceId": "phpcon-niigata",
     "name": "PHPカンファレンス新潟 2025",
     "year": 2025,
@@ -338,6 +328,16 @@
     "venueId": "fukuoka/fukuoka-institute-of-technology",
     "isHybrid": true,
     "eventUrl": "https://yapcjapan.org/2025fukuoka/"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "Cloud Native Days Winter 2025",
+    "year": 2025,
+    "startDate": "2025-11-18",
+    "endDate": "2025-11-19",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndw2025"
   },
   {
     "conferenceId": "postgresql-conference",

@@ -100,6 +100,16 @@
     "eventUrl": "https://gocon.jp/2024/"
   },
   {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Summer 2024",
+    "year": 2024,
+    "startDate": "2024-06-15",
+    "endDate": "2024-06-15",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cnds2024"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2024",
     "year": 2024,
@@ -150,6 +160,16 @@
     "eventUrl": "https://techramenconf.net/2024/"
   },
   {
+    "conferenceId": "sre-next",
+    "name": "SRE NEXT 2024",
+    "year": 2024,
+    "startDate": "2024-08-03",
+    "endDate": "2024-08-04",
+    "venueId": "tokyo/abema-towers",
+    "isHybrid": true,
+    "eventUrl": "https://sre-next.dev/2024/"
+  },
+  {
     "conferenceId": "front-end-conference-hokkaido",
     "name": "フロントエンドカンファレンス北海道 2024",
     "year": 2024,
@@ -198,6 +218,16 @@
     "venueId": "tokyo/ariake-central-tower",
     "isHybrid": false,
     "eventUrl": "https://kaigionrails.org/2024/"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Winter 2024",
+    "year": 2024,
+    "startDate": "2024-11-28",
+    "endDate": "2024-11-29",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndw2024"
   },
   {
     "conferenceId": "postgresql-conference",

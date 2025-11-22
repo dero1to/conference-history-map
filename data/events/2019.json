@@ -20,6 +20,16 @@
     "eventUrl": "https://phperkaigi.jp/2019/"
   },
   {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Fukuoka 2019",
+    "year": 2019,
+    "startDate": "2019-04-16",
+    "endDate": "2019-04-16",
+    "venueId": "fukuoka/acros-fukuoka",
+    "isHybrid": false,
+    "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2019",
     "year": 2019,
@@ -28,6 +38,16 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2019/"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Tokyo 2019",
+    "year": 2019,
+    "startDate": "2019-07-22",
+    "endDate": "2019-07-23",
+    "venueId": "tokyo/toranomon-hills-forum",
+    "isHybrid": false,
+    "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
   },
   {
     "conferenceId": "pycon-jp",
@@ -68,6 +88,16 @@
     "venueId": "tokyo/ap-shinagawa",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2019"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Kansai 2019",
+    "year": 2019,
+    "startDate": "2019-11-27",
+    "endDate": "2019-11-28",
+    "venueId": "osaka/grand-front-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
   },
   {
     "conferenceId": "phpcon",

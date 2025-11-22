@@ -10,6 +10,16 @@
     "eventUrl": "https://yapcjapan.org/2023kyoto/"
   },
   {
+    "conferenceId": "cloudnativedays",
+    "name": "CI/CD Conference 2023 by CloudNative Days",
+    "year": 2023,
+    "startDate": "2023-03-20",
+    "endDate": "2023-03-20",
+    "venueId": "tokyo/hibiya-kokusai-building-conference-square",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cicd2023"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2023",
     "year": 2023,
@@ -40,6 +50,16 @@
     "eventUrl": "https://phpcon.fukuoka.jp/2023/"
   },
   {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Fukuoka 2023",
+    "year": 2023,
+    "startDate": "2023-08-03",
+    "endDate": "2023-08-03",
+    "venueId": "fukuoka/acros-fukuoka",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndf2023"
+  },
+  {
     "conferenceId": "phpcon-okinawa",
     "name": "PHPカンファレンス沖縄 2023",
     "year": 2023,
@@ -48,6 +68,16 @@
     "venueId": "okinawa/ryukyu-university",
     "isHybrid": true,
     "eventUrl": "https://phpcon.okinawa.jp/2023/"
+  },
+  {
+    "conferenceId": "sre-next",
+    "name": "SRE NEXT 2023",
+    "year": 2023,
+    "startDate": "2023-09-29",
+    "endDate": "2023-09-29",
+    "venueId": "tokyo/kudan-kaikan-terrace",
+    "isHybrid": true,
+    "eventUrl": "https://sre-next.dev/2023/"
   },
   {
     "conferenceId": "phpcon",
@@ -98,5 +128,15 @@
     "venueId": "tokyo/ap-nihonbashi",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2023"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Tokyo 2023",
+    "year": 2023,
+    "startDate": "2023-12-11",
+    "endDate": "2023-12-12",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndt2023"
   }
 ]

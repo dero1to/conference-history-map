@@ -48,5 +48,15 @@
     "venueId": "tokyo/ap-nihonbashi",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2022"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "CloudNative Days Tokyo 2022",
+    "year": 2022,
+    "startDate": "2022-11-21",
+    "endDate": "2022-11-22",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndt2022"
   }
 ]
