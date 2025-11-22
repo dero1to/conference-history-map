@@ -35,7 +35,7 @@
 
 ```bash
 # リポジトリのクローン
-git clone https://github.com/yourusername/conference-history-map.git
+git clone https://github.com/dero1to/conference-history-map.git
 cd conference-history-map
 
 # 依存パッケージのインストール
