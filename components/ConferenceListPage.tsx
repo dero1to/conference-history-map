@@ -1,31 +1,22 @@
 'use client'
 
 import { useState, useMemo, useEffect } from 'react'
-import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
 import type { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
 import FilterPanel from './FilterPanel'
+import ConferenceList from './ConferenceList'
 import { filterEvents, getYears, getPrefectures } from '@/lib/utils'
 import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/url-params'
 
-const ConferenceMap = dynamic(() => import('./ConferenceMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors">
-      <p className="text-gray-500 dark:text-gray-400">地図を読み込み中...</p>
-    </div>
-  ),
-})
-
-interface ConferenceMapPageProps {
+interface ConferenceListPageProps {
   conferences: Conference[]
   events: ConferenceEventWithVenue[]
 }
 
-export default function ConferenceMapPage({
+export default function ConferenceListPage({
   conferences,
   events,
-}: ConferenceMapPageProps) {
+}: ConferenceListPageProps) {
   const searchParams = useSearchParams()
   const [filters, setFilters] = useState<FilterParams>({
     years: [],
@@ -61,7 +52,6 @@ export default function ConferenceMapPage({
   const availablePrefectures = useMemo(() => getPrefectures(events), [events])
 
   const allCategories: Category[] = [
-    // 技術領域
     'Web',
     'Mobile',
     'Backend',
@@ -72,28 +62,19 @@ export default function ConferenceMapPage({
     'Security',
     'Cloud',
     'General',
-    
   ]
+  
   const availableProgrammingLanguages: ProgrammingLanguages[] = [
-    // プログラミング言語
     'JavaScript',
     'TypeScript',
     'PHP',
     'Ruby'
-    // 'Python',
-    // 'Go',
-    // 'Rust',
-    // 'Java',
-    // 'Kotlin',
-    // 'Swift',
-    // 'C#',
-    // 'C++',
   ]
 
   return (
-    <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 lg:gap-4 h-[calc(100vh-6.5rem)] sm:h-[calc(100vh-7rem)] lg:h-[calc(100vh-8rem)]">
+    <div className="flex flex-col lg:flex-row gap-4 min-h-[calc(100vh-8rem)]">
       {/* サイドバー */}
-      <div className="lg:w-80 flex-shrink-0 overflow-y-auto max-h-[35vh] sm:max-h-[40vh] lg:max-h-full">
+      <div className="lg:w-80 flex-shrink-0 overflow-y-auto lg:max-h-[calc(100vh-8rem)]">
         <FilterPanel
           availableYears={availableYears}
           availableCategories={allCategories}
@@ -105,9 +86,9 @@ export default function ConferenceMapPage({
         />
 
         {/* 統計情報 */}
-        <div className="mt-2 sm:mt-3 lg:mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md p-2 sm:p-3 lg:p-4 transition-colors">
-          <h3 className="font-semibold mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base text-gray-900 dark:text-gray-100">統計情報</h3>
-          <div className="space-y-0.5 sm:space-y-1 text-xs text-gray-700 dark:text-gray-200">
+        <div className="mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition-colors">
+          <h3 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">統計情報</h3>
+          <div className="space-y-1 text-sm text-gray-700 dark:text-gray-200">
             <p>総イベント数: {events.length}</p>
             <p>表示中: {filteredEvents.length}</p>
             <p>カンファレンス数: {conferences.length}</p>
@@ -115,13 +96,14 @@ export default function ConferenceMapPage({
         </div>
       </div>
 
-      {/* 地図エリア */}
-      <div className="flex-1 rounded-lg overflow-hidden shadow-md min-h-[65vh] sm:min-h-[60vh] lg:min-h-0">
-        <ConferenceMap 
-          events={filteredEvents} 
-          conferences={conferences} 
-          highlightVenueId={filters.venueId}
-        />
+      {/* リスト表示エリア */}
+      <div className="flex-1 lg:overflow-y-auto lg:max-h-[calc(100vh-8rem)]">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            カンファレンス一覧
+          </h2>
+          <ConferenceList events={filteredEvents} conferences={conferences} />
+        </div>
       </div>
     </div>
   )

@@ -8,6 +8,8 @@ export interface FilterParams {
   offlineOnly: boolean
   hybridOnly: boolean
   searchQuery: string
+  venueSearchQuery: string
+  venueId?: string
 }
 
 const ALLOWED_CATEGORIES: Category[] = [
@@ -119,6 +121,8 @@ export function parseUrlParams(searchParams: URLSearchParams): FilterParams {
     offlineOnly: parseBoolean(searchParams.get('offline')),
     hybridOnly: parseBoolean(searchParams.get('hybrid')),
     searchQuery: sanitizeString(searchParams.get('search') || ''),
+    venueSearchQuery: sanitizeString(searchParams.get('venueSearch') || ''),
+    venueId: sanitizeString(searchParams.get('venue') || '') || undefined,
   }
 }
 
@@ -151,6 +155,14 @@ export function createUrlParams(filters: FilterParams): URLSearchParams {
   
   if (filters.searchQuery.trim()) {
     params.set('search', filters.searchQuery.trim())
+  }
+
+  if (filters.venueSearchQuery.trim()) {
+    params.set('venueSearch', filters.venueSearchQuery.trim())
+  }
+
+  if (filters.venueId) {
+    params.set('venue', filters.venueId)
   }
   
   return params
