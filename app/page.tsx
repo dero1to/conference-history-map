@@ -1,9 +1,9 @@
 import { getConferences, getEvents } from '@/lib/data'
-import ConferenceMapPage from '@/components/ConferenceMapPage'
+import ConferenceMapWrapper from '@/components/ConferenceMapWrapper'
 
 export default async function Home() {
   const conferences = await getConferences()
   const events = await getEvents()
 
-  return <ConferenceMapPage conferences={conferences} events={events} />
+  return <ConferenceMapWrapper conferences={conferences} events={events} />
 }
