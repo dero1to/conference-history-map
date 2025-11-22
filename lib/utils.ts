@@ -117,8 +117,11 @@ export function filterEvents(
 
       const normalizedQuery = normalizeSearchQuery(filters.searchQuery)
       const normalizedConferenceName = normalizeSearchQuery(conference.name)
+      const normalizedEventName = normalizeSearchQuery(event.name)
 
-      if (!normalizedConferenceName.includes(normalizedQuery)) return false
+      if (!normalizedConferenceName.includes(normalizedQuery) && !normalizedEventName.includes(normalizedQuery)) {
+        return false
+      }
     }
 
     // 会場名検索フィルター
