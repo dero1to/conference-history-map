@@ -10,6 +10,16 @@
     "eventUrl": "https://phpcon.hokkaido.jp/"
   },
   {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2024",
+    "year": 2024,
+    "startDate": "2024-01-20",
+    "endDate": "2024-01-20",
+    "venueId": "toyama/university-of-toyama-dx-education-research-center",
+    "isHybrid": false,
+    "eventUrl": "https://burikaigi.dev/2024/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2024",
     "year": 2024,
@@ -50,16 +60,6 @@
     "eventUrl": "https://phpcon-odawara.jp/2024/"
   },
   {
-    "conferenceId": "rubykaigi",
-    "name": "RubyKaigi 2024",
-    "year": 2024,
-    "startDate": "2024-05-15",
-    "endDate": "2024-05-17",
-    "venueId": "okinawa/naha-nahart",
-    "isHybrid": false,
-    "eventUrl": "https://rubykaigi.org/2024/"
-  },
-  {
     "conferenceId": "phpcon-kagawa",
     "name": "PHPカンファレンス香川 2024",
     "year": 2024,
@@ -68,6 +68,16 @@
     "venueId": "kagawa/tamamo-hiunkaku",
     "isHybrid": false,
     "eventUrl": "https://phpcon.kagawa.jp/2024/"
+  },
+  {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2024",
+    "year": 2024,
+    "startDate": "2024-05-15",
+    "endDate": "2024-05-17",
+    "venueId": "okinawa/naha-nahart",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2024/"
   },
   {
     "conferenceId": "phpcon-fukuoka",

@@ -10,6 +10,16 @@
     "eventUrl": "https://rubykaigi.org/2023/"
   },
   {
+    "conferenceId": "phpcon-fukuoka",
+    "name": "PHPカンファレンス福岡 2023",
+    "year": 2023,
+    "startDate": "2023-06-24",
+    "endDate": "2023-06-24",
+    "venueId": "fukuoka/ffb-hall",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.fukuoka.jp/2023/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンスJapan 2023",
     "year": 2023,
