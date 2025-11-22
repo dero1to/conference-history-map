@@ -1,23 +1,18 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Category, ProgrammingLanguages } from '@/types/conference'
 import { getCategoryColor, getProgrammingLanguageColor } from '@/lib/utils'
+import type { FilterParams } from '@/lib/url-params'
 
 interface FilterPanelProps {
   availableYears: number[]
   availableCategories: Category[]
   availableProgrammingLanguages: ProgrammingLanguages[]
   availablePrefectures: string[]
-  onFilterChange: (filters: {
-    years: number[]
-    categories: Category[]
-    programmingLanguages: ProgrammingLanguages[]
-    prefectures: string[]
-    onlineOnly: boolean
-    offlineOnly: boolean
-    searchQuery: string
-  }) => void
+  initialFilters: FilterParams
+  isInitialized: boolean
+  onFilterChange: (filters: FilterParams) => void
 }
 
 export default function FilterPanel({
@@ -25,6 +20,8 @@ export default function FilterPanel({
   availableCategories,
   availableProgrammingLanguages,
   availablePrefectures,
+  initialFilters,
+  isInitialized,
   onFilterChange,
 }: FilterPanelProps) {
   const [selectedYears, setSelectedYears] = useState<number[]>([])
@@ -35,15 +32,19 @@ export default function FilterPanel({
   const [offlineOnly, setOfflineOnly] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
 
-  const handleFilterUpdate = (updates: Partial<{
-    years: number[]
-    categories: Category[]
-    programmingLanguages: ProgrammingLanguages[]
-    prefectures: string[]
-    onlineOnly: boolean
-    offlineOnly: boolean
-    searchQuery: string
-  }>) => {
+  useEffect(() => {
+    if (isInitialized) {
+      setSelectedYears(initialFilters.years)
+      setSelectedCategories(initialFilters.categories)
+      setSelectedProgrammingLanguages(initialFilters.programmingLanguages)
+      setSelectedPrefectures(initialFilters.prefectures)
+      setOnlineOnly(initialFilters.onlineOnly)
+      setOfflineOnly(initialFilters.offlineOnly)
+      setSearchQuery(initialFilters.searchQuery)
+    }
+  }, [initialFilters, isInitialized])
+
+  const handleFilterUpdate = (updates: Partial<FilterParams>) => {
     const newFilters = {
       years: updates.years ?? selectedYears,
       categories: updates.categories ?? selectedCategories,
@@ -117,14 +118,7 @@ export default function FilterPanel({
   }
 
   const clearAllFilters = () => {
-    setSelectedYears([])
-    setSelectedCategories([])
-    setSelectedProgrammingLanguages([])
-    setSelectedPrefectures([])
-    setOnlineOnly(false)
-    setOfflineOnly(false)
-    setSearchQuery('')
-    onFilterChange({
+    const emptyFilters: FilterParams = {
       years: [],
       categories: [],
       programmingLanguages: [],
@@ -132,7 +126,15 @@ export default function FilterPanel({
       onlineOnly: false,
       offlineOnly: false,
       searchQuery: '',
-    })
+    }
+    setSelectedYears(emptyFilters.years)
+    setSelectedCategories(emptyFilters.categories)
+    setSelectedProgrammingLanguages(emptyFilters.programmingLanguages)
+    setSelectedPrefectures(emptyFilters.prefectures)
+    setOnlineOnly(emptyFilters.onlineOnly)
+    setOfflineOnly(emptyFilters.offlineOnly)
+    setSearchQuery(emptyFilters.searchQuery)
+    onFilterChange(emptyFilters)
   }
 
   const hasActiveFilters =
