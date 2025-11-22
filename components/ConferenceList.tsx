@@ -81,7 +81,7 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
                     {event.venue.name}
                   </Link>
                   <div className="text-sm text-gray-500 dark:text-gray-400">
-                    {event.venue.prefecture}
+                    {event.venue.address}
                   </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
