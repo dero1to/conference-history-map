@@ -31,6 +31,7 @@ export default function FilterPanel({
   const [offlineOnly, setOfflineOnly] = useState(false)
   const [hybridOnly, setHybridOnly] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const [venueSearchQuery, setVenueSearchQuery] = useState('')
 
   useEffect(() => {
     if (isInitialized) {
@@ -41,6 +42,7 @@ export default function FilterPanel({
       setOfflineOnly(initialFilters.offlineOnly)
       setHybridOnly(initialFilters.hybridOnly)
       setSearchQuery(initialFilters.searchQuery)
+      setVenueSearchQuery(initialFilters.venueSearchQuery)
     }
   }, [initialFilters, isInitialized])
 
@@ -53,6 +55,7 @@ export default function FilterPanel({
       offlineOnly: updates.offlineOnly ?? offlineOnly,
       hybridOnly: updates.hybridOnly ?? hybridOnly,
       searchQuery: updates.searchQuery ?? searchQuery,
+      venueSearchQuery: updates.venueSearchQuery ?? venueSearchQuery,
     }
     onFilterChange(newFilters)
   }
@@ -117,6 +120,12 @@ export default function FilterPanel({
     handleFilterUpdate({ searchQuery: newSearchQuery })
   }
 
+  const handleVenueSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newVenueSearchQuery = e.target.value
+    setVenueSearchQuery(newVenueSearchQuery)
+    handleFilterUpdate({ venueSearchQuery: newVenueSearchQuery })
+  }
+
   const clearAllFilters = () => {
     const emptyFilters: FilterParams = {
       years: [],
@@ -126,6 +135,7 @@ export default function FilterPanel({
       offlineOnly: false,
       hybridOnly: false,
       searchQuery: '',
+      venueSearchQuery: '',
     }
     setSelectedYears(emptyFilters.years)
     setSelectedCategories(emptyFilters.categories)
@@ -134,6 +144,7 @@ export default function FilterPanel({
     setOfflineOnly(emptyFilters.offlineOnly)
     setHybridOnly(emptyFilters.hybridOnly)
     setSearchQuery(emptyFilters.searchQuery)
+    setVenueSearchQuery(emptyFilters.venueSearchQuery)
     onFilterChange(emptyFilters)
   }
 
@@ -144,7 +155,8 @@ export default function FilterPanel({
     selectedPrefectures.length > 0 ||
     offlineOnly ||
     hybridOnly ||
-    searchQuery.trim().length > 0
+    searchQuery.trim().length > 0 ||
+    venueSearchQuery.trim().length > 0
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-3 sm:p-4 space-y-3 sm:space-y-4 transition-colors">
@@ -160,7 +172,7 @@ export default function FilterPanel({
         )}
       </div>
 
-      {/* 検索フィルター */}
+      {/* カンファレンス名検索フィルター */}
       <div>
         <h3 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">カンファレンス名で検索</h3>
         <input
@@ -168,6 +180,18 @@ export default function FilterPanel({
           placeholder="カンファレンス名を入力..."
           value={searchQuery}
           onChange={handleSearchChange}
+          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent min-h-[40px] transition-colors"
+        />
+      </div>
+
+      {/* 会場名検索フィルター */}
+      <div>
+        <h3 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">会場名で検索</h3>
+        <input
+          type="text"
+          placeholder="会場名を入力..."
+          value={venueSearchQuery}
+          onChange={handleVenueSearchChange}
           className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent min-h-[40px] transition-colors"
         />
       </div>

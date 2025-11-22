@@ -1,14 +1,14 @@
 import { Suspense } from 'react'
 import { getConferences, getEventsWithVenues } from '@/lib/data'
-import ConferenceMapWrapper from '@/components/ConferenceMapWrapper'
+import ConferenceListPage from '@/components/ConferenceListPage'
 
-export default async function Home() {
+export default async function ListPage() {
   const conferences = await getConferences()
   const events = await getEventsWithVenues()
 
   return (
     <Suspense fallback={<div className="flex items-center justify-center min-h-[50vh]">読み込み中...</div>}>
-      <ConferenceMapWrapper conferences={conferences} events={events} />
+      <ConferenceListPage conferences={conferences} events={events} />
     </Suspense>
   )
 }

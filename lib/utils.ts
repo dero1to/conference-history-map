@@ -1,4 +1,4 @@
-import { Conference, ConferenceEvent, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
+import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages } from '@/types/conference'
 
 // カテゴリー別の色を返す
 export function getCategoryColor(category: Category): string {
@@ -71,6 +71,7 @@ export function filterEvents(
     offlineOnly?: boolean
     hybridOnly?: boolean
     searchQuery?: string
+    venueSearchQuery?: string
   }
 ): ConferenceEventWithVenue[] {
   return events.filter((event) => {
@@ -104,15 +105,23 @@ export function filterEvents(
       if (!filters.prefectures.includes(event.venue.prefecture)) return false
     }
 
-    // 検索クエリフィルター
+    // カンファレンス名検索フィルター
     if (filters.searchQuery && filters.searchQuery.trim()) {
       const conference = conferences.find((c) => c.id === event.conferenceId)
       if (!conference) return false
       
       const normalizedQuery = normalizeSearchQuery(filters.searchQuery)
-      const normalizedName = normalizeSearchQuery(conference.name)
+      const normalizedConferenceName = normalizeSearchQuery(conference.name)
       
-      if (!normalizedName.includes(normalizedQuery)) return false
+      if (!normalizedConferenceName.includes(normalizedQuery)) return false
+    }
+
+    // 会場名検索フィルター
+    if (filters.venueSearchQuery && filters.venueSearchQuery.trim()) {
+      const normalizedVenueQuery = normalizeSearchQuery(filters.venueSearchQuery)
+      const normalizedVenueName = normalizeSearchQuery(event.venue.name)
+      
+      if (!normalizedVenueName.includes(normalizedVenueQuery)) return false
     }
 
     // 開催形式フィルター
