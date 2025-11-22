@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon JP 2015",
+    "year": 2015,
+    "startDate": "2015-10-10",
+    "endDate": "2015-10-11",
+    "venueId": "tokyo/tokyo-international-exchange-center",
+    "isHybrid": false,
+    "eventUrl": "https://pycon.jp/2015"
+  }
+]

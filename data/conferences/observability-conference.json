@@ -1,0 +1,12 @@
+{
+  "id": "observability-conference",
+  "name": "Observability Conference",
+  "category": [
+    "Web",
+    "DevOps",
+    "SRE"
+  ],
+  "programmingLanguages": [],
+  "website": "https://o11ycon.jp/",
+  "twitter": "@o11yconjp"
+}

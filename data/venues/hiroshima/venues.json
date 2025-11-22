@@ -6,5 +6,13 @@
     "lat": 34.3966473,
     "lng": 132.4732828,
     "prefecture": "広島県"
+  },
+  {
+    "id": "hiroshima-international-conference-center",
+    "name": "広島国際会議場",
+    "address": "広島県広島市中区中島町1−5",
+    "lat": 34.3920687,
+    "lng": 132.4510433,
+    "prefecture": "広島県"
   }
 ]

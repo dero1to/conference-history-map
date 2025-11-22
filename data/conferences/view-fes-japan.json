@@ -1,0 +1,14 @@
+{
+  "id": "view-fes-japan",
+  "name": "Vue Fes Japan",
+  "category": [
+    "Web",
+    "Frontend"
+  ],
+  "programmingLanguages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "website": "https://vuefes.jp/",
+  "twitter": "@vuefes"
+}

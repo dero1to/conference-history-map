@@ -1,0 +1,13 @@
+{
+  "id": "go-conference",
+  "name": "Go Conference",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "Go"
+  ],
+  "website": "https://gocon.jp/",
+  "twitter": "@goconjp"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "pycon-jp",
+  "name": "PyCon JP",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": ["Python"],
+  "website": "https://pycon.jp/",
+  "twitter": "@pyconjapan"
+}

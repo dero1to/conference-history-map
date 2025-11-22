@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon JP 2019",
+    "year": 2019,
+    "startDate": "2019-09-15",
+    "endDate": "2019-09-17",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "https://pycon.jp/2019/"
+  }
+]

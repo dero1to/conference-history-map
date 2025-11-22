@@ -110,5 +110,45 @@
     "lat": 35.67990791289149,
     "lng": 139.7646534549541,
     "prefecture": "東京都"
+  },
+  {
+    "id": "asakusabashi-hulic-hall-conference",
+    "name": "浅草橋ヒューリックホール&カンファレンス",
+    "address": "東京都台東区浅草橋１丁目２２−１６",
+    "lat": 35.69794588574528,
+    "lng": 139.78433704205858,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "waseda-university-nishi-waseda-campus",
+    "name": "早稲田大学西早稲田キャンパス",
+    "address": "東京都新宿区大久保３丁目４−１",
+    "lat": 35.7060685,
+    "lng": 139.7067865,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tokyo-international-exchange-center",
+    "name": "東京国際交流館",
+    "address": "東京都江東区青海２丁目２−１",
+    "lat": 35.621845,
+    "lng": 139.776833,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "otemachi-place-hall-conference",
+    "name": "大手町プレイス ホール＆カンファレンス",
+    "address": "東京都千代田区大手町２丁目３−２ ",
+    "lat": 35.687187407175415,
+    "lng": 139.76811417975753,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "akihabara-udx",
+    "name": "秋葉原UDX",
+    "address": "東京都千代田区外神田４丁目１４−１",
+    "lat": 35.7003697,
+    "lng": 139.7726097,
+    "prefecture": "東京都"
   }
 ]

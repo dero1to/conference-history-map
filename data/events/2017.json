@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon JP 2017",
+    "year": 2017,
+    "startDate": "2017-09-08",
+    "endDate": "2017-09-09",
+    "venueId": "tokyo/waseda-university-nishi-waseda-campus",
+    "isHybrid": false,
+    "eventUrl": "https://pycon.jp/2017/"
+  }
+]

@@ -28,5 +28,35 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2023/"
+  },
+  {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon APAC 2023",
+    "year": 2023,
+    "startDate": "2023-10-26",
+    "endDate": "2023-10-27",
+    "venueId": "tokyo/toc-ariake-convention-hall",
+    "isHybrid": false,
+    "eventUrl": "https://2023.pycon.jp/"
+  },
+  {
+    "conferenceId": "kaigi-on-rails",
+    "name": "Kaigi on Rails 2023",
+    "year": 2023,
+    "startDate": "2023-10-27",
+    "endDate": "2023-10-28",
+    "venueId": "tokyo/asakusabashi-hulic-hall-conference",
+    "isHybrid": true,
+    "eventUrl": "https://kaigionrails.org/2023/"
+  },
+  {
+    "conferenceId": "view-fes-japan",
+    "name": "Vue Fes Japan 2023",
+    "year": 2023,
+    "startDate": "2023-10-28",
+    "endDate": "2023-10-28",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": false,
+    "eventUrl": "https://vuefes.jp/2023"
   }
 ]

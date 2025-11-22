@@ -80,6 +80,16 @@
     "eventUrl": "https://rubykaigi.org/2024/"
   },
   {
+    "conferenceId": "go-conference",
+    "name": "Go Conference 2024",
+    "year": 2024,
+    "startDate": "2024-06-08",
+    "endDate": "2024-06-08",
+    "venueId": "tokyo/abema-towers",
+    "isHybrid": false,
+    "eventUrl": "https://gocon.jp/2024/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2024",
     "year": 2024,
@@ -140,6 +150,16 @@
     "eventUrl": "https://www.frontend-conf.jp/2024"
   },
   {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon JP 2024",
+    "year": 2024,
+    "startDate": "2024-09-27",
+    "endDate": "2024-09-29",
+    "venueId": "tokyo/toc-ariake-convention-hall",
+    "isHybrid": false,
+    "eventUrl": "https://2024.pycon.jp"
+  },
+  {
     "conferenceId": "phpcon-okinawa",
     "name": "PHPカンファレンス沖縄 2024",
     "year": 2024,
@@ -148,6 +168,26 @@
     "venueId": "okinawa/okinawa-city-municipal-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.okinawa.jp"
+  },
+  {
+    "conferenceId": "view-fes-japan",
+    "name": "Vue Fes Japan 2024",
+    "year": 2024,
+    "startDate": "2024-10-19",
+    "endDate": "2024-10-19",
+    "venueId": "tokyo/otemachi-place-hall-conference",
+    "isHybrid": false,
+    "eventUrl": "https://vuefes.jp/2024"
+  },
+  {
+    "conferenceId": "kaigi-on-rails",
+    "name": "Kaigi on Rails 2024",
+    "year": 2024,
+    "startDate": "2024-10-25",
+    "endDate": "2024-10-26",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": false,
+    "eventUrl": "https://kaigionrails.org/2024/"
   },
   {
     "conferenceId": "phpcon",

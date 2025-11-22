@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "pycon-jp",
+    "name": "PyCon JP 2021",
+    "year": 2021,
+    "startDate": "2021-10-15",
+    "endDate": "2021-10-16",
+    "venueId": "tokyo/bersal-kanda",
+    "isHybrid": true,
+    "eventUrl": "https://2021.pycon.jp/"
+  }
+]
