@@ -131,58 +131,111 @@ export default function ConferenceMap({
               position={[event.venue.lat, event.venue.lng]}
               icon={icon}
             >
-              <Popup maxWidth={300} className="custom-popup">
-                <div className="p-2 min-w-[180px] sm:min-w-[200px]">
-                  <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{event.name}</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 mb-2">{event.year}年</p>
-                  <p className="text-xs sm:text-sm mb-1">
-                    {formatDateRange(event.startDate, event.endDate)}
-                  </p>
-                  <p className="text-xs sm:text-sm mb-1">{event.venue.name}</p>
-                  <p className="text-xs sm:text-sm text-gray-600 mb-2">
-                    {event.venue.prefecture}
-                  </p>
-                  <div className="flex flex-wrap gap-1 mt-2">
-                    {conference.category.map((cat) => (
-                      <span
-                        key={cat}
-                        className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
-                        style={{
-                          backgroundColor: getCategoryColor(cat),
-                          color: 'white',
-                        }}
-                      >
-                        {cat}
-                      </span>
-                    ))}
-                    {conference.programmingLanguages?.map((lang) => (
-                      <span
-                        key={lang}
-                        className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded"
-                        style={{
-                          backgroundColor: getProgrammingLanguageColor(lang),
-                          color: 'white',
-                        }}
-                      >
-                        {lang}
-                      </span>
-                    ))}
+              <Popup 
+                maxWidth={320} 
+                className="conference-popup"
+                closeButton={false}
+                autoPan={true}
+              >
+                <div className="min-w-[260px] sm:min-w-[280px] bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transition-colors">
+                  {/* ヘッダー部分 */}
+                  <div 
+                    className="px-3 py-2.5 text-white relative"
+                    style={{ 
+                      background: `linear-gradient(135deg, ${getCategoryColor(primaryCategory)}, ${getCategoryColor(primaryCategory)}dd)`
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-black bg-opacity-10 dark:bg-opacity-20"></div>
+                    <div className="relative">
+                      <h3 className="font-bold text-base mb-1 leading-tight drop-shadow-sm">{event.name}</h3>
+                      <div className="flex items-center gap-1.5 text-xs">
+                        <span className="bg-white bg-opacity-20 dark:bg-opacity-30 px-1.5 py-0.5 rounded text-xs font-medium">
+                          {event.year}年
+                        </span>
+                        {event.isHybrid && (
+                          <span className="bg-white bg-opacity-20 dark:bg-opacity-30 px-1.5 py-0.5 rounded text-xs font-medium">
+                            ハイブリッド
+                          </span>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                  {event.isHybrid && (
-                    <span className="inline-block text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-blue-100 text-blue-800 rounded mt-2">
-                      ハイブリッド開催
-                    </span>
-                  )}
-                  {event.eventUrl && (
-                    <a
-                      href={event.eventUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block mt-2 text-xs sm:text-sm text-blue-600 hover:underline"
-                    >
-                      イベントページ →
-                    </a>
-                  )}
+
+                  {/* コンテンツ部分 */}
+                  <div className="p-3 bg-white dark:bg-gray-800">
+                    {/* 日程と会場情報 */}
+                    <div className="mb-3">
+                      <div className="flex items-center gap-1 m-1">
+                        <div className="w-4 h-4 flex-shrink-0">
+                          <svg viewBox="0 0 20 20" fill="currentColor" className="text-gray-400 dark:text-gray-500">
+                            <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs text-gray-600 dark:text-gray-300 truncate">{formatDateRange(event.startDate, event.endDate)}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-1 m-1">
+                        <div className="w-4 h-4 flex-shrink-0">
+                          <svg viewBox="0 0 20 20" fill="currentColor" className="text-gray-400 dark:text-gray-500">
+                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs text-gray-900 dark:text-gray-100 font-medium truncate">{event.venue.name}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* タグ */}
+                    <div className="mb-3">
+                      <div className="flex flex-wrap gap-1">
+                        {conference.category.map((cat) => (
+                          <span
+                            key={cat}
+                            className="text-xs px-1.5 py-0.5 rounded font-medium"
+                            style={{
+                              backgroundColor: getCategoryColor(cat),
+                              color: 'white',
+                            }}
+                          >
+                            {cat}
+                          </span>
+                        ))}
+                        {conference.programmingLanguages?.map((lang) => (
+                          <span
+                            key={lang}
+                            className="text-xs px-1.5 py-0.5 rounded font-medium border"
+                            style={{
+                              backgroundColor: getProgrammingLanguageColor(lang) + '20',
+                              borderColor: getProgrammingLanguageColor(lang),
+                              color: getProgrammingLanguageColor(lang),
+                            }}
+                          >
+                            {lang}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* イベントページリンク */}
+                    {event.eventUrl && (
+                      <div className="pt-2 border-t border-gray-100 dark:border-gray-700">
+                        <a
+                          href={event.eventUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                        >
+                          <span>詳細を見る</span>
+                          <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Popup>
             </Marker>
