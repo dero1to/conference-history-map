@@ -132,13 +132,13 @@ export default function FilterPanel({
     offlineOnly
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 space-y-4">
+    <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 space-y-3 sm:space-y-4">
       <div className="flex justify-between items-center">
-        <h2 className="text-lg font-bold">フィルター</h2>
+        <h2 className="text-base sm:text-lg font-bold">フィルター</h2>
         {hasActiveFilters && (
           <button
             onClick={clearAllFilters}
-            className="text-sm text-blue-600 hover:text-blue-800"
+            className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 px-2 py-1 rounded"
           >
             クリア
           </button>
@@ -147,13 +147,13 @@ export default function FilterPanel({
 
       {/* 年度フィルター */}
       <div>
-        <h3 className="font-semibold mb-2">年度</h3>
-        <div className="flex flex-wrap gap-2">
+        <h3 className="font-semibold mb-2 text-sm sm:text-base">年度</h3>
+        <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableYears.map((year) => (
             <button
               key={year}
               onClick={() => toggleYear(year)}
-              className={`px-3 py-1 rounded-full text-sm transition-colors ${
+              className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${
                 selectedYears.includes(year)
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -167,8 +167,8 @@ export default function FilterPanel({
 
       {/* 技術領域フィルター */}
       <div>
-        <h3 className="font-semibold mb-2">技術領域</h3>
-        <div className="flex flex-wrap gap-2">
+        <h3 className="font-semibold mb-2 text-sm sm:text-base">技術領域</h3>
+        <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableCategories
             .filter((cat) =>
               [
@@ -192,7 +192,7 @@ export default function FilterPanel({
               <button
                 key={category}
                 onClick={() => toggleCategory(category)}
-                className={`px-3 py-1 rounded-full text-sm transition-all ${
+                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-all ${
                   selectedCategories.includes(category)
                     ? 'text-white shadow-md'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -211,8 +211,8 @@ export default function FilterPanel({
 
       {/* プログラミング言語フィルター */}
       <div>
-        <h3 className="font-semibold mb-2">プログラミング言語</h3>
-        <div className="flex flex-wrap gap-2">
+        <h3 className="font-semibold mb-2 text-sm sm:text-base">プログラミング言語</h3>
+        <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableProgrammingLanguages
             .filter((lang) =>
               [
@@ -234,7 +234,7 @@ export default function FilterPanel({
               <button
                 key={language}
                 onClick={() => toggleProgrammingLanguage(language)}
-                className={`px-3 py-1 rounded-full text-sm transition-all ${
+                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-all ${
                   selectedProgrammingLanguages.includes(language)
                     ? 'text-white shadow-md'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -253,14 +253,14 @@ export default function FilterPanel({
 
       {/* 都道府県フィルター */}
       <div>
-        <h3 className="font-semibold mb-2">都道府県</h3>
-        <div className="max-h-40 overflow-y-auto">
-          <div className="flex flex-wrap gap-2">
+        <h3 className="font-semibold mb-2 text-sm sm:text-base">都道府県</h3>
+        <div className="max-h-32 sm:max-h-40 overflow-y-auto">
+          <div className="flex flex-wrap gap-1 sm:gap-2">
             {availablePrefectures.map((prefecture) => (
               <button
                 key={prefecture}
                 onClick={() => togglePrefecture(prefecture)}
-                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${
                   selectedPrefectures.includes(prefecture)
                     ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -275,25 +275,25 @@ export default function FilterPanel({
 
       {/* オンライン/オフラインフィルター */}
       <div>
-        <h3 className="font-semibold mb-2">開催形式</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base">開催形式</h3>
         <div className="space-y-2">
           <label className="flex items-center space-x-2 cursor-pointer">
             <input
               type="checkbox"
               checked={onlineOnly}
               onChange={handleOnlineToggle}
-              className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+              className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 rounded focus:ring-blue-500"
             />
-            <span className="text-sm">オンライン開催のみ</span>
+            <span className="text-xs sm:text-sm">オンライン開催のみ</span>
           </label>
           <label className="flex items-center space-x-2 cursor-pointer">
             <input
               type="checkbox"
               checked={offlineOnly}
               onChange={handleOfflineToggle}
-              className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+              className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 rounded focus:ring-blue-500"
             />
-            <span className="text-sm">オフライン開催のみ</span>
+            <span className="text-xs sm:text-sm">オフライン開催のみ</span>
           </label>
         </div>
       </div>
