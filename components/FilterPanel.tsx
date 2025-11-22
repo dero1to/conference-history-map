@@ -147,13 +147,13 @@ export default function FilterPanel({
     searchQuery.trim().length > 0
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 space-y-3 sm:space-y-4">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-3 sm:p-4 space-y-3 sm:space-y-4 transition-colors">
       <div className="flex justify-between items-center">
-        <h2 className="text-base sm:text-lg font-bold">フィルター</h2>
+        <h2 className="text-base sm:text-lg font-bold text-gray-900 dark:text-gray-100">フィルター</h2>
         {hasActiveFilters && (
           <button
             onClick={clearAllFilters}
-            className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 px-2 py-1 rounded"
+            className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 px-2 py-1 rounded transition-colors"
           >
             クリア
           </button>
@@ -162,19 +162,19 @@ export default function FilterPanel({
 
       {/* 検索フィルター */}
       <div>
-        <h3 className="font-semibold mb-2">カンファレンス名で検索</h3>
+        <h3 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">カンファレンス名で検索</h3>
         <input
           type="text"
           placeholder="カンファレンス名を入力..."
           value={searchQuery}
           onChange={handleSearchChange}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent min-h-[40px]"
+          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent min-h-[40px] transition-colors"
         />
       </div>
 
       {/* 年度フィルター */}
       <div>
-        <h3 className="font-semibold mb-2 text-sm sm:text-base">年度</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">年度</h3>
         <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableYears.map((year) => (
             <button
@@ -183,7 +183,7 @@ export default function FilterPanel({
               className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center ${
                 selectedYears.includes(year)
                   ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  : 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-500'
               }`}
             >
               {year}
@@ -194,7 +194,7 @@ export default function FilterPanel({
 
       {/* 技術領域フィルター */}
       <div>
-        <h3 className="font-semibold mb-2 text-sm sm:text-base">技術領域</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">技術領域</h3>
         <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableCategories
             .filter((cat) =>
@@ -222,7 +222,7 @@ export default function FilterPanel({
                 className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-all min-h-[36px] flex items-center justify-center ${
                   selectedCategories.includes(category)
                     ? 'text-white shadow-md'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-500'
                 }`}
                 style={
                   selectedCategories.includes(category)
@@ -238,7 +238,7 @@ export default function FilterPanel({
 
       {/* プログラミング言語フィルター */}
       <div>
-        <h3 className="font-semibold mb-2 text-sm sm:text-base">プログラミング言語</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">プログラミング言語</h3>
         <div className="flex flex-wrap gap-1 sm:gap-2">
           {availableProgrammingLanguages
             .filter((lang) =>
@@ -264,7 +264,7 @@ export default function FilterPanel({
                 className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-all min-h-[36px] flex items-center justify-center ${
                   selectedProgrammingLanguages.includes(language)
                     ? 'text-white shadow-md'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-500'
                 }`}
                 style={
                   selectedProgrammingLanguages.includes(language)
@@ -280,7 +280,7 @@ export default function FilterPanel({
 
       {/* 都道府県フィルター */}
       <div>
-        <h3 className="font-semibold mb-2 text-sm sm:text-base">都道府県</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">都道府県</h3>
         <div className="max-h-32 sm:max-h-40 overflow-y-auto">
           <div className="flex flex-wrap gap-1 sm:gap-2">
             {availablePrefectures.map((prefecture) => (
@@ -290,7 +290,7 @@ export default function FilterPanel({
                 className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors min-h-[36px] flex items-center justify-center ${
                   selectedPrefectures.includes(prefecture)
                     ? 'bg-green-600 text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-500'
                 }`}
               >
                 {prefecture}
@@ -302,7 +302,7 @@ export default function FilterPanel({
 
       {/* 開催形式フィルター */}
       <div>
-        <h3 className="font-semibold mb-2 text-sm sm:text-base">開催形式</h3>
+        <h3 className="font-semibold mb-2 text-sm sm:text-base text-gray-900 dark:text-gray-100">開催形式</h3>
         <div className="space-y-2">
           <label className="flex items-center space-x-2 cursor-pointer">
             <input
