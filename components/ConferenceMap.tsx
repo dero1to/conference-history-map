@@ -30,19 +30,28 @@ const createColoredIcon = (color: string) => {
 interface ConferenceMapProps {
   events: ConferenceEventWithVenue[]
   conferences: Conference[]
+  highlightVenueId?: string
 }
 
-function MapUpdater({ events }: { events: ConferenceEventWithVenue[] }) {
+function MapUpdater({ events, highlightVenueId }: { events: ConferenceEventWithVenue[], highlightVenueId?: string }) {
   const map = useMap()
 
   useEffect(() => {
+    if (highlightVenueId) {
+      const targetEvent = events.find(event => event.venue.id === highlightVenueId)
+      if (targetEvent) {
+        map.setView([targetEvent.venue.lat, targetEvent.venue.lng], 12)
+        return
+      }
+    }
+
     if (events.length > 0) {
       const bounds = new LatLngBounds(
         events.map((event) => [event.venue.lat, event.venue.lng])
       )
       map.fitBounds(bounds, { padding: [50, 50] })
     }
-  }, [events, map])
+  }, [events, map, highlightVenueId])
 
   return null
 }
@@ -50,6 +59,7 @@ function MapUpdater({ events }: { events: ConferenceEventWithVenue[] }) {
 export default function ConferenceMap({
   events,
   conferences,
+  highlightVenueId,
 }: ConferenceMapProps) {
   const [mounted, setMounted] = useState(false)
 
@@ -84,7 +94,7 @@ export default function ConferenceMap({
         attribution='Map data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MapUpdater events={events} />
+      <MapUpdater events={events} highlightVenueId={highlightVenueId} />
       <MarkerClusterGroup
         chunkedLoading
         iconCreateFunction={(cluster: MarkerClusterType) => {
@@ -111,7 +121,8 @@ export default function ConferenceMap({
           if (!conference) return null
 
           const primaryCategory = conference.category[0]
-          const color = getCategoryColor(primaryCategory)
+          const isHighlighted = highlightVenueId === event.venue.id
+          const color = isHighlighted ? '#FF0000' : getCategoryColor(primaryCategory)
           const icon = createColoredIcon(color)
 
           return (
