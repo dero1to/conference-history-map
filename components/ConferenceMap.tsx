@@ -69,7 +69,6 @@ export default function ConferenceMap({
       zoom={5}
       style={{ height: '100%', width: '100%' }}
       className="rounded-lg"
-      tap={true}
       touchZoom={true}
       doubleClickZoom={true}
       scrollWheelZoom={true}
