@@ -30,6 +30,12 @@ body {
   --background-end-rgb: 255, 255, 255;
 }
 
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 31, 41, 55;
+  --background-end-rgb: 17, 24, 39;
+}
+
 /* Leaflet map styles */
 .leaflet-container {
   font-family: inherit;
@@ -66,4 +72,32 @@ body {
     line-height: 30px !important;
     font-size: 16px !important;
   }
+}
+
+/* Dark mode support for Leaflet controls */
+.dark .leaflet-control-zoom a,
+.dark .leaflet-control-layers-toggle {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+  border-color: #4b5563 !important;
+}
+
+.dark .leaflet-control-zoom a:hover {
+  background-color: #4b5563 !important;
+}
+
+.dark .leaflet-control-attribution {
+  background-color: rgba(55, 65, 81, 0.9) !important;
+  color: #d1d5db !important;
+}
+
+.dark .leaflet-control-attribution a {
+  color: #93c5fd !important;
+}
+
+/* Dark mode for popups */
+.dark .leaflet-popup-content-wrapper,
+.dark .leaflet-popup-tip {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
 }

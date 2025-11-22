@@ -53,8 +53,8 @@ export default function ConferenceMap({
 
   if (!mounted) {
     return (
-      <div className="w-full h-full flex items-center justify-center bg-gray-100 rounded-lg">
-        <p className="text-gray-500">地図を読み込み中...</p>
+      <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors">
+        <p className="text-gray-500 dark:text-gray-400">地図を読み込み中...</p>
       </div>
     )
   }

@@ -11,8 +11,8 @@ import { parseUrlParams, updateUrlWithParams, type FilterParams } from '@/lib/ur
 const ConferenceMap = dynamic(() => import('./ConferenceMap'), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-100 rounded-lg">
-      <p className="text-gray-500">地図を読み込み中...</p>
+    <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors">
+      <p className="text-gray-500 dark:text-gray-400">地図を読み込み中...</p>
     </div>
   ),
 })
@@ -104,9 +104,9 @@ export default function ConferenceMapPage({
         />
 
         {/* 統計情報 */}
-        <div className="mt-2 sm:mt-3 lg:mt-4 bg-white rounded-lg shadow-md p-2 sm:p-3 lg:p-4">
-          <h3 className="font-semibold mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base">統計情報</h3>
-          <div className="space-y-0.5 sm:space-y-1 text-xs">
+        <div className="mt-2 sm:mt-3 lg:mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md p-2 sm:p-3 lg:p-4 transition-colors">
+          <h3 className="font-semibold mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base text-gray-900 dark:text-gray-100">統計情報</h3>
+          <div className="space-y-0.5 sm:space-y-1 text-xs text-gray-700 dark:text-gray-200">
             <p>総イベント数: {events.length}</p>
             <p>表示中: {filteredEvents.length}</p>
             <p>カンファレンス数: {conferences.length}</p>
