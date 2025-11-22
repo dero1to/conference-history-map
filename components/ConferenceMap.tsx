@@ -97,6 +97,11 @@ export default function ConferenceMap({
       <MapUpdater events={events} highlightVenueId={highlightVenueId} />
       <MarkerClusterGroup
         chunkedLoading
+        maxClusterRadius={60} // クラスター化する最大距離（デフォルト: 80）
+        // disableClusteringAtZoom={12} // ズームレベル12以上でクラスター化を無効
+        zoomToBoundsOnClick={true} // クラスタークリック時にズーム
+        spiderfyOnMaxZoom={true} // 最大ズーム時にマーカーを扇状展開
+        showCoverageOnHover={false} // ホバー時のカバレッジ表示を無効
         iconCreateFunction={(cluster: MarkerClusterType) => {
           const count = cluster.getChildCount()
           let className = 'marker-cluster-small'
