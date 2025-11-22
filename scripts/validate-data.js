@@ -59,7 +59,6 @@ const ConferenceEventSchema = z.object({
   endDate: z.string(),
   location: LocationSchema,
   attendees: z.number().optional(),
-  isOnline: z.boolean().default(false),
   isHybrid: z.boolean().default(false),
   eventUrl: z.string().url().optional(),
 })

@@ -116,7 +116,7 @@ export function filterEvents(
     }
 
     // 開催形式フィルター
-    if (filters.offlineOnly && event.isOnline) return false
+    if (filters.offlineOnly && event.isHybrid) return false
     if (filters.hybridOnly && !event.isHybrid) return false
 
     return true
