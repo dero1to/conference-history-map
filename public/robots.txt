@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://conference-history-map.pages.dev/sitemap.xml
+Disallow: /conference/*

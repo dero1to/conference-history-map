@@ -54,9 +54,17 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
               <tr key={`${event.name}`} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex items-center gap-2">
-                    <span className="font-medium text-gray-900 dark:text-gray-100">
-                      {event.name}
-                    </span>
+                    <div className="flex flex-col">
+                      <span className="font-medium text-gray-900 dark:text-gray-100">
+                        {event.name}
+                      </span>
+                      <Link
+                        href={`/conference/${event.conferenceId}`}
+                        className="text-xs text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline transition-colors"
+                      >
+                        {conference.name}の歴史を見る
+                      </Link>
+                    </div>
                     {event.eventUrl && (
                       <a
                         href={event.eventUrl}
