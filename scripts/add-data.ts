@@ -140,7 +140,10 @@ async function main() {
                 type: 'text',
                 name: 'id',
                 message: 'Conference ID (e.g. jsconf-jp):',
-                initial: (prev: string) => prev.toLowerCase().replace(/\s+/g, '-'),
+                initial: async (prev: string, values: any) => {
+                    const translated = await translateToSlug(values.name);
+                    return translated || values.name.toLowerCase().replace(/\s+/g, '-');
+                },
                 validate: async (value: string) => {
                     if (!/^[a-z0-9-]+$/.test(value)) return 'ID must be lowercase alphanumeric and hyphens';
                     const exists = await fs.stat(path.join(CONFERENCES_DIR, `${value}.json`)).then(() => true).catch(() => false);
@@ -203,6 +206,13 @@ async function main() {
             name: 'year',
             message: 'Event Year:',
             initial: new Date().getFullYear(),
+        },
+        {
+            type: 'text',
+            name: 'name',
+            message: 'Event Name:',
+            initial: (prev: number) => `${conferenceName} ${prev}`,
+            validate: (val: string) => val.length > 0 ? true : 'Required',
         },
         {
             type: 'text',
@@ -430,7 +440,7 @@ async function main() {
     // 5. Save Event
     const newEvent: ConferenceEvent = {
         conferenceId,
-        name: `${conferenceName} ${eventData.year}`, // Default name convention
+        name: eventData.name,
         year: eventData.year,
         startDate: eventData.startDate,
         endDate: eventData.endDate,

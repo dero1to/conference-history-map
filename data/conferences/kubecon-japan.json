@@ -1,0 +1,11 @@
+{
+  "id": "kubecon-japan",
+  "name": "KubeCon Japan",
+  "category": [
+    "DevOps",
+    "Cloud"
+  ],
+  "programmingLanguages": [],
+  "website": "https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/",
+  "twitter": "@KubeCon_"
+}

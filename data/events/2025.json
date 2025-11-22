@@ -10,6 +10,16 @@
     "eventUrl": "https://regional.rubykaigi.org/tokyo12/"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG55ミーティング",
+    "year": 2025,
+    "startDate": "2025-01-22",
+    "endDate": "2025-01-24",
+    "venueId": "kyoto/kyoto-city-industrial-museum-miyako-messe",
+    "isHybrid": false,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog55/"
+  },
+  {
     "conferenceId": "srekaigi",
     "name": "SRE Kaigi 2025",
     "year": 2025,
@@ -48,6 +58,16 @@
     "venueId": "aichi/winc-aichi",
     "isHybrid": false,
     "eventUrl": "https://phpcon.nagoya/2025/"
+  },
+  {
+    "conferenceId": "jaws-days",
+    "name": "JAWS DAYS 2025",
+    "year": 2025,
+    "startDate": "2025-03-01",
+    "endDate": "2025-03-01",
+    "venueId": "tokyo/ikebukuro-sunshine-city",
+    "isHybrid": false,
+    "eventUrl": "https://jawsdays2025.jaws-ug.jp/"
   },
   {
     "conferenceId": "phperkaigi",
@@ -120,6 +140,26 @@
     "eventUrl": "https://phpcon.niigata.jp/"
   },
   {
+    "conferenceId": "fp-matsuri",
+    "name": "関数型まつり 2025",
+    "year": 2025,
+    "startDate": "2025-06-14",
+    "endDate": "2025-06-15",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": false,
+    "eventUrl": "https://2025.fp-matsuri.org/"
+  },
+  {
+    "conferenceId": "kubecon-japan",
+    "name": "KubeCon Japan 2025",
+    "year": 2025,
+    "startDate": "2025-06-16",
+    "endDate": "2025-06-17",
+    "venueId": "tokyo/hilton-tokyo-odaiba",
+    "isHybrid": false,
+    "eventUrl": "https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンスJapan 2025",
     "year": 2025,
@@ -128,6 +168,16 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2025/"
+  },
+  {
+    "conferenceId": "sre-next",
+    "name": "SRE NEXT 2025",
+    "year": 2025,
+    "startDate": "2025-07-11",
+    "endDate": "2025-07-12",
+    "venueId": "tokyo/toc-ariake-convention-hall",
+    "isHybrid": true,
+    "eventUrl": "https://sre-next.dev/2025/"
   },
   {
     "conferenceId": "phpcon-kansai",

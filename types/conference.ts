@@ -11,6 +11,7 @@ export const CategorySchema = z.enum([
   'AI/ML',
   'Data',
   'Security',
+  'Network',
   'Cloud',
   'SRE',
   'Other',

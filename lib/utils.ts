@@ -13,6 +13,7 @@ export function getCategoryColor(category: Category): string {
     'AI/ML': '#EC4899', // pink
     Data: '#6366F1', // indigo
     Security: '#EF4444', // red
+    Network: '#F59E0B', // amber
     Cloud: '#14B8A6', // teal
     SRE: '#F97316', // orange
     Other: '#6B7280', // gray
@@ -47,9 +48,9 @@ export function getPrefectures(events: ConferenceEventWithVenue[]): Prefectures[
   events.forEach((event) => {
     existingPrefectures.add(event.venue.prefecture as Prefectures)
   })
-  
+
   // 型定義の順序で、データがあるもののみを返す
-  return getAvailablePrefectures().filter(prefecture => 
+  return getAvailablePrefectures().filter(prefecture =>
     existingPrefectures.has(prefecture)
   )
 }
@@ -113,10 +114,10 @@ export function filterEvents(
     if (filters.searchQuery && filters.searchQuery.trim()) {
       const conference = conferences.find((c) => c.id === event.conferenceId)
       if (!conference) return false
-      
+
       const normalizedQuery = normalizeSearchQuery(filters.searchQuery)
       const normalizedConferenceName = normalizeSearchQuery(conference.name)
-      
+
       if (!normalizedConferenceName.includes(normalizedQuery)) return false
     }
 
@@ -124,7 +125,7 @@ export function filterEvents(
     if (filters.venueSearchQuery && filters.venueSearchQuery.trim()) {
       const normalizedVenueQuery = normalizeSearchQuery(filters.venueSearchQuery)
       const normalizedVenueName = normalizeSearchQuery(event.venue.name)
-      
+
       if (!normalizedVenueName.includes(normalizedVenueQuery)) return false
     }
 
@@ -178,7 +179,7 @@ export function searchConferences(
   }
 
   const normalizedQuery = normalizeSearchQuery(searchQuery)
-  
+
   return conferences.filter((conference) => {
     const normalizedName = normalizeSearchQuery(conference.name)
     return normalizedName.includes(normalizedQuery)
