@@ -133,7 +133,7 @@ export default function ConferenceMap({
             >
               <Popup maxWidth={300} className="custom-popup">
                 <div className="p-2 min-w-[180px] sm:min-w-[200px]">
-                  <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{conference.name}</h3>
+                  <h3 className="font-bold text-sm sm:text-lg mb-1 leading-tight">{event.name}</h3>
                   <p className="text-xs sm:text-sm text-gray-600 mb-2">{event.year}年</p>
                   <p className="text-xs sm:text-sm mb-1">
                     {formatDateRange(event.startDate, event.endDate)}
