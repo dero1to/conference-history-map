@@ -6,5 +6,29 @@
     "lat": 36.7079346,
     "lng": 137.0996487,
     "prefecture": "富山県"
+  },
+  {
+    "id": "unazuki-international-hall-selene",
+    "name": "宇奈月国際会館セレネ",
+    "address": "富山県黒部市 宇奈月温泉6−3",
+    "lat": 36.813621671837815,
+    "lng": 137.58521451008593,
+    "prefecture": "富山県"
+  },
+  {
+    "id": "himi-city-ikiiki-genkikan",
+    "name": "氷見市いきいき元気館",
+    "address": "富山県氷見市中央町１２−２１",
+    "lat": 36.859503976542484,
+    "lng": 136.98450642186705,
+    "prefecture": "富山県"
+  },
+  {
+    "id": "toyama-prefectural-civic-hall",
+    "name": "富山県民会館",
+    "address": "富山県富山市新総曲輪4-18",
+    "lat": 36.69561405605554,
+    "lng": 137.21240771516648,
+    "prefecture": "富山県"
   }
 ]

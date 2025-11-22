@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2018",
+    "year": 2018,
+    "startDate": "2018-02-03",
+    "endDate": "2018-02-03",
+    "venueId": "toyama/himi-city-ikiiki-genkikan",
+    "isHybrid": false,
+    "eventUrl": "https://toyama-eng.connpass.com/event/72023/"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2018",
     "year": 2018,

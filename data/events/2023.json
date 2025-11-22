@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2023",
+    "year": 2023,
+    "startDate": "2023-01-21",
+    "endDate": "2023-01-21",
+    "venueId": "toyama/unazuki-international-hall-selene",
+    "isHybrid": false,
+    "eventUrl": "https://toyama-eng.connpass.com/event/265774/"
+  },
+  {
     "conferenceId": "yapc",
     "name": "YAPC::Kyoto 2023",
     "year": 2023,

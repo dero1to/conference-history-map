@@ -10,6 +10,16 @@
     "eventUrl": "https://phpcon-sendai.net/2019/"
   },
   {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2019",
+    "year": 2019,
+    "startDate": "2019-01-26",
+    "endDate": "2019-01-26",
+    "venueId": "toyama/unazuki-international-hall-selene",
+    "isHybrid": false,
+    "eventUrl": "https://toyama-eng.connpass.com/event/111062/"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2019",
     "year": 2019,
