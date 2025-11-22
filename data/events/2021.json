@@ -8,5 +8,15 @@
     "venueId": "tokyo/bersal-kanda",
     "isHybrid": true,
     "eventUrl": "https://2021.pycon.jp/"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2021",
+    "year": 2021,
+    "startDate": "2021-11-12",
+    "endDate": "2021-11-12",
+    "venueId": "tokyo/ap-nihonbashi",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2021"
   }
 ]

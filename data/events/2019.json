@@ -8,5 +8,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2019/"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2019",
+    "year": 2019,
+    "startDate": "2019-11-15",
+    "endDate": "2019-11-15",
+    "venueId": "tokyo/ap-shinagawa",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2019"
   }
 ]

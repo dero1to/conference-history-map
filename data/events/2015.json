@@ -8,5 +8,15 @@
     "venueId": "tokyo/tokyo-international-exchange-center",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2015"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2015",
+    "year": 2015,
+    "startDate": "2015-11-27",
+    "endDate": "2015-11-27",
+    "venueId": "tokyo/ap-shinagawa",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2015"
   }
 ]

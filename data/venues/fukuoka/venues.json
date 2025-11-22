@@ -6,5 +6,13 @@
     "lat": 33.5921875,
     "lng": 130.4149999,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "fukuoka-institute-of-technology",
+    "name": "福岡工業大学",
+    "address": "福岡県福岡市東区和白東３丁目３０−１",
+    "lat": 33.6963746,
+    "lng": 130.4406732,
+    "prefecture": "福岡県"
   }
 ]

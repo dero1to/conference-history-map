@@ -1,0 +1,13 @@
+{
+  "id": "yapc",
+  "name": "YAPC",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "Other"
+  ],
+  "website": "https://yapcjapan.org/",
+  "twitter": "@yapcjapan"
+}

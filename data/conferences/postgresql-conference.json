@@ -1,0 +1,10 @@
+{
+  "id": "postgresql-conference",
+  "name": "PostgreSQLカンファレンス",
+  "category": [
+    "Backend",
+    "Data"
+  ],
+  "programmingLanguages": [],
+  "website": "https://www.postgresql.jp/con"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2013",
+    "year": 2013,
+    "startDate": "2013-11-08",
+    "endDate": "2013-11-08",
+    "venueId": "tokyo/ap-tokyo-yaesu",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2013"
+  }
+]

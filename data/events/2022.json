@@ -8,5 +8,15 @@
     "venueId": "tokyo/toc-ariake-convention-hall",
     "isHybrid": false,
     "eventUrl": "https://2022.pycon.jp/"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2022",
+    "year": 2022,
+    "startDate": "2022-11-11",
+    "endDate": "2022-11-11",
+    "venueId": "tokyo/ap-nihonbashi",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2022"
   }
 ]

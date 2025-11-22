@@ -20,6 +20,16 @@
     "eventUrl": "https://burikaigi.dev/2024/"
   },
   {
+    "conferenceId": "yapc",
+    "name": "YAPC::Hiroshima 2024",
+    "year": 2024,
+    "startDate": "2024-02-10",
+    "endDate": "2024-02-10",
+    "venueId": "hiroshima/hiroshima-international-conference-center",
+    "isHybrid": true,
+    "eventUrl": "https://yapcjapan.org/2024hiroshima/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2024",
     "year": 2024,
@@ -190,6 +200,16 @@
     "eventUrl": "https://kaigionrails.org/2024/"
   },
   {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2024",
+    "year": 2024,
+    "startDate": "2024-12-06",
+    "endDate": "2024-12-06",
+    "venueId": "tokyo/ap-nihonbashi",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2024"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンスJapan 2024",
     "year": 2024,
@@ -198,5 +218,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2024/"
+  },
+  {
+    "conferenceId": "yapc",
+    "name": "YAPC::Hakodate 2024",
+    "year": 2024,
+    "startDate": "2025-10-05",
+    "endDate": "2025-10-05",
+    "venueId": "hokkaido/public-hakodate-future-university",
+    "isHybrid": false,
+    "eventUrl": "https://yapcjapan.org/2024hakodate/"
   }
 ]

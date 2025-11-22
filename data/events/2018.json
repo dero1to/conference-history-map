@@ -18,5 +18,15 @@
     "venueId": "tokyo/akihabara-udx",
     "isHybrid": false,
     "eventUrl": "https://vuefes.jp/2018"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2018",
+    "year": 2018,
+    "startDate": "2018-11-22",
+    "endDate": "2018-11-22",
+    "venueId": "tokyo/ap-tokyo-yaesu",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2018"
   }
 ]

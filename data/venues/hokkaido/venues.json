@@ -38,5 +38,13 @@
     "lat": 43.0685626,
     "lng": 141.3345065,
     "prefecture": "北海道"
+  },
+  {
+    "id": "public-hakodate-future-university",
+    "name": "公立はこだて未来大学",
+    "address": "北海道函館市亀田中野町１１６−２",
+    "lat": 41.8422511,
+    "lng": 140.7669393,
+    "prefecture": "北海道"
   }
 ]

@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "yapc",
+    "name": "YAPC::Kyoto 2023",
+    "year": 2023,
+    "startDate": "2023-03-19",
+    "endDate": "2023-03-19",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": true,
+    "eventUrl": "https://yapcjapan.org/2023kyoto/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2023",
     "year": 2023,
@@ -58,5 +68,15 @@
     "venueId": "tokyo/nakano-central-park",
     "isHybrid": false,
     "eventUrl": "https://vuefes.jp/2023"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2023",
+    "year": 2023,
+    "startDate": "2023-11-24",
+    "endDate": "2023-11-24",
+    "venueId": "tokyo/ap-nihonbashi",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2023"
   }
 ]
