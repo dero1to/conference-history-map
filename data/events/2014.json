@@ -10,6 +10,16 @@
     "eventUrl": "http://conference.kphpug.jp/2014/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2014",
+    "year": 2014,
+    "startDate": "2014-09-18",
+    "endDate": "2014-09-20",
+    "venueId": "tokyo/tower-hall-funabori",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2014/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference 2014",
     "year": 2014,

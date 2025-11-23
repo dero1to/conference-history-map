@@ -6,5 +6,13 @@
     "lat": 38.2634875,
     "lng": 140.8810897,
     "prefecture": "宮城県"
+  },
+  {
+    "id": "sendai-international-center",
+    "name": "仙台国際センター",
+    "address": "宮城県仙台市青葉区青葉山８−１",
+    "lat": 38.258464,
+    "lng": 140.857457,
+    "prefecture": "宮城県"
   }
 ]

@@ -20,6 +20,16 @@
     "eventUrl": "https://phperkaigi.jp/2018/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2018",
+    "year": 2018,
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-02",
+    "venueId": "miyagi/sendai-international-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2018/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2018",
     "year": 2018,

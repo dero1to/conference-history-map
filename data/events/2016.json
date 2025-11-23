@@ -30,6 +30,16 @@
     "eventUrl": "http://conference.kphpug.jp/2016/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2016",
+    "year": 2016,
+    "startDate": "2016-09-08",
+    "endDate": "2016-09-10",
+    "venueId": "kyoto/kyoto-international-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2016/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2016",
     "year": 2016,

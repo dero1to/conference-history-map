@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "rubykaigi",
+    "name": "日本Rubyカンファレンス2006",
+    "year": 2006,
+    "startDate": "2006-06-10",
+    "endDate": "2006-06-11",
+    "venueId": "tokyo/national-institute-of-advanced-industrial-science-and-technology-waterfront-city-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2006/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2006",
     "year": 2006,

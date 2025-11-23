@@ -40,6 +40,16 @@
     "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2019",
+    "year": 2019,
+    "startDate": "2019-04-18",
+    "endDate": "2019-04-20",
+    "venueId": "fukuoka/fukuoka-international-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2019/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2019",
     "year": 2019,

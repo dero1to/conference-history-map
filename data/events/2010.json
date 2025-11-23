@@ -10,6 +10,16 @@
     "eventUrl": "https://www.1x1.jp/blog/2011/04/phpcon_kansai.html"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "日本Ruby会議2010",
+    "year": 2010,
+    "startDate": "2010-08-27",
+    "endDate": "2010-10-29",
+    "venueId": "ibaraki/tsukuba-international-conference-center",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2010/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2010",
     "year": 2010,

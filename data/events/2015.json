@@ -58,5 +58,15 @@
     "venueId": "tokyo/ap-shinagawa",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2015"
+  },
+  {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2015",
+    "year": 2015,
+    "startDate": "2015-12-11",
+    "endDate": "2015-12-13",
+    "venueId": "tokyo/bellesalle-shiodome",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2015/"
   }
 ]

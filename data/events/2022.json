@@ -20,6 +20,16 @@
     "eventUrl": "https://phpcon-okinawa.connpass.com/event/257992/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2022",
+    "year": 2022,
+    "startDate": "2022-09-08",
+    "endDate": "2022-09-10",
+    "venueId": "mie/mie-prefectural-arts-and-culture-center",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2022/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference 2022",
     "year": 2022,

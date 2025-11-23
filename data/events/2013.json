@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2013",
+    "year": 2013,
+    "startDate": "2013-05-30",
+    "endDate": "2013-06-01",
+    "venueId": "tokyo/tokyo-international-exchange-center",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2013/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2013",
     "year": 2013,

@@ -40,6 +40,16 @@
     "eventUrl": "https://pycon.jp/2017/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2017",
+    "year": 2017,
+    "startDate": "2017-09-18",
+    "endDate": "2017-09-20",
+    "venueId": "hiroshima/hiroshima-international-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2017/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2017",
     "year": 2017,

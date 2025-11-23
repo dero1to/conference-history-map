@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "rubykaigi",
+    "name": "日本Ruby会議2009",
+    "year": 2009,
+    "startDate": "2009-07-17",
+    "endDate": "2009-07-19",
+    "venueId": "tokyo/hitotsubashi-university-chiyoda-campus",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2009/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2009",
     "year": 2009,

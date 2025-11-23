@@ -10,6 +10,16 @@
     "eventUrl": "http://conference.kphpug.jp/2011/"
   },
   {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2011",
+    "year": 2011,
+    "startDate": "2011-06-16",
+    "endDate": "2011-06-18",
+    "venueId": "tokyo/nerima-cultural-center",
+    "isHybrid": true,
+    "eventUrl": "https://rubykaigi.org/2011/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2011",
     "year": 2011,

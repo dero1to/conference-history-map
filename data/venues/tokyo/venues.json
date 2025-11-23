@@ -302,5 +302,53 @@
     "lat": 35.66627138583531,
     "lng": 139.73122035588378,
     "prefecture": "東京都"
+  },
+  {
+    "id": "bellesalle-shiodome",
+    "name": "ベルサール汐留",
+    "address": "東京都中央区銀座８丁目２１−１",
+    "lat": 35.66426945958543,
+    "lng": 139.76404591084437,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tower-hall-funabori",
+    "name": "タワーホール船堀",
+    "address": "東京都江戸川区船堀４丁目１−１",
+    "lat": 35.684403,
+    "lng": 139.8647807,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "nerima-cultural-center",
+    "name": "練馬文化センター",
+    "address": "東京都練馬区練馬１丁目１７−３７",
+    "lat": 35.7394074,
+    "lng": 139.6537515,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "hitotsubashi-university-chiyoda-campus",
+    "name": "一橋大学 千代田キャンパス",
+    "address": "東京都千代田区一ツ橋２丁目１−２",
+    "lat": 35.6926247,
+    "lng": 139.7580149,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "zendentsu-labor-hall",
+    "name": "全電通労働会館",
+    "address": "東京都千代田区神田駿河台３丁目６",
+    "lat": 35.6968268,
+    "lng": 139.7658361,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "national-institute-of-advanced-industrial-science-and-technology-waterfront-city-center",
+    "name": "産業技術総合研究所臨海副都心センター",
+    "address": "東京都江東区青海２丁目３−２６",
+    "lat": 35.61862611600008,
+    "lng": 139.77734351576174,
+    "prefecture": "東京都"
   }
 ]

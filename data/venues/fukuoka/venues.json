@@ -22,5 +22,13 @@
     "lat": 33.5914878,
     "lng": 130.402445,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "fukuoka-international-conference-center",
+    "name": "福岡国際会議場",
+    "address": "福岡県福岡市博多区石城町２−１",
+    "lat": 33.6043194,
+    "lng": 130.4035441,
+    "prefecture": "福岡県"
   }
 ]
