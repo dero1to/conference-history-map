@@ -28,5 +28,15 @@
     "venueId": "tokyo/ap-nihonbashi",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2021"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2021",
+    "year": 2021,
+    "startDate": "2021-11-27",
+    "endDate": "2021-11-27",
+    "venueId": "tokyo/kudansakagami-ks-building",
+    "isHybrid": true,
+    "eventUrl": "https://jsconf.jp/2021/"
   }
 ]

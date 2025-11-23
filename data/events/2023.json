@@ -140,6 +140,16 @@
     "eventUrl": "https://vuefes.jp/2023"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2023",
+    "year": 2023,
+    "startDate": "2023-11-19",
+    "endDate": "2023-11-19",
+    "venueId": "tokyo/kudansakagami-ks-building",
+    "isHybrid": true,
+    "eventUrl": "https://jsconf.jp/2023/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2023",
     "year": 2023,

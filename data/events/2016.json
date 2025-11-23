@@ -48,5 +48,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2016/"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2016",
+    "year": 2016,
+    "startDate": "2016-11-12",
+    "endDate": "2016-11-13",
+    "venueId": "tokyo/cyberagent-mark-city-co-ltd",
+    "isHybrid": false,
+    "eventUrl": "https://nodefest.jp/2016/"
   }
 ]

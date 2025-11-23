@@ -40,6 +40,16 @@
     "eventUrl": "https://pycon.jp/2015"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2015",
+    "year": 2015,
+    "startDate": "2015-11-07",
+    "endDate": "2015-11-07",
+    "venueId": "tokyo/cyberagent-mark-city-co-ltd",
+    "isHybrid": true,
+    "eventUrl": "https://nodefest.jp/2015/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2015",
     "year": 2015,

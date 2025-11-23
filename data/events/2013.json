@@ -20,6 +20,16 @@
     "eventUrl": "https://phpcon.php.gr.jp/w/2013/"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2013",
+    "year": 2013,
+    "startDate": "2013-10-26",
+    "endDate": "2013-10-26",
+    "venueId": "tokyo/nifty-co-ltd-seminar-room",
+    "isHybrid": true,
+    "eventUrl": "https://nodefest.jp/2013"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2013",
     "year": 2013,

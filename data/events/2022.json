@@ -58,5 +58,15 @@
     "venueId": "tokyo/ariake-central-tower",
     "isHybrid": true,
     "eventUrl": "https://cloudnativedays.jp/cndt2022"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2022",
+    "year": 2022,
+    "startDate": "2022-11-26",
+    "endDate": "2022-11-26",
+    "venueId": "tokyo/kudansakagami-ks-building",
+    "isHybrid": true,
+    "eventUrl": "https://jsconf.jp/2022/"
   }
 ]

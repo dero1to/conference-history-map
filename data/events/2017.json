@@ -58,5 +58,15 @@
     "venueId": "tokyo/ap-shinagawa",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2017"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2017",
+    "year": 2017,
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-26",
+    "venueId": "tokyo/hosei-university-fujimi-gate",
+    "isHybrid": false,
+    "eventUrl": "https://nodefest.jp/2017/"
   }
 ]

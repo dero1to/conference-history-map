@@ -120,6 +120,16 @@
     "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2019",
+    "year": 2019,
+    "startDate": "2019-11-30",
+    "endDate": "2019-12-01",
+    "venueId": "tokyo/arts-chiyoda-3331",
+    "isHybrid": false,
+    "eventUrl": "https://jsconf.jp/2019/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2019",
     "year": 2019,

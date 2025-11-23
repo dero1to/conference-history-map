@@ -18,5 +18,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/w/2012/"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2012",
+    "year": 2012,
+    "startDate": "2012-11-18",
+    "endDate": "2012-11-18",
+    "venueId": "tokyo/hosei-university-fujimi-gate",
+    "isHybrid": true,
+    "eventUrl": "https://nodefest.jp/2012/"
   }
 ]

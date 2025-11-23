@@ -238,5 +238,69 @@
     "lat": 35.67882179987549,
     "lng": 139.7675000835613,
     "prefecture": "東京都"
+  },
+  {
+    "id": "kudansakagami-ks-building",
+    "name": "九段坂上KSビル",
+    "address": "東京都千代田区九段北1-14-6",
+    "lat": 35.6957429,
+    "lng": 139.7491841,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "arts-chiyoda-3331",
+    "name": "アーツ千代田 3331",
+    "address": "東京都千代田区外神田6丁目11-14",
+    "lat": 35.70428716699617,
+    "lng": 139.7706963050485,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "yahoo-corporation",
+    "name": "ヤフー株式会社",
+    "address": "東京都千代田区紀尾井町1-3",
+    "lat": 35.6795452,
+    "lng": 139.736962,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "hosei-university-fujimi-gate",
+    "name": "法政大学 市ケ谷キャンパス",
+    "address": "東京都千代田区富士見2-17-1",
+    "lat": 35.69597690157406,
+    "lng": 139.7411994580286,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "dots",
+    "name": "dots.",
+    "address": "東京都渋谷区宇田川町20-17",
+    "lat": 35.66110213483308,
+    "lng": 139.7004174608877,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "cyberagent-mark-city-co-ltd",
+    "name": "株式会社サイバーエージェント セミナールーム",
+    "address": "渋谷区道玄坂1丁目12番1号",
+    "lat": 35.6581058564742,
+    "lng": 139.69858643045342,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "nifty-co-ltd-seminar-room",
+    "name": "ニフティ株式会社 セミナールーム",
+    "address": "東京都新宿区北新宿2-21-1",
+    "lat": 35.6960397,
+    "lng": 139.6893766,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "yahoo-japan-midtown-tower",
+    "name": "Yahoo! JAPAN(ミッドタウン・タワー)",
+    "address": "東京都港区赤坂9-7-1 ",
+    "lat": 35.66627138583531,
+    "lng": 139.73122035588378,
+    "prefecture": "東京都"
   }
 ]

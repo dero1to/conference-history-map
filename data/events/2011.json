@@ -18,5 +18,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2011/"
+  },
+  {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2011",
+    "year": 2011,
+    "startDate": "2011-10-29",
+    "endDate": "2011-10-29",
+    "venueId": "tokyo/yahoo-japan-midtown-tower",
+    "isHybrid": true,
+    "eventUrl": "https://nodefest.jp/2011/"
   }
 ]

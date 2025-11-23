@@ -240,6 +240,16 @@
     "eventUrl": "https://kansai.tskaigi.org/"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2024",
+    "year": 2024,
+    "startDate": "2024-11-23",
+    "endDate": "2024-11-23",
+    "venueId": "tokyo/kudansakagami-ks-building",
+    "isHybrid": true,
+    "eventUrl": "https://jsconf.jp/2024/"
+  },
+  {
     "conferenceId": "cloudnativedays",
     "name": "CloudNative Days Winter 2024",
     "year": 2024,

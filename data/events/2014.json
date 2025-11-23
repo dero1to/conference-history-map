@@ -20,6 +20,16 @@
     "eventUrl": "https://phpcon.php.gr.jp/w/2014/"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2014",
+    "year": 2014,
+    "startDate": "2014-11-15",
+    "endDate": "2014-11-15",
+    "venueId": "tokyo/cyberagent-mark-city-co-ltd",
+    "isHybrid": true,
+    "eventUrl": "https://nodefest.jp/2014/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2014",
     "year": 2014,

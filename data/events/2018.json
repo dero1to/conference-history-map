@@ -70,6 +70,16 @@
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2018"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "東京Node学園祭2018",
+    "year": 2018,
+    "startDate": "2018-11-23",
+    "endDate": "2018-11-24",
+    "venueId": "tokyo/yahoo-corporation",
+    "isHybrid": false,
+    "eventUrl": "https://nodefest.jp/2018/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2018",
     "year": 2018,

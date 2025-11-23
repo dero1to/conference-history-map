@@ -330,6 +330,16 @@
     "eventUrl": "https://yapcjapan.org/2025fukuoka/"
   },
   {
+    "conferenceId": "jsconf-japan",
+    "name": "JSConf JP 2025",
+    "year": 2025,
+    "startDate": "2025-11-16",
+    "endDate": "2025-11-16",
+    "venueId": "tokyo/gran-tokyo-south-tower",
+    "isHybrid": false,
+    "eventUrl": "https://jsconf.jp/2025"
+  },
+  {
     "conferenceId": "cloudnativedays",
     "name": "Cloud Native Days Winter 2025",
     "year": 2025,
