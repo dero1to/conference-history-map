@@ -38,25 +38,33 @@ export default async function DashboardPage() {
         .map(([pref, count]) => ({ name: pref, value: count }))
         .sort((a, b) => b.value - a.value)
 
-    // Category Distribution
+    // Category Distribution (weighted by events)
     const categoryMap = new Map<string, number>()
-    conferences.forEach(c => {
-        c.category.forEach(cat => {
-            const count = categoryMap.get(cat) || 0
-            categoryMap.set(cat, count + 1)
-        })
+    const conferenceMap = new Map(conferences.map(c => [c.id, c]))
+
+    events.forEach(e => {
+        const conf = conferenceMap.get(e.conferenceId)
+        if (conf) {
+            conf.category.forEach(cat => {
+                const count = categoryMap.get(cat) || 0
+                categoryMap.set(cat, count + 1)
+            })
+        }
     })
     const categoryDistribution = Array.from(categoryMap.entries())
         .map(([cat, count]) => ({ name: cat, value: count }))
         .sort((a, b) => b.value - a.value)
 
-    // Language Distribution
+    // Language Distribution (weighted by events)
     const languageMap = new Map<string, number>()
-    conferences.forEach(c => {
-        c.programmingLanguages.forEach(lang => {
-            const count = languageMap.get(lang) || 0
-            languageMap.set(lang, count + 1)
-        })
+    events.forEach(e => {
+        const conf = conferenceMap.get(e.conferenceId)
+        if (conf) {
+            conf.programmingLanguages.forEach(lang => {
+                const count = languageMap.get(lang) || 0
+                languageMap.set(lang, count + 1)
+            })
+        }
     })
     const languageDistribution = Array.from(languageMap.entries())
         .map(([lang, count]) => ({ name: lang, value: count }))
