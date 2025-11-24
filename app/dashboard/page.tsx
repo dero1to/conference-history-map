@@ -1,5 +1,9 @@
 import { getConferences, getEventsWithVenues } from '@/lib/data'
 import DashboardCharts from '@/components/DashboardCharts'
+import SeasonalityHeatmap from '@/components/SeasonalityHeatmap'
+import TokyoConcentrationMeter from '@/components/TokyoConcentrationMeter'
+import VenuePopularityRanking from '@/components/VenuePopularityRanking'
+import AnimatedMapWrapper from '@/components/AnimatedMapWrapper'
 
 export const metadata = {
     title: 'Dashboard | Conference History Map',
@@ -71,7 +75,7 @@ export default async function DashboardPage() {
         .sort((a, b) => b.value - a.value)
 
     return (
-        <div className="container mx-auto py-8 px-4">
+        <div className="container mx-auto py-8 px-4 max-w-7xl">
             <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-gray-100">Dashboard</h1>
 
             {/* Summary Cards */}
@@ -90,13 +94,30 @@ export default async function DashboardPage() {
                 </div>
             </div>
 
-            {/* Charts */}
-            <DashboardCharts
-                eventsPerYear={eventsPerYear}
-                eventsPerPrefecture={eventsPerPrefecture}
-                categoryDistribution={categoryDistribution}
-                languageDistribution={languageDistribution}
-            />
+            {/* Basic Charts */}
+            <div className="mb-8">
+                <DashboardCharts
+                    eventsPerYear={eventsPerYear}
+                    eventsPerPrefecture={eventsPerPrefecture}
+                    categoryDistribution={categoryDistribution}
+                    languageDistribution={languageDistribution}
+                />
+            </div>
+
+            {/* New Visualizations Section */}
+            <div className="space-y-8">
+                {/* 季節性ヒートマップ */}
+                <SeasonalityHeatmap events={events} />
+
+                {/* 東京集中度と会場ランキング */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <TokyoConcentrationMeter events={events} />
+                    <VenuePopularityRanking events={events} />
+                </div>
+
+                {/* アニメーションマップ */}
+                <AnimatedMapWrapper events={events} conferences={conferences} />
+            </div>
         </div>
     )
 }
