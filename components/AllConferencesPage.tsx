@@ -1,7 +1,8 @@
 'use client'
 
+import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Calendar, MapPin, ArrowRight, Users } from 'lucide-react'
+import { Calendar, MapPin, ArrowRight, Users, Search } from 'lucide-react'
 import { Conference, ConferenceEventWithVenue } from '@/types/conference'
 
 interface ConferenceWithStats extends Conference {
@@ -19,10 +20,31 @@ interface AllConferencesPageProps {
 }
 
 export default function AllConferencesPage({ conferences }: AllConferencesPageProps) {
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const filteredConferences = useMemo(() => {
+    if (!searchQuery.trim()) {
+      return conferences
+    }
+
+    const query = searchQuery.toLowerCase().trim()
+    return conferences.filter((conference) =>
+      conference.name.toLowerCase().includes(query)
+    )
+  }, [conferences, searchQuery])
+
   const formatYearRange = (firstYear: number | null, lastYear: number | null) => {
     if (!firstYear || !lastYear) return '-'
     if (firstYear === lastYear) return `${firstYear}`
     return `${firstYear} - ${lastYear}`
+  }
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value)
+  }
+
+  const clearSearch = () => {
+    setSearchQuery('')
   }
 
   return (
@@ -32,13 +54,38 @@ export default function AllConferencesPage({ conferences }: AllConferencesPagePr
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             カンファレンス一覧
           </h1>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
             日本全国のIT技術カンファレンスの開催履歴を確認できます
           </p>
+
+          {/* 検索バー */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-700">
+            <div className="flex items-center gap-3">
+              <Search className="w-5 h-5 text-gray-400 dark:text-gray-500 flex-shrink-0" />
+              <input
+                type="text"
+                placeholder="カンファレンス名で絞り込み (例: RubyKaigi, PHPカンファレンス...)"
+                value={searchQuery}
+                onChange={handleSearchChange}
+                className="flex-1 px-3 py-2 bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none"
+              />
+              {searchQuery && (
+                <button
+                  onClick={clearSearch}
+                  className="px-3 py-1 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
+                >
+                  クリア
+                </button>
+              )}
+            </div>
+            <div className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              {filteredConferences.length} / {conferences.length} 件のカンファレンス
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {conferences.map((conference) => (
+          {filteredConferences.map((conference) => (
             <Link
               key={conference.id}
               href={`/conference/${conference.id}`}
@@ -106,10 +153,12 @@ export default function AllConferencesPage({ conferences }: AllConferencesPagePr
           ))}
         </div>
 
-        {conferences.length === 0 && (
+        {filteredConferences.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500 dark:text-gray-400">
-              カンファレンスが見つかりませんでした
+              {searchQuery
+                ? `「${searchQuery}」に一致するカンファレンスが見つかりませんでした`
+                : 'カンファレンスが見つかりませんでした'}
             </p>
           </div>
         )}
