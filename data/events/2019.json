@@ -130,6 +130,16 @@
     "eventUrl": "https://rust.tokyo/2019"
   },
   {
+    "conferenceId": "cakefest",
+    "name": "CakeFest Tokyo 2019",
+    "year": 2019,
+    "startDate": "2019-11-07",
+    "endDate": "2019-11-10",
+    "venueId": "tokyo/smart-news-co-ltd",
+    "isHybrid": false,
+    "eventUrl": "https://cakefest.org/archive/tokyo-2019"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2019",
     "year": 2019,
