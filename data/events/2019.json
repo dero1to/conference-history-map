@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "janog",
+    "name": "JANOG43ミーティング",
+    "year": 2019,
+    "startDate": "2019-01-22",
+    "endDate": "2019-01-25",
+    "venueId": "yamanashi/yamanashi-prefectural-citizens-culture-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog43/"
+  },
+  {
     "conferenceId": "php-conference-sendai",
     "name": "PHPカンファレンス仙台 2019",
     "year": 2019,

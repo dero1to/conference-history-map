@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "janog",
+    "name": "JANOG39ミーティング",
+    "year": 2017,
+    "startDate": "2017-01-18",
+    "endDate": "2017-01-20",
+    "venueId": "ishikawa/kanazawa-city-culture-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog39/"
+  },
+  {
     "conferenceId": "burikaigi",
     "name": "BuriKaigi 2017",
     "year": 2017,
@@ -28,6 +38,16 @@
     "venueId": "osaka/grand-front-osaka",
     "isHybrid": false,
     "eventUrl": "https://2017.kphpug.jp/"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG40ミーティング",
+    "year": 2017,
+    "startDate": "2017-07-26",
+    "endDate": "2017-07-28",
+    "venueId": "fukushima/big-palette-fukushima",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog40/"
   },
   {
     "conferenceId": "pycon-jp",

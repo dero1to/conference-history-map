@@ -6,5 +6,13 @@
     "lat": 34.74414295709027,
     "lng": 136.50165830404117,
     "prefecture": "三重県"
+  },
+  {
+    "id": "mie-prefectural-cultural-center",
+    "name": "三重県総合文化センター",
+    "address": "三重県津市一身田上津部田１２３４",
+    "lat": 34.7445996,
+    "lng": 136.5019204,
+    "prefecture": "三重県"
   }
 ]

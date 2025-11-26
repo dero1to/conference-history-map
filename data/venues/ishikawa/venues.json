@@ -6,5 +6,13 @@
     "lat": 36.5785161,
     "lng": 136.6502252,
     "prefecture": "石川県"
+  },
+  {
+    "id": "kanazawa-city-culture-hall",
+    "name": "金沢市文化ホール",
+    "address": "石川県金沢市高岡町１５−１",
+    "lat": 36.5664703,
+    "lng": 136.6519117,
+    "prefecture": "石川県"
   }
 ]

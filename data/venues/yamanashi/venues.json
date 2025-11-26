@@ -6,5 +6,13 @@
     "lat": 35.491443169967354,
     "lng": 138.79605755404677,
     "prefecture": "山梨県"
+  },
+  {
+    "id": "yamanashi-prefectural-citizens-culture-hall",
+    "name": "山梨県立県民文化ホール",
+    "address": "山梨県甲府市寿町２６−１",
+    "lat": 35.6596401,
+    "lng": 138.5626093,
+    "prefecture": "山梨県"
   }
 ]

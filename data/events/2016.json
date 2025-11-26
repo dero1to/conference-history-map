@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "janog",
+    "name": "JANOG37ミーティング",
+    "year": 2016,
+    "startDate": "2016-01-20",
+    "endDate": "2016-01-22",
+    "venueId": "aichi/japan-special-ceramic-industry-civic-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog37/"
+  },
+  {
     "conferenceId": "phpcon-hokkaido",
     "name": "PHPカンファレンス北海道 2016",
     "year": 2016,
@@ -18,6 +28,16 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2016/"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG38ミーティング",
+    "year": 2016,
+    "startDate": "2016-07-06",
+    "endDate": "2016-07-08",
+    "venueId": "okinawa/okinawa-kariyushi-urban-resort-naha",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog38/"
   },
   {
     "conferenceId": "phpcon-kansai",
