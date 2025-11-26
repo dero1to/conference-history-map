@@ -8,6 +8,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'JP Conference History Map',
   description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
+  icons: {
+    icon: '/image.png',
+    apple: '/image.png',
+  },
   openGraph: {
     title: 'JP Conference History Map',
     description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
