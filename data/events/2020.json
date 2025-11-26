@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "janog",
+    "name": "  JANOG45ミーティング",
+    "year": 2020,
+    "startDate": "2020-01-22",
+    "endDate": "2020-01-24",
+    "venueId": "hokkaido/sapporo-prince-hotel",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog45/"
+  },
+  {
     "conferenceId": "sre-next",
     "name": "SRE NEXT 2020",
     "year": 2020,

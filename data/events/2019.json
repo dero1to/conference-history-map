@@ -70,6 +70,16 @@
     "eventUrl": "https://cloudnativedays.jp/posts/recent-cnd-events"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG44ミーティング",
+    "year": 2019,
+    "startDate": "2019-07-24",
+    "endDate": "2019-07-26",
+    "venueId": "hyogo/kobe-international-exhibition-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog44/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2019",
     "year": 2019,

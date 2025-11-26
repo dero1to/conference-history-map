@@ -10,6 +10,16 @@
     "eventUrl": "https://toyama-eng.connpass.com/event/265774/"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG51 Meeting",
+    "year": 2023,
+    "startDate": "2023-01-25",
+    "endDate": "2023-01-27",
+    "venueId": "yamanashi/fujisan-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog51/"
+  },
+  {
     "conferenceId": "yapc",
     "name": "YAPC::Kyoto 2023",
     "year": 2023,
@@ -58,6 +68,16 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2023/"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG52 ミーティング",
+    "year": 2023,
+    "startDate": "2023-07-05",
+    "endDate": "2023-07-07",
+    "venueId": "nagasaki/dejima-messe-nagasaki",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog52"
   },
   {
     "conferenceId": "cloudnativedays",

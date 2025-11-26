@@ -14,5 +14,13 @@
     "lat": 34.68972631885444,
     "lng": 135.1950183118534,
     "prefecture": "兵庫県"
+  },
+  {
+    "id": "kobe-international-exhibition-center",
+    "name": "神戸国際展示場",
+    "address": "兵庫県神戸市中央区港島中町６丁目１１−１",
+    "lat": 34.6643524,
+    "lng": 135.2117416,
+    "prefecture": "兵庫県"
   }
 ]

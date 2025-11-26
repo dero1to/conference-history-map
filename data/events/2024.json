@@ -10,6 +10,16 @@
     "eventUrl": "https://phpcon.hokkaido.jp/"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG53ミーティング",
+    "year": 2024,
+    "startDate": "2024-01-17",
+    "endDate": "2024-01-19",
+    "venueId": "fukuoka/hakata-international-exhibition-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog53/"
+  },
+  {
     "conferenceId": "burikaigi",
     "name": "BuriKaigi 2024",
     "year": 2024,

@@ -30,5 +30,13 @@
     "lat": 33.6043194,
     "lng": 130.4035441,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "hakata-international-exhibition-center",
+    "name": "博多国際展示場",
+    "address": "福岡県福岡市博多区東光２丁目２２−１５",
+    "lat": 33.59603173591288,
+    "lng": 130.42876184171223,
+    "prefecture": "福岡県"
   }
 ]

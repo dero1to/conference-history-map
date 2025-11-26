@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "janog",
+    "name": "JANOG49 Meeting",
+    "year": 2022,
+    "startDate": "2022-01-26",
+    "endDate": "2022-01-28",
+    "venueId": "kagoshima/kawasho-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog49/"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2022",
     "year": 2022,
@@ -8,6 +18,16 @@
     "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
     "isHybrid": true,
     "eventUrl": "https://phperkaigi.jp/2022"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG50 Meeting",
+    "year": 2022,
+    "startDate": "2022-07-13",
+    "endDate": "2022-07-15",
+    "venueId": "hokkaido/hakodate-arena",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog50/"
   },
   {
     "conferenceId": "phpcon-okinawa",

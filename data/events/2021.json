@@ -10,6 +10,16 @@
     "eventUrl": "https://phpcon-okinawa.connpass.com/event/212058/"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG48 Meeting",
+    "year": 2021,
+    "startDate": "2021-07-14",
+    "endDate": "2021-07-16",
+    "venueId": "gifu/softopia-japan-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog48/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2021",
     "year": 2021,
