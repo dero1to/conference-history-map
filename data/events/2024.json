@@ -140,6 +140,16 @@
     "eventUrl": "https://blessingsoftware.connpass.com/event/315796/"
   },
   {
+    "conferenceId": "janog",
+    "name": "JANOG54ミーティング",
+    "year": 2024,
+    "startDate": "2024-07-03",
+    "endDate": "2024-07-05",
+    "venueId": "nara/nara-prefecture-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog54/"
+  },
+  {
     "conferenceId": "platform-engineering-kaigi",
     "name": "Platform Engineering Kaigi 2024",
     "year": 2024,

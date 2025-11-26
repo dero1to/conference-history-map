@@ -185,6 +185,7 @@ MIT License
 
 - [OpenStreetMap](https://www.openstreetmap.org/) - 地図データ
 - [Leaflet](https://leafletjs.com/) - 地図ライブラリ
+- [国土地理院](https://www.gsi.go.jp/) - 住所検索API（ジオコーディング）
 - 各カンファレンスの運営チームの皆様
 
 ---

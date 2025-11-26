@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import { LatLngBounds, Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
+import MapSearchControl from './MapSearchControl'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import { getCategoryColor, getProgrammingLanguageColor, formatDateRange } from '@/lib/utils'
 import 'leaflet/dist/leaflet.css'
@@ -96,6 +97,7 @@ export default function ConferenceMap({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <MapUpdater events={events} highlightVenueId={highlightVenueId} />
+      <MapSearchControl />
       <MarkerClusterGroup
         chunkedLoading
         maxClusterRadius={60} // クラスター化する最大距離（デフォルト: 80）

@@ -16,6 +16,9 @@ export function getCategoryColor(category: Category): string {
     Network: '#F59E0B', // amber
     Cloud: '#14B8A6', // teal
     SRE: '#F97316', // orange
+    OS: '#22C55E', // lime
+    Framework: '#8B5CF6', // violet
+    Tooling: '#3B82F6', // blue
     Other: '#6B7280', // gray
   }
   return colorMap[category] || colorMap.Other
