@@ -8,6 +8,18 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'JP Conference History Map',
   description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
+  openGraph: {
+    title: 'JP Conference History Map',
+    description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
+    images: ['/image.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'JP Conference History Map',
+    description: '日本全国のIT技術カンファレンスの開催履歴を地図上で確認できます',
+    images: ['/image.png'],
+  },
 }
 
 export default function RootLayout({
