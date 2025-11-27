@@ -1,5 +1,14 @@
 [
   {
+    "conferenceId": "godo",
+    "name": "Get into OpenSource Hokkaido 2004",
+    "year": 2004,
+    "startDate": "2004-07-24",
+    "endDate": "2004-07-24",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2004",
     "year": 2004,
