@@ -1,5 +1,25 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2005",
+    "year": 2005,
+    "startDate": "2005-03-25",
+    "endDate": "2005-03-26",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2005/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2005 in Hokkaido",
+    "year": 2005,
+    "startDate": "2005-07-09",
+    "endDate": "2005-07-09",
+    "venueId": "hokkaido/hokkaido-university-clark-memorial-student-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2005-do/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2005",
     "year": 2005,
@@ -8,5 +28,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "http://oldwww.php.gr.jp/seminar/20050730/index.html"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2005 Tokyo/Fall",
+    "year": 2005,
+    "startDate": "2005-09-17",
+    "endDate": "2005-09-17",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2005-fall/"
   }
 ]

@@ -17,5 +17,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "http://ml.php.gr.jp/pipermail/php-users/2004-August/023502.html"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2004",
+    "year": 2004,
+    "startDate": "2004-09-04",
+    "endDate": "2004-09-04",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/pdf/OSC2004_program_170209.pdf"
   }
 ]
