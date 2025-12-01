@@ -38,5 +38,53 @@
     "lat": 33.59603173591288,
     "lng": 130.42876184171223,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "asc-bldg",
+    "name": "アスクビル",
+    "address": "福岡県福岡市博多区博多駅東１丁目１６−２５",
+    "lat": 33.5908068435845,
+    "lng": 130.42483210731774,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "fukuoka-university",
+    "name": "福岡大学",
+    "address": "福岡県福岡市城南区七隈８丁目１９",
+    "lat": 33.54789096047561,
+    "lng": 130.36398472120305,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "kyushu-sangyo-university-information-science",
+    "name": "九州産業大学",
+    "address": "福岡県福岡市東区松香台２丁目３−１",
+    "lat": 33.67137695254039,
+    "lng": 130.44635272815142,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "chikushi-jogakuen-university",
+    "name": "筑紫女学園大学",
+    "address": "福岡県太宰府市石坂２丁目１２−１",
+    "lat": 33.51376829669666,
+    "lng": 130.53806417793126,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "kyushu-computer-college-fukuoka",
+    "name": "KCS福岡情報専門学校",
+    "address": "福岡県福岡市中央区春吉１丁目１１−１８",
+    "lat": 33.58422994207748,
+    "lng": 130.4083105562926,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "fukuoka-srp-center-bldg",
+    "name": "福岡SRPセンタービル",
+    "address": "福岡県福岡市早良区百道浜２丁目１−２２",
+    "lat": 33.59334536488865,
+    "lng": 130.35691307793275,
+    "prefecture": "福岡県"
   }
 ]

@@ -1,5 +1,35 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Oita",
+    "year": 2010,
+    "startDate": "2010-01-23",
+    "endDate": "2010-01-23",
+    "venueId": "oita/oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-oita/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Tokyo/Spring",
+    "year": 2010,
+    "startDate": "2010-02-26",
+    "endDate": "2010-02-27",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Kansai@Kobe",
+    "year": 2010,
+    "startDate": "2010-03-13",
+    "endDate": "2010-03-13",
+    "venueId": "kobe-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-kobe/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2010",
     "year": 2010,
@@ -8,6 +38,46 @@
     "venueId": "osaka/osaka-industrial-creation-museum",
     "isHybrid": true,
     "eventUrl": "https://www.1x1.jp/blog/2011/04/phpcon_kansai.html"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Sendai",
+    "year": 2010,
+    "startDate": "2010-05-22",
+    "endDate": "2010-05-22",
+    "venueId": "miyagi/tohoku-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-sendai/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Hokkaido",
+    "year": 2010,
+    "startDate": "2010-06-26",
+    "endDate": "2010-06-26",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-do/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Kansai@Kyoto",
+    "year": 2010,
+    "startDate": "2010-07-09",
+    "endDate": "2010-07-10",
+    "venueId": "kyoto/kyoto-computer-gakuin-kyoto-ekimae",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-kyoto/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Nagoya",
+    "year": 2010,
+    "startDate": "2010-08-07",
+    "endDate": "2010-08-07",
+    "venueId": "aichi/nagoya-city-university-yamanohata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-nagoya/"
   },
   {
     "conferenceId": "rubykaigi",
@@ -20,6 +90,26 @@
     "eventUrl": "https://rubykaigi.org/2010/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010.Goverment",
+    "year": 2010,
+    "startDate": "2010-09-09",
+    "endDate": "2010-09-10",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-gov/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Tokyo/Fall",
+    "year": 2010,
+    "startDate": "2010-09-09",
+    "endDate": "2010-09-10",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-fall/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2010",
     "year": 2010,
@@ -28,5 +118,45 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2010/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Okinawa",
+    "year": 2010,
+    "startDate": "2010-10-02",
+    "endDate": "2010-10-02",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Niigata",
+    "year": 2010,
+    "startDate": "2010-10-23",
+    "endDate": "2010-10-23",
+    "venueId": "niigata/niigata-university-faculty-of-engineering",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-niigata/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Shimane",
+    "year": 2010,
+    "startDate": "2010-11-27",
+    "endDate": "2010-11-27",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2010 Fukuoka",
+    "year": 2010,
+    "startDate": "2010-12-11",
+    "endDate": "2010-12-11",
+    "venueId": "fukuoka/fukuoka-institute-of-technology",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2010-fukuoka/"
   }
 ]

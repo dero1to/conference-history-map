@@ -17,6 +17,7 @@ export const CategorySchema = z.enum([
   'OS',
   'Framework',
   'Tooling',
+  'General',
   'Other',
 ])
 
@@ -36,6 +37,7 @@ export const ProgrammingLanguagesSchema = z.enum([
   'Swift',
   'C#',
   'C++',
+  'Polyglot',
   'Other',
 ])
 
@@ -148,4 +150,3 @@ export const getAvailableProgrammingLanguages = (): ProgrammingLanguages[] => {
 export const getAvailablePrefectures = (): Prefectures[] => {
   return PrefecturesSchema.options
 }
-

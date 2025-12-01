@@ -1,0 +1,26 @@
+[
+  {
+    "id": "beppu-suginoi-hotel",
+    "name": "別府 杉乃井ホテル コスモス",
+    "address": "大分県別府市南立石２３１０",
+    "lat": 33.284357580325526,
+    "lng": 131.473903635213,
+    "prefecture": "大分県"
+  },
+  {
+    "id": "oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "name": "大分県消費生活・男女共同参画プラザ アイネス ",
+    "address": "大分県大分市東春日町１−１",
+    "lat": 33.23951478966833,
+    "lng": 131.60038437237807,
+    "prefecture": "大分県"
+  },
+  {
+    "id": "sophia-hall",
+    "name": "ソフィアホール",
+    "address": "大分県大分市東春日町１７−２０ 大分第2ソフィアプラザビル",
+    "lat": 33.24133243798922,
+    "lng": 131.60023208721526,
+    "prefecture": "大分県"
+  }
+]

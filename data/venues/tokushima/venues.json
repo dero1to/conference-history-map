@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tokugin-tomony-plaza",
+    "name": "とくぎんトモニプラザ",
+    "address": "徳島県徳島市寺島本町西１丁目５ アミコビル東館 9階",
+    "lat": 34.073827771407444,
+    "lng": 134.55066718164133,
+    "prefecture": "徳島県"
+  },
+  {
+    "id": "shikoku-university-attached-plaza",
+    "name": "四国大学交流プラザ",
+    "address": "徳島県徳島市寺島本町西２丁目３５−８",
+    "lat": 34.075710226603505,
+    "lng": 134.54933086629876,
+    "prefecture": "徳島県"
+  }
+]

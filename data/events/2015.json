@@ -1,5 +1,45 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Oita",
+    "year": 2015,
+    "startDate": "2015-02-07",
+    "endDate": "2015-02-07",
+    "venueId": "oita/oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-oita/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Hamanako",
+    "year": 2015,
+    "startDate": "2015-02-11",
+    "endDate": "2015-02-11",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-hamanako/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Tokyo/Spring",
+    "year": 2015,
+    "startDate": "2015-02-27",
+    "endDate": "2015-02-28",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Nagoya",
+    "year": 2015,
+    "startDate": "2015-05-22",
+    "endDate": "2015-05-23",
+    "venueId": "aichi/nagoya-international-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-nagoya/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2015",
     "year": 2015,
@@ -8,6 +48,16 @@
     "venueId": "osaka/breeze-plaza",
     "isHybrid": false,
     "eventUrl": "http://conference.kphpug.jp/2015/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Hokkaido",
+    "year": 2015,
+    "startDate": "2015-06-12",
+    "endDate": "2015-06-13",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-do/"
   },
   {
     "conferenceId": "phpcon-fukuoka",
@@ -20,6 +70,56 @@
     "eventUrl": "https://phpcon.fukuoka.jp/2015/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Okinawa",
+    "year": 2015,
+    "startDate": "2015-07-04",
+    "endDate": "2015-07-04",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Kansai@Kyoto",
+    "year": 2015,
+    "startDate": "2015-08-07",
+    "endDate": "2015-08-08",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-kyoto/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Shimane",
+    "year": 2015,
+    "startDate": "2015-08-22",
+    "endDate": "2015-08-22",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Niigata",
+    "year": 2015,
+    "startDate": "2015-09-05",
+    "endDate": "2015-09-05",
+    "venueId": "niigata/honport-niigata-city-public-library",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2015-niigata/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Hiroshima",
+    "year": 2015,
+    "startDate": "2015-09-19",
+    "endDate": "2015-09-19",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-hiroshima/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2015",
     "year": 2015,
@@ -28,6 +128,16 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2015/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Fukuoka",
+    "year": 2015,
+    "startDate": "2015-10-03",
+    "endDate": "2015-10-03",
+    "venueId": "fukuoka/kyushu-sangyo-university-information-science",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-fukuoka/"
   },
   {
     "conferenceId": "pycon-jp",
@@ -40,6 +150,16 @@
     "eventUrl": "https://pycon.jp/2015"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Tokyo/Fall",
+    "year": 2015,
+    "startDate": "2015-10-24",
+    "endDate": "2015-10-25",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-fall/"
+  },
+  {
     "conferenceId": "jsconf-japan",
     "name": "東京Node学園祭2015",
     "year": 2015,
@@ -50,6 +170,16 @@
     "eventUrl": "https://nodefest.jp/2015/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 Tokushima",
+    "year": 2015,
+    "startDate": "2015-11-14",
+    "endDate": "2015-11-14",
+    "venueId": "tokushima/tokugin-tomony-plaza",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015-tokushima/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2015",
     "year": 2015,
@@ -58,6 +188,16 @@
     "venueId": "tokyo/ap-shinagawa",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2015"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2015 .Enterprise",
+    "year": 2015,
+    "startDate": "2015-12-09",
+    "endDate": "2015-12-09",
+    "venueId": "tokyo/tkp-garden-city-shibuya",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2015.enterprise/"
   },
   {
     "conferenceId": "rubykaigi",

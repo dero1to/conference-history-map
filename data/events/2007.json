@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Tokyo/Spring",
+    "year": 2007,
+    "startDate": "2007-03-16",
+    "endDate": "2007-03-17",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-spring/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "日本Ruby会議2007",
     "year": 2007,
@@ -10,6 +20,36 @@
     "eventUrl": "https://rubykaigi.org/2007/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 .DB",
+    "year": 2007,
+    "startDate": "2007-06-23",
+    "endDate": "2007-06-23",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007.db/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Hokkaido",
+    "year": 2007,
+    "startDate": "2007-06-30",
+    "endDate": "2007-06-30",
+    "venueId": "hokkaido/hokkaido-university-conference-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-do/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Kansai",
+    "year": 2007,
+    "startDate": "2007-07-20",
+    "endDate": "2007-07-21",
+    "venueId": "kyoto/kyoto-computer-gakuin-kyoto-ekimae",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-kansai/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2007",
     "year": 2007,
@@ -18,5 +58,45 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "http://www.php.gr.jp/seminar/20070901/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Tokyo/Fall",
+    "year": 2007,
+    "startDate": "2007-10-05",
+    "endDate": "2007-10-06",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Niigata",
+    "year": 2007,
+    "startDate": "2007-10-27",
+    "endDate": "2007-10-27",
+    "venueId": "niigata/niigata-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-niigata/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Okinawa",
+    "year": 2007,
+    "startDate": "2007-11-17",
+    "endDate": "2007-11-17",
+    "venueId": "okinawa/okiden-fureai-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2007 Fukuoka",
+    "year": 2007,
+    "startDate": "2007-12-08",
+    "endDate": "2007-12-08",
+    "venueId": "fukuoka/asc-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2007-fukuoka/"
   }
 ]
