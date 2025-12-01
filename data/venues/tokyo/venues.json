@@ -366,5 +366,85 @@
     "lat": 35.698318388503544,
     "lng": 139.69809493047376,
     "prefecture": "東京都"
+  },
+  {
+    "id": "meisei-university-hino",
+    "name": "明星大学 日野キャンパス",
+    "address": "東京都日野市程久保２丁目１−１",
+    "lat": 35.64436109810478,
+    "lng": 139.40796104544364,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ntt-data-toyosu",
+    "name": "NTTデータ 豊洲センタービル",
+    "address": "東京都江東区豊洲３丁目３−３ 豊洲センタービル",
+    "lat": 35.656120182700725,
+    "lng": 139.7969578129095,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "oracle-aoyama-center",
+    "name": "オラクル青山センター",
+    "address": "東京都港区北青山２丁目５−８",
+    "lat": 35.67137681025917,
+    "lng": 139.719603595169,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "hosei-ichigaya-sotobori",
+    "name": "法政大学 市ヶ谷キャンパス 外濠校舎",
+    "address": "東京都港区北青山２丁目５−８",
+    "lat": 35.69626242506721,
+    "lng": 139.741876280377,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "neec-kamata",
+    "name": "日本工学院専門学校 蒲田キャンパス",
+    "address": "東京都大田区西蒲田５丁目２４番地1",
+    "lat": 35.56460035746159,
+    "lng": 139.7171963724281,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "microsoft-japan-shinagawa",
+    "name": "日本マイクロソフト株式会社 品川本社",
+    "address": "東京都港区港南２丁目１６−３ 品川グランドセントラルタワー",
+    "lat": 35.627188065380345,
+    "lng": 139.74146756633274,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tkp-garden-city-shibuya",
+    "name": "TKPガーデンシティ渋谷",
+    "address": "東京都渋谷区渋谷２丁目２２−３ 渋谷東口ビル",
+    "lat": 35.658798616998475,
+    "lng": 139.70476654359484,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ap-shibuyadougenzaka",
+    "name": "AP渋谷道玄坂渋東シネタワー",
+    "address": "東京都渋谷区道玄坂２丁目６−１７ 渋東シネタワー",
+    "lat": 35.65930878153863,
+    "lng": 139.6995872012657,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tokyo-metropolitan-industrial-trade-center-taito",
+    "name": "東京都立産業貿易センター 台東館",
+    "address": "東京都台東区花川戸２丁目６−５",
+    "lat": 35.71466123945589,
+    "lng": 139.7996381049652,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "komazawa-university-komazawa",
+    "name": "駒澤大学 駒沢キャンパス",
+    "address": "東京都世田谷区駒沢１丁目２３",
+    "lat": 35.62813493879847,
+    "lng": 139.65889526675753,
+    "prefecture": "東京都"
   }
 ]

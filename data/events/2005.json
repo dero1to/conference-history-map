@@ -38,5 +38,15 @@
     "venueId": "tokyo/japan-electronics-college",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2005-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2005 Okinawa",
+    "year": 2005,
+    "startDate": "2005-11-19",
+    "endDate": "2005-11-19",
+    "venueId": "okinawa/okiden-fureai-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2005-okinawa/"
   }
 ]
