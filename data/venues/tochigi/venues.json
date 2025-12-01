@@ -1,0 +1,26 @@
+[
+  {
+    "id": "higashi-nasuno-community-center",
+    "name": "東那須野公民館",
+    "address": "栃木県那須塩原市東小屋４７４−１１",
+    "lat": 36.93054506354197,
+    "lng": 140.0250911454724,
+    "prefecture": "栃木県"
+  },
+  {
+    "id": "nishi-nasuno-community-center",
+    "name": "西那須野公民館",
+    "address": "栃木県那須塩原市太夫塚１丁目１９４−７８",
+    "lat": 36.884770742028294,
+    "lng": 139.97750081663568,
+    "prefecture": "栃木県"
+  },
+  {
+    "id": "nasunogahara-harmony-hall",
+    "name": "那須野が原ハーモニーホール",
+    "address": "栃木県大田原市本町１丁目２７０３−６",
+    "lat": 36.87266199302521,
+    "lng": 140.00823112809155,
+    "prefecture": "栃木県"
+  }
+]

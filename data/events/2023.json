@@ -20,6 +20,26 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog51/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Rubyist会議03",
+    "year": 2023,
+    "startDate": "2023-02-18",
+    "endDate": "2023-02-18",
+    "venueId": "fukuoka/reference-ekihigashi-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/fukuoka03/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "鹿児島Ruby会議02",
+    "year": 2023,
+    "startDate": "2023-03-04",
+    "endDate": "2023-03-04",
+    "venueId": "kagoshima/mark-meizan",
+    "isHybrid": false,
+    "eventUrl": "https://k-ruby.com/kagoshima-rubykaigi02/"
+  },
+  {
     "conferenceId": "yapc",
     "name": "YAPC::Kyoto 2023",
     "year": 2023,
@@ -110,6 +130,16 @@
     "eventUrl": "https://event.ospn.jp/osc2023-do/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議14",
+    "year": 2023,
+    "startDate": "2023-06-29",
+    "endDate": "2023-06-29",
+    "venueId": "tokyo/speee-inc-roppongi-ground-tower",
+    "isHybrid": false,
+    "eventUrl": "https://tokyurubykaigi.github.io/tokyu14/"
+  },
+  {
     "conferenceId": "janog",
     "name": "JANOG52 ミーティング",
     "year": 2023,
@@ -160,6 +190,16 @@
     "eventUrl": "https://event.ospn.jp/odc2023/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大阪Ruby会議03",
+    "year": 2023,
+    "startDate": "2023-09-09",
+    "endDate": "2023-09-09",
+    "venueId": "osaka/hearton-hotel-shinsaibashi-annex",
+    "isHybrid": false,
+    "eventUrl": "https://rubykansai.github.io/osaka03/"
+  },
+  {
     "conferenceId": "phpcon-okinawa",
     "name": "PHPカンファレンス沖縄 2023",
     "year": 2023,
@@ -168,6 +208,16 @@
     "venueId": "okinawa/ryukyu-university",
     "isHybrid": true,
     "eventUrl": "https://phpcon.okinawa.jp/2023/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議10",
+    "year": 2023,
+    "startDate": "2023-09-16",
+    "endDate": "2023-09-16",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk10/"
   },
   {
     "conferenceId": "sre-next",
@@ -188,6 +238,16 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2023/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議10",
+    "year": 2023,
+    "startDate": "2023-10-15",
+    "endDate": "2023-10-15",
+    "venueId": "tokyo/asakusa-kaminari-5656-kaikan-tokiwa-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo10"
   },
   {
     "conferenceId": "rust-tokyo",

@@ -14,5 +14,29 @@
     "lat": 35.5070227,
     "lng": 139.6768967,
     "prefecture": "神奈川県"
+  },
+  {
+    "id": "kanagawa-prefectural-archives",
+    "name": "神奈川県立公文書館",
+    "address": "神奈川県横浜市旭区中尾１丁目６−１",
+    "lat": 35.466025836827285,
+    "lng": 139.52149326484687,
+    "prefecture": "神奈川県"
+  },
+  {
+    "id": "ntt-at-presentation-room",
+    "name": "NTT-ATプレゼンルーム",
+    "address": "神奈川県川崎市幸区大宮町１３１０ ミューザ川崎セントラルタワー",
+    "lat": 35.53108377787382,
+    "lng": 139.69519293046625,
+    "prefecture": "神奈川県"
+  },
+  {
+    "id": "kawasaki-city-education-and-culture-hall",
+    "name": "川崎市教育文化会館",
+    "address": "神奈川県川崎市川崎区富士見２丁目１−３",
+    "lat": 35.52895160582555,
+    "lng": 139.7087356931314,
+    "prefecture": "神奈川県"
   }
 ]

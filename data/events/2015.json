@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "神奈川Ruby会議01",
+    "year": 2015,
+    "startDate": "2015-01-17",
+    "endDate": "2015-01-17",
+    "venueId": "kanagawa/ntt-at-presentation-room",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kana01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2015 Oita",
     "year": 2015,
@@ -28,6 +38,16 @@
     "venueId": "tokyo/meisei-university-hino",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2015-spring/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "浜松Ruby会議01",
+    "year": 2015,
+    "startDate": "2015-03-28",
+    "endDate": "2015-03-28",
+    "venueId": "shizuoka/act-city-hamamatsu-congress-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/hamamatsu01"
   },
   {
     "conferenceId": "osc",
@@ -60,6 +80,16 @@
     "eventUrl": "https://www.ospn.jp/osc2015-do/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議06",
+    "year": 2015,
+    "startDate": "2015-06-20",
+    "endDate": "2015-06-20",
+    "venueId": "tochigi/higashi-nasuno-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi06"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2015",
     "year": 2015,
@@ -78,6 +108,16 @@
     "venueId": "okinawa/okinawa-convention-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2015-okinawa/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議06",
+    "year": 2015,
+    "startDate": "2015-07-11",
+    "endDate": "2015-07-11",
+    "venueId": "osaka/motex-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai06"
   },
   {
     "conferenceId": "osc",
@@ -100,6 +140,16 @@
     "eventUrl": "https://www.ospn.jp/osc2015-shimane/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議09",
+    "year": 2015,
+    "startDate": "2015-08-29",
+    "endDate": "2015-08-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu09"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2015 Niigata",
     "year": 2015,
@@ -118,6 +168,16 @@
     "venueId": "hiroshima/satellite-campus-hiroshima",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2015-hiroshima/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議07",
+    "year": 2015,
+    "startDate": "2015-09-26",
+    "endDate": "2015-09-26",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk07/"
   },
   {
     "conferenceId": "phpcon",
@@ -168,6 +228,16 @@
     "venueId": "tokyo/cyberagent-mark-city-co-ltd",
     "isHybrid": true,
     "eventUrl": "https://nodefest.jp/2015/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議05",
+    "year": 2015,
+    "startDate": "2015-11-08",
+    "endDate": "2015-11-08",
+    "venueId": "tokyo/ap-tokyo-yaesu",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo05"
   },
   {
     "conferenceId": "osc",

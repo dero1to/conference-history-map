@@ -10,6 +10,26 @@
     "eventUrl": "https://www.ospn.jp/osc2009-sendai/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "仙台Ruby会議01",
+    "year": 2009,
+    "startDate": "2009-01-24",
+    "endDate": "2009-01-24",
+    "venueId": "miyagi/tohoku-computer-college",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/sendai01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議01",
+    "year": 2009,
+    "startDate": "2009-02-02",
+    "endDate": "2009-02-02",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/matsue01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2009 Tokyo/Spring",
     "year": 2009,
@@ -18,6 +38,26 @@
     "venueId": "tokyo/japan-electronics-college",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2009-spring/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議01",
+    "year": 2009,
+    "startDate": "2009-02-21",
+    "endDate": "2009-02-21",
+    "venueId": "tochigi/higashi-nasuno-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "広島Ruby会議01",
+    "year": 2009,
+    "startDate": "2009-03-11",
+    "endDate": "2009-03-11",
+    "venueId": "hiroshima/hacchobori-chanter",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/hiroshima01"
   },
   {
     "conferenceId": "osc",
@@ -110,6 +150,26 @@
     "eventUrl": "https://www.ospn.jp/osc2009-okinawa/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議01",
+    "year": 2009,
+    "startDate": "2009-10-10",
+    "endDate": "2009-10-10",
+    "venueId": "aichi/winc-aichi",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議02",
+    "year": 2009,
+    "startDate": "2009-10-24",
+    "endDate": "2009-10-24",
+    "venueId": "tochigi/nishi-nasuno-community-center",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi02"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2009 Tokyo/Fall",
     "year": 2009,
@@ -118,6 +178,16 @@
     "venueId": "tokyo/neec-kamata",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2009-fall/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議02",
+    "year": 2009,
+    "startDate": "2009-11-06",
+    "endDate": "2009-11-07",
+    "venueId": "osaka/asia-and-pacific-trade-center-itm",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai02"
   },
   {
     "conferenceId": "osc",
@@ -130,6 +200,16 @@
     "eventUrl": "https://www.ospn.jp/osc2009-kochi/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議01",
+    "year": 2009,
+    "startDate": "2009-11-29",
+    "endDate": "2009-11-29",
+    "venueId": "tokyo/omori-higashi-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2009 Fukuoka",
     "year": 2009,
@@ -138,5 +218,15 @@
     "venueId": "fukuoka/kyushu-sangyo-university-information-science",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2009-fukuoka/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "札幌Ruby会議02",
+    "year": 2009,
+    "startDate": "2009-12-05",
+    "endDate": "2009-12-05",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/sapporo02"
   }
 ]

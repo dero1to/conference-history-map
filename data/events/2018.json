@@ -60,6 +60,16 @@
     "eventUrl": "https://phperkaigi.jp/2018/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "沖縄Ruby会議02",
+    "year": 2018,
+    "startDate": "2018-03-10",
+    "endDate": "2018-03-10",
+    "venueId": "okinawa/ryukyu-university",
+    "isHybrid": false,
+    "eventUrl": "http://ruby.okinawa/okrk02/"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2018 Nagoya",
     "year": 2018,
@@ -100,6 +110,16 @@
     "eventUrl": "https://www.ospn.jp/osc2018-okinawa/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議09",
+    "year": 2018,
+    "startDate": "2018-06-30",
+    "endDate": "2018-06-30",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": false,
+    "eventUrl": "https://matsue.rubyist.net/matrk09/"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2018 Hokkaido",
     "year": 2018,
@@ -130,6 +150,26 @@
     "eventUrl": "https://2018.kphpug.jp/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大阪Ruby会議01",
+    "year": 2018,
+    "startDate": "2018-07-21",
+    "endDate": "2018-07-21",
+    "venueId": "osaka/osaka-science-and-technology-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/osaka01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議12",
+    "year": 2018,
+    "startDate": "2018-07-29",
+    "endDate": "2018-07-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu12"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2018 Kyoto",
     "year": 2018,
@@ -148,6 +188,16 @@
     "venueId": "tokyo/neec-kamata",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/odc2018/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議07",
+    "year": 2018,
+    "startDate": "2018-09-15",
+    "endDate": "2018-09-15",
+    "venueId": "tokyo/asakusa-kaminari-5656-kaikan-tokiwa-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo07"
   },
   {
     "conferenceId": "pycon-jp",

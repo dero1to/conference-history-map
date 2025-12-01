@@ -102,5 +102,29 @@
     "lat": 43.07081587136116,
     "lng": 141.3475373517194,
     "prefecture": "北海道"
+  },
+  {
+    "id": "hokkaido-information-uiversity-sapporo-satellite",
+    "name": "北海道情報大学札幌サテライト",
+    "address": "北海道札幌市中央区北３条西７丁目 ４階 1-1",
+    "lat": 43.064153438858206,
+    "lng": 141.34603980329373,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "media-mix-hall",
+    "name": "メディアMIXホール",
+    "address": "北海道札幌市白石区菊水１条３丁目１−５",
+    "lat": 43.054773023249666,
+    "lng": 141.37185391178872,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "hokkaido-citizens-activities-center-kaderu-2-7",
+    "name": "北海道立道民活動センター かでる2・7",
+    "address": "北海道札幌市中央区北２条西７丁目 道民活動センタービル",
+    "lat": 43.063478304375096,
+    "lng": 141.34631613562013,
+    "prefecture": "北海道"
   }
 ]

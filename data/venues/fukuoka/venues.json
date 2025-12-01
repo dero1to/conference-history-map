@@ -86,5 +86,37 @@
     "lat": 33.59334536488865,
     "lng": 130.35691307793275,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "guild-cafe-costa",
+    "name": "GuildCafe Costa",
+    "address": "福岡県福岡市中央区大名１丁目１０−１４ MATCH 2F",
+    "lat": 33.58683211202142,
+    "lng": 130.39380490104273,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "bayern-fukuoka",
+    "name": "バイエルン福岡",
+    "address": "福岡県福岡市中央区今川２丁目１４−３",
+    "lat": 33.58506354563262,
+    "lng": 130.36780939200932,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "fukuoka-growth-next",
+    "name": "Fukuoka Growth Next",
+    "address": "福岡県福岡市中央区大名２丁目６−１１",
+    "lat": 33.58910159698012,
+    "lng": 130.39568906056274,
+    "prefecture": "福岡県"
+  },
+  {
+    "id": "reference-ekihigashi-bldg",
+    "name": "リファレンス駅東ビル貸会議室",
+    "address": "福岡県福岡市博多区博多駅東１丁目１６−１４",
+    "lat": 33.5913305309336,
+    "lng": 130.42565544522063,
+    "prefecture": "福岡県"
   }
 ]

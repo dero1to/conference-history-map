@@ -40,6 +40,16 @@
     "eventUrl": "https://phperkaigi.jp/2020/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議08",
+    "year": 2020,
+    "startDate": "2020-02-11",
+    "endDate": "2020-02-11",
+    "venueId": "tokyo/asakusa-kaminari-5656-kaikan-tokiwa-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo08"
+  },
+  {
     "conferenceId": "object-oriented-con",
     "name": "Object-Oriented Conference 2020",
     "year": 2020,
@@ -48,6 +58,16 @@
     "venueId": "tokyo/ocha-no-mizu-joshi-daigaku",
     "isHybrid": false,
     "eventUrl": "https://ooc.dev/2020/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議09",
+    "year": 2020,
+    "startDate": "2020-09-12",
+    "endDate": "2020-09-12",
+    "venueId": "tochigi/nasunogahara-harmony-hall",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi09"
   },
   {
     "conferenceId": "postgresql-conference",

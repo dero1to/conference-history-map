@@ -30,5 +30,13 @@
     "lat": 36.69561405605554,
     "lng": 137.21240771516648,
     "prefecture": "富山県"
+  },
+  {
+    "id": "toyama-international-conference-center-otemachi-forum",
+    "name": "富山国際会議場 大手町フォーラム",
+    "address": "富山県富山市大手町１−２",
+    "lat": 36.691612241368524,
+    "lng": 137.21182448254478,
+    "prefecture": "富山県"
   }
 ]

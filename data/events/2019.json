@@ -110,6 +110,16 @@
     "eventUrl": "https://www.ospn.jp/osc2019-do/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議04",
+    "year": 2019,
+    "startDate": "2019-06-08",
+    "endDate": "2019-06-08",
+    "venueId": "aichi/osu-engeijo-theater",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya04"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2019",
     "year": 2019,
@@ -118,6 +128,36 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2019/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議13",
+    "year": 2019,
+    "startDate": "2019-06-29",
+    "endDate": "2019-06-29",
+    "venueId": "tokyo/speee-inc-roppongi-kurosaki",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu13"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議08",
+    "year": 2019,
+    "startDate": "2019-06-29",
+    "endDate": "2019-06-29",
+    "venueId": "tochigi/nasunogahara-harmony-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi08"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TamaRuby会議01",
+    "year": 2019,
+    "startDate": "2019-07-06",
+    "endDate": "2019-07-06",
+    "venueId": "tokyo/gmo-yours-cerulean",
+    "isHybrid": false,
+    "eventUrl": "https://tama-rb.github.io/tamarubykaigi01/"
   },
   {
     "conferenceId": "osc",
@@ -190,6 +230,16 @@
     "eventUrl": "https://www.ospn.jp/osc2019-hiroshima/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大阪Ruby会議02",
+    "year": 2019,
+    "startDate": "2019-09-15",
+    "endDate": "2019-09-15",
+    "venueId": "osaka/osaka-science-and-technology-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/osaka02"
+  },
+  {
     "conferenceId": "phpcon-hokkaido",
     "name": "PHPカンファレンス北海道 2019",
     "year": 2019,
@@ -260,6 +310,16 @@
     "eventUrl": "https://rust.tokyo/2019"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "富山Ruby会議01",
+    "year": 2019,
+    "startDate": "2019-11-03",
+    "endDate": "2019-11-03",
+    "venueId": "toyama/toyama-international-conference-center-otemachi-forum",
+    "isHybrid": false,
+    "eventUrl": "https://toyamarb.github.io/toyama-rubykaigi01/"
+  },
+  {
     "conferenceId": "cakefest",
     "name": "CakeFest Tokyo 2019",
     "year": 2019,
@@ -320,6 +380,16 @@
     "eventUrl": "https://jsconf.jp/2019/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "鹿児島Ruby会議01",
+    "year": 2019,
+    "startDate": "2019-11-30",
+    "endDate": "2019-11-30",
+    "venueId": "kagoshima/mark-meizan",
+    "isHybrid": false,
+    "eventUrl": "https://k-ruby.github.io/kagoshima-rubykaigi01/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2019",
     "year": 2019,
@@ -328,5 +398,15 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2019/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "平成Ruby会議01",
+    "year": 2019,
+    "startDate": "2019-12-14",
+    "endDate": "2019-12-14",
+    "venueId": "tokyo/drecom-meguro",
+    "isHybrid": false,
+    "eventUrl": "https://heiseirb.github.io/kaigi01/"
   }
 ]

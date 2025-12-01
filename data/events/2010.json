@@ -10,6 +10,16 @@
     "eventUrl": "https://www.ospn.jp/osc2010-oita/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議02",
+    "year": 2010,
+    "startDate": "2010-02-13",
+    "endDate": "2010-02-13",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/matsue02"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2010 Tokyo/Spring",
     "year": 2010,
@@ -20,6 +30,16 @@
     "eventUrl": "https://www.ospn.jp/osc2010-spring/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議03",
+    "year": 2010,
+    "startDate": "2010-02-28",
+    "endDate": "2010-02-28",
+    "venueId": "tokyo/oracle-aoyama-center",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo03"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2010 Kansai@Kobe",
     "year": 2010,
@@ -28,6 +48,16 @@
     "venueId": "kobe-industrial-promotion-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2010-kobe/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "仙台Ruby会議02",
+    "year": 2010,
+    "startDate": "2010-03-20",
+    "endDate": "2010-03-20",
+    "venueId": "miyagi/el-solar-sendai",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/sendai02"
   },
   {
     "conferenceId": "phpcon-kansai",
@@ -48,6 +78,16 @@
     "venueId": "miyagi/tohoku-computer-college",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2010-sendai/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議02",
+    "year": 2010,
+    "startDate": "2010-05-29",
+    "endDate": "2010-05-29",
+    "venueId": "tokyo/omori-higashi-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu02"
   },
   {
     "conferenceId": "osc",
@@ -140,6 +180,16 @@
     "eventUrl": "https://www.ospn.jp/osc2010-niigata/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議03",
+    "year": 2010,
+    "startDate": "2010-11-05",
+    "endDate": "2010-11-06",
+    "venueId": "osaka/asia-and-pacific-trade-center-itm",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai03"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2010 Shimane",
     "year": 2010,
@@ -148,6 +198,16 @@
     "venueId": "shimane/matsue-terrsa",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2010-shimane/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "札幌Ruby会議03",
+    "year": 2010,
+    "startDate": "2010-12-04",
+    "endDate": "2010-12-04",
+    "venueId": "sapporo/media-mix-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/sapporo03"
   },
   {
     "conferenceId": "osc",

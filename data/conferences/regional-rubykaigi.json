@@ -1,0 +1,12 @@
+{
+  "id": "regional-rubykaigi",
+  "name": "地域Ruby会議",
+  "category": [
+    "Web",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "Ruby"
+  ],
+  "website": "https://regional.rubykaigi.org/"
+}

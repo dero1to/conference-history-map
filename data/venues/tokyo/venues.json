@@ -216,6 +216,14 @@
     "prefecture": "東京都"
   },
   {
+    "id": "gmo-yours-cerulean",
+    "name": "GMO Yours (セルリアンタワー)",
+    "address": "東京都渋谷区桜丘町２６−１",
+    "lat": 35.65649865403287,
+    "lng": 139.69983957969103,
+    "prefecture": "東京都"
+  },
+  {
     "id": "gmo-yoursfukuras",
     "name": "GMO Yours・フクラス",
     "address": "東京都渋谷区道玄坂1丁目2番3号",
@@ -293,6 +301,14 @@
     "address": "東京都新宿区北新宿2-21-1",
     "lat": 35.6960397,
     "lng": 139.6893766,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "nifty-omori",
+    "name": "ニフティ株式会社 本社(大森ベルポートA館)",
+    "address": "東京都品川区南大井６丁目２６−１ 大森ベルポート A館",
+    "lat": 35.58827659532674,
+    "lng": 139.73255334146907,
     "prefecture": "東京都"
   },
   {
@@ -445,6 +461,102 @@
     "address": "東京都世田谷区駒沢１丁目２３",
     "lat": 35.62813493879847,
     "lng": 139.65889526675753,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "omori-higashi-community-center",
+    "name": "大森東地域センター",
+    "address": "東京都大田区大森東１丁目３１−３",
+    "lat": 35.57632066093392,
+    "lng": 139.73954384734904,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "voyage-group",
+    "name": "VOYAGE GROUP",
+    "address": "東京都渋谷区神泉町８−１６ 渋谷ファーストプレイス",
+    "lat": 35.65528102217914,
+    "lng": 139.69373576035866,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "fukagawa-edo-museum",
+    "name": "深川江戸資料館",
+    "address": "東京都江東区白河１丁目３−２８",
+    "lat": 35.68136888235664,
+    "lng": 139.80139676060145,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "edo-tokyo-museum",
+    "name": "江戸東京博物館",
+    "address": "東京都墨田区横網１丁目４−１",
+    "lat": 35.696605885553446,
+    "lng": 139.79688158333863,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "shidax-culture-hall",
+    "name": "シダックス カルチャーホール",
+    "address": "東京都渋谷区神南１丁目１２−１０ シダックスカルチャービレッジ",
+    "lat": 35.6635231893697,
+    "lng": 139.70153282621914,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "akihabara-convention-hall",
+    "name": "秋葉原コンベンションホール",
+    "address": "東京都千代田区外神田１丁目１８−１３ 秋葉原ダイビル",
+    "lat": 35.69928508760959,
+    "lng": 139.7716716040352,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ochanomizu-solacity-conference-center",
+    "name": "御茶ノ水ソラシティカンファレンスセンター",
+    "address": "東京都千代田区神田駿河台４丁目６",
+    "lat": 35.69882106803493,
+    "lng": 139.7672646397135,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "minna-no-wedding-ginza",
+    "name": "みんなのウェディング (銀座松竹スクエア)",
+    "address": "東京都中央区築地1-13-1 銀座松竹スクエア",
+    "lat": 35.668468917913465,
+    "lng": 139.77006815690353,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "asakusa-kaminari-5656-kaikan-tokiwa-hall",
+    "name": "浅草 雷5656会館 ときわホール",
+    "address": "東京都台東区浅草３丁目６−１",
+    "lat": 35.71689403348615,
+    "lng": 139.79666114156223,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "speee-inc-roppongi-kurosaki",
+    "name": "株式会社Speee (黒崎ビル)",
+    "address": "東京都港区六本木４丁目１−４",
+    "lat": 35.66563903602599,
+    "lng": 139.73645086669936,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "speee-inc-roppongi-ground-tower",
+    "name": "株式会社Speee (六本木グランドタワー)",
+    "address": "東京都港区六本木３丁目２−１",
+    "lat": 35.66469147135843,
+    "lng": 139.7383354973836,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "drecom-meguro",
+    "name": "株式会社ドリコム(目黒)",
+    "address": "東京都目黒区下目黒１丁目８−１",
+    "lat": 35.63159040499405,
+    "lng": 139.71411018929322,
     "prefecture": "東京都"
   }
 ]

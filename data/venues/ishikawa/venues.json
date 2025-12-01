@@ -14,5 +14,13 @@
     "lat": 36.5664703,
     "lng": 136.6519117,
     "prefecture": "石川県"
+  },
+  {
+    "id": "ishikawa-prefectural-library",
+    "name": "石川県立図書館",
+    "address": "石川県金沢市小立野２丁目４３−１",
+    "lat": 36.54888278622779,
+    "lng": 136.681319828085,
+    "prefecture": "石川県"
   }
 ]

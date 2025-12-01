@@ -6,5 +6,13 @@
     "lat": 36.32311879000222,
     "lng": 139.01460957429435,
     "prefecture": "群馬県"
+  },
+  {
+    "id": "takasaki-city-comprehensive-welfare-center",
+    "name": "高崎市総合福祉センター",
+    "address": "群馬県高崎市末広町１１５−１",
+    "lat": 36.3373689147989,
+    "lng": 139.01013301588387,
+    "prefecture": "群馬県"
   }
 ]

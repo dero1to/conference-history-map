@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "札幌市中央区Ruby会議01",
+    "year": 2014,
+    "startDate": "2014-02-08",
+    "endDate": "2014-02-08",
+    "venueId": "hokkaido/hokkaido-citizens-activities-center-kaderu-2-7",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/chuork01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2014 Tokyo/Spring",
     "year": 2014,
@@ -10,6 +20,26 @@
     "eventUrl": "https://www.ospn.jp/osc2014-spring/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "沖縄Ruby会議01",
+    "year": 2014,
+    "startDate": "2014-03-01",
+    "endDate": "2014-03-01",
+    "venueId": "okinawa/ryukyu-university",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/okrk01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議05",
+    "year": 2014,
+    "startDate": "2014-03-15",
+    "endDate": "2014-03-15",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": true,
+    "eventUrl": "http://matsue.rubyist.net/matrk05/"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2014 Hamanako",
     "year": 2014,
@@ -18,6 +48,26 @@
     "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2014-hamanako/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議07",
+    "year": 2014,
+    "startDate": "2014-03-29",
+    "endDate": "2014-03-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu07"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議04",
+    "year": 2014,
+    "startDate": "2014-04-19",
+    "endDate": "2014-04-19",
+    "venueId": "tokyo/edo-tokyo-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo04"
   },
   {
     "conferenceId": "osc",
@@ -130,6 +180,16 @@
     "eventUrl": "https://www.ospn.jp/osc2014-fall/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "渋谷Ruby会議01",
+    "year": 2014,
+    "startDate": "2014-11-01",
+    "endDate": "2014-11-01",
+    "venueId": "tokyo/shidax-culture-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/shibuya01"
+  },
+  {
     "conferenceId": "jsconf-japan",
     "name": "東京Node学園祭2014",
     "year": 2014,
@@ -150,6 +210,16 @@
     "eventUrl": "https://www.ospn.jp/osc2014-fukuoka/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議08",
+    "year": 2014,
+    "startDate": "2014-11-29",
+    "endDate": "2014-11-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu08"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2014",
     "year": 2014,
@@ -168,5 +238,15 @@
     "venueId": "tokyo/tkp-garden-city-shibuya",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2014.enterprise/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議06",
+    "year": 2014,
+    "startDate": "2014-12-20",
+    "endDate": "2014-12-20",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk06/"
   }
 ]

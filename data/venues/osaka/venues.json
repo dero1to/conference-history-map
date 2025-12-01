@@ -30,5 +30,53 @@
     "lat": 34.684853,
     "lng": 135.5111489,
     "prefecture": "大阪府"
+  },
+  {
+    "id": "asia-and-pacific-trade-center-itm",
+    "name": "大阪南港ATC ITM棟",
+    "address": "大阪府大阪市住之江区南港北２丁目１−１０",
+    "lat": 34.638170180740666,
+    "lng": 135.4112659370742,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "tis-inc-osaka-head-office",
+    "name": "TIS大阪本社",
+    "address": "〒530-0004 大阪府大阪市北区堂島浜１丁目２−１ 新ダイビル",
+    "lat": 34.69564740510554,
+    "lng": 135.4998369029115,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "motex-hall",
+    "name": "エムオーテックスホール",
+    "address": "大阪府大阪市淀川区西中島５丁目１２−１２ エムオーテックス新大阪ビル",
+    "lat": 34.72954334558818,
+    "lng": 135.49977540716165,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "osaka-science-and-technology-center",
+    "name": "大阪科学技術センター",
+    "address": "大阪府大阪市西区靱本町１丁目８−４",
+    "lat": 34.68665449766522,
+    "lng": 135.49593024192615,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "hearton-hotel-shinsaibashi-annex",
+    "name": "ハートンホテル心斎橋別館",
+    "address": "大阪府大阪市中央区西心斎橋１丁目４-１３竹山ビル",
+    "lat": 34.672895771127244,
+    "lng": 135.50000777237685,
+    "prefecture": "大阪府"
+  },
+  {
+    "id": "nakanoshima-kaikan-festival-city-conference-center",
+    "name": "中之島会館",
+    "address": "大阪府大阪市北区中之島３丁目２−４ 中之島フェスティバルタワー・ウエスト",
+    "lat": 34.693598842316916,
+    "lng": 135.49591929181918,
+    "prefecture": "大阪府"
   }
 ]

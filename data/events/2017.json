@@ -30,6 +30,16 @@
     "eventUrl": "https://toyama-eng.connpass.com/event/45745/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議03",
+    "year": 2017,
+    "startDate": "2017-02-11",
+    "endDate": "2017-02-11",
+    "venueId": "aichi/osu-engeijo-theater",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya03"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2017 Hamanako",
     "year": 2017,
@@ -50,6 +60,16 @@
     "eventUrl": "https://www.ospn.jp/osc2017-spring/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議06",
+    "year": 2017,
+    "startDate": "2017-03-20",
+    "endDate": "2017-03-20",
+    "venueId": "tokyo/ochanomizu-solacity-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo06"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2017 Nagoya",
     "year": 2017,
@@ -58,6 +78,16 @@
     "venueId": "aichi/nagoya-trade-and-industry-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2017-nagoya/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議2017",
+    "year": 2017,
+    "startDate": "2017-05-27",
+    "endDate": "2017-05-27",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai2017"
   },
   {
     "conferenceId": "phpcon-fukuoka",
@@ -110,6 +140,16 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog40/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議11",
+    "year": 2017,
+    "startDate": "2017-07-29",
+    "endDate": "2017-07-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu11"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2017 Kyoto",
     "year": 2017,
@@ -120,6 +160,16 @@
     "eventUrl": "https://www.ospn.jp/osc2017-kyoto/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "ぎんざRuby会議01",
+    "year": 2017,
+    "startDate": "2017-08-05",
+    "endDate": "2017-08-05",
+    "venueId": "tokyo/minna-no-wedding-ginza",
+    "isHybrid": false,
+    "eventUrl": "https://ginzarb.github.io//kaigi01/"
+  },
+  {
     "conferenceId": "odc",
     "name": "オープンデベロッパーズカンファレンス 2017 Tokyo",
     "year": 2017,
@@ -128,6 +178,16 @@
     "venueId": "tokyo/neec-kamata",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/odc2017/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議07",
+    "year": 2017,
+    "startDate": "2017-08-26",
+    "endDate": "2017-08-26",
+    "venueId": "tochigi/nasunogahara-harmony-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi07"
   },
   {
     "conferenceId": "osc",
@@ -228,6 +288,16 @@
     "venueId": "tokyo/hosei-university-fujimi-gate",
     "isHybrid": false,
     "eventUrl": "https://nodefest.jp/2017/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Ruby会議02",
+    "year": 2017,
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-25",
+    "venueId": "fukuoka/fukuoka-growth-next",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/fukuoka02"
   },
   {
     "conferenceId": "osc",

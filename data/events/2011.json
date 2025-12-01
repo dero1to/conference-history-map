@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議05",
+    "year": 2011,
+    "startDate": "2011-02-04",
+    "endDate": "2011-02-04",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo05"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2011 Kagawa",
     "year": 2011,
@@ -8,6 +18,26 @@
     "venueId": "tokyo/sunport-hall-takamatsu",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2011-kagawa/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議03",
+    "year": 2011,
+    "startDate": "2011-02-26",
+    "endDate": "2011-02-26",
+    "venueId": "tochigi/nishi-nasuno-community-center",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi03"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議02",
+    "year": 2011,
+    "startDate": "2011-02-26",
+    "endDate": "2011-02-26",
+    "venueId": "aichi/trident-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya02"
   },
   {
     "conferenceId": "osc",
@@ -50,6 +80,16 @@
     "eventUrl": "http://conference.kphpug.jp/2011/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議01",
+    "year": 2011,
+    "startDate": "2011-04-10",
+    "endDate": "2011-04-10",
+    "venueId": "tokyo/fukagawa-edo-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2011 Kobe",
     "year": 2011,
@@ -80,6 +120,16 @@
     "eventUrl": "https://www.ospn.jp/osc2011-sendai/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議03",
+    "year": 2011,
+    "startDate": "2011-05-29",
+    "endDate": "2011-05-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu03"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2011 Hokkaido",
     "year": 2011,
@@ -98,6 +148,16 @@
     "venueId": "tokyo/nerima-cultural-center",
     "isHybrid": true,
     "eventUrl": "https://rubykaigi.org/2011/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議03",
+    "year": 2011,
+    "startDate": "2011-07-03",
+    "endDate": "2011-07-03",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/matsue03"
   },
   {
     "conferenceId": "osc",
@@ -170,6 +230,16 @@
     "eventUrl": "https://nodefest.jp/2011/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議04",
+    "year": 2011,
+    "startDate": "2011-10-29",
+    "endDate": "2011-10-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu04"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2011 .DB",
     "year": 2011,
@@ -178,6 +248,16 @@
     "venueId": "tokyo/oracle-aoyama-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2011.db/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議04",
+    "year": 2011,
+    "startDate": "2011-11-11",
+    "endDate": "2011-11-12",
+    "venueId": "osaka/asia-and-pacific-trade-center-itm",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai04"
   },
   {
     "conferenceId": "osc",
@@ -208,5 +288,15 @@
     "venueId": "fukuoka/chikushi-jogakuen-university",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2011-fukuoka/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議04",
+    "year": 2011,
+    "startDate": "2011-12-03",
+    "endDate": "2011-12-03",
+    "venueId": "tochigi/higashi-nasuno-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi04"
   }
 ]

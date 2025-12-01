@@ -60,6 +60,16 @@
     "eventUrl": "http://conference.kphpug.jp/2012/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "みなとRuby会議01",
+    "year": 2012,
+    "startDate": "2012-06-02",
+    "endDate": "2012-06-02",
+    "venueId": "kanagawa/kanagawa-prefectural-archives",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/minato01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2012 Hokkaido",
     "year": 2012,
@@ -68,6 +78,16 @@
     "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2012-do/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "岡山Ruby会議01",
+    "year": 2012,
+    "startDate": "2012-07-07",
+    "endDate": "2012-07-07",
+    "venueId": "okayama/okayama-international-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/okayama01"
   },
   {
     "conferenceId": "osc",
@@ -90,6 +110,16 @@
     "eventUrl": "https://www.ospn.jp/osc2012.db/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議05",
+    "year": 2012,
+    "startDate": "2012-07-29",
+    "endDate": "2012-07-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu05"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2012 Kansai/Kyoto",
     "year": 2012,
@@ -110,6 +140,16 @@
     "eventUrl": "https://www.ospn.jp/osc2012-shimane/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議04",
+    "year": 2012,
+    "startDate": "2012-09-01",
+    "endDate": "2012-09-01",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/matsue04"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2012 Tokyo/Fall",
     "year": 2012,
@@ -118,6 +158,16 @@
     "venueId": "tokyo/meisei-university-hino",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2012-fall/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "札幌Ruby会議2012",
+    "year": 2012,
+    "startDate": "2012-09-14",
+    "endDate": "2012-09-16",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "http://sapporo.rubykaigi.org/2012"
   },
   {
     "conferenceId": "phpcon",
@@ -178,6 +228,16 @@
     "venueId": "tokyo/hosei-university-fujimi-gate",
     "isHybrid": true,
     "eventUrl": "https://nodefest.jp/2012/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Ruby会議01",
+    "year": 2012,
+    "startDate": "2012-12-01",
+    "endDate": "2012-12-01",
+    "venueId": "fukuoka/guild-cafe-costa",
+    "isHybrid": false,
+    "eventUrl": "http://fukuokarb.doorkeeper.jp/events/2049"
   },
   {
     "conferenceId": "osc",

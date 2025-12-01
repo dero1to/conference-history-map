@@ -90,6 +90,16 @@
     "eventUrl": "https://www.ospn.jp/osc2008-nagoya/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議01",
+    "year": 2008,
+    "startDate": "2008-08-21",
+    "endDate": "2008-08-21",
+    "venueId": "tokyo/nifty-omori",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2008 Shimane",
     "year": 2008,
@@ -110,6 +120,26 @@
     "eventUrl": "https://www.ospn.jp/osc2008-fall/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "札幌Ruby会議01",
+    "year": 2008,
+    "startDate": "2008-10-25",
+    "endDate": "2008-10-25",
+    "venueId": "hokkaido/hokkaido-information-uiversity-sapporo-satellite",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/sapporo01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議01",
+    "year": 2008,
+    "startDate": "2008-11-07",
+    "endDate": "2008-11-08",
+    "venueId": "osaka/asia-and-pacific-trade-center-itm",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai01"
+  },
+  {
     "conferenceId": "osc",
     "name": "オープンソースカンファレンス 2008 Okinawa",
     "year": 2008,
@@ -128,5 +158,15 @@
     "venueId": "fukuoka/fukuoka-university",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2008-fukuoka/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "九州Ruby会議01",
+    "year": 2008,
+    "startDate": "2008-12-14",
+    "endDate": "2008-12-14",
+    "venueId": "fukuoka/kyushu-sangyo-university-information-science",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kyushu01"
   }
 ]

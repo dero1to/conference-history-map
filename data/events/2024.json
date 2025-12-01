@@ -260,6 +260,16 @@
     "eventUrl": "https://www.frontend-conf.jp/2024"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大阪Ruby会議04",
+    "year": 2024,
+    "startDate": "2024-08-24",
+    "endDate": "2024-08-24",
+    "venueId": "osaka/nakanoshima-kaikan-festival-city-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykansai.github.io/osaka04/"
+  },
+  {
     "conferenceId": "odc",
     "name": "オープンデベロッパーズカンファレンス2024",
     "year": 2024,
@@ -268,6 +278,16 @@
     "venueId": "tokyo/docomo-rd-openlab-odaiba",
     "isHybrid": true,
     "eventUrl": "https://event.ospn.jp/odc2024/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Rubyist会議04",
+    "year": 2024,
+    "startDate": "2024-09-07",
+    "endDate": "2024-09-07",
+    "venueId": "fukuoka/reference-ekihigashi-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/fukuoka04/"
   },
   {
     "conferenceId": "pycon-jp",
@@ -298,6 +318,26 @@
     "venueId": "hiroshima/satellite-campus-hiroshima",
     "isHybrid": false,
     "eventUrl": "https://event.ospn.jp/osc2024-hiroshima/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議15",
+    "year": 2024,
+    "startDate": "2024-09-29",
+    "endDate": "2024-09-29",
+    "venueId": "tokyo/gmo-yoursfukuras",
+    "isHybrid": false,
+    "eventUrl": "https://tokyurubykaigi.github.io/tokyu15/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議11",
+    "year": 2024,
+    "startDate": "2024-10-05",
+    "endDate": "2024-10-05",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk11/"
   },
   {
     "conferenceId": "osc",
