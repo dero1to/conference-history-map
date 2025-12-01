@@ -1,0 +1,12 @@
+{
+  "id": "osc",
+  "name": "オープンソースカンファレンス",
+  "category": [
+    "General"
+  ],
+  "programmingLanguages": [
+    "Polyglot"
+  ],
+  "website": "https://www.ospn.jp/",
+  "twitter": "OSC_official"
+}

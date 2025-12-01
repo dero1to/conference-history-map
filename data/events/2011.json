@@ -1,5 +1,75 @@
 [
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議05",
+    "year": 2011,
+    "startDate": "2011-02-04",
+    "endDate": "2011-02-04",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo05"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Kagawa",
+    "year": 2011,
+    "startDate": "2011-02-05",
+    "endDate": "2011-02-05",
+    "venueId": "tokyo/sunport-hall-takamatsu",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-kagawa/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議03",
+    "year": 2011,
+    "startDate": "2011-02-26",
+    "endDate": "2011-02-26",
+    "venueId": "tochigi/nishi-nasuno-community-center",
+    "isHybrid": true,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi03"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議02",
+    "year": 2011,
+    "startDate": "2011-02-26",
+    "endDate": "2011-02-26",
+    "venueId": "aichi/trident-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya02"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Tokyo/Spring",
+    "year": 2011,
+    "startDate": "2011-03-04",
+    "endDate": "2011-03-05",
+    "venueId": "tokyo/waseda-university-nishi-waseda-campus",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011.Goverment",
+    "year": 2011,
+    "startDate": "2011-03-04",
+    "endDate": "2011-03-05",
+    "venueId": "tokyo/waseda-university-nishi-waseda-campus",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-gov/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Oita",
+    "year": 2011,
+    "startDate": "2011-03-19",
+    "endDate": "2011-03-19",
+    "venueId": "oita/oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-oita/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2011",
     "year": 2011,
@@ -8,6 +78,66 @@
     "venueId": "osaka/osaka-industrial-creation-museum",
     "isHybrid": true,
     "eventUrl": "http://conference.kphpug.jp/2011/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議01",
+    "year": 2011,
+    "startDate": "2011-04-10",
+    "endDate": "2011-04-10",
+    "venueId": "tokyo/fukagawa-edo-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo01"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Kobe",
+    "year": 2011,
+    "startDate": "2011-04-16",
+    "endDate": "2011-04-16",
+    "venueId": "hyogo/kobe-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-kobe/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "東日本大震災支援緊急企画 OSSチャリティーセミナー",
+    "year": 2011,
+    "startDate": "2011-05-07",
+    "endDate": "2011-05-07",
+    "venueId": "tokyo/ntt-data-toyosu",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/oss-charity/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Sendai",
+    "year": 2011,
+    "startDate": "2011-05-21",
+    "endDate": "2011-05-21",
+    "venueId": "miyagi/tohoku-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-sendai/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議03",
+    "year": 2011,
+    "startDate": "2011-05-29",
+    "endDate": "2011-05-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu03"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Hokkaido",
+    "year": 2011,
+    "startDate": "2011-06-11",
+    "endDate": "2011-06-11",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-do/"
   },
   {
     "conferenceId": "rubykaigi",
@@ -20,6 +150,46 @@
     "eventUrl": "https://rubykaigi.org/2011/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議03",
+    "year": 2011,
+    "startDate": "2011-07-03",
+    "endDate": "2011-07-03",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/matsue03"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Kansai/Kyoto",
+    "year": 2011,
+    "startDate": "2011-07-15",
+    "endDate": "2011-07-16",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-kyoto/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Nagoya",
+    "year": 2011,
+    "startDate": "2011-08-20",
+    "endDate": "2011-08-20",
+    "venueId": "aichi/nagoya-international-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2011-nagoya/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "OSSC Aizu",
+    "year": 2011,
+    "startDate": "2011-09-03",
+    "endDate": "2011-09-03",
+    "venueId": "fukushima/university-of-aizu",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/ossc-aizu/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2011",
     "year": 2011,
@@ -30,6 +200,26 @@
     "eventUrl": "https://phpcon.php.gr.jp/2011/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Okinawa",
+    "year": 2011,
+    "startDate": "2011-09-10",
+    "endDate": "2011-09-10",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Hiroshima",
+    "year": 2011,
+    "startDate": "2011-10-01",
+    "endDate": "2011-10-01",
+    "venueId": "hiroshima/prefectural-university-of-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-hiroshima/"
+  },
+  {
     "conferenceId": "jsconf-japan",
     "name": "東京Node学園祭2011",
     "year": 2011,
@@ -38,5 +228,75 @@
     "venueId": "tokyo/yahoo-japan-midtown-tower",
     "isHybrid": true,
     "eventUrl": "https://nodefest.jp/2011/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議04",
+    "year": 2011,
+    "startDate": "2011-10-29",
+    "endDate": "2011-10-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu04"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 .DB",
+    "year": 2011,
+    "startDate": "2011-11-05",
+    "endDate": "2011-11-05",
+    "venueId": "tokyo/oracle-aoyama-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011.db/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議04",
+    "year": 2011,
+    "startDate": "2011-11-11",
+    "endDate": "2011-11-12",
+    "venueId": "osaka/asia-and-pacific-trade-center-itm",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai04"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Shimane",
+    "year": 2011,
+    "startDate": "2011-11-12",
+    "endDate": "2011-11-12",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Tokyo/Fall",
+    "year": 2011,
+    "startDate": "2011-11-19",
+    "endDate": "2011-11-19",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2011 Fukuoka",
+    "year": 2011,
+    "startDate": "2011-12-03",
+    "endDate": "2011-12-03",
+    "venueId": "fukuoka/chikushi-jogakuen-university",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2011-fukuoka/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議04",
+    "year": 2011,
+    "startDate": "2011-12-03",
+    "endDate": "2011-12-03",
+    "venueId": "tochigi/higashi-nasuno-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi04"
   }
 ]

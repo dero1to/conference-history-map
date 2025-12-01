@@ -22,5 +22,21 @@
     "lat": 35.0610839,
     "lng": 135.7831473,
     "prefecture": "京都府"
+  },
+  {
+    "id": "kyoto-computer-gakuin-kyoto-ekimae",
+    "name": "京都コンピュータ学院 京都駅前校",
+    "address": "京都府京都市南区西九条寺ノ前町１０−５",
+    "lat": 34.98524583626455,
+    "lng": 135.75329788775778,
+    "prefecture": "京都府"
+  },
+  {
+    "id": "pontocho-kaburenjo-theatre",
+    "name": "先斗町歌舞練場",
+    "address": "京都府京都市中京区橋下町１３０",
+    "lat": 35.0082780014202,
+    "lng": 135.77147870531846,
+    "prefecture": "京都府"
   }
 ]

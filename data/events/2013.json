@@ -1,5 +1,85 @@
 [
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議10",
+    "year": 2013,
+    "startDate": "2013-01-13",
+    "endDate": "2013-01-14",
+    "venueId": "chiba/chiba-city-mihama-culture-hall",
+    "isHybrid": false,
+    "eventUrl": "http://tokyo10.rubykaigi.info/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Hamamatsu",
+    "year": 2013,
+    "startDate": "2013-02-09",
+    "endDate": "2013-02-09",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2013-hamamatsu/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Tokyo/Spring",
+    "year": 2013,
+    "startDate": "2013-02-22",
+    "endDate": "2013-02-23",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Tokushima",
+    "year": 2013,
+    "startDate": "2013-03-09",
+    "endDate": "2013-03-09",
+    "venueId": "tokushima/tokugin-tomony-plaza",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2013-tokushima/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "ぐんまRuby会議01",
+    "year": 2013,
+    "startDate": "2013-03-09",
+    "endDate": "2013-03-09",
+    "venueId": "gunma/takasaki-city-comprehensive-welfare-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/gunma01"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議03",
+    "year": 2013,
+    "startDate": "2013-03-16",
+    "endDate": "2013-03-16",
+    "venueId": "tokyo/fukagawa-edo-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo03"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "九州Ruby会議02",
+    "year": 2013,
+    "startDate": "2013-04-14",
+    "endDate": "2013-04-14",
+    "venueId": "fukuoka/bayern-fukuoka",
+    "isHybrid": false,
+    "eventUrl": "http://rubyist-kyushu.doorkeeper.jp/events/3342"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Cloud＠Osaka",
+    "year": 2013,
+    "startDate": "2013-05-25",
+    "endDate": "2013-05-25",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013.cloud-osaka/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2013",
     "year": 2013,
@@ -20,6 +100,76 @@
     "eventUrl": "http://conference.kphpug.jp/2013/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Nagoya",
+    "year": 2013,
+    "startDate": "2013-06-21",
+    "endDate": "2013-06-22",
+    "venueId": "aichi/nagoya-international-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-nagoya/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議06",
+    "year": 2013,
+    "startDate": "2013-06-29",
+    "endDate": "2013-06-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu06"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Okinawa",
+    "year": 2013,
+    "startDate": "2013-07-06",
+    "endDate": "2013-07-06",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2013-okinawa/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "岡山Ruby会議02",
+    "year": 2013,
+    "startDate": "2013-07-06",
+    "endDate": "2013-07-06",
+    "venueId": "okayama/okayama-prefectural-university",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/okayama02"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Kansai＠Kyoto",
+    "year": 2013,
+    "startDate": "2013-08-02",
+    "endDate": "2013-08-03",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-kyoto/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Shimane",
+    "year": 2013,
+    "startDate": "2013-08-24",
+    "endDate": "2013-08-24",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-shimane/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議05",
+    "year": 2013,
+    "startDate": "2013-08-31",
+    "endDate": "2013-08-31",
+    "venueId": "osaka/tis-inc-osaka-head-office",
+    "isHybrid": false,
+    "eventUrl": "https://web.archive.org/web/20131211064406/https://regional.rubykaigi.org/kansai05"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス 2013",
     "year": 2013,
@@ -28,6 +178,46 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/w/2013/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Hokkaido",
+    "year": 2013,
+    "startDate": "2013-09-14",
+    "endDate": "2013-09-14",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-do/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議05",
+    "year": 2013,
+    "startDate": "2013-09-21",
+    "endDate": "2013-09-21",
+    "venueId": "tochigi/higashi-nasuno-community-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi05"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Hiroshima",
+    "year": 2013,
+    "startDate": "2013-10-06",
+    "endDate": "2013-10-06",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-hiroshima/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Tokyo/Fall",
+    "year": 2013,
+    "startDate": "2013-10-19",
+    "endDate": "2013-10-20",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-fall/"
   },
   {
     "conferenceId": "jsconf-japan",
@@ -48,5 +238,35 @@
     "venueId": "tokyo/ap-tokyo-yaesu",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/events/jpug-pgcon2013"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Fukuoka",
+    "year": 2013,
+    "startDate": "2013-11-16",
+    "endDate": "2013-11-16",
+    "venueId": "fukuoka/fukuoka-srp-center-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-fukuoka/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 Oita",
+    "year": 2013,
+    "startDate": "2013-11-23",
+    "endDate": "2013-11-23",
+    "venueId": "oita/oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013-oita/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2013 .Enterprise",
+    "year": 2013,
+    "startDate": "2013-12-13",
+    "endDate": "2013-12-13",
+    "venueId": "tokyo/tkp-garden-city-shibuya",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2013.enterprise/"
   }
 ]

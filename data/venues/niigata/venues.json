@@ -6,5 +6,61 @@
     "lat": 37.9082163,
     "lng": 139.0617185,
     "prefecture": "新潟県"
+  },
+  {
+    "id": "niigata-sansin",
+    "name": "新潟市産業振興センター",
+    "address": "新潟県新潟市中央区鐘木１８５−１０",
+    "lat": 37.879082265830476,
+    "lng": 139.04714879152152,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "niigata-terrsa",
+    "name": "新潟テルサ",
+    "address": "新潟県新潟市中央区鐘木１８５−１８",
+    "lat": 37.87752580580332,
+    "lng": 139.04760395528913,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "nagaoka-university-of-technology",
+    "name": "長岡技術科学大学",
+    "address": "新潟県長岡市上富岡町１６０３−１",
+    "lat": 37.42431294304283,
+    "lng": 138.7787167878125,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "niigata-university-of-international-and-information-studies",
+    "name": "新潟国際情報大学 新潟中央キャンパス",
+    "address": "新潟県新潟市中央区上大川前通７番町１１６９",
+    "lat": 37.922039330817384,
+    "lng": 139.04827882645455,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "niigata-university-faculty-of-engineering",
+    "name": "新潟大学 工学部 (五十嵐キャンパス)",
+    "address": "新潟県新潟市西区五十嵐２の町８０５０",
+    "lat": 37.8663173208625,
+    "lng": 138.93864315367802,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "honport-niigata-city-public-library",
+    "name": "ほんぽーと新潟市立中央図書館",
+    "address": "新潟県新潟市中央区明石２丁目１−１０",
+    "lat": 37.91668621233771,
+    "lng": 139.06854292830363,
+    "prefecture": "新潟県"
+  },
+  {
+    "id": "machinaka-campus-nagaoka",
+    "name": "まちなかキャンパス長岡 ",
+    "address": "新潟県長岡市大手通２丁目６ フェニックス大手イースト 4F",
+    "lat": 37.44767840406066,
+    "lng": 138.85065006082655,
+    "prefecture": "新潟県"
   }
 ]

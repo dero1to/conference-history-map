@@ -10,6 +10,16 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog39/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Osaka",
+    "year": 2017,
+    "startDate": "2017-01-27",
+    "endDate": "2017-01-28",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-osaka/"
+  },
+  {
     "conferenceId": "burikaigi",
     "name": "BuriKaigi 2017",
     "year": 2017,
@@ -20,6 +30,66 @@
     "eventUrl": "https://toyama-eng.connpass.com/event/45745/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "名古屋Ruby会議03",
+    "year": 2017,
+    "startDate": "2017-02-11",
+    "endDate": "2017-02-11",
+    "venueId": "aichi/osu-engeijo-theater",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/nagoya03"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Hamanako",
+    "year": 2017,
+    "startDate": "2017-02-12",
+    "endDate": "2017-02-12",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-hamanako/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Tokyo/Spring",
+    "year": 2017,
+    "startDate": "2017-03-10",
+    "endDate": "2017-03-11",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-spring/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大江戸Ruby会議06",
+    "year": 2017,
+    "startDate": "2017-03-20",
+    "endDate": "2017-03-20",
+    "venueId": "tokyo/ochanomizu-solacity-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/oedo06"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Nagoya",
+    "year": 2017,
+    "startDate": "2017-05-27",
+    "endDate": "2017-05-27",
+    "venueId": "aichi/nagoya-trade-and-industry-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-nagoya/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "関西Ruby会議2017",
+    "year": 2017,
+    "startDate": "2017-05-27",
+    "endDate": "2017-05-27",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kansai2017"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2017",
     "year": 2017,
@@ -28,6 +98,26 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2017/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Okinawa",
+    "year": 2017,
+    "startDate": "2017-06-17",
+    "endDate": "2017-06-17",
+    "venueId": "okinawa/okinawa-city-municipal-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Hokkaido",
+    "year": 2017,
+    "startDate": "2017-07-14",
+    "endDate": "2017-07-15",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-do/"
   },
   {
     "conferenceId": "phpcon-kansai",
@@ -50,6 +140,66 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog40/"
   },
   {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議11",
+    "year": 2017,
+    "startDate": "2017-07-29",
+    "endDate": "2017-07-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu11"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Kyoto",
+    "year": 2017,
+    "startDate": "2017-08-04",
+    "endDate": "2017-08-05",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-kyoto/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "ぎんざRuby会議01",
+    "year": 2017,
+    "startDate": "2017-08-05",
+    "endDate": "2017-08-05",
+    "venueId": "tokyo/minna-no-wedding-ginza",
+    "isHybrid": false,
+    "eventUrl": "https://ginzarb.github.io//kaigi01/"
+  },
+  {
+    "conferenceId": "odc",
+    "name": "オープンデベロッパーズカンファレンス 2017 Tokyo",
+    "year": 2017,
+    "startDate": "2017-08-19",
+    "endDate": "2017-08-20",
+    "venueId": "tokyo/neec-kamata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/odc2017/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "とちぎRuby会議07",
+    "year": 2017,
+    "startDate": "2017-08-26",
+    "endDate": "2017-08-26",
+    "venueId": "tochigi/nasunogahara-harmony-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tochigi07"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Chiba",
+    "year": 2017,
+    "startDate": "2017-09-02",
+    "endDate": "2017-09-02",
+    "venueId": "chiba/chiba-institute-of-technology-tsudanuma",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-chiba/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2017",
     "year": 2017,
@@ -58,6 +208,16 @@
     "venueId": "tokyo/waseda-university-nishi-waseda-campus",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2017/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Tokyo/Fall",
+    "year": 2017,
+    "startDate": "2017-09-09",
+    "endDate": "2017-09-10",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-fall/"
   },
   {
     "conferenceId": "rubykaigi",
@@ -70,6 +230,16 @@
     "eventUrl": "https://rubykaigi.org/2017/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Fukuoka",
+    "year": 2017,
+    "startDate": "2017-10-07",
+    "endDate": "2017-10-07",
+    "venueId": "fukuoka/fukuoka-university",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-fukuoka/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2017",
     "year": 2017,
@@ -78,6 +248,26 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2017/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Shimane",
+    "year": 2017,
+    "startDate": "2017-10-14",
+    "endDate": "2017-10-14",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Nagaoka",
+    "year": 2017,
+    "startDate": "2017-10-28",
+    "endDate": "2017-10-28",
+    "venueId": "niigata/nagaoka-university-of-technology",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-nagaoka/"
   },
   {
     "conferenceId": "postgresql-conference",
@@ -98,5 +288,35 @@
     "venueId": "tokyo/hosei-university-fujimi-gate",
     "isHybrid": false,
     "eventUrl": "https://nodefest.jp/2017/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Ruby会議02",
+    "year": 2017,
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-25",
+    "venueId": "fukuoka/fukuoka-growth-next",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/fukuoka02"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 Hiroshima",
+    "year": 2017,
+    "startDate": "2017-11-26",
+    "endDate": "2017-11-26",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017-hiroshima/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2017 .Enterprise",
+    "year": 2017,
+    "startDate": "2017-12-08",
+    "endDate": "2017-12-08",
+    "venueId": "tokyo/tkp-garden-city-shibuya",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2017.enterprise/"
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "okayama-international-center",
+    "name": "岡山国際交流センター",
+    "address": "岡山県岡山市北区奉還町２丁目２−１",
+    "lat": 34.668434853248776,
+    "lng": 133.91703177037834,
+    "prefecture": "岡山県"
+  },
+  {
+    "id": "okayama-prefectural-university",
+    "name": "岡山県立大学",
+    "address": "岡山県総社市窪木１１１",
+    "lat": 34.692765165627684,
+    "lng": 133.78200440716128,
+    "prefecture": "岡山県"
+  }
+]

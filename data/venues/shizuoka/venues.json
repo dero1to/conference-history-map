@@ -1,0 +1,18 @@
+[
+  {
+    "id": "hamamatsu-civil-collaboration-center",
+    "name": "浜松市市民協働センター",
+    "address": "静岡県浜松市中央区中央１丁目１３−３",
+    "lat": 34.709813960009285,
+    "lng": 137.7345856705257,
+    "prefecture": "静岡県"
+  },
+  {
+    "id": "act-city-hamamatsu-congress-center",
+    "name": "アクトシティ浜松 研修交流センター",
+    "address": "静岡県浜松市中央区中央３丁目９−１",
+    "lat": 34.70684459130961,
+    "lng": 137.7389420666811,
+    "prefecture": "静岡県"
+  }
+]

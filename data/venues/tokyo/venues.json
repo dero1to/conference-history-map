@@ -216,6 +216,14 @@
     "prefecture": "東京都"
   },
   {
+    "id": "gmo-yours-cerulean",
+    "name": "GMO Yours (セルリアンタワー)",
+    "address": "東京都渋谷区桜丘町２６−１",
+    "lat": 35.65649865403287,
+    "lng": 139.69983957969103,
+    "prefecture": "東京都"
+  },
+  {
     "id": "gmo-yoursfukuras",
     "name": "GMO Yours・フクラス",
     "address": "東京都渋谷区道玄坂1丁目2番3号",
@@ -296,6 +304,14 @@
     "prefecture": "東京都"
   },
   {
+    "id": "nifty-omori",
+    "name": "ニフティ株式会社 本社(大森ベルポートA館)",
+    "address": "東京都品川区南大井６丁目２６−１ 大森ベルポート A館",
+    "lat": 35.58827659532674,
+    "lng": 139.73255334146907,
+    "prefecture": "東京都"
+  },
+  {
     "id": "yahoo-japan-midtown-tower",
     "name": "Yahoo! JAPAN(ミッドタウン・タワー)",
     "address": "東京都港区赤坂9-7-1 ",
@@ -357,6 +373,190 @@
     "address": "東京都渋谷区神宮前６丁目２５−１６",
     "lat": 35.665418035515216,
     "lng": 139.70277909955678,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "japan-electronics-college",
+    "name": "日本電子専門学校",
+    "address": "東京都新宿区百人町１丁目２５−４",
+    "lat": 35.698318388503544,
+    "lng": 139.69809493047376,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "meisei-university-hino",
+    "name": "明星大学 日野キャンパス",
+    "address": "東京都日野市程久保２丁目１−１",
+    "lat": 35.64436109810478,
+    "lng": 139.40796104544364,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ntt-data-toyosu",
+    "name": "NTTデータ 豊洲センタービル",
+    "address": "東京都江東区豊洲３丁目３−３ 豊洲センタービル",
+    "lat": 35.656120182700725,
+    "lng": 139.7969578129095,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "oracle-aoyama-center",
+    "name": "オラクル青山センター",
+    "address": "東京都港区北青山２丁目５−８",
+    "lat": 35.67137681025917,
+    "lng": 139.719603595169,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "hosei-ichigaya-sotobori",
+    "name": "法政大学 市ヶ谷キャンパス 外濠校舎",
+    "address": "東京都港区北青山２丁目５−８",
+    "lat": 35.69626242506721,
+    "lng": 139.741876280377,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "neec-kamata",
+    "name": "日本工学院専門学校 蒲田キャンパス",
+    "address": "東京都大田区西蒲田５丁目２４番地1",
+    "lat": 35.56460035746159,
+    "lng": 139.7171963724281,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "microsoft-japan-shinagawa",
+    "name": "日本マイクロソフト株式会社 品川本社",
+    "address": "東京都港区港南２丁目１６−３ 品川グランドセントラルタワー",
+    "lat": 35.627188065380345,
+    "lng": 139.74146756633274,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tkp-garden-city-shibuya",
+    "name": "TKPガーデンシティ渋谷",
+    "address": "東京都渋谷区渋谷２丁目２２−３ 渋谷東口ビル",
+    "lat": 35.658798616998475,
+    "lng": 139.70476654359484,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ap-shibuyadougenzaka",
+    "name": "AP渋谷道玄坂渋東シネタワー",
+    "address": "東京都渋谷区道玄坂２丁目６−１７ 渋東シネタワー",
+    "lat": 35.65930878153863,
+    "lng": 139.6995872012657,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tokyo-metropolitan-industrial-trade-center-taito",
+    "name": "東京都立産業貿易センター 台東館",
+    "address": "東京都台東区花川戸２丁目６−５",
+    "lat": 35.71466123945589,
+    "lng": 139.7996381049652,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "komazawa-university-komazawa",
+    "name": "駒澤大学 駒沢キャンパス",
+    "address": "東京都世田谷区駒沢１丁目２３",
+    "lat": 35.62813493879847,
+    "lng": 139.65889526675753,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "omori-higashi-community-center",
+    "name": "大森東地域センター",
+    "address": "東京都大田区大森東１丁目３１−３",
+    "lat": 35.57632066093392,
+    "lng": 139.73954384734904,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "voyage-group",
+    "name": "VOYAGE GROUP",
+    "address": "東京都渋谷区神泉町８−１６ 渋谷ファーストプレイス",
+    "lat": 35.65528102217914,
+    "lng": 139.69373576035866,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "fukagawa-edo-museum",
+    "name": "深川江戸資料館",
+    "address": "東京都江東区白河１丁目３−２８",
+    "lat": 35.68136888235664,
+    "lng": 139.80139676060145,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "edo-tokyo-museum",
+    "name": "江戸東京博物館",
+    "address": "東京都墨田区横網１丁目４−１",
+    "lat": 35.696605885553446,
+    "lng": 139.79688158333863,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "shidax-culture-hall",
+    "name": "シダックス カルチャーホール",
+    "address": "東京都渋谷区神南１丁目１２−１０ シダックスカルチャービレッジ",
+    "lat": 35.6635231893697,
+    "lng": 139.70153282621914,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "akihabara-convention-hall",
+    "name": "秋葉原コンベンションホール",
+    "address": "東京都千代田区外神田１丁目１８−１３ 秋葉原ダイビル",
+    "lat": 35.69928508760959,
+    "lng": 139.7716716040352,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ochanomizu-solacity-conference-center",
+    "name": "御茶ノ水ソラシティカンファレンスセンター",
+    "address": "東京都千代田区神田駿河台４丁目６",
+    "lat": 35.69882106803493,
+    "lng": 139.7672646397135,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "minna-no-wedding-ginza",
+    "name": "みんなのウェディング (銀座松竹スクエア)",
+    "address": "東京都中央区築地1-13-1 銀座松竹スクエア",
+    "lat": 35.668468917913465,
+    "lng": 139.77006815690353,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "asakusa-kaminari-5656-kaikan-tokiwa-hall",
+    "name": "浅草 雷5656会館 ときわホール",
+    "address": "東京都台東区浅草３丁目６−１",
+    "lat": 35.71689403348615,
+    "lng": 139.79666114156223,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "speee-inc-roppongi-kurosaki",
+    "name": "株式会社Speee (黒崎ビル)",
+    "address": "東京都港区六本木４丁目１−４",
+    "lat": 35.66563903602599,
+    "lng": 139.73645086669936,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "speee-inc-roppongi-ground-tower",
+    "name": "株式会社Speee (六本木グランドタワー)",
+    "address": "東京都港区六本木３丁目２−１",
+    "lat": 35.66469147135843,
+    "lng": 139.7383354973836,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "drecom-meguro",
+    "name": "株式会社ドリコム(目黒)",
+    "address": "東京都目黒区下目黒１丁目８−１",
+    "lat": 35.63159040499405,
+    "lng": 139.71411018929322,
     "prefecture": "東京都"
   }
 ]

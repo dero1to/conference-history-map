@@ -1,0 +1,18 @@
+[
+  {
+    "id": "chiba-institute-of-technology-tsudanuma",
+    "name": "千葉工業大学 津田沼キャンパス",
+    "address": "千葉県習志野市津田沼２丁目１７−１",
+    "lat": 35.688840452444246,
+    "lng": 140.02178564914246,
+    "prefecture": "千葉県"
+  },
+  {
+    "id": "chiba-city-mihama-culture-hall",
+    "name": "千葉市美浜文化ホール",
+    "address": "千葉県千葉市美浜区真砂５丁目１５−２",
+    "lat": 35.64121847868036,
+    "lng": 140.0637977428574,
+    "prefecture": "千葉県"
+  }
+]

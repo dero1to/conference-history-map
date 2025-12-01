@@ -10,6 +10,36 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog37/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Hamanako",
+    "year": 2016,
+    "startDate": "2016-01-23",
+    "endDate": "2016-01-23",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-hamanako/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 .Enterprise＠Osaka",
+    "year": 2016,
+    "startDate": "2016-01-29",
+    "endDate": "2016-01-29",
+    "venueId": "osaka/grand-front-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016.enterprise-osaka/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Tokyo/Spring",
+    "year": 2016,
+    "startDate": "2016-02-26",
+    "endDate": "2016-02-27",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-spring/"
+  },
+  {
     "conferenceId": "phpcon-hokkaido",
     "name": "PHPカンファレンス北海道 2016",
     "year": 2016,
@@ -20,6 +50,16 @@
     "eventUrl": "https://sapporophp.doorkeeper.jp/events/37547"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Gunma",
+    "year": 2016,
+    "startDate": "2016-05-14",
+    "endDate": "2016-05-14",
+    "venueId": "gunma/labi1-takasaki",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-gunma/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2016",
     "year": 2016,
@@ -28,6 +68,56 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2016/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Nagoya",
+    "year": 2016,
+    "startDate": "2016-05-28",
+    "endDate": "2016-05-28",
+    "venueId": "aichi/nagoya-trade-and-industry-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-nagoya/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "東京Ruby会議11",
+    "year": 2016,
+    "startDate": "2016-05-28",
+    "endDate": "2016-05-28",
+    "venueId": "tokyo/akihabara-convention-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyo11"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議10",
+    "year": 2016,
+    "startDate": "2016-05-29",
+    "endDate": "2016-05-29",
+    "venueId": "tokyo/voyage-group",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/tokyu10"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Hokkaido",
+    "year": 2016,
+    "startDate": "2016-06-17",
+    "endDate": "2016-06-18",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-do/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Okinawa",
+    "year": 2016,
+    "startDate": "2016-07-02",
+    "endDate": "2016-07-02",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-okinawa/"
   },
   {
     "conferenceId": "janog",
@@ -50,6 +140,36 @@
     "eventUrl": "http://conference.kphpug.jp/2016/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Kyoto",
+    "year": 2016,
+    "startDate": "2016-07-29",
+    "endDate": "2016-07-30",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-kyoto/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "川崎Ruby会議01",
+    "year": 2016,
+    "startDate": "2016-08-20",
+    "endDate": "2016-08-20",
+    "venueId": "kanagawa/kawasaki-city-education-and-culture-hall",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/kwsk01"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 .Enterprise",
+    "year": 2016,
+    "startDate": "2016-09-01",
+    "endDate": "2016-09-01",
+    "venueId": "tokyo/tkp-garden-city-shibuya",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016.enterprise/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "RubyKaigi 2016",
     "year": 2016,
@@ -70,6 +190,26 @@
     "eventUrl": "https://pycon.jp/2016"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Shimane",
+    "year": 2016,
+    "startDate": "2016-09-24",
+    "endDate": "2016-09-24",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Nagaoka",
+    "year": 2016,
+    "startDate": "2016-10-01",
+    "endDate": "2016-10-01",
+    "venueId": "niigata/machinaka-campus-nagaoka",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-nagaoka/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHP Conference Japan 2016",
     "year": 2016,
@@ -80,6 +220,16 @@
     "eventUrl": "https://phpcon.php.gr.jp/2016/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Tokyo/Fall",
+    "year": 2016,
+    "startDate": "2016-11-05",
+    "endDate": "2016-11-06",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-fall/"
+  },
+  {
     "conferenceId": "jsconf-japan",
     "name": "東京Node学園祭2016",
     "year": 2016,
@@ -88,5 +238,35 @@
     "venueId": "tokyo/cyberagent-mark-city-co-ltd",
     "isHybrid": false,
     "eventUrl": "https://nodefest.jp/2016/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Fukuoka",
+    "year": 2016,
+    "startDate": "2016-11-19",
+    "endDate": "2016-11-19",
+    "venueId": "fukuoka/fukuoka-srp-center-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-fukuoka/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2016 Hiroshima",
+    "year": 2016,
+    "startDate": "2016-11-27",
+    "endDate": "2016-11-27",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2016-hiroshima/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議08",
+    "year": 2016,
+    "startDate": "2016-12-17",
+    "endDate": "2016-12-17",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk08/"
   }
 ]

@@ -30,6 +30,16 @@
     "eventUrl": "https://burikaigi.dev/2024/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Osaka",
+    "year": 2024,
+    "startDate": "2024-01-27",
+    "endDate": "2024-01-27",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-osaka/"
+  },
+  {
     "conferenceId": "yapc",
     "name": "YAPC::Hiroshima 2024",
     "year": 2024,
@@ -58,6 +68,16 @@
     "venueId": "tokyo/nakano-central-park",
     "isHybrid": true,
     "eventUrl": "https://phperkaigi.jp/2024/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Tokyo/Spring",
+    "year": 2024,
+    "startDate": "2024-03-10",
+    "endDate": "2024-03-10",
+    "venueId": "tokyo/tokyo-metropolitan-industrial-trade-center-taito",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-spring/"
   },
   {
     "conferenceId": "object-oriented-con",
@@ -110,6 +130,16 @@
     "eventUrl": "https://rubykaigi.org/2024/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Nagoya",
+    "year": 2024,
+    "startDate": "2024-05-25",
+    "endDate": "2024-05-25",
+    "venueId": "aichi/nagoya-trade-and-industry-center",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-nagoya/"
+  },
+  {
     "conferenceId": "go-conference",
     "name": "Go Conference 2024",
     "year": 2024,
@@ -148,6 +178,16 @@
     "venueId": "hyogo/chuo-ku-bunka-center",
     "isHybrid": false,
     "eventUrl": "https://blessingsoftware.connpass.com/event/315796/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Hokkaido",
+    "year": 2024,
+    "startDate": "2024-06-29",
+    "endDate": "2024-06-29",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-do/"
   },
   {
     "conferenceId": "janog",
@@ -190,6 +230,16 @@
     "eventUrl": "https://techramenconf.net/2024/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Kyoto",
+    "year": 2024,
+    "startDate": "2024-07-27",
+    "endDate": "2024-07-27",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-kyoto/"
+  },
+  {
     "conferenceId": "sre-next",
     "name": "SRE NEXT 2024",
     "year": 2024,
@@ -208,6 +258,36 @@
     "venueId": "hokkaido/deep-tech-core-sapporo",
     "isHybrid": true,
     "eventUrl": "https://www.frontend-conf.jp/2024"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "大阪Ruby会議04",
+    "year": 2024,
+    "startDate": "2024-08-24",
+    "endDate": "2024-08-24",
+    "venueId": "osaka/nakanoshima-kaikan-festival-city-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://rubykansai.github.io/osaka04/"
+  },
+  {
+    "conferenceId": "odc",
+    "name": "オープンデベロッパーズカンファレンス2024",
+    "year": 2024,
+    "startDate": "2024-09-07",
+    "endDate": "2024-09-07",
+    "venueId": "tokyo/docomo-rd-openlab-odaiba",
+    "isHybrid": true,
+    "eventUrl": "https://event.ospn.jp/odc2024/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "福岡Rubyist会議04",
+    "year": 2024,
+    "startDate": "2024-09-07",
+    "endDate": "2024-09-07",
+    "venueId": "fukuoka/reference-ekihigashi-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://regional.rubykaigi.org/fukuoka04/"
   },
   {
     "conferenceId": "pycon-jp",
@@ -230,6 +310,46 @@
     "eventUrl": "https://phpcon.okinawa.jp"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Hiroshima",
+    "year": 2024,
+    "startDate": "2024-09-29",
+    "endDate": "2024-09-29",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-hiroshima/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "TokyuRuby会議15",
+    "year": 2024,
+    "startDate": "2024-09-29",
+    "endDate": "2024-09-29",
+    "venueId": "tokyo/gmo-yoursfukuras",
+    "isHybrid": false,
+    "eventUrl": "https://tokyurubykaigi.github.io/tokyu15/"
+  },
+  {
+    "conferenceId": "regional-rubykaigi",
+    "name": "松江Ruby会議11",
+    "year": 2024,
+    "startDate": "2024-10-05",
+    "endDate": "2024-10-05",
+    "venueId": "shimane/matsue-opensource-lab",
+    "isHybrid": false,
+    "eventUrl": "http://matsue.rubyist.net/matrk11/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Nagaoka",
+    "year": 2024,
+    "startDate": "2024-10-12",
+    "endDate": "2024-10-12",
+    "venueId": "niigata/nagaoka-university-of-technology",
+    "isHybrid": true,
+    "eventUrl": "https://ospn.connpass.com/event/325425/"
+  },
+  {
     "conferenceId": "view-fes-japan",
     "name": "Vue Fes Japan 2024",
     "year": 2024,
@@ -250,6 +370,36 @@
     "eventUrl": "https://kaigionrails.org/2024/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Tokyo/Fall",
+    "year": 2024,
+    "startDate": "2024-10-26",
+    "endDate": "2024-10-26",
+    "venueId": "tokyo/tokyo-metropolitan-industrial-trade-center-taito",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Shimane",
+    "year": 2024,
+    "startDate": "2024-11-02",
+    "endDate": "2024-11-02",
+    "venueId": "shimane/shimane-civic-center",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Yamaguchi",
+    "year": 2024,
+    "startDate": "2024-11-09",
+    "endDate": "2024-11-09",
+    "venueId": "yamaguchi/tokiwa-engineering-society-hall",
+    "isHybrid": false,
+    "eventUrl": "https://ospn.connpass.com/event/328859/"
+  },
+  {
     "conferenceId": "tskaigi",
     "name": "TSKaigi Kansai 2024",
     "year": 2024,
@@ -258,6 +408,16 @@
     "venueId": "kyoto/kyoto-city-industrial-museum-miyako-messe",
     "isHybrid": true,
     "eventUrl": "https://kansai.tskaigi.org/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Ehime",
+    "year": 2024,
+    "startDate": "2024-11-16",
+    "endDate": "2024-11-16",
+    "venueId": "ehime/ehime-university-johoku",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-ehime/"
   },
   {
     "conferenceId": "jsconf-japan",
@@ -298,6 +458,16 @@
     "venueId": "tokyo/ap-nihonbashi",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2024"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2024 Fukuoka",
+    "year": 2024,
+    "startDate": "2024-12-07",
+    "endDate": "2024-12-07",
+    "venueId": "fukuoka/kyushu-sangyo-university-information-science",
+    "isHybrid": false,
+    "eventUrl": "https://event.ospn.jp/osc2024-fukuoka/"
   },
   {
     "conferenceId": "phpcon",
