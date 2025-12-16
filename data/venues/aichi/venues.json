@@ -14,5 +14,29 @@
     "lat": 35.1454876,
     "lng": 136.9018427,
     "prefecture": "愛知県"
+  },
+  {
+    "id": "nagoya-city-university-yamanohata",
+    "name": "名古屋市立大学 滝子(山の畑)キャンパス",
+    "address": "愛知県名古屋市瑞穂区瑞穂町山の畑",
+    "lat": 35.13719562356424,
+    "lng": 136.92655010970145,
+    "prefecture": "愛知県"
+  },
+  {
+    "id": "nagoya-international-center",
+    "name": "名古屋国際センター",
+    "address": "愛知県名古屋市中村区那古野１丁目４７−１",
+    "lat": 35.17295736172714,
+    "lng": 136.8909727031041,
+    "prefecture": "愛知県"
+  },
+  {
+    "id": "nagoya-trade-and-industry-center",
+    "name": "名古屋中小企業振興会館",
+    "address": "愛知県名古屋市千種区吹上２丁目６−３",
+    "lat": 35.15835367394313,
+    "lng": 136.93013712269376,
+    "prefecture": "愛知県"
   }
 ]

@@ -80,6 +80,16 @@
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2022"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス2022 Online/Nagaoka",
+    "year": 2022,
+    "startDate": "2022-11-12",
+    "endDate": "2022-11-12",
+    "venueId": "niigata/machinaka-campus-nagaoka",
+    "isHybrid": true,
+    "eventUrl": "https://ospn.connpass.com/event/261361/"
+  },
+  {
     "conferenceId": "cloudnativedays",
     "name": "CloudNative Days Tokyo 2022",
     "year": 2022,
