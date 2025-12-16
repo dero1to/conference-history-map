@@ -25,7 +25,7 @@
     "year": 2010,
     "startDate": "2010-03-13",
     "endDate": "2010-03-13",
-    "venueId": "kobe-industrial-promotion-center",
+    "venueId": "hyogo/kobe-industrial-promotion-center",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2010-kobe/"
   },
@@ -76,7 +76,7 @@
     "startDate": "2010-08-07",
     "endDate": "2010-08-07",
     "venueId": "aichi/nagoya-city-university-yamanohata",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2010-nagoya/"
   },
   {

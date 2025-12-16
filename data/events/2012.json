@@ -25,7 +25,7 @@
     "year": 2012,
     "startDate": "2012-03-24",
     "endDate": "2012-03-24",
-    "venueId": "tokyo/ehime-university-johoku",
+    "venueId": "ehime/ehime-university-johoku",
     "isHybrid": false,
     "eventUrl": "https://www.ospn.jp/osc2012-ehime/"
   },
@@ -46,7 +46,7 @@
     "startDate": "2012-05-11",
     "endDate": "2012-05-12",
     "venueId": "aichi/nagoya-international-center",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-nagoya/"
   },
   {
@@ -66,7 +66,7 @@
     "startDate": "2012-06-16",
     "endDate": "2012-06-16",
     "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-do/"
   },
   {
@@ -86,7 +86,7 @@
     "startDate": "2012-07-25",
     "endDate": "2012-07-25",
     "venueId": "tokyo/japan-electronics-college",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012.db/"
   },
   {
@@ -96,7 +96,7 @@
     "startDate": "2012-08-03",
     "endDate": "2012-08-04",
     "venueId": "kyoto/kyoto-research-park",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-kyoto/"
   },
   {
@@ -106,7 +106,7 @@
     "startDate": "2012-09-01",
     "endDate": "2012-09-01",
     "venueId": "shimane/matsue-terrsa",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-shimane/"
   },
   {
@@ -116,7 +116,7 @@
     "startDate": "2012-09-06",
     "endDate": "2012-09-07",
     "venueId": "tokyo/meisei-university-hino",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-fall/"
   },
   {
@@ -146,7 +146,7 @@
     "startDate": "2012-10-20",
     "endDate": "2012-10-20",
     "venueId": "hiroshima/hiroshima-kokusai-gakuin-nakano",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-hiroshima/"
   },
   {
@@ -156,7 +156,7 @@
     "startDate": "2012-10-27",
     "endDate": "2012-10-27",
     "venueId": "oita/sophia-hall",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-oita-fall/"
   },
   {
@@ -166,7 +166,7 @@
     "startDate": "2012-11-03",
     "endDate": "2012-11-03",
     "venueId": "fukushima/university-of-aizu",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-aizu/"
   },
   {
@@ -186,7 +186,7 @@
     "startDate": "2012-12-08",
     "endDate": "2012-12-08",
     "venueId": "fukuoka/kyushu-computer-college-fukuoka",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2012-fukuoka/"
   },
   {

@@ -116,7 +116,7 @@
     "startDate": "2013-09-14",
     "endDate": "2013-09-14",
     "venueId": "hokkaido/sapporo-convention-center",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2013-do/"
   },
   {
@@ -136,7 +136,7 @@
     "startDate": "2013-10-19",
     "endDate": "2013-10-20",
     "venueId": "tokyo/meisei-university-hino",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2013-fall/"
   },
   {
@@ -166,7 +166,7 @@
     "startDate": "2013-11-16",
     "endDate": "2013-11-16",
     "venueId": "fukuoka/fukuoka-srp-center-bldg",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2013-fukuoka/"
   },
   {

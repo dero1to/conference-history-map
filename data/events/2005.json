@@ -16,7 +16,7 @@
     "startDate": "2005-07-09",
     "endDate": "2005-07-09",
     "venueId": "hokkaido/hokkaido-university-clark-memorial-student-center",
-    "isHybrid": false,
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2005-do/"
   },
   {

@@ -5,8 +5,8 @@
     "year": 2011,
     "startDate": "2011-02-05",
     "endDate": "2011-02-05",
-    "venueId": "tokyo/sunport-hall-takamatsu",
-    "isHybrid": false,
+    "venueId": "kagawa/sunport-hall-takamatsu",
+    "isHybrid": true,
     "eventUrl": "https://www.ospn.jp/osc2011-kagawa/"
   },
   {
