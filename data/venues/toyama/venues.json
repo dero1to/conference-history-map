@@ -30,5 +30,13 @@
     "lat": 36.69561405605554,
     "lng": 137.21240771516648,
     "prefecture": "富山県"
+  },
+  {
+    "id": "toyama-international-conference-center",
+    "name": "富山国際会議場",
+    "address": "富山県富山市大手町１−２",
+    "lat": 36.6916305,
+    "lng": 137.2109351,
+    "prefecture": "富山県"
   }
 ]

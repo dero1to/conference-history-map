@@ -1,0 +1,22 @@
+[
+  {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2026",
+    "year": 2026,
+    "startDate": "2026-01-09",
+    "endDate": "2026-01-10",
+    "venueId": "toyama/toyama-international-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/burikaigi-2026"
+  },
+  {
+    "conferenceId": "srekaigi",
+    "name": "SRE Kaigi 2026",
+    "year": 2026,
+    "startDate": "2026-01-31",
+    "endDate": "2026-01-31",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://2026.srekaigi.net/"
+  }
+]
