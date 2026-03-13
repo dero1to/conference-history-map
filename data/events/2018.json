@@ -10,6 +10,16 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog41/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Osaka",
+    "year": 2018,
+    "startDate": "2018-01-26",
+    "endDate": "2018-01-27",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-osaka/"
+  },
+  {
     "conferenceId": "burikaigi",
     "name": "BuriKaigi 2018",
     "year": 2018,
@@ -20,6 +30,26 @@
     "eventUrl": "https://toyama-eng.connpass.com/event/72023/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Hamanako",
+    "year": 2018,
+    "startDate": "2018-02-11",
+    "endDate": "2018-02-11",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-hamanako/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Tokyo/Spring",
+    "year": 2018,
+    "startDate": "2018-02-23",
+    "endDate": "2018-02-24",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-spring/"
+  },
+  {
     "conferenceId": "phperkaigi",
     "name": "PHPerKaigi 2018",
     "year": 2018,
@@ -28,6 +58,16 @@
     "venueId": "tokyo/nerima-city-citizens-and-industry-plaza-coconeri-hall",
     "isHybrid": false,
     "eventUrl": "https://phperkaigi.jp/2018/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Nagoya",
+    "year": 2018,
+    "startDate": "2018-05-19",
+    "endDate": "2018-05-19",
+    "venueId": "aichi/nagoya-trade-and-industry-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-nagoya/"
   },
   {
     "conferenceId": "rubykaigi",
@@ -50,6 +90,26 @@
     "eventUrl": "https://phpcon.fukuoka.jp/2018/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Okinawa",
+    "year": 2018,
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-16",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Hokkaido",
+    "year": 2018,
+    "startDate": "2018-07-06",
+    "endDate": "2018-07-07",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-do/"
+  },
+  {
     "conferenceId": "janog",
     "name": "JANOG42ミーティング",
     "year": 2018,
@@ -70,6 +130,26 @@
     "eventUrl": "https://2018.kphpug.jp/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Kyoto",
+    "year": 2018,
+    "startDate": "2018-08-03",
+    "endDate": "2018-08-04",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-kyoto/"
+  },
+  {
+    "conferenceId": "odc",
+    "name": "オープンデベロッパーズカンファレンス 2018 Tokyo",
+    "year": 2018,
+    "startDate": "2018-08-25",
+    "endDate": "2018-08-26",
+    "venueId": "tokyo/neec-kamata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/odc2018/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2018",
     "year": 2018,
@@ -80,6 +160,36 @@
     "eventUrl": "https://pycon.jp/2018/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Hiroshima",
+    "year": 2018,
+    "startDate": "2018-09-23",
+    "endDate": "2018-09-23",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-hiroshima/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Kagawa",
+    "year": 2018,
+    "startDate": "2018-10-06",
+    "endDate": "2018-10-06",
+    "venueId": "kagawa/e-topia-kagawa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-kagawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Tokyo/Fall",
+    "year": 2018,
+    "startDate": "2018-10-27",
+    "endDate": "2018-10-28",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-fall/"
+  },
+  {
     "conferenceId": "view-fes-japan",
     "name": "Vue Fes Japan 2018",
     "year": 2018,
@@ -88,6 +198,16 @@
     "venueId": "tokyo/akihabara-udx",
     "isHybrid": false,
     "eventUrl": "https://vuefes.jp/2018"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Niigata",
+    "year": 2018,
+    "startDate": "2018-11-10",
+    "endDate": "2018-11-10",
+    "venueId": "niigata/honport-niigata-city-public-library",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-niigata/"
   },
   {
     "conferenceId": "postgresql-conference",
@@ -108,6 +228,36 @@
     "venueId": "tokyo/yahoo-corporation",
     "isHybrid": false,
     "eventUrl": "https://nodefest.jp/2018/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Shimane",
+    "year": 2018,
+    "startDate": "2018-11-23",
+    "endDate": "2018-11-23",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 Fukuoka",
+    "year": 2018,
+    "startDate": "2018-12-08",
+    "endDate": "2018-12-08",
+    "venueId": "fukuoka/fukuoka-srp-center-bldg",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018-fukuoka/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2018 .Enterprise",
+    "year": 2018,
+    "startDate": "2018-12-14",
+    "endDate": "2018-12-14",
+    "venueId": "tokyo/tkp-garden-city-shibuya",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2018.enterprise/"
   },
   {
     "conferenceId": "phpcon",

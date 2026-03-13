@@ -1,5 +1,15 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 Spring",
+    "year": 2006,
+    "startDate": "2006-03-17",
+    "endDate": "2006-03-18",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "日本Rubyカンファレンス2006",
     "year": 2006,
@@ -10,6 +20,36 @@
     "eventUrl": "https://rubykaigi.org/2006/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 Niigata",
+    "year": 2006,
+    "startDate": "2006-06-17",
+    "endDate": "2006-06-17",
+    "venueId": "niigata/niigata-sansin",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006-niigata/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 .DB",
+    "year": 2006,
+    "startDate": "2006-06-24",
+    "endDate": "2006-06-24",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006.db/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 Hokkaido",
+    "year": 2006,
+    "startDate": "2006-07-15",
+    "endDate": "2006-07-15",
+    "venueId": "hokkaido/hokkaido-university-information-science-technology",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006-do/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2006",
     "year": 2006,
@@ -18,5 +58,25 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "http://oldwww.php.gr.jp/seminar/20060819/index.html"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 Tokyo/Fall",
+    "year": 2006,
+    "startDate": "2006-10-28",
+    "endDate": "2006-10-28",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2006 Okinawa",
+    "year": 2006,
+    "startDate": "2006-12-02",
+    "endDate": "2006-12-02",
+    "venueId": "okinawa/okinawa-sangyoushien",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2006-okinawa/"
   }
 ]

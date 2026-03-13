@@ -1,5 +1,65 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Sendai",
+    "year": 2009,
+    "startDate": "2009-01-24",
+    "endDate": "2009-01-24",
+    "venueId": "miyagi/tohoku-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-sendai/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Tokyo/Spring",
+    "year": 2009,
+    "startDate": "2009-02-20",
+    "endDate": "2009-02-21",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Oita",
+    "year": 2009,
+    "startDate": "2009-03-13",
+    "endDate": "2009-03-14",
+    "venueId": "oita/sophia-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-oita/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Shimane",
+    "year": 2009,
+    "startDate": "2009-05-16",
+    "endDate": "2009-05-16",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Hokkaido",
+    "year": 2009,
+    "startDate": "2009-06-20",
+    "endDate": "2009-06-20",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-do/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Kansai",
+    "year": 2009,
+    "startDate": "2009-07-10",
+    "endDate": "2009-07-11",
+    "venueId": "kyoto/kyoto-computer-gakuin-kyoto-ekimae",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-kansai/"
+  },
+  {
     "conferenceId": "rubykaigi",
     "name": "日本Ruby会議2009",
     "year": 2009,
@@ -10,6 +70,26 @@
     "eventUrl": "https://rubykaigi.org/2009/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Niigata",
+    "year": 2009,
+    "startDate": "2009-08-01",
+    "endDate": "2009-08-01",
+    "venueId": "niigata/niigata-university-of-international-and-information-studies",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-niigata/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Nagoya",
+    "year": 2009,
+    "startDate": "2009-08-22",
+    "endDate": "2009-08-22",
+    "venueId": "aichi/nagoya-city-university-yamanohata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-nagoya/"
+  },
+  {
     "conferenceId": "phpcon",
     "name": "PHPカンファレンス2009",
     "year": 2009,
@@ -18,5 +98,45 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": true,
     "eventUrl": "https://phpcon.php.gr.jp/2009/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Okinawa",
+    "year": 2009,
+    "startDate": "2009-09-26",
+    "endDate": "2009-09-26",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Tokyo/Fall",
+    "year": 2009,
+    "startDate": "2009-10-30",
+    "endDate": "2009-10-31",
+    "venueId": "tokyo/neec-kamata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Kochi",
+    "year": 2009,
+    "startDate": "2009-11-14",
+    "endDate": "2009-11-14",
+    "venueId": "kochi/kochi-city-culture-plaza-culport",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-kochi/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2009 Fukuoka",
+    "year": 2009,
+    "startDate": "2009-12-05",
+    "endDate": "2009-12-05",
+    "venueId": "fukuoka/kyushu-sangyo-university-information-science",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2009-fukuoka/"
   }
 ]

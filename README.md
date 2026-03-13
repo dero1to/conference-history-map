@@ -165,6 +165,7 @@ npm run validate-data
 - **TypeScript** - TypeScript関連カンファレンス
 - **PHP** - PHP関連カンファレンス
 - **Ruby** - Ruby関連カンファレンス
+- **Polyglot** - 複数言語横断的なカンファレンス
 
 ## 🤝 コントリビューション
 

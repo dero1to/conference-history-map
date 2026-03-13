@@ -10,6 +10,16 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog43/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Osaka",
+    "year": 2019,
+    "startDate": "2019-01-25",
+    "endDate": "2019-01-26",
+    "venueId": "osaka/osaka-industrial-creation-museum",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-osaka/"
+  },
+  {
     "conferenceId": "php-conference-sendai",
     "name": "PHPカンファレンス仙台 2019",
     "year": 2019,
@@ -28,6 +38,26 @@
     "venueId": "toyama/unazuki-international-hall-selene",
     "isHybrid": false,
     "eventUrl": "https://toyama-eng.connpass.com/event/111062/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Hamanako",
+    "year": 2019,
+    "startDate": "2019-02-10",
+    "endDate": "2019-02-10",
+    "venueId": "shizuoka/hamamatsu-civil-collaboration-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-hamanako/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Tokyo/Spring",
+    "year": 2019,
+    "startDate": "2019-02-22",
+    "endDate": "2019-02-23",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-spring/"
   },
   {
     "conferenceId": "phperkaigi",
@@ -60,6 +90,26 @@
     "eventUrl": "https://rubykaigi.org/2019/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Okinawa",
+    "year": 2019,
+    "startDate": "2019-04-20",
+    "endDate": "2019-04-20",
+    "venueId": "okinawa/okinawa-city-municipal-hall",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Hokkaido",
+    "year": 2019,
+    "startDate": "2019-05-31",
+    "endDate": "2019-06-01",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-do/"
+  },
+  {
     "conferenceId": "phpcon-fukuoka",
     "name": "PHPカンファレンス福岡 2019",
     "year": 2019,
@@ -68,6 +118,16 @@
     "venueId": "fukuoka/ffb-hall",
     "isHybrid": false,
     "eventUrl": "https://phpcon.fukuoka.jp/2019/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Nagoya",
+    "year": 2019,
+    "startDate": "2019-07-13",
+    "endDate": "2019-07-13",
+    "venueId": "aichi/nagoya-trade-and-industry-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-nagoya/"
   },
   {
     "conferenceId": "cloudnativedays",
@@ -90,6 +150,26 @@
     "eventUrl": "https://www.janog.gr.jp/meeting/janog44/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Kyoto",
+    "year": 2019,
+    "startDate": "2019-08-02",
+    "endDate": "2019-08-03",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-kyoto/"
+  },
+  {
+    "conferenceId": "odc",
+    "name": "オープンデベロッパーズカンファレンス 2019 Tokyo",
+    "year": 2019,
+    "startDate": "2019-08-24",
+    "endDate": "2019-08-24",
+    "venueId": "tokyo/neec-kamata",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/odc2019/"
+  },
+  {
     "conferenceId": "pycon-jp",
     "name": "PyCon JP 2019",
     "year": 2019,
@@ -98,6 +178,16 @@
     "venueId": "tokyo/ota-pio",
     "isHybrid": false,
     "eventUrl": "https://pycon.jp/2019/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Hiroshima",
+    "year": 2019,
+    "startDate": "2019-09-15",
+    "endDate": "2019-09-15",
+    "venueId": "hiroshima/satellite-campus-hiroshima",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-hiroshima/"
   },
   {
     "conferenceId": "phpcon-hokkaido",
@@ -110,6 +200,36 @@
     "eventUrl": "https://2019.phpcon.hokkaido.jp/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Shimane",
+    "year": 2019,
+    "startDate": "2019-09-28",
+    "endDate": "2019-09-28",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Niigata",
+    "year": 2019,
+    "startDate": "2019-10-05",
+    "endDate": "2019-10-05",
+    "venueId": "niigata/honport-niigata-city-public-library",
+    "isHybrid": false,
+    "eventUrl": "https://ospn.connpass.com/event/145108/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 .Enterprise",
+    "year": 2019,
+    "startDate": "2019-10-10",
+    "endDate": "2019-10-10",
+    "venueId": "tokyo/ap-shibuyadougenzaka",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019.enterprise/"
+  },
+  {
     "conferenceId": "phpcon-okinawa",
     "name": "PHPカンファレンス沖縄 2019",
     "year": 2019,
@@ -118,6 +238,16 @@
     "venueId": "okinawa/proto-ginowan-okinawa-head-office",
     "isHybrid": false,
     "eventUrl": "https://fortee.jp/phpcon-okinawa-2019"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Tokushima",
+    "year": 2019,
+    "startDate": "2019-10-19",
+    "endDate": "2019-10-19",
+    "venueId": "tokushima/shikoku-university-attached-plaza",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-tokushima/"
   },
   {
     "conferenceId": "rust-tokyo",
@@ -140,6 +270,16 @@
     "eventUrl": "https://cakefest.org/archive/tokyo-2019"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Fukuoka",
+    "year": 2019,
+    "startDate": "2019-11-09",
+    "endDate": "2019-11-09",
+    "venueId": "fukuoka/kyushu-sangyo-university-information-science",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-fukuoka/"
+  },
+  {
     "conferenceId": "postgresql-conference",
     "name": "PostgreSQL Conference Japan 2019",
     "year": 2019,
@@ -148,6 +288,16 @@
     "venueId": "tokyo/ap-shinagawa",
     "isHybrid": false,
     "eventUrl": "https://www.postgresql.jp/jpug-pgcon2019"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2019 Tokyo/Fall",
+    "year": 2019,
+    "startDate": "2019-11-23",
+    "endDate": "2019-11-24",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2019-fall/"
   },
   {
     "conferenceId": "cloudnativedays",

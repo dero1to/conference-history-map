@@ -1,5 +1,55 @@
 [
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Oita",
+    "year": 2012,
+    "startDate": "2012-02-11",
+    "endDate": "2012-02-11",
+    "venueId": "oita/oita-consumer-affairs-and-gender-equality-plaza-ines",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2012-oita/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Tokyo/Spring",
+    "year": 2012,
+    "startDate": "2012-03-16",
+    "endDate": "2012-03-17",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2012-spring/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Ehime",
+    "year": 2012,
+    "startDate": "2012-03-24",
+    "endDate": "2012-03-24",
+    "venueId": "ehime/ehime-university-johoku",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2012-ehime/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Iwate",
+    "year": 2012,
+    "startDate": "2012-04-21",
+    "endDate": "2012-04-21",
+    "venueId": "iwate/ichinoseki-cultural-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/ossc-iwate/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Nagoya",
+    "year": 2012,
+    "startDate": "2012-05-11",
+    "endDate": "2012-05-12",
+    "venueId": "aichi/nagoya-international-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-nagoya/"
+  },
+  {
     "conferenceId": "phpcon-kansai",
     "name": "PHPカンファレンス関西 2012",
     "year": 2012,
@@ -8,6 +58,66 @@
     "venueId": "osaka/osaka-industrial-creation-museum",
     "isHybrid": true,
     "eventUrl": "http://conference.kphpug.jp/2012/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Hokkaido",
+    "year": 2012,
+    "startDate": "2012-06-16",
+    "endDate": "2012-06-16",
+    "venueId": "hokkaido/sapporo-city-industrial-promotion-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-do/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Sendai",
+    "year": 2012,
+    "startDate": "2012-07-14",
+    "endDate": "2012-07-14",
+    "venueId": "miyagi/tohoku-computer-college",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2012-sendai/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 .DB",
+    "year": 2012,
+    "startDate": "2012-07-25",
+    "endDate": "2012-07-25",
+    "venueId": "tokyo/japan-electronics-college",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012.db/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Kansai/Kyoto",
+    "year": 2012,
+    "startDate": "2012-08-03",
+    "endDate": "2012-08-04",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-kyoto/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Shimane",
+    "year": 2012,
+    "startDate": "2012-09-01",
+    "endDate": "2012-09-01",
+    "venueId": "shimane/matsue-terrsa",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-shimane/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Tokyo/Fall",
+    "year": 2012,
+    "startDate": "2012-09-06",
+    "endDate": "2012-09-07",
+    "venueId": "tokyo/meisei-university-hino",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-fall/"
   },
   {
     "conferenceId": "phpcon",
@@ -20,6 +130,46 @@
     "eventUrl": "https://phpcon.php.gr.jp/w/2012/"
   },
   {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Okinawa",
+    "year": 2012,
+    "startDate": "2012-09-22",
+    "endDate": "2012-09-22",
+    "venueId": "okinawa/okinawa-convention-center",
+    "isHybrid": false,
+    "eventUrl": "https://www.ospn.jp/osc2012-okinawa/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Hiroshima",
+    "year": 2012,
+    "startDate": "2012-10-20",
+    "endDate": "2012-10-20",
+    "venueId": "hiroshima/hiroshima-kokusai-gakuin-nakano",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-hiroshima/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Oita(Fall)",
+    "year": 2012,
+    "startDate": "2012-10-27",
+    "endDate": "2012-10-27",
+    "venueId": "oita/sophia-hall",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-oita-fall/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Aizu",
+    "year": 2012,
+    "startDate": "2012-11-03",
+    "endDate": "2012-11-03",
+    "venueId": "fukushima/university-of-aizu",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-aizu/"
+  },
+  {
     "conferenceId": "jsconf-japan",
     "name": "東京Node学園祭2012",
     "year": 2012,
@@ -28,5 +178,25 @@
     "venueId": "tokyo/hosei-university-fujimi-gate",
     "isHybrid": true,
     "eventUrl": "https://nodefest.jp/2012/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 Fukuoka",
+    "year": 2012,
+    "startDate": "2012-12-08",
+    "endDate": "2012-12-08",
+    "venueId": "fukuoka/kyushu-computer-college-fukuoka",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012-fukuoka/"
+  },
+  {
+    "conferenceId": "osc",
+    "name": "オープンソースカンファレンス 2012 .Cloud",
+    "year": 2012,
+    "startDate": "2012-12-16",
+    "endDate": "2012-12-16",
+    "venueId": "tokyo/microsoft-japan-shinagawa",
+    "isHybrid": true,
+    "eventUrl": "https://www.ospn.jp/osc2012.cloud/"
   }
 ]

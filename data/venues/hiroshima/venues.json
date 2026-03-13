@@ -14,5 +14,29 @@
     "lat": 34.3920687,
     "lng": 132.4510433,
     "prefecture": "広島県"
+  },
+  {
+    "id": "prefectural-university-of-hiroshima",
+    "name": "県立広島大学 広島キャンパス",
+    "address": "広島県広島市南区宇品東１丁目１",
+    "lat": 34.366187040306365,
+    "lng": 132.46952486163232,
+    "prefecture": "広島県"
+  },
+  {
+    "id": "hiroshima-kokusai-gakuin-nakano",
+    "name": "広島国際学院大学 中野キャンパス",
+    "address": "広島県広島市安芸区中野６丁目２０−１",
+    "lat": 34.4111263042245,
+    "lng": 132.56784896289136,
+    "prefecture": "広島県"
+  },
+  {
+    "id": "satellite-campus-hiroshima",
+    "name": "サテライトキャンパスひろしま",
+    "address": "広島県広島市中区大手町１丁目５−３",
+    "lat": 34.39462569766642,
+    "lng": 132.45584655151256,
+    "prefecture": "広島県"
   }
 ]

@@ -78,5 +78,29 @@
     "lat": 43.055978094929785,
     "lng": 141.34082746495577,
     "prefecture": "北海道"
+  },
+  {
+    "id": "hokkaido-university-clark-memorial-student-center",
+    "name": "北海道大学 クラーク会館",
+    "address": "北海道札幌市北区北８条西７丁目",
+    "lat": 43.06976167938971,
+    "lng": 141.34339481581364,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "hokkaido-university-information-science-technology",
+    "name": "北海道大学 情報科学研究院棟",
+    "address": "北海道札幌市北区北１４条西９丁目",
+    "lat": 43.07633566625382,
+    "lng": 141.33896773754526,
+    "prefecture": "北海道"
+  },
+  {
+    "id": "hokkaido-university-conference-hall",
+    "name": "北海道大学 学術交流会館",
+    "address": "北海道札幌市北区北８条西５丁目８−１",
+    "lat": 43.07081587136116,
+    "lng": 141.3475373517194,
+    "prefecture": "北海道"
   }
 ]
