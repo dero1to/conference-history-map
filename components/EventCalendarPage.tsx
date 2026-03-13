@@ -6,6 +6,7 @@ import { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import { formatDateRange } from '@/lib/utils'
 import { getCategoryColor } from '@/lib/utils'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { getJapaneseHolidays } from '@/lib/holidays'
 
 const WEEKDAYS = ['月', '火', '水', '木', '金', '土', '日']
 const MONTH_NAMES = [
@@ -95,6 +96,9 @@ export default function EventCalendarPage({ conferences, events }: Props) {
     eventsByDate.forEach(evts => { count += evts.length })
     return count
   }, [eventsByDate])
+
+  // 日本の祝日マップ
+  const holidays = useMemo(() => getJapaneseHolidays(currentYear), [currentYear])
 
   function goToPrevMonth() {
     if (currentMonth === 0) {
@@ -220,6 +224,7 @@ export default function EventCalendarPage({ conferences, events }: Props) {
             const isToday = dateKey === todayKey
             const isSelected = dateKey === selectedDate
             const dayOfWeek = (startDayOfWeek + day - 1) % 7
+            const holidayName = holidays.get(dateKey)
 
             return (
               <button
@@ -233,15 +238,23 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                   className={`inline-flex items-center justify-center w-6 h-6 text-xs rounded-full ${
                     isToday
                       ? 'bg-blue-500 text-white font-bold'
-                      : dayOfWeek === 5
-                        ? 'text-blue-500'
-                        : dayOfWeek === 6
-                          ? 'text-red-500'
-                          : 'text-gray-700 dark:text-gray-300'
+                      : holidayName
+                        ? 'text-red-500'
+                        : dayOfWeek === 5
+                          ? 'text-blue-500'
+                          : dayOfWeek === 6
+                            ? 'text-red-500'
+                            : 'text-gray-700 dark:text-gray-300'
                   }`}
+                  title={holidayName}
                 >
                   {day}
                 </span>
+                {holidayName && (
+                  <div className="text-[9px] sm:text-[10px] leading-tight text-red-500 truncate px-0.5">
+                    {holidayName}
+                  </div>
+                )}
                 {dayEvents.length > 0 && (
                   <div className="mt-0.5 space-y-0.5">
                     {dayEvents.slice(0, 3).map((ce, i) => (
@@ -277,6 +290,11 @@ export default function EventCalendarPage({ conferences, events }: Props) {
               day: 'numeric',
               weekday: 'long',
             })}
+            {holidays.get(selectedDate) && (
+              <span className="ml-2 text-sm font-medium text-red-500">
+                {holidays.get(selectedDate)}
+              </span>
+            )}
           </h2>
           {selectedEvents.length === 0 ? (
             <p className="text-gray-500 dark:text-gray-400 text-sm">この日に開催されるイベントはありません</p>
