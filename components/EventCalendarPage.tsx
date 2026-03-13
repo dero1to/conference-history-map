@@ -7,7 +7,7 @@ import { formatDateRange } from '@/lib/utils'
 import { getCategoryColor } from '@/lib/utils'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土']
+const WEEKDAYS = ['月', '火', '水', '木', '金', '土', '日']
 const MONTH_NAMES = [
   '1月', '2月', '3月', '4月', '5月', '6月',
   '7月', '8月', '9月', '10月', '11月', '12月',
@@ -74,7 +74,8 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   // Calendar grid calculations
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1)
   const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0)
-  const startDayOfWeek = firstDayOfMonth.getDay()
+  // Convert Sunday=0 to Monday-based (Mon=0, Tue=1, ..., Sun=6)
+  const startDayOfWeek = (firstDayOfMonth.getDay() + 6) % 7
   const daysInMonth = lastDayOfMonth.getDate()
 
   const calendarDays: (number | null)[] = []
@@ -199,7 +200,7 @@ export default function EventCalendarPage({ conferences, events }: Props) {
             <div
               key={day}
               className={`text-center text-xs font-medium py-2 ${
-                i === 0 ? 'text-red-500' : i === 6 ? 'text-blue-500' : 'text-gray-500 dark:text-gray-400'
+                i === 5 ? 'text-blue-500' : i === 6 ? 'text-red-500' : 'text-gray-500 dark:text-gray-400'
               }`}
             >
               {day}
@@ -232,10 +233,10 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                   className={`inline-flex items-center justify-center w-6 h-6 text-xs rounded-full ${
                     isToday
                       ? 'bg-blue-500 text-white font-bold'
-                      : dayOfWeek === 0
-                        ? 'text-red-500'
+                      : dayOfWeek === 5
+                        ? 'text-blue-500'
                         : dayOfWeek === 6
-                          ? 'text-blue-500'
+                          ? 'text-red-500'
                           : 'text-gray-700 dark:text-gray-300'
                   }`}
                 >
