@@ -1,0 +1,14 @@
+{
+  "id": "frontend-conference-nagoya",
+  "name": "フロントエンドカンファレンス名古屋",
+  "category": [
+    "Web",
+    "Frontend"
+  ],
+  "programmingLanguages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "website": "https://fortee.jp/fec-nagoya-2026",
+  "twitter": "fec_nagoya"
+}

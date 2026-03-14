@@ -18,5 +18,115 @@
     "venueId": "tokyo/nakano-central-park",
     "isHybrid": true,
     "eventUrl": "https://2026.srekaigi.net/"
+  },
+  {
+    "conferenceId": "janog",
+    "name": "JANOG57",
+    "year": 2026,
+    "startDate": "2026-02-11",
+    "endDate": "2026-02-13",
+    "venueId": "osaka/congress-convention-center",
+    "isHybrid": true,
+    "eventUrl": "https://www.janog.gr.jp/meeting/janog57/"
+  },
+  {
+    "conferenceId": "emconf-jp",
+    "name": "Engineering Management Conference Japan 2026",
+    "year": 2026,
+    "startDate": "2026-03-04",
+    "endDate": "2026-03-04",
+    "venueId": "tokyo/toc-ariake",
+    "isHybrid": true,
+    "eventUrl": "https://2026.emconf.jp/"
+  },
+  {
+    "conferenceId": "jaws-days",
+    "name": "JAWS DAYS 2026",
+    "year": 2026,
+    "startDate": "2026-03-07",
+    "endDate": "2026-03-07",
+    "venueId": "tokyo/ikebukuro-sunshine-city",
+    "isHybrid": false,
+    "eventUrl": "https://jawsdays2026.jaws-ug.jp/"
+  },
+  {
+    "conferenceId": "phperkaigi",
+    "name": "PHPerKaigi 2026",
+    "year": 2026,
+    "startDate": "2026-03-20",
+    "endDate": "2026-03-22",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://phperkaigi.jp/2026/"
+  },
+  {
+    "conferenceId": "onestop-output",
+    "name": "ワンストップ アウトプット！",
+    "year": 2026,
+    "startDate": "2026-04-04",
+    "endDate": "2026-04-04",
+    "venueId": "tokyo/shift-co-ltd-shinjuku-1st-office",
+    "isHybrid": false,
+    "eventUrl": "https://onestop-output.dev/"
+  },
+  {
+    "conferenceId": "presentation-of-lessons-learned-from-anime",
+    "name": "【劇場版】アニメから得た学びを発表会2026",
+    "year": 2026,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "venueId": "tokyo/musashino-place",
+    "isHybrid": false,
+    "eventUrl": "https://engineers-anime.connpass.com/event/375981/"
+  },
+  {
+    "conferenceId": "phpcon-odawara",
+    "name": "PHPカンファレンス小田原 2026",
+    "year": 2026,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "venueId": "kanagawa/odawara-umeco",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-odawara.jp/ja/2026/"
+  },
+  {
+    "conferenceId": "retrospective-conference",
+    "name": "ふりかえりカンファレンス 2026",
+    "year": 2026,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "venueId": "tokyo/shift-co-ltd-shinjuku-1st-office",
+    "isHybrid": false,
+    "eventUrl": "https://retrospective.connpass.com/event/377208/"
+  },
+  {
+    "conferenceId": "rubykaigi",
+    "name": "RubyKaigi 2026",
+    "year": 2026,
+    "startDate": "2026-04-22",
+    "endDate": "2026-04-24",
+    "venueId": "hokkaido/hakodate-arena",
+    "isHybrid": false,
+    "eventUrl": "https://rubykaigi.org/2026/"
+  },
+  {
+    "conferenceId": "frontend-conference-nagoya",
+    "name": "フロントエンドカンファレンス名古屋 2026",
+    "year": 2026,
+    "startDate": "2026-05-09",
+    "endDate": "2026-05-09",
+    "venueId": "aichi/winc-aichi",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/fec-nagoya-2026"
+  },
+  {
+    "conferenceId": "phpcon-kagawa",
+    "name": "PHPカンファレンス香川 2026",
+    "year": 2026,
+    "startDate": "2026-05-09",
+    "endDate": "2026-05-09",
+    "venueId": "kagawa/tamamo-hiunkaku",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.kagawa.jp/2026/"
   }
 ]
