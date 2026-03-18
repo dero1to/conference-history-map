@@ -8,7 +8,7 @@ import { getCategoryColor } from '@/lib/utils'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { getJapaneseHolidays } from '@/lib/holidays'
 
-const WEEKDAYS = ['月', '火', '水', '木', '金', '土', '日']
+const WEEKDAYS = ['火', '水', '木', '金', '土', '日', '月']
 const MONTH_NAMES = [
   '1月', '2月', '3月', '4月', '5月', '6月',
   '7月', '8月', '9月', '10月', '11月', '12月',
@@ -23,6 +23,19 @@ interface CalendarEvent {
   event: ConferenceEventWithVenue
   conference: Conference
 }
+
+interface EventBand {
+  calendarEvent: CalendarEvent
+  startCol: number
+  endCol: number
+  isStart: boolean
+  isEnd: boolean
+  lane: number
+}
+
+const MAX_VISIBLE_LANES = 3
+const BAND_HEIGHT = 20
+const BAND_GAP = 2
 
 export default function EventCalendarPage({ conferences, events }: Props) {
   const today = new Date()
@@ -75,8 +88,8 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   // Calendar grid calculations
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1)
   const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0)
-  // Convert Sunday=0 to Monday-based (Mon=0, Tue=1, ..., Sun=6)
-  const startDayOfWeek = (firstDayOfMonth.getDay() + 6) % 7
+  // Convert Sunday=0 to Tuesday-based (Tue=0, Wed=1, ..., Mon=6)
+  const startDayOfWeek = (firstDayOfMonth.getDay() + 5) % 7
   const daysInMonth = lastDayOfMonth.getDate()
 
   const calendarDays: (number | null)[] = []
@@ -86,6 +99,95 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   for (let d = 1; d <= daysInMonth; d++) {
     calendarDays.push(d)
   }
+
+  // Split calendarDays into weeks
+  const weeks = useMemo(() => {
+    const result: (number | null)[][] = []
+    for (let i = 0; i < calendarDays.length; i += 7) {
+      const week = calendarDays.slice(i, i + 7)
+      while (week.length < 7) week.push(null)
+      result.push(week)
+    }
+    return result
+  }, [calendarDays])
+
+  // Compute event bands for each week
+  const weekBands = useMemo(() => {
+    // Collect unique events visible in this month
+    const monthEvents: { ce: CalendarEvent; firstDay: number; lastDay: number; eventStart: Date; eventEnd: Date }[] = []
+    const seen = new Set<string>()
+
+    events.forEach(event => {
+      const conference = conferenceMap.get(event.conferenceId)
+      if (!conference) return
+      const eventKey = `${event.conferenceId}-${event.startDate}`
+      if (seen.has(eventKey)) return
+      seen.add(eventKey)
+
+      const start = new Date(event.startDate)
+      const end = new Date(event.endDate)
+      const monthFirst = new Date(currentYear, currentMonth, 1)
+      const monthLast = new Date(currentYear, currentMonth + 1, 0)
+
+      if (start > monthLast || end < monthFirst) return
+
+      const visibleStart = start < monthFirst ? monthFirst : start
+      const visibleEnd = end > monthLast ? monthLast : end
+
+      monthEvents.push({
+        ce: { event, conference },
+        firstDay: visibleStart.getDate(),
+        lastDay: visibleEnd.getDate(),
+        eventStart: start,
+        eventEnd: end,
+      })
+    })
+
+    // Sort events: earlier start first, then longer spans first
+    monthEvents.sort((a, b) => {
+      if (a.firstDay !== b.firstDay) return a.firstDay - b.firstDay
+      return (b.lastDay - b.firstDay) - (a.lastDay - a.firstDay)
+    })
+
+    return weeks.map(week => {
+      const bands: EventBand[] = []
+
+      monthEvents.forEach(({ ce, firstDay, lastDay, eventStart, eventEnd }) => {
+        let startCol = -1
+        let endCol = -1
+
+        week.forEach((day, col) => {
+          if (day !== null && day >= firstDay && day <= lastDay) {
+            if (startCol === -1) startCol = col
+            endCol = col
+          }
+        })
+
+        if (startCol === -1) return
+
+        const isStart = week[startCol] === eventStart.getDate() &&
+                        currentMonth === eventStart.getMonth() &&
+                        currentYear === eventStart.getFullYear()
+        const isEnd = week[endCol] === eventEnd.getDate() &&
+                      currentMonth === eventEnd.getMonth() &&
+                      currentYear === eventEnd.getFullYear()
+
+        bands.push({ calendarEvent: ce, startCol, endCol, isStart, isEnd, lane: 0 })
+      })
+
+      // Greedy lane assignment
+      const laneEnds: number[] = []
+      bands.forEach(band => {
+        let lane = 0
+        while (lane < laneEnds.length && laneEnds[lane] >= band.startCol) lane++
+        band.lane = lane
+        if (lane < laneEnds.length) laneEnds[lane] = band.endCol
+        else laneEnds.push(band.endCol)
+      })
+
+      return bands
+    })
+  }, [weeks, events, conferenceMap, currentYear, currentMonth])
 
   // Events for the selected date
   const selectedEvents = selectedDate ? eventsByDate.get(selectedDate) || [] : []
@@ -204,7 +306,7 @@ export default function EventCalendarPage({ conferences, events }: Props) {
             <div
               key={day}
               className={`text-center text-xs font-medium py-2 ${
-                i === 5 ? 'text-blue-500' : i === 6 ? 'text-red-500' : 'text-gray-500 dark:text-gray-400'
+                i === 4 ? 'text-blue-500' : i === 5 ? 'text-red-500' : 'text-gray-500 dark:text-gray-400'
               }`}
             >
               {day}
@@ -213,68 +315,120 @@ export default function EventCalendarPage({ conferences, events }: Props) {
         </div>
 
         {/* Calendar Grid */}
-        <div className="grid grid-cols-7 border-t border-gray-200 dark:border-gray-700">
-          {calendarDays.map((day, index) => {
-            if (day === null) {
-              return <div key={`empty-${index}`} className="min-h-[80px] sm:min-h-[100px] border-b border-r border-gray-100 dark:border-gray-700/50" />
-            }
-
-            const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
-            const dayEvents = eventsByDate.get(dateKey) || []
-            const isToday = dateKey === todayKey
-            const isSelected = dateKey === selectedDate
-            const dayOfWeek = (startDayOfWeek + day - 1) % 7
-            const holidayName = holidays.get(dateKey)
+        <div className="border-t border-gray-200 dark:border-gray-700">
+          {weeks.map((week, weekIdx) => {
+            const bands = weekBands[weekIdx]
+            const maxLane = bands.length > 0 ? Math.max(...bands.map(b => b.lane)) : -1
+            const visibleLanes = Math.min(maxLane + 1, MAX_VISIBLE_LANES)
+            const bandRows = visibleLanes > 0
+              ? ` ${Array(visibleLanes).fill(`${BAND_HEIGHT + BAND_GAP}px`).join(' ')}`
+              : ''
 
             return (
-              <button
-                key={dateKey}
-                onClick={() => setSelectedDate(isSelected ? null : dateKey)}
-                className={`min-h-[80px] sm:min-h-[100px] border-b border-r border-gray-100 dark:border-gray-700/50 p-1 text-left transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50 ${
-                  isSelected ? 'bg-blue-50 dark:bg-blue-900/20' : ''
-                }`}
+              <div
+                key={weekIdx}
+                className="grid grid-cols-7"
+                style={{
+                  gridTemplateRows: `auto${bandRows} 1fr`,
+                  minHeight: 80,
+                }}
               >
-                <span
-                  className={`inline-flex items-center justify-center w-6 h-6 text-xs rounded-full ${
-                    isToday
-                      ? 'bg-blue-500 text-white font-bold'
-                      : holidayName
-                        ? 'text-red-500'
-                        : dayOfWeek === 5
-                          ? 'text-blue-500'
-                          : dayOfWeek === 6
-                            ? 'text-red-500'
-                            : 'text-gray-700 dark:text-gray-300'
-                  }`}
-                  title={holidayName}
-                >
-                  {day}
-                </span>
-                {holidayName && (
-                  <div className="text-[9px] sm:text-[10px] leading-tight text-red-500 truncate px-0.5">
-                    {holidayName}
-                  </div>
-                )}
-                {dayEvents.length > 0 && (
-                  <div className="mt-0.5 space-y-0.5">
-                    {dayEvents.slice(0, 3).map((ce, i) => (
+                {/* Day cell backgrounds & click targets - span all rows */}
+                {week.map((day, col) => {
+                  if (day === null) {
+                    return (
                       <div
-                        key={i}
-                        className="text-[10px] sm:text-xs leading-tight truncate rounded px-1 py-0.5 text-white"
-                        style={{ backgroundColor: getCategoryColor(ce.conference.category[0]) }}
-                        title={ce.event.name}
+                        key={`empty-${weekIdx}-${col}`}
+                        className="border-b border-r border-gray-100 dark:border-gray-700/50"
+                        style={{ gridColumn: col + 1, gridRow: '1 / -1' }}
+                      />
+                    )
+                  }
+
+                  const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+                  const isSelected = dateKey === selectedDate
+
+                  return (
+                    <button
+                      key={`cell-${col}`}
+                      onClick={() => setSelectedDate(isSelected ? null : dateKey)}
+                      className={`border-b border-r border-gray-100 dark:border-gray-700/50 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50 ${
+                        isSelected ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                      }`}
+                      style={{ gridColumn: col + 1, gridRow: '1 / -1' }}
+                    />
+                  )
+                })}
+
+                {/* Date headers - row 1 only, layered on top */}
+                {week.map((day, col) => {
+                  if (day === null) return null
+
+                  const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+                  const isToday = dateKey === todayKey
+                  const dayOfWeek = (startDayOfWeek + day - 1) % 7
+                  const holidayName = holidays.get(dateKey)
+                  const overflowCount = bands.filter(b => b.lane >= MAX_VISIBLE_LANES && col >= b.startCol && col <= b.endCol).length
+
+                  return (
+                    <div
+                      key={`date-${col}`}
+                      className="p-1 pointer-events-none"
+                      style={{ gridColumn: col + 1, gridRow: 1 }}
+                    >
+                      <span
+                        className={`inline-flex items-center justify-center w-6 h-6 text-xs rounded-full ${
+                          isToday
+                            ? 'bg-blue-500 text-white font-bold'
+                            : holidayName
+                              ? 'text-red-500'
+                              : dayOfWeek === 4
+                                ? 'text-blue-500'
+                                : dayOfWeek === 5
+                                  ? 'text-red-500'
+                                  : 'text-gray-700 dark:text-gray-300'
+                        }`}
+                        title={holidayName}
                       >
-                        {ce.event.name}
-                      </div>
-                    ))}
-                    {dayEvents.length > 3 && (
-                      <div className="text-[10px] text-gray-500 dark:text-gray-400 px-1">
-                        +{dayEvents.length - 3}件
-                      </div>
-                    )}
-                  </div>
-                )}
-              </button>
+                        {day}
+                      </span>
+                      {holidayName && (
+                        <div className="text-[9px] sm:text-[10px] leading-tight text-red-500 truncate px-0.5">
+                          {holidayName}
+                        </div>
+                      )}
+                      {overflowCount > 0 && (
+                        <div className="text-[10px] text-gray-500 dark:text-gray-400 px-1 mt-1">
+                          +{overflowCount}件
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+
+                {/* Event bands - rows 2+ */}
+                {bands.filter(b => b.lane < MAX_VISIBLE_LANES).map((band, i) => {
+                  const color = getCategoryColor(band.calendarEvent.conference.category[0])
+                  return (
+                    <div
+                      key={`band-${i}`}
+                      className="pointer-events-none text-[10px] sm:text-xs leading-[18px] text-white truncate px-1.5 mx-0.5 my-[1px]"
+                      style={{
+                        gridColumn: `${band.startCol + 1} / ${band.endCol + 2}`,
+                        gridRow: band.lane + 2,
+                        backgroundColor: color,
+                        borderTopLeftRadius: band.isStart ? 4 : 0,
+                        borderBottomLeftRadius: band.isStart ? 4 : 0,
+                        borderTopRightRadius: band.isEnd ? 4 : 0,
+                        borderBottomRightRadius: band.isEnd ? 4 : 0,
+                      }}
+                      title={band.calendarEvent.event.name}
+                    >
+                      {(band.isStart || band.startCol === 0) ? band.calendarEvent.event.name : '\u00A0'}
+                    </div>
+                  )
+                })}
+              </div>
             )
           })}
         </div>
