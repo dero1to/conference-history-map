@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import { formatDateRange } from '@/lib/utils'
 import { getCategoryColor } from '@/lib/utils'
@@ -33,15 +34,44 @@ interface EventBand {
   lane: number
 }
 
+interface CalendarDay {
+  day: number
+  month: number
+  year: number
+  isCurrentMonth: boolean
+  dateKey: string
+}
+
+function parseLocalDate(dateStr: string): Date {
+  const [y, m, d] = dateStr.split('-').map(Number)
+  return new Date(y, m - 1, d)
+}
+
 const MAX_VISIBLE_LANES = 3
 const BAND_HEIGHT = 20
 const BAND_GAP = 2
 
 export default function EventCalendarPage({ conferences, events }: Props) {
   const today = new Date()
-  const [currentYear, setCurrentYear] = useState(today.getFullYear())
-  const [currentMonth, setCurrentMonth] = useState(today.getMonth())
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  const paramYear = searchParams.get('year')
+  const paramMonth = searchParams.get('month')
+  const initialYear = paramYear ? Number(paramYear) : today.getFullYear()
+  const initialMonth = paramMonth ? Number(paramMonth) - 1 : today.getMonth()
+
+  const [currentYear, setCurrentYear] = useState(initialYear)
+  const [currentMonth, setCurrentMonth] = useState(initialMonth)
   const [selectedDate, setSelectedDate] = useState<string | null>(null)
+
+  const updateURL = useCallback((year: number, month: number) => {
+    const params = new URLSearchParams()
+    params.set('year', String(year))
+    params.set('month', String(month + 1))
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false })
+  }, [router, pathname])
 
   const conferenceMap = useMemo(() => {
     const map = new Map<string, Conference>()
@@ -54,8 +84,8 @@ export default function EventCalendarPage({ conferences, events }: Props) {
     const map = new Map<string, CalendarEvent[]>()
 
     events.forEach(event => {
-      const start = new Date(event.startDate)
-      const end = new Date(event.endDate)
+      const start = parseLocalDate(event.startDate)
+      const end = parseLocalDate(event.endDate)
       const conference = conferenceMap.get(event.conferenceId)
       if (!conference) return
 
@@ -92,29 +122,53 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   const startDayOfWeek = (firstDayOfMonth.getDay() + 5) % 7
   const daysInMonth = lastDayOfMonth.getDate()
 
-  const calendarDays: (number | null)[] = []
-  for (let i = 0; i < startDayOfWeek; i++) {
-    calendarDays.push(null)
+  const makeDay = (year: number, month: number, day: number, isCurrentMonth: boolean): CalendarDay => ({
+    day, month, year, isCurrentMonth,
+    dateKey: `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`,
+  })
+
+  const calendarDays: CalendarDay[] = []
+
+  // Previous month padding
+  const prevMonthLastDay = new Date(currentYear, currentMonth, 0).getDate()
+  const prevMonth = currentMonth === 0 ? 11 : currentMonth - 1
+  const prevYear = currentMonth === 0 ? currentYear - 1 : currentYear
+  for (let i = startDayOfWeek - 1; i >= 0; i--) {
+    calendarDays.push(makeDay(prevYear, prevMonth, prevMonthLastDay - i, false))
   }
+
+  // Current month
   for (let d = 1; d <= daysInMonth; d++) {
-    calendarDays.push(d)
+    calendarDays.push(makeDay(currentYear, currentMonth, d, true))
+  }
+
+  // Next month padding
+  const nextMonth = currentMonth === 11 ? 0 : currentMonth + 1
+  const nextYear = currentMonth === 11 ? currentYear + 1 : currentYear
+  let nextDay = 1
+  while (calendarDays.length % 7 !== 0) {
+    calendarDays.push(makeDay(nextYear, nextMonth, nextDay++, false))
   }
 
   // Split calendarDays into weeks
   const weeks = useMemo(() => {
-    const result: (number | null)[][] = []
+    const result: CalendarDay[][] = []
     for (let i = 0; i < calendarDays.length; i += 7) {
-      const week = calendarDays.slice(i, i + 7)
-      while (week.length < 7) week.push(null)
-      result.push(week)
+      result.push(calendarDays.slice(i, i + 7))
     }
     return result
   }, [calendarDays])
 
   // Compute event bands for each week
   const weekBands = useMemo(() => {
-    // Collect unique events visible in this month
-    const monthEvents: { ce: CalendarEvent; firstDay: number; lastDay: number; eventStart: Date; eventEnd: Date }[] = []
+    // Collect the full date range visible on the grid (including prev/next month padding)
+    const gridStart = calendarDays[0]
+    const gridEnd = calendarDays[calendarDays.length - 1]
+    const gridStartDate = new Date(gridStart.year, gridStart.month, gridStart.day)
+    const gridEndDate = new Date(gridEnd.year, gridEnd.month, gridEnd.day)
+
+    // Collect unique events visible in the grid range
+    const gridEvents: { ce: CalendarEvent; eventStart: Date; eventEnd: Date }[] = []
     const seen = new Set<string>()
 
     events.forEach(event => {
@@ -124,40 +178,34 @@ export default function EventCalendarPage({ conferences, events }: Props) {
       if (seen.has(eventKey)) return
       seen.add(eventKey)
 
-      const start = new Date(event.startDate)
-      const end = new Date(event.endDate)
-      const monthFirst = new Date(currentYear, currentMonth, 1)
-      const monthLast = new Date(currentYear, currentMonth + 1, 0)
+      const start = parseLocalDate(event.startDate)
+      const end = parseLocalDate(event.endDate)
 
-      if (start > monthLast || end < monthFirst) return
+      if (start > gridEndDate || end < gridStartDate) return
 
-      const visibleStart = start < monthFirst ? monthFirst : start
-      const visibleEnd = end > monthLast ? monthLast : end
-
-      monthEvents.push({
+      gridEvents.push({
         ce: { event, conference },
-        firstDay: visibleStart.getDate(),
-        lastDay: visibleEnd.getDate(),
         eventStart: start,
         eventEnd: end,
       })
     })
 
     // Sort events: earlier start first, then longer spans first
-    monthEvents.sort((a, b) => {
-      if (a.firstDay !== b.firstDay) return a.firstDay - b.firstDay
-      return (b.lastDay - b.firstDay) - (a.lastDay - a.firstDay)
+    gridEvents.sort((a, b) => {
+      if (a.eventStart.getTime() !== b.eventStart.getTime()) return a.eventStart.getTime() - b.eventStart.getTime()
+      return (b.eventEnd.getTime() - b.eventStart.getTime()) - (a.eventEnd.getTime() - a.eventStart.getTime())
     })
 
     return weeks.map(week => {
       const bands: EventBand[] = []
 
-      monthEvents.forEach(({ ce, firstDay, lastDay, eventStart, eventEnd }) => {
+      gridEvents.forEach(({ ce, eventStart, eventEnd }) => {
         let startCol = -1
         let endCol = -1
 
-        week.forEach((day, col) => {
-          if (day !== null && day >= firstDay && day <= lastDay) {
+        week.forEach((cell, col) => {
+          const cellDate = new Date(cell.year, cell.month, cell.day)
+          if (cellDate >= eventStart && cellDate <= eventEnd) {
             if (startCol === -1) startCol = col
             endCol = col
           }
@@ -165,12 +213,14 @@ export default function EventCalendarPage({ conferences, events }: Props) {
 
         if (startCol === -1) return
 
-        const isStart = week[startCol] === eventStart.getDate() &&
-                        currentMonth === eventStart.getMonth() &&
-                        currentYear === eventStart.getFullYear()
-        const isEnd = week[endCol] === eventEnd.getDate() &&
-                      currentMonth === eventEnd.getMonth() &&
-                      currentYear === eventEnd.getFullYear()
+        const startCell = week[startCol]
+        const endCell = week[endCol]
+        const isStart = startCell.year === eventStart.getFullYear() &&
+                        startCell.month === eventStart.getMonth() &&
+                        startCell.day === eventStart.getDate()
+        const isEnd = endCell.year === eventEnd.getFullYear() &&
+                      endCell.month === eventEnd.getMonth() &&
+                      endCell.day === eventEnd.getDate()
 
         bands.push({ calendarEvent: ce, startCol, endCol, isStart, isEnd, lane: 0 })
       })
@@ -187,7 +237,7 @@ export default function EventCalendarPage({ conferences, events }: Props) {
 
       return bands
     })
-  }, [weeks, events, conferenceMap, currentYear, currentMonth])
+  }, [weeks, calendarDays, events, conferenceMap])
 
   // Events for the selected date
   const selectedEvents = selectedDate ? eventsByDate.get(selectedDate) || [] : []
@@ -203,39 +253,42 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   const holidays = useMemo(() => getJapaneseHolidays(currentYear), [currentYear])
 
   function goToPrevMonth() {
-    if (currentMonth === 0) {
-      setCurrentYear(currentYear - 1)
-      setCurrentMonth(11)
-    } else {
-      setCurrentMonth(currentMonth - 1)
-    }
+    const newYear = currentMonth === 0 ? currentYear - 1 : currentYear
+    const newMonth = currentMonth === 0 ? 11 : currentMonth - 1
+    setCurrentYear(newYear)
+    setCurrentMonth(newMonth)
     setSelectedDate(null)
+    updateURL(newYear, newMonth)
   }
 
   function goToNextMonth() {
-    if (currentMonth === 11) {
-      setCurrentYear(currentYear + 1)
-      setCurrentMonth(0)
-    } else {
-      setCurrentMonth(currentMonth + 1)
-    }
+    const newYear = currentMonth === 11 ? currentYear + 1 : currentYear
+    const newMonth = currentMonth === 11 ? 0 : currentMonth + 1
+    setCurrentYear(newYear)
+    setCurrentMonth(newMonth)
     setSelectedDate(null)
+    updateURL(newYear, newMonth)
   }
 
   function goToToday() {
-    setCurrentYear(today.getFullYear())
-    setCurrentMonth(today.getMonth())
+    const y = today.getFullYear()
+    const m = today.getMonth()
+    setCurrentYear(y)
+    setCurrentMonth(m)
     setSelectedDate(null)
+    updateURL(y, m)
   }
 
   function handleYearChange(year: number) {
     setCurrentYear(year)
     setSelectedDate(null)
+    updateURL(year, currentMonth)
   }
 
   function handleMonthChange(month: number) {
     setCurrentMonth(month)
     setSelectedDate(null)
+    updateURL(currentYear, month)
   }
 
   const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
@@ -334,26 +387,21 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                 }}
               >
                 {/* Day cell backgrounds & click targets - span all rows */}
-                {week.map((day, col) => {
-                  if (day === null) {
-                    return (
-                      <div
-                        key={`empty-${weekIdx}-${col}`}
-                        className="border-b border-r border-gray-100 dark:border-gray-700/50"
-                        style={{ gridColumn: col + 1, gridRow: '1 / -1' }}
-                      />
-                    )
-                  }
-
-                  const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
-                  const isSelected = dateKey === selectedDate
+                {week.map((cell, col) => {
+                  const isSelected = cell.isCurrentMonth && cell.dateKey === selectedDate
 
                   return (
                     <button
                       key={`cell-${col}`}
-                      onClick={() => setSelectedDate(isSelected ? null : dateKey)}
-                      className={`border-b border-r border-gray-100 dark:border-gray-700/50 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50 ${
-                        isSelected ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                      onClick={() => {
+                        if (cell.isCurrentMonth) {
+                          setSelectedDate(isSelected ? null : cell.dateKey)
+                        }
+                      }}
+                      className={`border-b border-r border-gray-100 dark:border-gray-700/50 transition-colors ${
+                        cell.isCurrentMonth
+                          ? `hover:bg-gray-50 dark:hover:bg-gray-700/50 ${isSelected ? 'bg-blue-50 dark:bg-blue-900/20' : ''}`
+                          : 'bg-gray-50/50 dark:bg-gray-800/50'
                       }`}
                       style={{ gridColumn: col + 1, gridRow: '1 / -1' }}
                     />
@@ -361,13 +409,10 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                 })}
 
                 {/* Date headers - row 1 only, layered on top */}
-                {week.map((day, col) => {
-                  if (day === null) return null
-
-                  const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
-                  const isToday = dateKey === todayKey
-                  const dayOfWeek = (startDayOfWeek + day - 1) % 7
-                  const holidayName = holidays.get(dateKey)
+                {week.map((cell, col) => {
+                  const isToday = cell.dateKey === todayKey
+                  const dayOfWeek = col
+                  const holidayName = holidays.get(cell.dateKey)
                   const overflowCount = bands.filter(b => b.lane >= MAX_VISIBLE_LANES && col >= b.startCol && col <= b.endCol).length
 
                   return (
@@ -378,21 +423,23 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                     >
                       <span
                         className={`inline-flex items-center justify-center w-6 h-6 text-xs rounded-full ${
-                          isToday
-                            ? 'bg-blue-500 text-white font-bold'
-                            : holidayName
-                              ? 'text-red-500'
-                              : dayOfWeek === 4
-                                ? 'text-blue-500'
-                                : dayOfWeek === 5
-                                  ? 'text-red-500'
-                                  : 'text-gray-700 dark:text-gray-300'
+                          !cell.isCurrentMonth
+                            ? 'text-gray-300 dark:text-gray-600'
+                            : isToday
+                              ? 'bg-blue-500 text-white font-bold'
+                              : holidayName
+                                ? 'text-red-500'
+                                : dayOfWeek === 4
+                                  ? 'text-blue-500'
+                                  : dayOfWeek === 5
+                                    ? 'text-red-500'
+                                    : 'text-gray-700 dark:text-gray-300'
                         }`}
                         title={holidayName}
                       >
-                        {day}
+                        {cell.day}
                       </span>
-                      {holidayName && (
+                      {cell.isCurrentMonth && holidayName && (
                         <div className="text-[9px] sm:text-[10px] leading-tight text-red-500 truncate px-0.5">
                           {holidayName}
                         </div>
