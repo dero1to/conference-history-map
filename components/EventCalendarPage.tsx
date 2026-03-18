@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import Link from 'next/link'
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import { Conference, ConferenceEventWithVenue } from '@/types/conference'
@@ -292,6 +292,49 @@ export default function EventCalendarPage({ conferences, events }: Props) {
   }
 
   const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      // Ignore when focus is on input/select/textarea
+      const tag = (e.target as HTMLElement).tagName
+      if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return
+
+      switch (e.key) {
+        case 'ArrowLeft':
+          e.preventDefault()
+          goToPrevMonth()
+          break
+        case 'ArrowRight':
+          e.preventDefault()
+          goToNextMonth()
+          break
+        case 'ArrowUp':
+          if (availableYears.length > 0 && currentYear > availableYears[0]) {
+            e.preventDefault()
+            handleYearChange(currentYear - 1)
+          }
+          break
+        case 'ArrowDown':
+          if (availableYears.length > 0 && currentYear < availableYears[availableYears.length - 1]) {
+            e.preventDefault()
+            handleYearChange(currentYear + 1)
+          }
+          break
+        case 't':
+          e.preventDefault()
+          goToToday()
+          break
+        case 'Escape':
+          e.preventDefault()
+          setSelectedDate(null)
+          break
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [currentYear, currentMonth, availableYears])
 
   return (
     <div>
