@@ -1,0 +1,12 @@
+{
+  "id": "iosdc-japan",
+  "name": "iOSDC Japan",
+  "category": [
+    "Mobile"
+  ],
+  "programmingLanguages": [
+    "Swift"
+  ],
+  "website": "https://iosdc.jp/",
+  "twitter": "@iosdcjp"
+}

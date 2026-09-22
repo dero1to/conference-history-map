@@ -1,0 +1,12 @@
+{
+  "id": "tinygo-conference",
+  "name": "TinyGo Conference",
+  "category": [
+    "Other"
+  ],
+  "programmingLanguages": [
+    "Go"
+  ],
+  "website": "https://conf.tinygo-keeb.org/",
+  "twitter": "@tinygo_keeb"
+}
