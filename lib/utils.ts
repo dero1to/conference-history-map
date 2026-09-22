@@ -1,4 +1,4 @@
-import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages, Prefectures } from '@/types/conference'
+import { Conference, ConferenceEventWithVenue, Category, ProgrammingLanguages, Prefectures, Venue } from '@/types/conference'
 import { getAvailablePrefectures } from '@/types/conference'
 
 // カテゴリー別の色を返す
@@ -190,4 +190,15 @@ export function searchConferences(
     const normalizedName = normalizeSearchQuery(conference.name)
     return normalizedName.includes(normalizedQuery)
   })
+}
+
+// 会場のGoogle Mapsリンクを生成する
+// 会場名では別の場所に解決されることがあるため、データが持つ緯度経度で指定する
+export function createGoogleMapsUrl(venue: Venue): string {
+  const params = new URLSearchParams({
+    api: '1',
+    query: `${venue.lat},${venue.lng}`,
+  })
+
+  return `https://www.google.com/maps/search/?${params.toString()}`
 }

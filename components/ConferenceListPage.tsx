@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
+import { ArrowUpDown } from 'lucide-react'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import FilterPanel from './FilterPanel'
 import ConferenceList from './ConferenceList'
@@ -30,6 +31,7 @@ export default function ConferenceListPage({
     venueSearchQuery: '',
   })
   const [isInitialized, setIsInitialized] = useState(false)
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc')
 
   useEffect(() => {
     if (!isInitialized) {
@@ -48,6 +50,19 @@ export default function ConferenceListPage({
     () => filterEvents(events, conferences, filters),
     [events, conferences, filters]
   )
+
+  // 開催日順に並べ替える（データの読み込み順に依存しないよう明示的にソートする）
+  const sortedEvents = useMemo(() => {
+    const direction = sortOrder === 'asc' ? 1 : -1
+
+    return [...filteredEvents].sort((a, b) => {
+      if (a.startDate !== b.startDate) {
+        return a.startDate < b.startDate ? -direction : direction
+      }
+      // 同日開催は名前順で安定させる
+      return a.name.localeCompare(b.name, 'ja')
+    })
+  }, [filteredEvents, sortOrder])
 
   // 動的フィルタリング機能を使用
   const {
@@ -85,10 +100,22 @@ export default function ConferenceListPage({
       {/* リスト表示エリア */}
       <div className="flex-1 lg:overflow-y-auto lg:max-h-[calc(100vh-8rem)]">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-            イベント一覧
-          </h2>
-          <ConferenceList events={filteredEvents} conferences={conferences} />
+          <div className="flex items-center justify-between gap-4 mb-6">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+              イベント一覧
+            </h2>
+            <button
+              type="button"
+              onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              aria-label={`並び順を切り替える（現在: ${sortOrder === 'asc' ? '古い順' : '新しい順'}）`}
+              title="並び順を切り替える"
+            >
+              <ArrowUpDown className="w-4 h-4" />
+              {sortOrder === 'asc' ? '古い順' : '新しい順'}
+            </button>
+          </div>
+          <ConferenceList events={sortedEvents} conferences={conferences} />
         </div>
       </div>
     </div>

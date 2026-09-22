@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
+import { createMapUrl } from '@/lib/url-params'
 
 interface ConferenceListProps {
   events: ConferenceEventWithVenue[]
@@ -18,6 +19,20 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
     return date.toLocaleDateString('ja-JP')
   }
 
+  // 複数日開催は、同じ年なら終了日を「月/日」だけにして列幅を抑える
+  const formatEventPeriod = (startDate: string, endDate: string) => {
+    if (startDate === endDate) return formatDate(startDate)
+
+    const start = new Date(startDate)
+    const end = new Date(endDate)
+    const endLabel =
+      start.getFullYear() === end.getFullYear()
+        ? `${end.getMonth() + 1}/${end.getDate()}`
+        : formatDate(endDate)
+
+    return `${formatDate(startDate)} 〜 ${endLabel}`
+  }
+
   if (events.length === 0) {
     return (
       <div className="text-center py-8 text-gray-500 dark:text-gray-400">
@@ -31,16 +46,16 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
       <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
         <thead className="bg-gray-50 dark:bg-gray-800">
           <tr>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider whitespace-nowrap">
               カンファレンス
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider whitespace-nowrap">
               会場
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider whitespace-nowrap">
               開催日
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider whitespace-nowrap">
               形式
             </th>
           </tr>
@@ -52,8 +67,8 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
 
             return (
               <tr key={`${event.name}`} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center gap-2">
+                <td className="px-4 py-4 align-top">
+                  <div className="flex items-start gap-2">
                     <div className="flex flex-col">
                       <span className="font-medium text-gray-900 dark:text-gray-100">
                         {event.name}
@@ -81,10 +96,11 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
                     )}
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-4 py-4 align-top">
                   <Link
-                    href={`/?venue=${event.venue.id}`}
+                    href={createMapUrl(event.venue.id, event.year)}
                     className="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline transition-colors"
+                    title="この会場を地図で見る"
                   >
                     {event.venue.name}
                   </Link>
@@ -92,13 +108,10 @@ export default function ConferenceList({ events, conferences }: ConferenceListPr
                     {event.venue.address}
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {formatDate(event.startDate)}
-                  {event.startDate !== event.endDate && (
-                    <span> - {formatDate(event.endDate)}</span>
-                  )}
+                <td className="px-4 py-4 whitespace-nowrap align-top text-sm text-gray-900 dark:text-gray-100">
+                  {formatEventPeriod(event.startDate, event.endDate)}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-4 py-4 whitespace-nowrap align-top">
                   {event.isHybrid ? (
                     <span className="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
                       ハイブリッド

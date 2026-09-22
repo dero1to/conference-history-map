@@ -1,0 +1,8 @@
+{
+  "id": "phpcon-ehime",
+  "name": "PHPカンファレンス愛媛",
+  "category": ["Backend", "Web"],
+  "programmingLanguages": ["PHP"],
+  "website": "https://phpcon.ehime.jp/",
+  "twitter": "phpcon_ehime"
+}

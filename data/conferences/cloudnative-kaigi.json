@@ -1,0 +1,8 @@
+{
+  "id": "cloudnative-kaigi",
+  "name": "クラウドネイティブ会議",
+  "category": ["Cloud", "DevOps", "SRE"],
+  "programmingLanguages": ["Other"],
+  "website": "https://kaigi.cloudnativedays.jp/",
+  "twitter": "cloudnativedays"
+}
