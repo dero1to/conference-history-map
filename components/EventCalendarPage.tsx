@@ -5,8 +5,9 @@ import Link from 'next/link'
 import { Conference, ConferenceEventWithVenue } from '@/types/conference'
 import { formatDateRange } from '@/lib/utils'
 import { getCategoryColor } from '@/lib/utils'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react'
 import { getJapaneseHolidays } from '@/lib/holidays'
+import { createMapUrl } from '@/lib/url-params'
 
 const WEEKDAYS = ['月', '火', '水', '木', '金', '土', '日']
 const MONTH_NAMES = [
@@ -319,9 +320,14 @@ export default function EventCalendarPage({ conferences, events }: Props) {
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
                       {formatDateRange(ce.event.startDate, ce.event.endDate)}
                     </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {ce.event.venue.name} ({ce.event.venue.prefecture})
-                    </p>
+                    <Link
+                      href={createMapUrl(ce.event.venue.id, ce.event.year)}
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-colors"
+                      title="この会場を地図で見る"
+                    >
+                      <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
+                      <span>{ce.event.venue.name} ({ce.event.venue.prefecture})</span>
+                    </Link>
                     <div className="flex flex-wrap gap-1 mt-1.5">
                       {ce.conference.category.map(cat => (
                         <span

@@ -374,5 +374,37 @@
     "lat": 35.68632148914277,
     "lng": 139.69506075919256,
     "prefecture": "東京都"
+  },
+  {
+    "id": "miraikan",
+    "name": "日本科学未来館",
+    "address": "東京都江東区青海2-3-6",
+    "lat": 35.6192449,
+    "lng": 139.7766674,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "kyurian",
+    "name": "きゅりあん",
+    "address": "東京都品川区東大井5-18-1",
+    "lat": 35.6060797,
+    "lng": 139.7360514,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "line-yahoo-kioicho-office",
+    "name": "LINEヤフー 紀尾井町オフィス",
+    "address": "東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー",
+    "lat": 35.6795452,
+    "lng": 139.736962,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "bellesalle-shibuya-garden",
+    "name": "ベルサール渋谷ガーデン",
+    "address": "東京都渋谷区南平台町16-17",
+    "lat": 35.6539662,
+    "lng": 139.6939993,
+    "prefecture": "東京都"
   }
 ]

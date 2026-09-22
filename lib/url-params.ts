@@ -164,6 +164,22 @@ export function createUrlParams(filters: FilterParams): URLSearchParams {
   return params
 }
 
+/**
+ * 特定の会場（と開催年）にフォーカスした状態のマップページへのURLを生成する。
+ * マップ側は `venue` で該当マーカーを赤くハイライトして中心に寄せ、
+ * `years` でその年のイベントだけに絞り込む。
+ */
+export function createMapUrl(venueId: string, year?: number): string {
+  const params = new URLSearchParams()
+  params.set('venue', venueId)
+
+  if (year !== undefined) {
+    params.append('years', year.toString())
+  }
+
+  return `/?${params.toString()}`
+}
+
 export function updateUrlWithParams(filters: FilterParams, replace = false): void {
   if (typeof window === 'undefined') return
   

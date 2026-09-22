@@ -1,0 +1,14 @@
+{
+  "id": "hono-conference",
+  "name": "Hono Conference",
+  "category": [
+    "Web",
+    "Framework"
+  ],
+  "programmingLanguages": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "website": "https://honoconf.dev/",
+  "twitter": "honoconf"
+}

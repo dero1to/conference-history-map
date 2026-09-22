@@ -6,5 +6,13 @@
     "lat": 33.8483364,
     "lng": 132.7795355,
     "prefecture": "愛媛県"
+  },
+  {
+    "id": "ehime-university-johoku-campus",
+    "name": "愛媛大学 城北キャンパス",
+    "address": "愛媛県松山市文京町3",
+    "lat": 33.8493083,
+    "lng": 132.7714136,
+    "prefecture": "愛媛県"
   }
 ]

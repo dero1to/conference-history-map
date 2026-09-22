@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Calendar, MapPin, Globe, Twitter, ArrowLeft, ExternalLink, Users } from 'lucide-react'
 import { Conference, ConferenceEventWithVenue } from '@/types/conference'
+import { createMapUrl } from '@/lib/url-params'
 
 interface ConferenceHistoryPageProps {
   conference: Conference
@@ -172,10 +173,14 @@ export default function ConferenceHistoryPage({
                           <Calendar className="w-4 h-4 mr-2" />
                           <span>{formatDate(event.startDate, event.endDate)}</span>
                         </div>
-                        <div className="flex items-center">
-                          <MapPin className="w-4 h-4 mr-2" />
+                        <Link
+                          href={createMapUrl(event.venue.id, event.year)}
+                          className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-colors"
+                          title="この会場を地図で見る"
+                        >
+                          <MapPin className="w-4 h-4 mr-2 flex-shrink-0" />
                           <span>{event.venue.name}</span>
-                        </div>
+                        </Link>
                       </div>
                       
                       <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">

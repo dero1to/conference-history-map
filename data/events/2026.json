@@ -128,5 +128,135 @@
     "venueId": "kagawa/tamamo-hiunkaku",
     "isHybrid": false,
     "eventUrl": "https://phpcon.kagawa.jp/2026/"
+  },
+  {
+    "conferenceId": "phpcon-hokkaido",
+    "name": "フロントエンド・PHPカンファレンス北海道 2026",
+    "year": 2026,
+    "startDate": "2026-06-06",
+    "endDate": "2026-06-06",
+    "venueId": "hokkaido/sapporo-convention-center",
+    "isHybrid": true,
+    "eventUrl": "https://frontend-php-con.hokkaido.jp/"
+  },
+  {
+    "conferenceId": "kinoko-conf",
+    "name": "エンジニアがこの先生きのこるためのカンファレンス 2026",
+    "year": 2026,
+    "startDate": "2026-06-27",
+    "endDate": "2026-06-28",
+    "venueId": "tokyo/miraikan",
+    "isHybrid": false,
+    "eventUrl": "https://kinoko-conf.dev/"
+  },
+  {
+    "conferenceId": "fp-matsuri",
+    "name": "関数型まつり 2026",
+    "year": 2026,
+    "startDate": "2026-07-11",
+    "endDate": "2026-07-12",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": false,
+    "eventUrl": "https://2026.fp-matsuri.org/"
+  },
+  {
+    "conferenceId": "phpcon",
+    "name": "PHPカンファレンスJapan 2026",
+    "year": 2026,
+    "startDate": "2026-07-20",
+    "endDate": "2026-07-20",
+    "venueId": "tokyo/ota-pio",
+    "isHybrid": true,
+    "eventUrl": "https://phpcon.php.gr.jp/2026/"
+  },
+  {
+    "conferenceId": "daikichijoji-pm",
+    "name": "大吉祥寺.pm 2026",
+    "year": 2026,
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-25",
+    "venueId": "tokyo/kyurian",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/dai-kichijojipm-2026"
+  },
+  {
+    "conferenceId": "product-engineering-conference",
+    "name": "Product Engineering Conference 2026",
+    "year": 2026,
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": false,
+    "eventUrl": "https://product-engineering.jp/2026/"
+  },
+  {
+    "conferenceId": "go-conference",
+    "name": "Go Conference 2026",
+    "year": 2026,
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-11",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://gocon.jp/2026/"
+  },
+  {
+    "conferenceId": "platform-engineering-kaigi",
+    "name": "Platform Engineering Kaigi 2026",
+    "year": 2026,
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-26",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://www.cnia.io/pek2026/"
+  },
+  {
+    "conferenceId": "phpcon-ehime",
+    "name": "PHPカンファレンス愛媛 2026",
+    "year": 2026,
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-03",
+    "venueId": "ehime/ehime-university-johoku-campus",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.ehime.jp/"
+  },
+  {
+    "conferenceId": "hono-conference",
+    "name": "Hono Conference 2026 in Tokyo",
+    "year": 2026,
+    "startDate": "2026-10-11",
+    "endDate": "2026-10-11",
+    "venueId": "tokyo/line-yahoo-kioicho-office",
+    "isHybrid": true,
+    "eventUrl": "https://honoconf.dev/2026"
+  },
+  {
+    "conferenceId": "kaigi-on-rails",
+    "name": "Kaigi on Rails 2026",
+    "year": 2026,
+    "startDate": "2026-10-16",
+    "endDate": "2026-10-17",
+    "venueId": "tokyo/bellesalle-shibuya-garden",
+    "isHybrid": true,
+    "eventUrl": "https://kaigionrails.org/2026/"
+  },
+  {
+    "conferenceId": "view-fes-japan",
+    "name": "Vue Fes Japan 2026",
+    "year": 2026,
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-24",
+    "venueId": "tokyo/otemachi-place-hall-conference",
+    "isHybrid": false,
+    "eventUrl": "https://vuefes.jp/2026/"
+  },
+  {
+    "conferenceId": "phpcon-niigata",
+    "name": "PHPカンファレンス新潟 2026",
+    "year": 2026,
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "venueId": "niigata/toki-messe",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon.niigata.jp/"
   }
 ]

@@ -1,0 +1,12 @@
+{
+  "id": "product-engineering-conference",
+  "name": "Product Engineering Conference",
+  "category": [
+    "Other"
+  ],
+  "programmingLanguages": [
+    "Other"
+  ],
+  "website": "https://product-engineering.jp/",
+  "twitter": "PdEConf"
+}
