@@ -210,6 +210,16 @@
     "eventUrl": "https://gocon.jp/2026/"
   },
   {
+    "conferenceId": "iosdc-japan",
+    "name": "iOSDC Japan 2026",
+    "year": 2026,
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-13",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://iosdc.jp/2026/"
+  },
+  {
     "conferenceId": "platform-engineering-kaigi",
     "name": "Platform Engineering Kaigi 2026",
     "year": 2026,
@@ -230,6 +240,16 @@
     "eventUrl": "https://phpcon.ehime.jp/"
   },
   {
+    "conferenceId": "tinygo-conference",
+    "name": "TinyGo Conference 2026 in JAPAN",
+    "year": 2026,
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-10",
+    "venueId": "tokyo/ap-akihabara",
+    "isHybrid": false,
+    "eventUrl": "https://conf.tinygo-keeb.org/2026/"
+  },
+  {
     "conferenceId": "hono-conference",
     "name": "Hono Conference 2026 in Tokyo",
     "year": 2026,
@@ -238,6 +258,16 @@
     "venueId": "tokyo/line-yahoo-kioicho-office",
     "isHybrid": true,
     "eventUrl": "https://honoconf.dev/2026"
+  },
+  {
+    "conferenceId": "front-end-conference-kansai",
+    "name": "フロントエンドカンファレンス関西 2026",
+    "year": 2026,
+    "startDate": "2026-10-12",
+    "endDate": "2026-10-12",
+    "venueId": "osaka/congres-square-grand-green-osaka",
+    "isHybrid": false,
+    "eventUrl": "https://2026.frontend-conf.osaka.jp/"
   },
   {
     "conferenceId": "kaigi-on-rails",
@@ -260,6 +290,26 @@
     "eventUrl": "https://vuefes.jp/2026/"
   },
   {
+    "conferenceId": "flutterkaigi",
+    "name": "FlutterKaigi 2026",
+    "year": 2026,
+    "startDate": "2026-10-29",
+    "endDate": "2026-10-30",
+    "venueId": "tokyo/hamamatsucho-convention-hall",
+    "isHybrid": false,
+    "eventUrl": "https://2026.flutterkaigi.jp/"
+  },
+  {
+    "conferenceId": "tskaigi",
+    "name": "TSKaigi Sendai 2026",
+    "year": 2026,
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-01",
+    "venueId": "miyagi/yui-nos",
+    "isHybrid": false,
+    "eventUrl": "https://sendai.tskaigi.org/"
+  },
+  {
     "conferenceId": "phpcon-niigata",
     "name": "PHPカンファレンス新潟 2026",
     "year": 2026,
@@ -270,6 +320,26 @@
     "eventUrl": "https://phpcon.niigata.jp/"
   },
   {
+    "conferenceId": "kotlin-fest",
+    "name": "Kotlin Fest 2026",
+    "year": 2026,
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "venueId": "tokyo/tokyo-conference-center-shinagawa",
+    "isHybrid": false,
+    "eventUrl": "https://2026.kotlinfest.dev/"
+  },
+  {
+    "conferenceId": "jisabakan",
+    "name": "自鯖缶 2026",
+    "year": 2026,
+    "startDate": "2026-11-15",
+    "endDate": "2026-11-15",
+    "venueId": "tokyo/docomo-rd-openlab-odaiba",
+    "isHybrid": true,
+    "eventUrl": "https://jisaba.sh/"
+  },
+  {
     "conferenceId": "cloudnativedays",
     "name": "Cloud Native Days Winter 2026",
     "year": 2026,
@@ -278,5 +348,55 @@
     "venueId": "tokyo/ariake-central-tower",
     "isHybrid": true,
     "eventUrl": "https://cloudnativedays.jp/cndw2026"
+  },
+  {
+    "conferenceId": "accessibility-conference-fukuoka",
+    "name": "アクセシビリティカンファレンス福岡 2026",
+    "year": 2026,
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "venueId": "fukuoka/one-fukuoka-conference-hall",
+    "isHybrid": true,
+    "eventUrl": "https://fukuoka.a11yconf.net/"
+  },
+  {
+    "conferenceId": "postgresql-conference",
+    "name": "PostgreSQL Conference Japan 2026",
+    "year": 2026,
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-27",
+    "venueId": "tokyo/ap-tokyo-yaesu",
+    "isHybrid": false,
+    "eventUrl": "https://www.postgresql.jp/jpug-pgcon2026"
+  },
+  {
+    "conferenceId": "yapc",
+    "name": "YAPC::Tokyo 2026",
+    "year": 2026,
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29",
+    "venueId": "tokyo/tokyo-big-sight",
+    "isHybrid": false,
+    "eventUrl": "https://yapcjapan.org/2026tokyo/"
+  },
+  {
+    "conferenceId": "rubyworld-conference",
+    "name": "RubyWorld Conference 2026",
+    "year": 2026,
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-04",
+    "venueId": "shimane/shimane-prefectural-industrial-exchange-center-kunibiki-messe",
+    "isHybrid": false,
+    "eventUrl": "https://2026.rubyworld-conf.org/"
+  },
+  {
+    "conferenceId": "front-end-conference-tokyo",
+    "name": "フロントエンドカンファレンス東京 2026",
+    "year": 2026,
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "venueId": "tokyo/abema-towers",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/fec-tokyo-2026"
   }
 ]

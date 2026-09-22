@@ -1,0 +1,52 @@
+[
+  {
+    "conferenceId": "burikaigi",
+    "name": "BuriKaigi 2027",
+    "year": 2027,
+    "startDate": "2027-01-08",
+    "endDate": "2027-01-09",
+    "venueId": "toyama/toyama-international-conference-center",
+    "isHybrid": false,
+    "eventUrl": "https://burikaigi.dev/"
+  },
+  {
+    "conferenceId": "phpcon-kansai",
+    "name": "PHPカンファレンス関西 2026",
+    "year": 2027,
+    "startDate": "2027-01-16",
+    "endDate": "2027-01-16",
+    "venueId": "kyoto/kyoto-research-park",
+    "isHybrid": false,
+    "eventUrl": "https://2026.kphpug.jp/"
+  },
+  {
+    "conferenceId": "srekaigi",
+    "name": "SRE Kaigi 2027",
+    "year": 2027,
+    "startDate": "2027-02-20",
+    "endDate": "2027-02-20",
+    "venueId": "tokyo/nakano-central-park",
+    "isHybrid": true,
+    "eventUrl": "https://2027.srekaigi.net/"
+  },
+  {
+    "conferenceId": "phpcon-odawara",
+    "name": "PHPカンファレンス小田原 2027",
+    "year": 2027,
+    "startDate": "2027-04-10",
+    "endDate": "2027-04-10",
+    "venueId": "kanagawa/odawara-umeco",
+    "isHybrid": false,
+    "eventUrl": "https://phpcon-odawara.jp/2027/"
+  },
+  {
+    "conferenceId": "phpcon-kagawa",
+    "name": "PHPカンファレンス香川 2027",
+    "year": 2027,
+    "startDate": "2027-05-22",
+    "endDate": "2027-05-22",
+    "venueId": "kagawa/tamamo-hiunkaku",
+    "isHybrid": false,
+    "eventUrl": "https://fortee.jp/phpconkagawa-2027"
+  }
+]

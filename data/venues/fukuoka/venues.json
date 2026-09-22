@@ -38,5 +38,13 @@
     "lat": 33.59603173591288,
     "lng": 130.42876184171223,
     "prefecture": "福岡県"
+  },
+  {
+    "id": "one-fukuoka-conference-hall",
+    "name": "ONE FUKUOKA CONFERENCE HALL",
+    "address": "福岡県福岡市中央区天神1-11-1 ONE FUKUOKA BLDG.",
+    "lat": 33.5907945,
+    "lng": 130.399842,
+    "prefecture": "福岡県"
   }
 ]

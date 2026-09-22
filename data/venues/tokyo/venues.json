@@ -406,5 +406,37 @@
     "lat": 35.6539662,
     "lng": 139.6939993,
     "prefecture": "東京都"
+  },
+  {
+    "id": "tokyo-big-sight",
+    "name": "東京ビッグサイト（東京国際展示場）",
+    "address": "東京都江東区有明3-11-1",
+    "lat": 35.62977838247352,
+    "lng": 139.7941024612392,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "ap-akihabara",
+    "name": "AP秋葉原",
+    "address": "東京都台東区秋葉原1-1 秋葉原ビジネスセンター",
+    "lat": 35.701649,
+    "lng": 139.775314,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "hamamatsucho-convention-hall",
+    "name": "浜松町コンベンションホール",
+    "address": "東京都港区浜松町2-3-1 日本生命浜松町クレアタワー",
+    "lat": 35.65617663452184,
+    "lng": 139.75567188366887,
+    "prefecture": "東京都"
+  },
+  {
+    "id": "tokyo-conference-center-shinagawa",
+    "name": "東京コンファレンスセンター・品川",
+    "address": "東京都港区港南1-9-36 アレア品川",
+    "lat": 35.63011270661076,
+    "lng": 139.7412810618564,
+    "prefecture": "東京都"
   }
 ]

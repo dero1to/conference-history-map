@@ -1,0 +1,13 @@
+{
+  "id": "kotlin-fest",
+  "name": "Kotlin Fest",
+  "category": [
+    "Mobile",
+    "Backend"
+  ],
+  "programmingLanguages": [
+    "Kotlin"
+  ],
+  "website": "https://www.kotlinfest.dev/",
+  "twitter": "@kotlin_fest"
+}

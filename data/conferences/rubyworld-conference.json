@@ -1,0 +1,13 @@
+{
+  "id": "rubyworld-conference",
+  "name": "RubyWorld Conference",
+  "category": [
+    "Backend",
+    "Web"
+  ],
+  "programmingLanguages": [
+    "Ruby"
+  ],
+  "website": "https://www.rubyworld-conf.org/",
+  "twitter": "@RubyWorldConf"
+}
