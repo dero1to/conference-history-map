@@ -313,8 +313,8 @@
     "conferenceId": "yapc",
     "name": "YAPC::Hakodate 2024",
     "year": 2024,
-    "startDate": "2025-10-05",
-    "endDate": "2025-10-05",
+    "startDate": "2024-10-05",
+    "endDate": "2024-10-05",
     "venueId": "hokkaido/public-hakodate-future-university",
     "isHybrid": false,
     "eventUrl": "https://yapcjapan.org/2024hakodate/"
