@@ -7,7 +7,7 @@ import { LatLngBounds, Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
 import MapSearchControl from './MapSearchControl'
 import type { Conference, ConferenceEventWithVenue } from '@/types/conference'
-import { getCategoryColor, getProgrammingLanguageColor, formatDateRange } from '@/lib/utils'
+import { getCategoryColor, getProgrammingLanguageColor, formatDateRange, createGoogleMapsUrl } from '@/lib/utils'
 import 'leaflet/dist/leaflet.css'
 
 // クラスターのインターフェースを定義
@@ -191,7 +191,19 @@ export default function ConferenceMap({
                           </svg>
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="text-xs text-gray-900 dark:text-gray-100 font-medium truncate">{event.venue.name}</p>
+                          <a
+                            href={createGoogleMapsUrl(event.venue)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group inline-flex items-center gap-1 min-w-0 max-w-full text-xs font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-colors"
+                            title="Google マップで開く"
+                          >
+                            <span className="truncate">{event.venue.name}</span>
+                            <svg className="w-3 h-3 flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clipRule="evenodd" />
+                              <path fillRule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clipRule="evenodd" />
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </div>

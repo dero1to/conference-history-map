@@ -14,5 +14,13 @@
     "lat": 35.1454876,
     "lng": 136.9018427,
     "prefecture": "愛知県"
+  },
+  {
+    "id": "chunichi-hall-conference",
+    "name": "中日ホール&カンファレンス",
+    "address": "愛知県名古屋市中区栄4丁目1-1 中日ビル6F",
+    "lat": 35.1682532,
+    "lng": 136.9096674,
+    "prefecture": "愛知県"
   }
 ]

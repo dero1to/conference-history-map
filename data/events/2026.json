@@ -130,6 +130,16 @@
     "eventUrl": "https://phpcon.kagawa.jp/2026/"
   },
   {
+    "conferenceId": "cloudnative-kaigi",
+    "name": "クラウドネイティブ会議 2026",
+    "year": 2026,
+    "startDate": "2026-05-14",
+    "endDate": "2026-05-15",
+    "venueId": "aichi/chunichi-hall-conference",
+    "isHybrid": true,
+    "eventUrl": "https://kaigi.cloudnativedays.jp/"
+  },
+  {
     "conferenceId": "phpcon-hokkaido",
     "name": "フロントエンド・PHPカンファレンス北海道 2026",
     "year": 2026,
@@ -258,5 +268,15 @@
     "venueId": "niigata/toki-messe",
     "isHybrid": false,
     "eventUrl": "https://phpcon.niigata.jp/"
+  },
+  {
+    "conferenceId": "cloudnativedays",
+    "name": "Cloud Native Days Winter 2026",
+    "year": 2026,
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-19",
+    "venueId": "tokyo/ariake-central-tower",
+    "isHybrid": true,
+    "eventUrl": "https://cloudnativedays.jp/cndw2026"
   }
 ]
